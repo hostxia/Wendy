@@ -1,0 +1,246 @@
+02.11.18 01:05:05.358	================================================================================
+02.11.18 01:05:05.365	Trace Log for Wendy.Win.exe is started
+02.11.18 01:05:05.365	================================================================================
+02.11.18 01:05:05.366	System Environment
+	OS Version: Microsoft Windows NT 6.2.9200.0
+	.Net Framework Versions: v2.0.50727, v4.0.30319
+	CLR Version: 4.0.30319.42000
+	eXpressApp Version: 18.1.6.0
+	eXpressApp File Version: 18.1.6.0
+
+Application config
+	Modules=
+	NewVersionServer=
+	EnableDiagnosticActions=False
+
+02.11.18 01:05:05.422	Initialize application
+=======================
+02.11.18 01:05:05.423		Command line arguments: 
+		D:\代码\Wendy\Wendy.Win\bin\Debug\Wendy.Win.exe
+02.11.18 01:05:05.705	--------------------------------------------------------------------------------
+							Initialize Modules Manager
+
+02.11.18 01:05:05.706	--------------------------------------------------------------------------------
+							
+
+02.11.18 01:05:05.709	--------------------------------------------------------------------------------
+Loaded assemblies
+	Anonymously Hosted DynamicMethods Assembly, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+	DevExpress.Data.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Data.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.Data.v18.1.dll
+	DevExpress.ExpressApp.CloneObject.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.CloneObject.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.CloneObject.v18.1.dll
+	DevExpress.ExpressApp.ConditionalAppearance.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.ConditionalAppearance.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.ConditionalAppearance.v18.1.dll
+	DevExpress.ExpressApp.Dashboards.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Dashboards.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.Dashboards.v18.1.dll
+	DevExpress.ExpressApp.Dashboards.Win.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Dashboards.Win.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.Dashboards.Win.v18.1.dll
+	DevExpress.ExpressApp.Security.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Security.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.Security.v18.1.dll
+	DevExpress.ExpressApp.Security.Xpo.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Security.Xpo.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.Security.Xpo.v18.1.dll
+	DevExpress.ExpressApp.TreeListEditors.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.TreeListEditors.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.TreeListEditors.v18.1.dll
+	DevExpress.ExpressApp.TreeListEditors.Win.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.TreeListEditors.Win.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.TreeListEditors.Win.v18.1.dll
+	DevExpress.ExpressApp.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.v18.1.dll
+	DevExpress.ExpressApp.v18.1.resources, Version=18.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a, Location=D:\代码\Wendy\Wendy.Win\bin\Debug\zh-Hans\DevExpress.ExpressApp.v18.1.resources.dll
+	DevExpress.ExpressApp.Validation.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Validation.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.Validation.v18.1.dll
+	DevExpress.ExpressApp.Validation.Win.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Validation.Win.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.Validation.Win.v18.1.dll
+	DevExpress.ExpressApp.Win.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Win.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.Win.v18.1.dll
+	DevExpress.ExpressApp.Xpo.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Xpo.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.Xpo.v18.1.dll
+	DevExpress.Persistent.Base.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Persistent.Base.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.Persistent.Base.v18.1.dll
+	DevExpress.Persistent.BaseImpl.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Persistent.BaseImpl.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.Persistent.BaseImpl.v18.1.dll
+	DevExpress.Printing.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Printing.v18.1.Core\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.Printing.v18.1.Core.dll
+	DevExpress.Utils.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Utils.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.Utils.v18.1.dll
+	DevExpress.Xpo.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Xpo.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.Xpo.v18.1.dll
+	DevExpress.XtraBars.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraBars.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.XtraBars.v18.1.dll
+	DevExpress.XtraEditors.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraEditors.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.XtraEditors.v18.1.dll
+	DevExpress.XtraTreeList.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraTreeList.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.XtraTreeList.v18.1.dll
+	mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll
+	mscorlib.resources, Version=4.0.0.0, Culture=zh-Hans, PublicKeyToken=b77a5c561934e089, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\mscorlib.resources\v4.0_4.0.0.0_zh-Hans_b77a5c561934e089\mscorlib.resources.dll
+	System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll
+	System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll
+	System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll
+	System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Windows\Microsoft.Net\assembly\GAC_32\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll
+	System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll
+	System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll
+	System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll
+	UIAutomationClient, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\UIAutomationClient\v4.0_4.0.0.0__31bf3856ad364e35\UIAutomationClient.dll
+	Wendy.Module, Version=1.0.6880.44, Culture=neutral, PublicKeyToken=null, Location=D:\代码\Wendy\Wendy.Win\bin\Debug\Wendy.Module.dll
+	Wendy.Module.Win, Version=1.0.6880.44, Culture=neutral, PublicKeyToken=null, Location=D:\代码\Wendy\Wendy.Win\bin\Debug\Wendy.Module.Win.dll
+	Wendy.Win, Version=1.0.6880.1823, Culture=neutral, PublicKeyToken=null, Location=D:\代码\Wendy\Wendy.Win\bin\Debug\Wendy.Win.exe
+02.11.18 01:05:05.819	SetupModules
+02.11.18 01:05:05.949	Customize TypesInfo
+02.11.18 01:05:05.974	The ValueManagerType is initialized by the default value: SimpleValueManager.
+02.11.18 01:05:05.976	Stack trace:
+   在 DevExpress.Persistent.Base.ValueManager.CreateValueManager[ValueType](String key)
+   在 DevExpress.Persistent.Base.ValueManager.GetValueManager[ValueType](String key)
+   在 DevExpress.ExpressApp.SecuritySystem.SetInstance(ISecurityStrategyBase instance)
+   在 DevExpress.ExpressApp.XafApplication.InitializeSecuritySystem(ExpressApplicationSetupParameters parameters)
+   在 DevExpress.ExpressApp.XafApplication.Setup(ExpressApplicationSetupParameters parameters)
+   在 DevExpress.ExpressApp.XafApplication.Setup(String applicationName, IList`1 objectSpaceProviders, ApplicationModulesManager modulesManager, ISecurityStrategyBase security)
+   在 DevExpress.ExpressApp.XafApplication.Setup()
+   在 Wendy.Win.Program.Main() 位置 D:\代码\Wendy\Wendy.Win\Program.cs:行号 44
+
+02.11.18 01:05:07.359		preferredLanguageName: (User language)
+								userLanguageName: zh-CN
+
+02.11.18 01:05:07.360		preferredLanguageName: (User language)
+								userFormattingCultureName: zh-CN
+								selectedFormattingCultureName: 
+
+02.11.18 01:05:07.362	Logon With Parameters
+02.11.18 01:05:07.365		Type: DevExpress.ExpressApp.Actions.PopupWindowShowAction
+								ID: ef876603-b4a1-4a3e-8184-d17154e89bff
+								Category: Unspecified
+
+02.11.18 01:05:07.847	Generate default Model for Action containers
+02.11.18 01:05:10.936	'Password' property editor: new value is '*******'
+02.11.18 01:05:11.015	--------------------------------------------------------------------------------
+							Execute action
+
+02.11.18 01:05:11.015		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: Logon
+								Category: PopupActions
+								Controller.Name: DevExpress.ExpressApp.LogonController
+								Context.Name: 登录验证
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: Wendy.Module.BusinessObjects.CustomLogonParametersForStandardAuthentication
+
+02.11.18 01:05:11.016	--------------------------------------------------------------------------------
+							Execute action
+
+02.11.18 01:05:11.016		Type: DevExpress.ExpressApp.Actions.PopupWindowShowAction
+								ID: ef876603-b4a1-4a3e-8184-d17154e89bff
+								Category: Unspecified
+
+02.11.18 01:05:11.073	--------------------------------------------------------------------------------
+							Start logon process
+
+02.11.18 01:05:11.076	--------------------------------------------------------------------------------
+							Checking Compatibility
+
+02.11.18 01:05:11.077		ConnectionString: DataBase=WendyDB;XpoProvider=MySql;Server=cdb-regn6a3u.bj.tencentcdb.com;Port=10035;User ID=root;Persist Security Info= true;Charset=utf8;SslMode= none;
+02.11.18 01:05:11.077		ConnectionString: 
+02.11.18 01:05:11.862	--------------------------------------------------------------------------------
+							Logon successful
+
+02.11.18 01:05:11.914	--------------------------------------------------------------------------------
+							Logon completed
+
+02.11.18 01:05:11.921	Action 'ef876603-b4a1-4a3e-8184-d17154e89bff' done
+02.11.18 01:05:11.923	Window closing: 登录验证
+02.11.18 01:05:11.946	Action 'Logon' done
+02.11.18 01:05:11.946	Window closed: 登录验证
+02.11.18 01:05:11.996		startUpActions: 1
+02.11.18 01:05:12.015	--------------------------------------------------------------------------------
+							Initialize 'ShowNavigationItem' action items
+
+02.11.18 01:05:12.070	--------------------------------------------------------------------------------
+							Execute action
+
+02.11.18 01:05:12.070		Type: DevExpress.ExpressApp.Actions.SingleChoiceAction
+								ID: ChooseSkin
+								Category: Appearance
+								Controller.Name: DevExpress.ExpressApp.Win.SystemModule.ChooseSkinController
+
+02.11.18 01:05:12.071		SelectedItem: Springtime
+02.11.18 01:05:12.090	Action 'ChooseSkin' done
+02.11.18 01:05:13.562	Resolve the 'DevExpress.ExpressApp.Win.v18.1.XmlSerializers, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a' assembly
+02.11.18 01:05:13.563	Resolve the 'DevExpress.ExpressApp.Win.v18.1.XmlSerializers, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a' assembly
+02.11.18 01:05:15.905	Application startup done
+=========================
+02.11.18 01:05:15.905	Application running
+====================
+02.11.18 01:05:24.412	--------------------------------------------------------------------------------
+							Execute action
+
+02.11.18 01:05:24.412		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: ListViewShowObject
+								Category: ListView
+								Controller.Name: DevExpress.ExpressApp.SystemModule.ListViewProcessCurrentObjectController
+								Context.Name: 用户
+								Context.IsRoot: False
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: 孙媛
+
+02.11.18 01:05:24.834	Action 'ListViewShowObject' done
+02.11.18 01:05:26.481	--------------------------------------------------------------------------------
+							Execute action
+
+02.11.18 01:05:26.482		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: ListViewShowObject
+								Category: ListView
+								Controller.Name: DevExpress.ExpressApp.SystemModule.ListViewProcessCurrentObjectController
+								Context.Name: 角色
+								Context.IsRoot: False
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyRole(9115d1ea-8227-4934-926b-0014b8f256d7)
+
+02.11.18 01:05:26.895	Action 'ListViewShowObject' done
+02.11.18 01:05:32.058	--------------------------------------------------------------------------------
+							Execute action
+
+02.11.18 01:05:32.058		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: ListViewShowObject
+								Category: ListView
+								Controller.Name: DevExpress.ExpressApp.SystemModule.ListViewProcessCurrentObjectController
+								Context.Name: 类型权限
+								Context.IsRoot: False
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyTypePermissionObject(9381f4a7-2492-4827-af32-1a3b60bf73a6)
+
+02.11.18 01:05:37.441	--------------------------------------------------------------------------------
+							Execute action
+
+02.11.18 01:05:37.441		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: Close
+								Category: Close
+								Controller.Name: DevExpress.ExpressApp.Win.SystemModule.CloseWindowController
+								Context.Name: 类型操作权限
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyTypePermissionObject(9381f4a7-2492-4827-af32-1a3b60bf73a6)
+
+02.11.18 01:05:37.441	Window closing: 类型操作权限
+02.11.18 01:05:37.465	Action 'Close' done
+02.11.18 01:05:37.466	Window closed: 类型操作权限
+02.11.18 01:05:37.594	Action 'ListViewShowObject' done
+02.11.18 01:05:39.890	--------------------------------------------------------------------------------
+							Execute action
+
+02.11.18 01:05:39.890		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: ListViewShowObject
+								Category: ListView
+								Controller.Name: DevExpress.ExpressApp.SystemModule.ListViewProcessCurrentObjectController
+								Context.Name: 类型权限
+								Context.IsRoot: False
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyTypePermissionObject(c228bb56-4caf-4a4a-8ddf-9470de296e6d)
+
+02.11.18 01:05:46.477	Window closing: 类型操作权限
+02.11.18 01:05:46.484	Window closed: 类型操作权限
+02.11.18 01:05:46.547	Action 'ListViewShowObject' done
+02.11.18 01:06:01.435	--------------------------------------------------------------------------------
+							Execute action
+
+02.11.18 01:06:01.435		Type: DevExpress.ExpressApp.Actions.SingleChoiceAction
+								ID: ShowNavigationItem
+								Category: ViewsNavigation
+								Controller.Name: DevExpress.ExpressApp.SystemModule.ShowNavigationItemController
+
+02.11.18 01:06:01.435		SelectedItem: 我的信息
+02.11.18 01:06:01.807	Action 'ShowNavigationItem' done
+02.11.18 01:14:10.095	Window closing: 咨询顾问 - 角色
+02.11.18 01:14:10.096	Window closing: 孙媛 - 用户信息
+02.11.18 01:14:10.096	Window closing: 普通用户组 - 角色
+02.11.18 01:14:10.097	Window closing: 管理员 - 用户信息
+02.11.18 01:14:10.097	Window closing: 管理员 - 用户信息 - 文迪营销管理系统
+02.11.18 01:14:10.129	Window closed: 咨询顾问 - 角色
+02.11.18 01:14:10.130	Window closed: 孙媛 - 用户信息
+02.11.18 01:14:10.130	Window closed: 普通用户组 - 角色
+02.11.18 01:14:10.130	Window closed: 管理员 - 用户信息
+02.11.18 01:14:10.130	Window closed: 管理员 - 用户信息 - 文迪营销管理系统
+02.11.18 01:14:10.952	Save model changes
+===================
+02.11.18 01:14:11.091	Save model changes
+===================
+02.11.18 01:14:11.129	--------------------------------------------------------------------------------
+							Logoff completed
+
+02.11.18 01:14:11.130	Application stopping
+=====================

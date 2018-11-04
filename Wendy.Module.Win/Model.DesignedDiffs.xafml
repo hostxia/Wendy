@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ChangeDatabase" ShortCaption="切换校区" Caption="切换校区" ImageName="Action_Copy_CellValue" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="Wendy.Module.BusinessObjects.ConsultRecord">
+      <OwnMembers>
+        <Member Name="s_PayWay" PropertyEditorType="Wendy.Module.Win.Editors.StringSelector" />
+        <Member Name="s_SignUpPeriod" PropertyEditorType="Wendy.Module.Win.Editors.StringSelector" />
+        <Member Name="s_Source" PropertyEditorType="Wendy.Module.Win.Editors.StringSelector" PredefinedValues=";2Show;平行报班;续班;升学" />
+        <Member Name="s_Status" PropertyEditorType="Wendy.Module.Win.Editors.StringSelector" />
+      </OwnMembers>
+    </Class>
+    <Class Name="Wendy.Module.BusinessObjects.Payment">
+      <OwnMembers>
+        <Member Name="s_PayWay" PropertyEditorType="Wendy.Module.Win.Editors.StringSelector" />
+      </OwnMembers>
+    </Class>
+    <Class Name="Wendy.Module.BusinessObjects.SourseInfo">
+      <OwnMembers>
+        <Member Name="s_Name" PropertyEditorType="Wendy.Module.Win.Editors.StringSelector" />
+        <Member Name="s_Status" PropertyEditorType="Wendy.Module.Win.Editors.StringSelector" />
+      </OwnMembers>
+    </Class>
+    <Class Name="Wendy.Module.BusinessObjects.StudentInfo">
+      <OwnMembers>
+        <Member Name="s_PointLevel" PropertyEditorType="Wendy.Module.Win.Editors.StringSelector" PredefinedValues=";银卡;金卡;至尊卡" />
+        <Member Name="s_Sex" PropertyEditorType="Wendy.Module.Win.Editors.StringSelector" PredefinedValues=";男;女" />
+        <Member Name="s_Source" PropertyEditorType="Wendy.Module.Win.Editors.StringSelector" />
+        <Member Name="s_Valid" PropertyEditorType="Wendy.Module.Win.Editors.StringSelector" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="18.1.6.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="18.1.6.0" IsNewNode="True" />
+    <SchemaModule Name="SystemWindowsFormsModule" Version="18.1.6.0" IsNewNode="True" />
+  </SchemaModules>
+</Application>

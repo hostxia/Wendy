@@ -1,0 +1,1093 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign Id="ActionDesign">
+    <Actions Id="Actions">
+      <Action Id="AddFromFile" Caption="使用附件新增..." ToolTip="通过上传附件创建一条记录" />
+      <Action Id="ExportDashboard" Caption="导出到">
+        <ChoiceActionItems Id="ChoiceActionItems">
+          <ChoiceActionItem Id="Image File" Caption="图片文件" />
+          <ChoiceActionItem Id="PDF File" Caption="PDF文件" />
+          <ChoiceActionItem Id="XLSX File" Caption="XLSX文件" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="Open" Caption="打开..." ToolTip="使用外部程序打开附件" />
+      <Action Id="PrintDashboard" Caption="打印预览..." ToolTip="打印预览..." />
+      <Action Id="SaveTo" Caption="另存为..." ToolTip="将选中记录的附件保存到本地" />
+      <Action Id="ShowDashboardDesigner" Caption="显示仪表板设计器" />
+      <Action Id="TWorkload.scaFilter" Caption="筛选" />
+    </Actions>
+    <DisableReasons Id="DisableReasons">
+      <Reason Id="AttachmentAssigned" Caption="附件是空的" />
+    </DisableReasons>
+  </ActionDesign>
+  <Localization Id="Localization">
+    <LocalizationGroup Name="Controls">
+      <LocalizationGroup Name="DevExpress.Dashboard">
+        <LocalizationItem Name="YesterdayCheckEditCaption" Value="昨天" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.XtraBars">
+        <LocalizationItem Name="AccordionControlSearchBoxPromptText" Value="在此键入关键字" />
+        <LocalizationItem Name="AddOrRemove" Value="添加或删除按钮" />
+        <LocalizationItem Name="BarAllItems" Value="（所有项目）" />
+        <LocalizationItem Name="BarUnassignedItems" Value="（未分配项目）" />
+        <LocalizationItem Name="CancelButton" Value="取消" />
+        <LocalizationItem Name="CloseButton" Value="关闭" />
+        <LocalizationItem Name="CollapseRibbonSuperTipHeader" Value="最小化功能区（Ctrl + F1）" />
+        <LocalizationItem Name="CollapseRibbonSuperTipText" Value="仅显示功能区上的选项卡名称" />
+        <LocalizationItem Name="ColorAuto" Value="颜色自动" />
+        <LocalizationItem Name="ColorPickBlueValidationMsg" Value="蓝色范围应该在0-255之间" />
+        <LocalizationItem Name="ColorPickBrightnessAxisName" Value="亮度" />
+        <LocalizationItem Name="ColorPickBrightValidationMsg" Value="亮度范围应该在0-100之间" />
+        <LocalizationItem Name="ColorPickColorHexValidationMsg" Value="无效的十六进制值" />
+        <LocalizationItem Name="ColorPickGreenValidationMsg" Value="绿色范围应该在0-255之间" />
+        <LocalizationItem Name="ColorPickHueAxisName" Value="色调" />
+        <LocalizationItem Name="ColorPickHueValidationMsg" Value="色调范围应该在0-359之间" />
+        <LocalizationItem Name="ColorPickLuminanceAxisName" Value="亮度" />
+        <LocalizationItem Name="ColorPickOpacityAxisName" Value="不透明度" />
+        <LocalizationItem Name="ColorPickOpacityValidationMsg" Value="不透明度范围应该在0-255之间" />
+        <LocalizationItem Name="ColorPickPopupMoreColorsItemCaption" Value="更多颜色..." />
+        <LocalizationItem Name="ColorPickPopupRecentColorsGroupCaption" Value="最近使用的颜色" />
+        <LocalizationItem Name="ColorPickPopupStandardColorsGroupCaption" Value="标准颜色" />
+        <LocalizationItem Name="ColorPickPopupThemeColorsGroupCaption" Value="主题颜色" />
+        <LocalizationItem Name="ColorPickRedValidationMsg" Value="红色范围应该在0-255之间" />
+        <LocalizationItem Name="ColorPickSaturationAxisName" Value="饱和度" />
+        <LocalizationItem Name="ColorPickSaturationValidationMsg" Value="饱和度范围应该在0-100之间" />
+        <LocalizationItem Name="ColorTabWebSafeColors" Value="网络安全" />
+        <LocalizationItem Name="CustomizeButton" Value="自定义..." />
+        <LocalizationItem Name="CustomizeQuickAccessToolbar" Value="自定义快速访问工具栏..." />
+        <LocalizationItem Name="CustomizeRibbon" Value="自定义功能区..." />
+        <LocalizationItem Name="CustomizeToolbarSuperTipText" Value="自定义快速访问工具栏" />
+        <LocalizationItem Name="CustomizeToolbarText" Value="自定义工具栏" />
+        <LocalizationItem Name="CustomizeWindowCaption" Value="自定义窗口标题" />
+        <LocalizationItem Name="ExpandRibbonSuperTipHeader" Value="展开功能区（Ctrl + F1）" />
+        <LocalizationItem Name="ExpandRibbonSuperTipText" Value="显示功能区，以便即使在单击命令后也始终展开该功能区" />
+        <LocalizationItem Name="FullScreenButton" Value="自动隐藏功能区" />
+        <LocalizationItem Name="HelpButton" Value="帮助" />
+        <LocalizationItem Name="MaximizeButton" Value="最大化" />
+        <LocalizationItem Name="MenuAnimationFade" Value="淡入淡出" />
+        <LocalizationItem Name="MenuAnimationNone" Value="无" />
+        <LocalizationItem Name="MenuAnimationRandom" Value="随机" />
+        <LocalizationItem Name="MenuAnimationSlide" Value="幻灯片" />
+        <LocalizationItem Name="MenuAnimationSystem" Value="（系统默认）" />
+        <LocalizationItem Name="MenuAnimationUnfold" Value="展开" />
+        <LocalizationItem Name="MinimizeButton" Value="最小化" />
+        <LocalizationItem Name="MoreCommands" Value="更多命令..." />
+        <LocalizationItem Name="NewMenuName" Value="主菜单" />
+        <LocalizationItem Name="NewStatusBarName" Value="状态栏" />
+        <LocalizationItem Name="NewToolbarCaption" Value="新工具栏" />
+        <LocalizationItem Name="NewToolbarCustomNameFormat" Value="自定义{0}" />
+        <LocalizationItem Name="NewToolbarName" Value="工具" />
+        <LocalizationItem Name="PopupMenuEditor" Value="弹出菜单编辑器" />
+        <LocalizationItem Name="RenameToolbarCaption" Value="重命名工具栏" />
+        <LocalizationItem Name="ResetBar" Value="您确定要重置对“{0}”工具栏所做的更改吗？" />
+        <LocalizationItem Name="ResetBarCaption" Value="自定义" />
+        <LocalizationItem Name="ResetButton" Value="重置工具栏" />
+        <LocalizationItem Name="RestoreButton" Value="还原" />
+        <LocalizationItem Name="RibbonAllPages" Value="（所有页面）" />
+        <LocalizationItem Name="RibbonCaptionTextNone" Value="没有名字" />
+        <LocalizationItem Name="RibbonCustomizationAddText" Value="添加" />
+        <LocalizationItem Name="RibbonCustomizationDownText" Value="下移" />
+        <LocalizationItem Name="RibbonCustomizationExportSettingsCommand" Value="导出所有自定义项" />
+        <LocalizationItem Name="RibbonCustomizationImportSettingsCommand" Value="导入自定义文件" />
+        <LocalizationItem Name="RibbonCustomizationNewCategoryCommand" Value="新类别" />
+        <LocalizationItem Name="RibbonCustomizationNewCategoryDefaultAlias" Value="新类别" />
+        <LocalizationItem Name="RibbonCustomizationNewGroupCommand" Value="新组别" />
+        <LocalizationItem Name="RibbonCustomizationNewGroupDefaultAlias" Value="新组别" />
+        <LocalizationItem Name="RibbonCustomizationNewPageCommand" Value="新标签" />
+        <LocalizationItem Name="RibbonCustomizationNewTabDefaultAlias" Value="新标签" />
+        <LocalizationItem Name="RibbonCustomizationOptionAllCommands" Value="所有命令" />
+        <LocalizationItem Name="RibbonCustomizationOptionAllTabs" Value="所有标签" />
+        <LocalizationItem Name="RibbonCustomizationRemoveText" Value="移动" />
+        <LocalizationItem Name="RibbonCustomizationRenameText" Value="重命名" />
+        <LocalizationItem Name="RibbonCustomizationResetSelectedTabSettingsCommand" Value="仅重置选定的功能区选项卡" />
+        <LocalizationItem Name="RibbonCustomizationResetSettingsCommand" Value="重置所有自定义" />
+        <LocalizationItem Name="RibbonCustomizationStandardCustomItemSuffix" Value="自定义" />
+        <LocalizationItem Name="RibbonCustomizationUpText" Value="上移" />
+        <LocalizationItem Name="RibbonExpandedItemCaption" Value="显示选项卡和命令" />
+        <LocalizationItem Name="RibbonExpandedItemDescription" Value="一直显示功能区选项卡和命令。" />
+        <LocalizationItem Name="RibbonFullScreenItemCaption" Value="自动隐藏功能区" />
+        <LocalizationItem Name="RibbonFullScreenItemDescription" Value="隐藏功能区。 点击应用程序的顶部以显示它。" />
+        <LocalizationItem Name="RibbonGalleryFilter" Value="所有组" />
+        <LocalizationItem Name="RibbonGalleryFilterNone" Value="空" />
+        <LocalizationItem Name="RibbonMinimizedItemCaption" Value="显示标签" />
+        <LocalizationItem Name="RibbonMinimizedItemDescription" Value="仅显示功能区选项卡。 单击一个选项卡以显示命令。" />
+        <LocalizationItem Name="RibbonToolbarAbove" Value="在功能区上方显示快速访问工具栏" />
+        <LocalizationItem Name="RibbonToolbarAdd" Value="添加到快速访问工具栏" />
+        <LocalizationItem Name="RibbonToolbarBelow" Value="在功能区下方显示快速访问工具栏" />
+        <LocalizationItem Name="RibbonToolbarMinimizeRibbon" Value="最小化功能区" />
+        <LocalizationItem Name="RibbonToolbarRemove" Value="从快速访问工具栏中删除" />
+        <LocalizationItem Name="RibbonTouchMouseModeCommandText" Value="触摸/鼠标模式" />
+        <LocalizationItem Name="RibbonTouchMouseModeGalleryGroupText" Value="优化命令之间的空间。" />
+        <LocalizationItem Name="RibbonTouchMouseModeMouseItemDescription" Value="标准功能区和命令。 针对使用鼠标进行了优化。" />
+        <LocalizationItem Name="RibbonTouchMouseModeMouseItemText" Value="鼠标" />
+        <LocalizationItem Name="RibbonTouchMouseModeTouchItemDescription" Value="命令之间有更多空间。 针对触摸使用进行了优化。" />
+        <LocalizationItem Name="RibbonTouchMouseModeTouchItemText" Value="触摸" />
+        <LocalizationItem Name="RibbonUnassignedPages" Value="（未分配页面）" />
+        <LocalizationItem Name="ShowScreenTipsOnToolbarsName" Value="在工具栏上显示屏幕提示" />
+        <LocalizationItem Name="ShowShortcutKeysOnScreenTipsName" Value="在屏幕提示中显示快捷键" />
+        <LocalizationItem Name="SkinsBonus" Value="奖金皮肤" />
+        <LocalizationItem Name="SkinsCustom" Value="自定义皮肤" />
+        <LocalizationItem Name="SkinsMain" Value="标准皮肤" />
+        <LocalizationItem Name="SkinsOffice" Value="Office皮肤" />
+        <LocalizationItem Name="SkinsTheme" Value="主题皮肤" />
+        <LocalizationItem Name="ToolBarMenu" Value="＆重置$＆删除$！＆名称$！Defau＆lt样式$＆仅限文本（总是）$文本＆唯一（在菜单中）$图片和文本$！开始＆组$＆可见$＆最近使用" />
+        <LocalizationItem Name="ToolbarNameCaption" Value="工具栏名称：" />
+        <LocalizationItem Name="Visible" Value="可见的" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.XtraEditors">
+        <LocalizationItem Name="Apply" Value="应用" />
+        <LocalizationItem Name="CalcButtonBack" Value="返回" />
+        <LocalizationItem Name="CalcError" Value="计算错误" />
+        <LocalizationItem Name="CameraDesignTimeInfo" Value="渲染在设计时被禁用。" />
+        <LocalizationItem Name="CameraDeviceIsBusy" Value="无法使用该设备，因为它已被其他应用程序使用。" />
+        <LocalizationItem Name="CameraDeviceNotFound" Value="找不到网络摄像头。 检查网络摄像头连接或设备设置。" />
+        <LocalizationItem Name="CameraSettingsActiveDevice" Value="活跃的设备：" />
+        <LocalizationItem Name="CameraSettingsBrightness" Value="亮度：" />
+        <LocalizationItem Name="CameraSettingsCaption" Value="相机设置" />
+        <LocalizationItem Name="CameraSettingsContrast" Value="对比：" />
+        <LocalizationItem Name="CameraSettingsDefaults" Value="重置为默认值" />
+        <LocalizationItem Name="CameraSettingsDesaturate" Value="饱和度：" />
+        <LocalizationItem Name="CameraSettingsResolution" Value="解析度：" />
+        <LocalizationItem Name="Cancel" Value="取消" />
+        <LocalizationItem Name="CaptionError" Value="错误" />
+        <LocalizationItem Name="ChartRangeControlClientInvalidGrid" Value="网格线之间的间隔太小而不能在范围控制中表示。" />
+        <LocalizationItem Name="ChartRangeControlClientNoData" Value="在范围控制中没有要表示的数据。" />
+        <LocalizationItem Name="CheckChecked" Value="选中" />
+        <LocalizationItem Name="CheckIndeterminate" Value="不定" />
+        <LocalizationItem Name="CheckUnchecked" Value="未选中" />
+        <LocalizationItem Name="ColorPickBlueValidationMsg" Value="蓝色控件范围应该在0-255之间" />
+        <LocalizationItem Name="ColorPickBrightnessAxisName" Value="亮度" />
+        <LocalizationItem Name="ColorPickBrightValidationMsg" Value="亮度范围应该在0-100之间" />
+        <LocalizationItem Name="ColorPickColorHexValidationMsg" Value="无效的十六进制值" />
+        <LocalizationItem Name="ColorPickGreenValidationMsg" Value="绿色控件范围应该在0-255之间" />
+        <LocalizationItem Name="ColorPickHueAxisName" Value="色调" />
+        <LocalizationItem Name="ColorPickHueValidationMsg" Value="色调控件范围应该在0-359之间" />
+        <LocalizationItem Name="ColorPickLuminanceAxisName" Value="亮度" />
+        <LocalizationItem Name="ColorPickOpacityAxisName" Value="不透明度" />
+        <LocalizationItem Name="ColorPickOpacityValidationMsg" Value="不透明度范围应该在0-255之间" />
+        <LocalizationItem Name="ColorPickPopupAutomaticItemCaption" Value="自动" />
+        <LocalizationItem Name="ColorPickPopupMoreColorsItemCaption" Value="更多颜色..." />
+        <LocalizationItem Name="ColorPickPopupRecentColorsGroupCaption" Value="最近使用过的颜色" />
+        <LocalizationItem Name="ColorPickPopupStandardColorsGroupCaption" Value="标准颜色" />
+        <LocalizationItem Name="ColorPickPopupThemeColorsGroupCaption" Value="主题颜色" />
+        <LocalizationItem Name="ColorPickRedValidationMsg" Value="红色控件的范围应该在0-255之间" />
+        <LocalizationItem Name="ColorPickSaturationAxisName" Value="饱和度" />
+        <LocalizationItem Name="ColorPickSaturationValidationMsg" Value="饱和度控件范围应该在0-100之间" />
+        <LocalizationItem Name="ColorScaleBlueWhiteRed" Value="蓝 - 白 - 红" />
+        <LocalizationItem Name="ColorScaleEmeraldAzureBlue" Value="翡翠 - 天蓝色 - 蓝色" />
+        <LocalizationItem Name="ColorScaleGreenWhiteRed" Value="绿色 - 白色 - 红色" />
+        <LocalizationItem Name="ColorScaleGreenYellowRed" Value="绿色 - 黄色 - 红色" />
+        <LocalizationItem Name="ColorScalePurpleWhiteAzure" Value="紫色 - 白色 - 天蓝色" />
+        <LocalizationItem Name="ColorScaleWhiteAzure" Value="白色 - 天蓝色" />
+        <LocalizationItem Name="ColorScaleWhiteGreen" Value="白绿色" />
+        <LocalizationItem Name="ColorScaleWhiteRed" Value="白红色" />
+        <LocalizationItem Name="ColorScaleYellowGreen" Value="黄绿色" />
+        <LocalizationItem Name="ColorScaleYellowOrangeCoral" Value="黄 - 橙 - 珊瑚" />
+        <LocalizationItem Name="ColorTabCustom" Value="定制" />
+        <LocalizationItem Name="ColorTabSystem" Value="系统" />
+        <LocalizationItem Name="ColorTabWebSafeColors" Value="网络安全" />
+        <LocalizationItem Name="ContainerAccessibleEditName" Value="编辑控件" />
+        <LocalizationItem Name="DataBarBlue" Value="蓝色数据栏" />
+        <LocalizationItem Name="DataBarBlueGradient" Value="蓝色渐变数据栏" />
+        <LocalizationItem Name="DataBarCoral" Value="珊瑚色数据栏" />
+        <LocalizationItem Name="DataBarCoralGradient" Value="珊瑚渐变色数据栏" />
+        <LocalizationItem Name="DataBarGreen" Value="绿色数据栏" />
+        <LocalizationItem Name="DataBarGreenGradient" Value="绿色渐变色数据栏" />
+        <LocalizationItem Name="DataBarLightBlue" Value="浅蓝色数据栏" />
+        <LocalizationItem Name="DataBarLightBlueGradient" Value="浅蓝渐变色数据栏" />
+        <LocalizationItem Name="DataBarMint" Value="薄荷色数据栏" />
+        <LocalizationItem Name="DataBarMintGradient" Value="薄荷渐变色数据栏" />
+        <LocalizationItem Name="DataBarOrange" Value="橙色数据栏" />
+        <LocalizationItem Name="DataBarOrangeGradient" Value="橙色渐变色数据栏" />
+        <LocalizationItem Name="DataBarRaspberry" Value="树莓色数据栏" />
+        <LocalizationItem Name="DataBarRaspberryGradient" Value="树莓渐变色数据栏" />
+        <LocalizationItem Name="DataBarViolet" Value="紫罗兰色数据栏" />
+        <LocalizationItem Name="DataBarVioletGradient" Value="紫罗兰渐变色数据栏" />
+        <LocalizationItem Name="DataBarYellow" Value="黄色数据栏" />
+        <LocalizationItem Name="DataBarYellowGradient" Value="黄色渐变色数据栏" />
+        <LocalizationItem Name="DataEmpty" Value="没有图像数据" />
+        <LocalizationItem Name="DateEditClear" Value="清除" />
+        <LocalizationItem Name="DateEditToday" Value="今天" />
+        <LocalizationItem Name="Days" Value="天" />
+        <LocalizationItem Name="DefaultBooleanDefault" Value="默认" />
+        <LocalizationItem Name="EditFormattingRule" Value="编辑格式化规则" />
+        <LocalizationItem Name="FieldListName" Value="字段列表（{0}）" />
+        <LocalizationItem Name="FilterAggregateAvg" Value="平均值" />
+        <LocalizationItem Name="FilterAggregateCount" Value="计数" />
+        <LocalizationItem Name="FilterAggregateExists" Value="存在" />
+        <LocalizationItem Name="FilterAggregateMax" Value="最大值" />
+        <LocalizationItem Name="FilterAggregateMin" Value="最小值" />
+        <LocalizationItem Name="FilterAggregateSum" Value="和" />
+        <LocalizationItem Name="FilterClauseAnyOf" Value="是任意之一" />
+        <LocalizationItem Name="FilterClauseBeginsWith" Value="开始于" />
+        <LocalizationItem Name="FilterClauseBetween" Value="在...之间" />
+        <LocalizationItem Name="FilterClauseBetweenAnd" Value="和" />
+        <LocalizationItem Name="FilterClauseContains" Value="包含" />
+        <LocalizationItem Name="FilterClauseDoesNotContain" Value="不包含" />
+        <LocalizationItem Name="FilterClauseDoesNotEqual" Value="不等于" />
+        <LocalizationItem Name="FilterClauseEndsWith" Value="以...结束" />
+        <LocalizationItem Name="FilterClauseEquals" Value="等于" />
+        <LocalizationItem Name="FilterClauseGreater" Value="大于" />
+        <LocalizationItem Name="FilterClauseGreaterOrEqual" Value="大于等于" />
+        <LocalizationItem Name="FilterClauseIsNotNull" Value="不为空" />
+        <LocalizationItem Name="FilterClauseIsNotNullOrEmpty" Value="不是空白的" />
+        <LocalizationItem Name="FilterClauseIsNull" Value="为空" />
+        <LocalizationItem Name="FilterClauseIsNullOrEmpty" Value="是空白的" />
+        <LocalizationItem Name="FilterClauseLess" Value="小于" />
+        <LocalizationItem Name="FilterClauseLessOrEqual" Value="小于等于" />
+        <LocalizationItem Name="FilterClauseLike" Value="相似于" />
+        <LocalizationItem Name="FilterClauseNoneOf" Value="没有" />
+        <LocalizationItem Name="FilterClauseNotBetween" Value="不在...之间" />
+        <LocalizationItem Name="FilterClauseNotLike" Value="不类似于" />
+        <LocalizationItem Name="FilterCriteriaInvalidExpression" Value="指定的表达式包含无效符号（行{0}，字符{1}）。" />
+        <LocalizationItem Name="FilterCriteriaInvalidExpressionEx" Value="指定的表达式无效。{0}" />
+        <LocalizationItem Name="FilterCriteriaToStringBetween" Value="之间" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionAddDays" Value="添加日期" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionAddHours" Value="添加小时" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionAddMilliSeconds" Value="增加毫秒" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionAddMinutes" Value="增加分钟" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionAddMonths" Value="增加月份" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionAddSeconds" Value="增加秒" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionAddTimeSpan" Value="增加时间跨度" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionAddYears" Value="添加年份" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionCharIndex" Value="字符索引" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionContains" Value="包含" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionCustom" Value="定制" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionCustomNonDeterministic" Value="自定义非确定性" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionDateDiffDay" Value="天数差异" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionDateDiffHour" Value="小时差异" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionDateDiffMilliSecond" Value="微秒差异" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionDateDiffMinute" Value="分钟差异" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionDateDiffMonth" Value="月份差异" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionDateDiffSecond" Value="秒数差异" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionDateDiffYear" Value="年份差异" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionEndsWith" Value="以...结束" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionGetDate" Value="获取日期" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionGetDayOfWeek" Value="获取星期" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionGetDayOfYear" Value="获取日期" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionGetHour" Value="获取小时" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionGetMilliSecond" Value="获取毫秒" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionGetMinute" Value="获取分钟" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionGetMonth" Value="获取月份" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionGetSecond" Value="获取秒数" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionGetTimeOfDay" Value="获取时间" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionGetYear" Value="获取年份" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionInsert" Value="插入" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsApril" Value="是四月" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsAugust" Value="是八月" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsDecember" Value="是十二月" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsFebruary" Value="是二月" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsJanuary" Value="是一月" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsJuly" Value="是七月" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsJune" Value="是六月" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsLastMonth" Value="是上个月" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsLastYear" Value="是去年" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsMarch" Value="是三月" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsMay" Value="是五月" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsNextMonth" Value="是下个月" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsNextYear" Value="是明年" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsNovember" Value="是十一月" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsNull" Value="是空" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsNullOrEmpty" Value="是空或空白" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsOctober" Value="是十月" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsOutlookIntervalBeyondThisYear" Value="是除了今年" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsOutlookIntervalEarlierThisMonth" Value="是月初" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsOutlookIntervalEarlierThisWeek" Value="是本周早些时候" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsOutlookIntervalEarlierThisYear" Value="是年初" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsOutlookIntervalLastWeek" Value="是上周" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsOutlookIntervalLaterThisMonth" Value="是月末" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsOutlookIntervalLaterThisWeek" Value="是本周晚些时候" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsOutlookIntervalLaterThisYear" Value="是年末" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsOutlookIntervalNextWeek" Value="是下周" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsOutlookIntervalPriorThisYear" Value="是今年之前" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsOutlookIntervalToday" Value="是今天" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsOutlookIntervalTomorrow" Value="是明天" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsOutlookIntervalYesterday" Value="是昨天" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsSameDay" Value="是同一天" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsSeptember" Value="是九月" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsThisMonth" Value="是这个月" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsThisWeek" Value="是本周" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionIsThisYear" Value="是今年" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionLocalDateTimeDayAfterTomorrow" Value="后天" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionLocalDateTimeLastMonth" Value="上个月" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionLocalDateTimeLastWeek" Value="上周" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionLocalDateTimeLastYear" Value="去年" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionLocalDateTimeNextMonth" Value="下个月" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionLocalDateTimeNextWeek" Value="下周" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionLocalDateTimeNextYear" Value="明年" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionLocalDateTimeNow" Value="现在" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionLocalDateTimeThisMonth" Value="这个月" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionLocalDateTimeThisWeek" Value="这一周" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionLocalDateTimeThisYear" Value="今年" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionLocalDateTimeToday" Value="今天" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionLocalDateTimeTomorrow" Value="明天" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionLocalDateTimeTwoMonthsAway" Value="两个月后" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionLocalDateTimeTwoWeeksAway" Value="两周后" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionLocalDateTimeTwoYearsAway" Value="两年后" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionLocalDateTimeYearBeforeToday" Value="一年前" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionLocalDateTimeYesterday" Value="昨天" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionNow" Value="现在" />
+        <LocalizationItem Name="FilterCriteriaToStringFunctionToday" Value="今天" />
+        <LocalizationItem Name="FilterDateTextAlt" Value="显示全部|显示清空|按特定日期过滤：|超越|||下周|今天|本周|本月|早期| {0：yyyy}，{0：MMMM}" />
+        <LocalizationItem Name="FilterDateTimeConstantMenuCaption" Value="日期和时间常数" />
+        <LocalizationItem Name="FilterDateTimeOperatorMenuCaption" Value="日期和时间操作符" />
+        <LocalizationItem Name="FilterEditorTabText" Value="文本" />
+        <LocalizationItem Name="FilterEmptyEnter" Value="&lt;输入一个值&gt;" />
+        <LocalizationItem Name="FilterEmptyParameter" Value="&lt;输入参数名称&gt;" />
+        <LocalizationItem Name="FilterEmptyValue" Value="&lt;空&gt;" />
+        <LocalizationItem Name="FilterFunctionsMenuCaption" Value="功能" />
+        <LocalizationItem Name="FilterMenuAddNewParameter" Value="添加参数..." />
+        <LocalizationItem Name="FilterMenuClearAll" Value="清除所有" />
+        <LocalizationItem Name="FilterMenuConditionAdd" Value="添加条件" />
+        <LocalizationItem Name="FilterMenuGroupAdd" Value="添加组" />
+        <LocalizationItem Name="FilterMenuRowRemove" Value="删除组" />
+        <LocalizationItem Name="FilterOutlookDateText" Value="显示全部|显示全部|按特定日期过滤：|除了今年|年末|今年晚些时候|月末|下周|本周晚些时候|明天|今天|昨天|本周初|上周|本月初|早 今年|今年之前" />
+        <LocalizationItem Name="FilterPopupToolbarIncrementalSearch" Value="增量搜索" />
+        <LocalizationItem Name="FilterPopupToolbarInvertFilter" Value="反转过滤器" />
+        <LocalizationItem Name="FilterPopupToolbarMultiSelection" Value="多选择" />
+        <LocalizationItem Name="FilterPopupToolbarShowNewValues" Value="显示新的字段值" />
+        <LocalizationItem Name="FilterPopupToolbarShowOnlyAvailableItems" Value="仅显示可用项目" />
+        <LocalizationItem Name="FilterShowAll" Value="(选择全部)" />
+        <LocalizationItem Name="FilterToolTipElementAdd" Value="将新项目添加到列表中" />
+        <LocalizationItem Name="FilterToolTipKeysAdd" Value="(使用插入或添加键)" />
+        <LocalizationItem Name="FilterToolTipKeysRemove" Value="(使用删除或减去键)" />
+        <LocalizationItem Name="FilterToolTipNodeAction" Value="操作" />
+        <LocalizationItem Name="FilterToolTipNodeAdd" Value="为此组添加新条件" />
+        <LocalizationItem Name="FilterToolTipValueType" Value="与值/另一个字段的值进行比较" />
+        <LocalizationItem Name="ManageRuleDatesOccurringLastWeek" Value="上周" />
+        <LocalizationItem Name="ManageRuleDatesOccurringYesterday" Value="昨天" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="FileAttachments">
+      <LocalizationItem Name="Editor_Clear" Value="清除内容" />
+      <LocalizationItem Name="Editor_Open" Value="打开" />
+      <LocalizationItem Name="Editor_Save" Value="另存为..." />
+      <LocalizationItem Name="OverwritePrompt" Value="“{0}”文件已存在。 你想替换它吗？" />
+      <LocalizationItem Name="OverwritePromptCaption" Value="另存为..." />
+      <LocalizationItem Name="WordAll" Value="所有" />
+      <LocalizationItem Name="WordFiles" Value="文件" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Captions">
+      <LocalizationItem Name="ChooseXafType" Value="选择XAF类型" />
+      <LocalizationItem Name="ObjectDataSourceWithXafPersistentTypes" Value="带有XAF持久类型的对象数据源" />
+      <LocalizationItem Name="XafObjectDataSource" Value="XAF对象数据源" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+AnnualFeeBaseDate" Value="年费起算日">
+        <LocalizationItem Name="AppDate" Value="申请日" />
+        <LocalizationItem Name="GrantDate" Value="公告日" />
+        <LocalizationItem Name="PCTAppDate" Value="PCT申请日" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+AnnualFeeCalcRule" Value="计算规则">
+        <LocalizationItem Name="DM" Value="+天+月" />
+        <LocalizationItem Name="MD" Value="+月+天" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+AnnualFeeCondition" Value="年费产生条件">
+        <LocalizationItem Name="ApplicantNoContainsIn" Value="申请人代码为其一" />
+        <LocalizationItem Name="ApplyTypeContainsIn" Value="申请类型为其一" />
+        <LocalizationItem Name="CaseHasBeenClosed" Value="案件已结案" />
+        <LocalizationItem Name="CaseInstructionContainWord" Value="案件指示包含关键字" />
+        <LocalizationItem Name="CaseTypeContainsIn" Value="案件类型为其一" />
+        <LocalizationItem Name="ChildrenCaseContainsIn" Value="案件子类为其一" />
+        <LocalizationItem Name="EntityNoContainsIn" Value="实体代码为其一" />
+        <LocalizationItem Name="GrantDateIsNotNull" Value="公告日不为空" />
+        <LocalizationItem Name="GrantNoIsNotNull" Value="公告号不为空" />
+        <LocalizationItem Name="OneClientNoContainsIn" Value="委托人代码为其一" />
+        <LocalizationItem Name="RegCountryCodeIsAnyIn" Value="国家代码为其一" />
+        <LocalizationItem Name="RegFeeYearNotEqualZeroAndRegFeeYearAddOneEqual" Value="本年年费年度" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+ApplicantType">
+        <LocalizationItem Name="Big" Value="大实体" />
+        <LocalizationItem Name="Mini" Value="微实体" />
+        <LocalizationItem Name="Small" Value="小实体" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+ApplyType" Value="申请类型">
+        <LocalizationItem Name="First" Value="首次" />
+        <LocalizationItem Name="Pairs" Value="巴黎公约" />
+        <LocalizationItem Name="PCT" Value="PCT进入" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+AppType" Value="申请类型">
+        <LocalizationItem Name="College" Value="大专院校" />
+        <LocalizationItem Name="IndustrialAndMiningEnterprises" Value="工矿企业" />
+        <LocalizationItem Name="Institutions" Value="事业单位" />
+        <LocalizationItem Name="Personal" Value="个人" />
+        <LocalizationItem Name="ResearchAndDevelopmentInstitution" Value="科研单位" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+BeginDate" Value="起算日">
+        <LocalizationItem Name="AppDate" Value="申请日" />
+        <LocalizationItem Name="AppDateOrEarlyPriority" Value="申请日或最早优先权日" />
+        <LocalizationItem Name="Date_CNPatentAppDate" Value="相关中国案申请日" />
+        <LocalizationItem Name="Date_CNPatentGrantDate" Value="相关中国案公告日" />
+        <LocalizationItem Name="Date_CNPatentPubDate" Value="相关中国案公开日" />
+        <LocalizationItem Name="Date_DivSubmitDate" Value="分案提交日" />
+        <LocalizationItem Name="Date_EPPatentGrantDate" Value="相关欧洲案公告日" />
+        <LocalizationItem Name="Date_FileOfficialDeadline" Value="文件答复官方绝限" />
+        <LocalizationItem Name="Date_RealTrail" Value="提实审时限" />
+        <LocalizationItem Name="Date_SEDate" Value="进实审日" />
+        <LocalizationItem Name="DeadlineClient" Value="父时限客户期限" />
+        <LocalizationItem Name="DeadlineClientChild" Value="本时限客户期限" />
+        <LocalizationItem Name="DeadlineCompleteDate" Value="父时限完成日" />
+        <LocalizationItem Name="DeadlineCreationDate" Value="父时限创建日" />
+        <LocalizationItem Name="DeadlineOfficial" Value="父时限官方绝限" />
+        <LocalizationItem Name="DeadlineOfficialChild" Value="本时限官方绝限" />
+        <LocalizationItem Name="EarlyDeadline" Value="父时限最早期限" />
+        <LocalizationItem Name="EarlyPriority" Value="最早优先权日" />
+        <LocalizationItem Name="GrantDate" Value="公告日" />
+        <LocalizationItem Name="Now" Value="当前日期" />
+        <LocalizationItem Name="OffcialReceivedDate" Value="官文收到日" />
+        <LocalizationItem Name="OfficialSendDate" Value="官方发出日" />
+        <LocalizationItem Name="PCTAppDate" Value="PCT申请日" />
+        <LocalizationItem Name="PCTAppDateOrEarlyPriority" Value="PCT申请日或最早优先权日" />
+        <LocalizationItem Name="PubDate" Value="公开日" />
+        <LocalizationItem Name="ReceivedDate" Value="接案日" />
+        <LocalizationItem Name="SpecialDateDeadline" Value="时限特殊日期" />
+        <LocalizationItem Name="SpecialDateFile" Value="文件特殊日期" />
+        <LocalizationItem Name="SpecialDatePatent" Value="专利特殊日期" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+CaseRoleType">
+        <LocalizationItem Name="AnnualFeeSecretary" Value="年费组秘书" />
+        <LocalizationItem Name="CaseSecretary" Value="立案组秘书" />
+        <LocalizationItem Name="ExternalAgent" Value="对外代理人" />
+        <LocalizationItem Name="FirstProofreader" Value="一校" />
+        <LocalizationItem Name="ForeignSecretary" Value="国外组秘书" />
+        <LocalizationItem Name="InternalAgent" Value="实际代理人" />
+        <LocalizationItem Name="NewApplicationSecretary" Value="新申请组秘书" />
+        <LocalizationItem Name="OAAgent" Value="OA代理人" />
+        <LocalizationItem Name="OASecretary" Value="OA组秘书" />
+        <LocalizationItem Name="OATranslator" Value="OA翻译" />
+        <LocalizationItem Name="OfficialFirstAgent" Value="官方第一代理人" />
+        <LocalizationItem Name="OfficialSecondAgent" Value="官方第二代理人" />
+        <LocalizationItem Name="QualityInspectionSecretary" Value="总质检" />
+        <LocalizationItem Name="SecondProofreader" Value="二校" />
+        <LocalizationItem Name="Translator" Value="翻译人" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+CaseState" Value="用例状态">
+        <LocalizationItem Name="Expire" Value="届满" />
+        <LocalizationItem Name="Invalid" Value="全部无效" />
+        <LocalizationItem Name="Lapse" Value="失效" />
+        <LocalizationItem Name="Suspend" Value="中止" />
+        <LocalizationItem Name="Transfer" Value="转出" />
+        <LocalizationItem Name="Unfile" Value="不提交" />
+        <LocalizationItem Name="Withdraw" Value="撤回" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+CaseType">
+        <LocalizationItem Name="TP_AppCN" Value="国内申请" />
+        <LocalizationItem Name="TP_AppForeign" Value="国外申请" />
+        <LocalizationItem Name="TP_AppHKMO" Value="港澳申请" />
+        <LocalizationItem Name="TP_AppPCT" Value="国际申请" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+ClientRole">
+        <LocalizationItem Name="Agency" Value="外代理" />
+        <LocalizationItem Name="AnnualManagementCompany" Value="年管公司" />
+        <LocalizationItem Name="CaseIntroducer" Value="案源人" />
+        <LocalizationItem Name="Defendant" Value="被告" />
+        <LocalizationItem Name="GroupCustomer" Value="集团客户" />
+        <LocalizationItem Name="Licensee" Value="被许可人" />
+        <LocalizationItem Name="Licensor" Value="许可人" />
+        <LocalizationItem Name="MainClient" Value="主委托人" />
+        <LocalizationItem Name="Plaintiff" Value="原告" />
+        <LocalizationItem Name="ThirdParty" Value="第三方" />
+        <LocalizationItem Name="TransferInOffice" Value="转入所" />
+        <LocalizationItem Name="TransferOutOffice" Value="转出所" />
+        <LocalizationItem Name="TranslationCompany" Value="翻译公司" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+ConflictCaseType" Value="冲突案案件类型">
+        <LocalizationItem Name="AdministrativeLawsuit" Value="行政诉讼" />
+        <LocalizationItem Name="CivilLawsuit" Value="民事诉讼" />
+        <LocalizationItem Name="Invalid" Value="无效" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+ConflictRole">
+        <LocalizationItem Name="Defendant" Value="被告" />
+        <LocalizationItem Name="Patentee" Value="专利权人" />
+        <LocalizationItem Name="Plaintiff" Value="原告" />
+        <LocalizationItem Name="Requester" Value="请求人" />
+        <LocalizationItem Name="ThirdParty" Value="第三方" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+CreateCaseType" Value="创建案件">
+        <LocalizationItem Name="Effective" Value="生效案" />
+        <LocalizationItem Name="IU" Value="双申案" />
+        <LocalizationItem Name="Priority" Value="同族案" />
+        <LocalizationItem Name="ThisCase" Value="本案" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+Currency" Value="货币">
+        <LocalizationItem Name="EUR" Value="欧元" />
+        <LocalizationItem Name="GBP" Value="英镑" />
+        <LocalizationItem Name="JPY" Value="日元" />
+        <LocalizationItem Name="RMB" Value="人民币" />
+        <LocalizationItem Name="USD" Value="美元" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+DeadlineCondition">
+        <LocalizationItem Name="AppDateIsNull" Value="申请日为空" />
+        <LocalizationItem Name="ApplicantNoContainsIn" Value="申请人代码为其一" />
+        <LocalizationItem Name="ApplyTypeContainsIn" Value="申请途径为其一" />
+        <LocalizationItem Name="CaseDepartmentEqualTo" Value="案件所属部门等于" />
+        <LocalizationItem Name="CaseHasBeenClosed" Value="案件已结案" />
+        <LocalizationItem Name="CaseInstructionContainWord" Value="案件指示包含关键字" />
+        <LocalizationItem Name="CaseIsDivCase" Value="本案是分案" />
+        <LocalizationItem Name="CaseTypeContainsIn" Value="案件类型为其一" />
+        <LocalizationItem Name="ChildrenCaseContainsIn" Value="案件子类为其一" />
+        <LocalizationItem Name="CommensContainsInThisPatent" Value="本案包含附加信息" />
+        <LocalizationItem Name="DeadlineContainsInThisPatent" Value="时限之一在本案中存在且未完成" />
+        <LocalizationItem Name="DeadlineResultContainsWord" Value="时限完成结果包含关键字" />
+        <LocalizationItem Name="DirectionContainsIn" Value="案件流向为其一" />
+        <LocalizationItem Name="EntityNoContainsIn" Value="实体代码为其一" />
+        <LocalizationItem Name="ExecDeadlineStoredProcedure" Value="执行时限存储过程" />
+        <LocalizationItem Name="ExecFileStoredProcedure" Value="执行文件存储过程" />
+        <LocalizationItem Name="ExecPatentStoredProcedure" Value="执行专利存储过程" />
+        <LocalizationItem Name="ExistEarliestPriorityDate" Value="本案存在最早优先权日" />
+        <LocalizationItem Name="FileIsPaper" Value="来文是纸件" />
+        <LocalizationItem Name="FileResultContainWord" Value="文件结果包含关键字" />
+        <LocalizationItem Name="IUAndUtilityModel" Value="本案是双申实用新型案" />
+        <LocalizationItem Name="OneClientNoContainsIn" Value="委托人代码为其一" />
+        <LocalizationItem Name="RegCountryCodeIsAnyIn" Value="国家代码为其一" />
+        <LocalizationItem Name="UseGracePeriod" Value="本案使用宽限期" />
+        <LocalizationItem Name="WriteCase" Value="撰写案" />
+        <LocalizationItem Name="YourNoContainsWord" Value="委托人卷号包含关键字" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+DeadlineHandlerType">
+        <LocalizationItem Name="CaseRoleType" Value="案件角色" />
+        <LocalizationItem Name="Custom" Value="自定义" />
+        <LocalizationItem Name="FileHandler" Value="文件处理人" />
+        <LocalizationItem Name="SysUser" Value="指定用户" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+Direction" Value="方向">
+        <LocalizationItem Name="Receive" Value="收文" />
+        <LocalizationItem Name="Send" Value="发文" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+DocStatus" Value="文档状态">
+        <LocalizationItem Name="Destroy" Value="销毁" />
+        <LocalizationItem Name="NoDoc" Value="无纸件" />
+        <LocalizationItem Name="Normal" Value="正常" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+FilingInfoItem" Value="项目">
+        <LocalizationItem Name="BriefDescriptionOfThePage" Value="简要说明页数" />
+        <LocalizationItem Name="CharCount" Value="字数" />
+        <LocalizationItem Name="DesignPictureOrPhotoNumber" Value="设计图片或照片图数" />
+        <LocalizationItem Name="IndexTablePageCount" Value="序列表页数" />
+        <LocalizationItem Name="InstructionPageCount" Value="说明书页数" />
+        <LocalizationItem Name="InstructionPictureCount" Value="说明书附图页数" />
+        <LocalizationItem Name="InstructionSummaryPageCount" Value="说明书摘要页数" />
+        <LocalizationItem Name="Language" Value="文种" />
+        <LocalizationItem Name="PackageNumberSeveralDesignItems" Value="成套产品多项外观设计项数" />
+        <LocalizationItem Name="Picture" Value="指定摘图" />
+        <LocalizationItem Name="PriorityRequestCount" Value="权利要求项数" />
+        <LocalizationItem Name="PriorityRequestPageCount" Value="权利要求书页数" />
+        <LocalizationItem Name="SimilarDesignNumberOfItems" Value="相似外观设计项数" />
+        <LocalizationItem Name="SummaryPictureCount" Value="摘要附图页数" />
+        <LocalizationItem Name="TheNumberOfDesignOrPhotoPages" Value="设计图片或照片页数" />
+        <LocalizationItem Name="TheNumberOfIndependentClaims" Value="独立权利要求项数" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+ForeignApplyType">
+        <LocalizationItem Name="Europe" Value="欧洲生效" />
+        <LocalizationItem Name="First" Value="首次" />
+        <LocalizationItem Name="Pairs" Value="巴黎公约" />
+        <LocalizationItem Name="PCT" Value="PCT进入" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+ForeignPatentType" Value="国外专利类型">
+        <LocalizationItem Name="Design" Value="外观设计" />
+        <LocalizationItem Name="Invention" Value="发明" />
+        <LocalizationItem Name="UtilityModel" Value="实用新型" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+HKMOPatentType" Value="香港澳门专利类型">
+        <LocalizationItem Name="Design" Value="外观设计" />
+        <LocalizationItem Name="Extension" Value="澳门延伸" />
+        <LocalizationItem Name="Short" Value="短期" />
+        <LocalizationItem Name="Standard" Value="标准" />
+        <LocalizationItem Name="Validation" Value="登记生效" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+Language" Value="语言">
+        <LocalizationItem Name="Arabic" Value="阿拉伯文" />
+        <LocalizationItem Name="Chinese" Value="中文" />
+        <LocalizationItem Name="ChineseTraditional" Value="中文繁体" />
+        <LocalizationItem Name="English" Value="英文" />
+        <LocalizationItem Name="French" Value="法文" />
+        <LocalizationItem Name="German" Value="德文" />
+        <LocalizationItem Name="Japanese" Value="日文" />
+        <LocalizationItem Name="Korean" Value="韩文" />
+        <LocalizationItem Name="Portuguese" Value="葡萄牙文" />
+        <LocalizationItem Name="Russian" Value="俄文" />
+        <LocalizationItem Name="Spanish" Value="西班牙文" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+OtherCaseType">
+        <LocalizationItem Name="AdministrativeReview" Value="行政复议" />
+        <LocalizationItem Name="Analysis" Value="分析" />
+        <LocalizationItem Name="Consultion" Value="咨询" />
+        <LocalizationItem Name="Permission" Value="实施许可" />
+        <LocalizationItem Name="Research" Value="检索" />
+        <LocalizationItem Name="Translation" Value="翻译" />
+        <LocalizationItem Name="Write" Value="撰写" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+PatentType" Value="专利类型">
+        <LocalizationItem Name="Design" Value="外观设计" />
+        <LocalizationItem Name="Invention" Value="发明" />
+        <LocalizationItem Name="UtilityModel" Value="实用新型" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+PayRule">
+        <LocalizationItem Name="NeedRemind" Value="需提醒，确认后缴费" />
+        <LocalizationItem Name="NoRemind" Value="无需提醒，直接缴费" />
+        <LocalizationItem Name="OnlyRemind" Value="仅提醒，不缴费" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+PCTSearchBureau" Value="PCT检索局" />
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+RegRegion" Value="注册地区">
+        <LocalizationItem Name="Cambodia" Value="柬埔寨" />
+        <LocalizationItem Name="Hongkong" Value="香港" />
+        <LocalizationItem Name="Laos" Value="老挝" />
+        <LocalizationItem Name="Macao" Value="澳门" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+RelationType" Value="关系类型">
+        <LocalizationItem Name="ContinuationApplication" Value="继续申请" />
+        <LocalizationItem Name="Div" Value="分案" />
+        <LocalizationItem Name="EntryIntoForce" Value="登记生效" />
+        <LocalizationItem Name="Invalid" Value="无效" />
+        <LocalizationItem Name="IU" Value="双申" />
+        <LocalizationItem Name="Lawsuit" Value="诉讼" />
+        <LocalizationItem Name="License" Value="实施许可" />
+        <LocalizationItem Name="PatentFamily" Value="同族案" />
+        <LocalizationItem Name="Priority" Value="优先权" />
+        <LocalizationItem Name="Related" Value="相关" />
+        <LocalizationItem Name="Resemble" Value="有相似" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+SendingMethod" Value="发送方式">
+        <LocalizationItem Name="Email" Value="邮件" />
+        <LocalizationItem Name="Mailing" Value="邮寄" />
+        <LocalizationItem Name="UploadToSystem" Value="上传到系统" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+SendingType">
+        <LocalizationItem Name="BCC" Value="密抄" />
+        <LocalizationItem Name="CC" Value="抄送" />
+        <LocalizationItem Name="Normal" Value="主送" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+Stage" Value="阶段">
+        <LocalizationItem Name="FinalReview" Value="终审" />
+        <LocalizationItem Name="FirstInstance" Value="一审" />
+        <LocalizationItem Name="SecondInstance" Value="二审" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+Status" Value="发文状态">
+        <LocalizationItem Name="Draft" Value="草稿" />
+        <LocalizationItem Name="Formal" Value="正式" />
+        <LocalizationItem Name="Middle" Value="中间" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+TriggerTiming" Value="触发时机">
+        <LocalizationItem Name="BaseOnExistDeadline" Value="基于已有时限触发" />
+        <LocalizationItem Name="Completion" Value="时限标记完成时触发" />
+        <LocalizationItem Name="GenerateDeadline" Value="立案生成时限时触发" />
+        <LocalizationItem Name="Manual" Value="手工创建" />
+        <LocalizationItem Name="Registration" Value="来文登记时触发" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+UnAppCaseLicenseType">
+        <LocalizationItem Name="Exclusive" Value="排他" />
+        <LocalizationItem Name="Monopolized" Value="独占" />
+        <LocalizationItem Name="Normal" Value="普通" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="SiMuse.Module.BusinessObjects.Base.EnumAll+UnAppCaseType">
+        <LocalizationItem Name="ConfidentialExam" Value="保密审查" />
+        <LocalizationItem Name="Copyright" Value="版权登记" />
+        <LocalizationItem Name="HandleCopy" Value="办理副本" />
+        <LocalizationItem Name="LayoutDesign" Value="布图设计" />
+        <LocalizationItem Name="OfficialSearch" Value="官方检索" />
+        <LocalizationItem Name="Permission" Value="许可备案" />
+        <LocalizationItem Name="PublicOpinion" Value="公众意见" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="FrameTemplates">
+      <LocalizationGroup Name="DevExpress.ExpressApp.Win.Templates.Bars.DetailFormV2">
+        <LocalizationItem Name="_mainMenuBar.Text" Value="主菜单" />
+        <LocalizationItem Name="_statusBar.Text" Value="状态栏" />
+        <LocalizationItem Name="barContainerAbout.Caption" Value="关于" />
+        <LocalizationItem Name="barContainerClose.Caption" Value="关闭" />
+        <LocalizationItem Name="barContainerDiagnostic.Caption" Value="诊断" />
+        <LocalizationItem Name="barContainerEdit.Caption" Value="编辑" />
+        <LocalizationItem Name="barContainerExport.Caption" Value="导出" />
+        <LocalizationItem Name="barContainerFile.Caption" Value="文件" />
+        <LocalizationItem Name="barContainerFilters.Caption" Value="筛选器" />
+        <LocalizationItem Name="barContainerFullTextSearch.Caption" Value="全文搜索" />
+        <LocalizationItem Name="barContainerMenu.Caption" Value="菜单" />
+        <LocalizationItem Name="barContainerNotifications.Caption" Value="通知" />
+        <LocalizationItem Name="barContainerObjectsCreation.Caption" Value="记录创建" />
+        <LocalizationItem Name="barContainerOpenObject.Caption" Value="打开相关的记录" />
+        <LocalizationItem Name="barContainerOptions.Caption" Value="选项" />
+        <LocalizationItem Name="barContainerPrint.Caption" Value="打印" />
+        <LocalizationItem Name="barContainerRecordEdit.Caption" Value="记录编辑" />
+        <LocalizationItem Name="barContainerRecordsNavigation.Caption" Value="记录导航" />
+        <LocalizationItem Name="barContainerReports.Caption" Value="报告" />
+        <LocalizationItem Name="barContainerSave.Caption" Value="保存" />
+        <LocalizationItem Name="barContainerSearch.Caption" Value="搜索" />
+        <LocalizationItem Name="barContainerStatusMessages.Caption" Value="状态消息" />
+        <LocalizationItem Name="barContainerTools.Caption" Value="工具" />
+        <LocalizationItem Name="barContainerUndoRedo.Caption" Value="设置" />
+        <LocalizationItem Name="barContainerView.Caption" Value="视图" />
+        <LocalizationItem Name="barContainerWorkflow.Caption" Value="工作流" />
+        <LocalizationItem Name="barSubItemEdit.Caption" Value="编辑" />
+        <LocalizationItem Name="barSubItemFile.Caption" Value="文件" />
+        <LocalizationItem Name="barSubItemHelp.Caption" Value="帮助" />
+        <LocalizationItem Name="barSubItemTools.Caption" Value="工具" />
+        <LocalizationItem Name="barSubItemView.Caption" Value="视图" />
+        <LocalizationItem Name="standardToolBar.Text" Value="主工具栏" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Win.Templates.Bars.MainFormV2">
+        <LocalizationItem Name="barChooseSkinItem.Caption" Value="外观" />
+        <LocalizationItem Name="barContainerAbout.Caption" Value="关于" />
+        <LocalizationItem Name="barContainerDefault.Caption" Value="默认" />
+        <LocalizationItem Name="barContainerDiagnostic.Caption" Value="诊断" />
+        <LocalizationItem Name="barContainerEdit.Caption" Value="编辑" />
+        <LocalizationItem Name="barContainerExit.Caption" Value="退出" />
+        <LocalizationItem Name="barContainerExport.Caption" Value="导出" />
+        <LocalizationItem Name="barContainerFile.Caption" Value="文件" />
+        <LocalizationItem Name="barContainerFilters.Caption" Value="筛选器" />
+        <LocalizationItem Name="barContainerFullTextSearch.Caption" Value="全文搜索" />
+        <LocalizationItem Name="barContainerMenu.Caption" Value="菜单" />
+        <LocalizationItem Name="barContainerNotifications.Caption" Value="通知" />
+        <LocalizationItem Name="barContainerObjectsCreation.Caption" Value="记录创建" />
+        <LocalizationItem Name="barContainerOpenObject.Caption" Value="打开相关的记录" />
+        <LocalizationItem Name="barContainerOptions.Caption" Value="选项" />
+        <LocalizationItem Name="barContainerPanels.Caption" Value="面板" />
+        <LocalizationItem Name="barContainerPrint.Caption" Value="打印" />
+        <LocalizationItem Name="barContainerRecordEdit.Caption" Value="记录编辑" />
+        <LocalizationItem Name="barContainerRecordsNavigation.Caption" Value="记录导航" />
+        <LocalizationItem Name="barContainerReports.Caption" Value="报告" />
+        <LocalizationItem Name="barContainerSave.Caption" Value="保存" />
+        <LocalizationItem Name="barContainerSearch.Caption" Value="搜索" />
+        <LocalizationItem Name="barContainerStatusMessages.Caption" Value="状态消息" />
+        <LocalizationItem Name="barContainerTools.Caption" Value="工具" />
+        <LocalizationItem Name="barContainerUndoRedo.Caption" Value="设置" />
+        <LocalizationItem Name="barContainerView.Caption" Value="视图" />
+        <LocalizationItem Name="barContainerViewsHistoryNavigation.Caption" Value="查看历史记录导航" />
+        <LocalizationItem Name="barContainerViewsNavigation.Caption" Value="导航" />
+        <LocalizationItem Name="barContainerWindow.Caption" Value="窗口" />
+        <LocalizationItem Name="barContainerWindows.Caption" Value="视窗" />
+        <LocalizationItem Name="barContainerWorkflow.Caption" Value="工作流" />
+        <LocalizationItem Name="barMdiChildrenListItem.Caption" Value="窗口列表" />
+        <LocalizationItem Name="barSubItemEdit.Caption" Value="编辑" />
+        <LocalizationItem Name="barSubItemFile.Caption" Value="文件" />
+        <LocalizationItem Name="barSubItemHelp.Caption" Value="帮助" />
+        <LocalizationItem Name="barSubItemPanels.Caption" Value="面板" />
+        <LocalizationItem Name="barSubItemTools.Caption" Value="工具" />
+        <LocalizationItem Name="barSubItemView.Caption" Value="视图" />
+        <LocalizationItem Name="barSubItemWindow.Caption" Value="窗口" />
+        <LocalizationItem Name="dockPanelNavigation.Text" Value="导航" />
+        <LocalizationItem Name="mainMenuBar.Text" Value="主菜单" />
+        <LocalizationItem Name="standardToolBar.Text" Value="主工具栏" />
+        <LocalizationItem Name="statusBar.Text" Value="状态栏" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Win.Templates.Bars.NestedFrameTemplateV2">
+        <LocalizationItem Name="barContainerDefault.Caption" Value="其他" />
+        <LocalizationItem Name="barContainerDiagnostic.Caption" Value="诊断" />
+        <LocalizationItem Name="barContainerEdit.Caption" Value="编辑" />
+        <LocalizationItem Name="barContainerExport.Caption" Value="导出" />
+        <LocalizationItem Name="barContainerFilters.Caption" Value="筛选器" />
+        <LocalizationItem Name="barContainerLink.Caption" Value="链接" />
+        <LocalizationItem Name="barContainerMenu.Caption" Value="菜单" />
+        <LocalizationItem Name="barContainerObjectsCreation.Caption" Value="记录创建" />
+        <LocalizationItem Name="barContainerOpenObject.Caption" Value="打开相关的记录" />
+        <LocalizationItem Name="barContainerPrint.Caption" Value="打印" />
+        <LocalizationItem Name="barContainerRecordEdit.Caption" Value="记录编辑" />
+        <LocalizationItem Name="barContainerRecordsNavigation.Caption" Value="记录导航" />
+        <LocalizationItem Name="barContainerReports.Caption" Value="报告" />
+        <LocalizationItem Name="barContainerSave.Caption" Value="保存" />
+        <LocalizationItem Name="barContainerView.Caption" Value="视图" />
+        <LocalizationItem Name="barContainerWorkflow.Caption" Value="工作流" />
+        <LocalizationItem Name="standardToolBar.Text" Value="工具栏" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Win.Templates.DetailViewForm">
+        <LocalizationItem Name="_mainMenuBar.Text" Value="主菜单" />
+        <LocalizationItem Name="_statusBar.Text" Value="状态栏" />
+        <LocalizationItem Name="barSubItemEdit.Caption" Value="编辑" />
+        <LocalizationItem Name="barSubItemFile.Caption" Value="文件" />
+        <LocalizationItem Name="barSubItemHelp.Caption" Value="帮助" />
+        <LocalizationItem Name="barSubItemTools.Caption" Value="工具" />
+        <LocalizationItem Name="barSubItemView.Caption" Value="视图" />
+        <LocalizationItem Name="cAbout.Caption" Value="关于" />
+        <LocalizationItem Name="cClose.Caption" Value="关闭" />
+        <LocalizationItem Name="cDiagnostic.Caption" Value="诊断" />
+        <LocalizationItem Name="cEdit.Caption" Value="编辑" />
+        <LocalizationItem Name="cExport.Caption" Value="导出" />
+        <LocalizationItem Name="cFile.Caption" Value="文件" />
+        <LocalizationItem Name="cFilters.Caption" Value="筛选器" />
+        <LocalizationItem Name="cFullTextSearch.Caption" Value="全文搜索" />
+        <LocalizationItem Name="cMenu.Caption" Value="菜单" />
+        <LocalizationItem Name="cObjectsCreation.Caption" Value="记录创建" />
+        <LocalizationItem Name="cOpenObject.Caption" Value="打开相关的记录" />
+        <LocalizationItem Name="cOptions.Caption" Value="选项" />
+        <LocalizationItem Name="cPrint.Caption" Value="打印" />
+        <LocalizationItem Name="cRecordEdit.Caption" Value="记录编辑" />
+        <LocalizationItem Name="cRecordsNavigation.Caption" Value="记录导航" />
+        <LocalizationItem Name="cReports.Caption" Value="报告" />
+        <LocalizationItem Name="cReports.TargetPageGroupCaption" Value="视图" />
+        <LocalizationItem Name="cSave.Caption" Value="保存" />
+        <LocalizationItem Name="cSearch.Caption" Value="搜索" />
+        <LocalizationItem Name="cTools.Caption" Value="工具" />
+        <LocalizationItem Name="cUndoRedo.Caption" Value="设置" />
+        <LocalizationItem Name="cUndoRedo.TargetPageGroupCaption" Value="编辑" />
+        <LocalizationItem Name="cView.Caption" Value="视图" />
+        <LocalizationItem Name="cWorkflow.Caption" Value="工作流" />
+        <LocalizationItem Name="standardToolBar.Text" Value="主工具栏" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Win.Templates.LookupControlTemplate">
+        <LocalizationItem Name="AvailableRecords.Text" Value="结果记录︰" />
+        <LocalizationItem Name="Root.CustomizationFormText" Value="根" />
+        <LocalizationItem Name="Root.Text" Value="根" />
+        <LocalizationItem Name="searchActionContainerLayoutItem.CustomizationFormText" Value="查找︰" />
+        <LocalizationItem Name="searchActionContainerLayoutItem.Text" Value="查找︰" />
+        <LocalizationItem Name="typeValueLayoutItem.CustomizationFormText" Value="类型︰" />
+        <LocalizationItem Name="typeValueLayoutItem.Text" Value="类型︰" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Win.Templates.MainForm">
+        <LocalizationItem Name="_mainMenuBar.Text" Value="主菜单" />
+        <LocalizationItem Name="_statusBar.Text" Value="状态栏" />
+        <LocalizationItem Name="barMdiChildrenListItem.Caption" Value="窗口列表" />
+        <LocalizationItem Name="barSubItemEdit.Caption" Value="编辑" />
+        <LocalizationItem Name="barSubItemFile.Caption" Value="文件" />
+        <LocalizationItem Name="barSubItemHelp.Caption" Value="帮助" />
+        <LocalizationItem Name="barSubItemPanels.Caption" Value="面板" />
+        <LocalizationItem Name="barSubItemTools.Caption" Value="工具" />
+        <LocalizationItem Name="barSubItemView.Caption" Value="视图" />
+        <LocalizationItem Name="barSubItemWindow.Caption" Value="窗口" />
+        <LocalizationItem Name="cAbout.Caption" Value="关于" />
+        <LocalizationItem Name="cAppearance.Caption" Value="外观" />
+        <LocalizationItem Name="cDefault.Caption" Value="默认" />
+        <LocalizationItem Name="cDiagnostic.Caption" Value="诊断" />
+        <LocalizationItem Name="cEdit.Caption" Value="编辑" />
+        <LocalizationItem Name="cExit.Caption" Value="退出" />
+        <LocalizationItem Name="cExport.Caption" Value="导出" />
+        <LocalizationItem Name="cFile.Caption" Value="文件" />
+        <LocalizationItem Name="cFilters.Caption" Value="筛选器" />
+        <LocalizationItem Name="cFullTextSearch.Caption" Value="全文搜索" />
+        <LocalizationItem Name="cMenu.Caption" Value="菜单" />
+        <LocalizationItem Name="cObjectsCreation.Caption" Value="记录创建" />
+        <LocalizationItem Name="cOpenObject.Caption" Value="打开相关的记录" />
+        <LocalizationItem Name="cOptions.Caption" Value="选项" />
+        <LocalizationItem Name="cPanels.Caption" Value="面板" />
+        <LocalizationItem Name="cPanels.TargetPageCaption" Value="视图" />
+        <LocalizationItem Name="cPrint.Caption" Value="打印" />
+        <LocalizationItem Name="cRecordEdit.Caption" Value="记录编辑" />
+        <LocalizationItem Name="cRecordsNavigation.Caption" Value="记录导航" />
+        <LocalizationItem Name="cReports.Caption" Value="报告" />
+        <LocalizationItem Name="cReports.TargetPageGroupCaption" Value="视图" />
+        <LocalizationItem Name="cSave.Caption" Value="保存" />
+        <LocalizationItem Name="cSearch.Caption" Value="搜索" />
+        <LocalizationItem Name="cTools.Caption" Value="工具" />
+        <LocalizationItem Name="cUndoRedo.Caption" Value="设置" />
+        <LocalizationItem Name="cUndoRedo.TargetPageGroupCaption" Value="编辑" />
+        <LocalizationItem Name="cView.Caption" Value="视图" />
+        <LocalizationItem Name="cViewsHistoryNavigation.Caption" Value="查看历史记录导航" />
+        <LocalizationItem Name="cViewsNavigation.Caption" Value="导航" />
+        <LocalizationItem Name="cWindows.Caption" Value="视窗" />
+        <LocalizationItem Name="cWindows.TargetPageCaption" Value="视图" />
+        <LocalizationItem Name="cWorkflow.Caption" Value="工作流" />
+        <LocalizationItem Name="dockPanelNavigation.Text" Value="导航" />
+        <LocalizationItem Name="standardToolBar.Text" Value="主工具栏" />
+        <LocalizationItem Name="Window.Caption" Value="窗口" />
+        <LocalizationItem Name="Window.TargetPageCaption" Value="视图" />
+        <LocalizationItem Name="Window.TargetPageGroupCaption" Value="视窗" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Win.Templates.NestedFrameTemplate">
+        <LocalizationItem Name="cDefault.Caption" Value="其他" />
+        <LocalizationItem Name="cDiagnostic.Caption" Value="诊断" />
+        <LocalizationItem Name="cEdit.Caption" Value="编辑" />
+        <LocalizationItem Name="cExport.Caption" Value="导出" />
+        <LocalizationItem Name="cFilters.Caption" Value="筛选器" />
+        <LocalizationItem Name="cLink.Caption" Value="关联" />
+        <LocalizationItem Name="cMenu.Caption" Value="菜单" />
+        <LocalizationItem Name="cObjectsCreation.Caption" Value="记录创建" />
+        <LocalizationItem Name="cOpenObject.Caption" Value="打开相关的记录" />
+        <LocalizationItem Name="cPrint.Caption" Value="打印" />
+        <LocalizationItem Name="cRecordEdit.Caption" Value="记录编辑" />
+        <LocalizationItem Name="cRecordsNavigation.Caption" Value="记录导航" />
+        <LocalizationItem Name="cReports.Caption" Value="报告" />
+        <LocalizationItem Name="cSave.Caption" Value="保存" />
+        <LocalizationItem Name="cView.Caption" Value="视图" />
+        <LocalizationItem Name="cWorkflow.Caption" Value="工作流" />
+        <LocalizationItem Name="standardToolBar.Text" Value="工具栏" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Win.Templates.Ribbon.DetailRibbonFormV2">
+        <LocalizationItem Name="barContainerAbout.Caption" Value="关于" />
+        <LocalizationItem Name="barContainerClose.Caption" Value="关闭" />
+        <LocalizationItem Name="barContainerDiagnostic.Caption" Value="诊断" />
+        <LocalizationItem Name="barContainerEdit.Caption" Value="编辑" />
+        <LocalizationItem Name="barContainerExport.Caption" Value="导出" />
+        <LocalizationItem Name="barContainerFile.Caption" Value="文件" />
+        <LocalizationItem Name="barContainerFilters.Caption" Value="筛选器" />
+        <LocalizationItem Name="barContainerFullTextSearch.Caption" Value="全文搜索" />
+        <LocalizationItem Name="barContainerMenu.Caption" Value="菜单" />
+        <LocalizationItem Name="barContainerNotifications.Caption" Value="通知" />
+        <LocalizationItem Name="barContainerObjectsCreation.Caption" Value="记录创建" />
+        <LocalizationItem Name="barContainerOpenObject.Caption" Value="打开相关的记录" />
+        <LocalizationItem Name="barContainerOptions.Caption" Value="选项" />
+        <LocalizationItem Name="barContainerPrint.Caption" Value="打印" />
+        <LocalizationItem Name="barContainerRecordEdit.Caption" Value="记录编辑" />
+        <LocalizationItem Name="barContainerRecordsNavigation.Caption" Value="记录导航" />
+        <LocalizationItem Name="barContainerReports.Caption" Value="报告" />
+        <LocalizationItem Name="barContainerSave.Caption" Value="保存" />
+        <LocalizationItem Name="barContainerSearch.Caption" Value="搜索" />
+        <LocalizationItem Name="barContainerStatusMessages.Caption" Value="状态消息" />
+        <LocalizationItem Name="barContainerTools.Caption" Value="工具" />
+        <LocalizationItem Name="barContainerUndoRedo.Caption" Value="设置" />
+        <LocalizationItem Name="barContainerView.Caption" Value="视图" />
+        <LocalizationItem Name="barContainerWorkflow.Caption" Value="工作流" />
+        <LocalizationItem Name="defaultPage.Text" Value="首页" />
+        <LocalizationItem Name="ribbonGroupClose.Text" Value="关闭" />
+        <LocalizationItem Name="ribbonGroupDiagnostic.Text" Value="诊断" />
+        <LocalizationItem Name="ribbonGroupEdit.Text" Value="编辑" />
+        <LocalizationItem Name="ribbonGroupFilters.Text" Value="筛选器" />
+        <LocalizationItem Name="ribbonGroupFullTextSearch.Text" Value="全文搜索" />
+        <LocalizationItem Name="ribbonGroupObjectsCreation.Text" Value="记录创建" />
+        <LocalizationItem Name="ribbonGroupOpenObject.Text" Value="打开相关的记录" />
+        <LocalizationItem Name="ribbonGroupOptions.Text" Value="选项" />
+        <LocalizationItem Name="ribbonGroupRecordEdit.Text" Value="记录编辑" />
+        <LocalizationItem Name="ribbonGroupRecordsNavigation.Text" Value="记录导航" />
+        <LocalizationItem Name="ribbonGroupSave.Text" Value="保存" />
+        <LocalizationItem Name="ribbonGroupSearch.Text" Value="搜索" />
+        <LocalizationItem Name="ribbonGroupTools.Text" Value="工具" />
+        <LocalizationItem Name="ribbonGroupView.Text" Value="视图" />
+        <LocalizationItem Name="ribbonGroupWorkflow.Text" Value="工作流" />
+        <LocalizationItem Name="toolsPage.Text" Value="工具" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Win.Templates.Ribbon.MainRibbonFormV2">
+        <LocalizationItem Name="barContainerAbout.Caption" Value="关于" />
+        <LocalizationItem Name="barContainerDefault.Caption" Value="默认" />
+        <LocalizationItem Name="barContainerDiagnostic.Caption" Value="诊断" />
+        <LocalizationItem Name="barContainerEdit.Caption" Value="编辑" />
+        <LocalizationItem Name="barContainerExit.Caption" Value="退出" />
+        <LocalizationItem Name="barContainerExport.Caption" Value="导出" />
+        <LocalizationItem Name="barContainerFile.Caption" Value="文件" />
+        <LocalizationItem Name="barContainerFilters.Caption" Value="筛选器" />
+        <LocalizationItem Name="barContainerFullTextSearch.Caption" Value="全文搜索" />
+        <LocalizationItem Name="barContainerMenu.Caption" Value="菜单" />
+        <LocalizationItem Name="barContainerNotifications.Caption" Value="通知" />
+        <LocalizationItem Name="barContainerObjectsCreation.Caption" Value="记录创建" />
+        <LocalizationItem Name="barContainerOpenObject.Caption" Value="打开相关的记录" />
+        <LocalizationItem Name="barContainerOptions.Caption" Value="选项" />
+        <LocalizationItem Name="barContainerPanels.Caption" Value="面板" />
+        <LocalizationItem Name="barContainerPrint.Caption" Value="打印" />
+        <LocalizationItem Name="barContainerRecordEdit.Caption" Value="记录编辑" />
+        <LocalizationItem Name="barContainerRecordsNavigation.Caption" Value="记录导航" />
+        <LocalizationItem Name="barContainerReports.Caption" Value="报告" />
+        <LocalizationItem Name="barContainerSave.Caption" Value="保存" />
+        <LocalizationItem Name="barContainerSearch.Caption" Value="搜索" />
+        <LocalizationItem Name="barContainerStatusMessages.Caption" Value="状态消息" />
+        <LocalizationItem Name="barContainerTools.Caption" Value="工具" />
+        <LocalizationItem Name="barContainerUndoRedo.Caption" Value="设置" />
+        <LocalizationItem Name="barContainerView.Caption" Value="视图" />
+        <LocalizationItem Name="barContainerViewsHistoryNavigation.Caption" Value="查看历史记录导航" />
+        <LocalizationItem Name="barContainerViewsNavigation.Caption" Value="导航" />
+        <LocalizationItem Name="barContainerWindows.Caption" Value="视窗" />
+        <LocalizationItem Name="barContainerWorkflow.Caption" Value="工作流" />
+        <LocalizationItem Name="barMdiChildrenListItem.Caption" Value="窗口列表" />
+        <LocalizationItem Name="barSubItemPanels.Caption" Value="面板" />
+        <LocalizationItem Name="defaultPage.Text" Value="首页" />
+        <LocalizationItem Name="defaultPageGroup.Text" Value="功能" />
+        <LocalizationItem Name="dockPanelNavigation.Text" Value="导航" />
+        <LocalizationItem Name="ribbonGallerySkins.Caption" Value="外观" />
+        <LocalizationItem Name="ribbonGroupAppearance.Text" Value="外观" />
+        <LocalizationItem Name="ribbonGroupDefault.Text" Value="默认" />
+        <LocalizationItem Name="ribbonGroupDiagnostic.Text" Value="诊断" />
+        <LocalizationItem Name="ribbonGroupEdit.Text" Value="编辑" />
+        <LocalizationItem Name="ribbonGroupFilters.Text" Value="筛选器" />
+        <LocalizationItem Name="ribbonGroupFullTextSearch.Text" Value="全文搜索" />
+        <LocalizationItem Name="ribbonGroupObjectsCreation.Text" Value="记录创建" />
+        <LocalizationItem Name="ribbonGroupOpenObject.Text" Value="打开相关的记录" />
+        <LocalizationItem Name="ribbonGroupOptions.Text" Value="选项" />
+        <LocalizationItem Name="ribbonGroupRecordEdit.Text" Value="记录编辑" />
+        <LocalizationItem Name="ribbonGroupRecordsNavigation.Text" Value="记录导航" />
+        <LocalizationItem Name="ribbonGroupSave.Text" Value="保存" />
+        <LocalizationItem Name="ribbonGroupSearch.Text" Value="搜索" />
+        <LocalizationItem Name="ribbonGroupTools.Text" Value="工具" />
+        <LocalizationItem Name="ribbonGroupView.Text" Value="视图" />
+        <LocalizationItem Name="ribbonGroupViewsHistoryNavigation.Text" Value="查看历史记录导航" />
+        <LocalizationItem Name="ribbonGroupViewsNavigation.Text" Value="导航" />
+        <LocalizationItem Name="ribbonGroupWindows.Text" Value="视窗" />
+        <LocalizationItem Name="ribbonGroupWorkflow.Text" Value="工作流" />
+        <LocalizationItem Name="toolsPage.Text" Value="工具" />
+        <LocalizationItem Name="viewPage.Text" Value="视图" />
+        <LocalizationItem Name="windowPage.Text" Value="窗口" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Win.Templates.Ribbon.OutlookStyleMainRibbonForm">
+        <LocalizationItem Name="barCheckItemNormal.Caption" Value="普通视图" />
+        <LocalizationItem Name="barCheckItemReading.Caption" Value="阅读视图" />
+        <LocalizationItem Name="barContainerAbout.Caption" Value="关于" />
+        <LocalizationItem Name="barContainerDefault.Caption" Value="默认" />
+        <LocalizationItem Name="barContainerDiagnostic.Caption" Value="诊断" />
+        <LocalizationItem Name="barContainerEdit.Caption" Value="编辑" />
+        <LocalizationItem Name="barContainerExit.Caption" Value="退出" />
+        <LocalizationItem Name="barContainerExport.Caption" Value="导出" />
+        <LocalizationItem Name="barContainerFile.Caption" Value="文件" />
+        <LocalizationItem Name="barContainerFilters.Caption" Value="筛选器" />
+        <LocalizationItem Name="barContainerFullTextSearch.Caption" Value="全文搜索" />
+        <LocalizationItem Name="barContainerMenu.Caption" Value="菜单" />
+        <LocalizationItem Name="barContainerNotifications.Caption" Value="通知" />
+        <LocalizationItem Name="barContainerObjectsCreation.Caption" Value="记录创建" />
+        <LocalizationItem Name="barContainerOpenObject.Caption" Value="打开相关的记录" />
+        <LocalizationItem Name="barContainerOptions.Caption" Value="选项" />
+        <LocalizationItem Name="barContainerPanels.Caption" Value="面板" />
+        <LocalizationItem Name="barContainerPrint.Caption" Value="打印" />
+        <LocalizationItem Name="barContainerRecordEdit.Caption" Value="记录编辑" />
+        <LocalizationItem Name="barContainerRecordsNavigation.Caption" Value="记录导航" />
+        <LocalizationItem Name="barContainerReports.Caption" Value="报告" />
+        <LocalizationItem Name="barContainerSave.Caption" Value="保存" />
+        <LocalizationItem Name="barContainerSearch.Caption" Value="搜索" />
+        <LocalizationItem Name="barContainerStatusMessages.Caption" Value="状态消息" />
+        <LocalizationItem Name="barContainerTools.Caption" Value="工具" />
+        <LocalizationItem Name="barContainerUndoRedo.Caption" Value="撤销/重做" />
+        <LocalizationItem Name="barContainerView.Caption" Value="视图" />
+        <LocalizationItem Name="barContainerViewsHistoryNavigation.Caption" Value="视图历史记录导航" />
+        <LocalizationItem Name="barContainerViewsNavigation.Caption" Value="导航" />
+        <LocalizationItem Name="barContainerWorkflow.Caption" Value="工作流" />
+        <LocalizationItem Name="barSubItemNavigationPane.Caption" Value="导航窗格" />
+        <LocalizationItem Name="barSubItemPanels.Caption" Value="面板" />
+        <LocalizationItem Name="defaultPage.Text" Value="首页" />
+        <LocalizationItem Name="defaultPageGroup.Text" Value="功能" />
+        <LocalizationItem Name="officeNavigationBar.Text" Value="办公导航栏" />
+        <LocalizationItem Name="ribbonGallerySkins.Caption" Value="外观" />
+        <LocalizationItem Name="ribbonGroupAppearance.Text" Value="外观" />
+        <LocalizationItem Name="ribbonGroupDefault.Text" Value="默认" />
+        <LocalizationItem Name="ribbonGroupDiagnostic.Text" Value="诊断" />
+        <LocalizationItem Name="ribbonGroupEdit.Text" Value="编辑" />
+        <LocalizationItem Name="ribbonGroupFilters.Text" Value="筛选器" />
+        <LocalizationItem Name="ribbonGroupFullTextSearch.Text" Value="全文搜索" />
+        <LocalizationItem Name="ribbonGroupObjectsCreation.Text" Value="记录创建" />
+        <LocalizationItem Name="ribbonGroupOpenObject.Text" Value="打开相关的记录" />
+        <LocalizationItem Name="ribbonGroupOptions.Text" Value="选项" />
+        <LocalizationItem Name="ribbonGroupRecordEdit.Text" Value="记录编辑" />
+        <LocalizationItem Name="ribbonGroupRecordsNavigation.Text" Value="记录导航" />
+        <LocalizationItem Name="ribbonGroupSave.Text" Value="保存" />
+        <LocalizationItem Name="ribbonGroupSearch.Text" Value="搜索" />
+        <LocalizationItem Name="ribbonGroupTools.Text" Value="工具" />
+        <LocalizationItem Name="ribbonGroupView.Text" Value="视图" />
+        <LocalizationItem Name="ribbonGroupViewsHistoryNavigation.Text" Value="查看历史记录导航" />
+        <LocalizationItem Name="ribbonGroupViewsNavigation.Text" Value="导航" />
+        <LocalizationItem Name="ribbonGroupWindows.Text" Value="视窗" />
+        <LocalizationItem Name="ribbonGroupWorkflow.Text" Value="工作流" />
+        <LocalizationItem Name="toolsPage.Text" Value="工具" />
+        <LocalizationItem Name="viewPage.Text" Value="视图" />
+        <LocalizationItem Name="windowPage.Text" Value="窗口" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="Namespaces">
+      <LocalizationItem Name="SiMuse.Module.BusinessObjects.Contact" Value="联系人" />
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Item Id="@c3ccb509-fab9-4435-b7a4-696f98663cea">
+        <Items Id="Items">
+          <Item Id="MyDetails" Caption="我的信息" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Views Id="Views">
+    <DetailView Id="TCode_SysUser_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="ChangePasswordOnFirstLogon" Caption="在第一次登录时更改密码" />
+        <PropertyEditor Id="Roles" Caption="角色" />
+        <PropertyEditor Id="UserName" Caption="账号" />
+      </Items>
+    </DetailView>
+    <ListView Id="TCode_SysUser_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="ChangePasswordOnFirstLogon" Caption="在第一次登录时更改密码" />
+        <ColumnInfo Id="UserName" Caption="账号" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>

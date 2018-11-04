@@ -1,0 +1,710 @@
+22.10.18 10:45:25.739	================================================================================
+22.10.18 10:45:25.744	Trace Log for Wendy.Win.exe is started
+22.10.18 10:45:25.744	================================================================================
+22.10.18 10:45:25.745	System Environment
+	OS Version: Microsoft Windows NT 6.2.9200.0
+	.Net Framework Versions: v2.0.50727, v4.0.30319
+	CLR Version: 4.0.30319.42000
+	eXpressApp Version: 18.1.6.0
+	eXpressApp File Version: 18.1.6.0
+
+Application config
+	Modules=
+	NewVersionServer=
+	EnableDiagnosticActions=False
+
+22.10.18 10:45:25.790	Initialize application
+=======================
+22.10.18 10:45:25.791		Command line arguments: 
+		D:\代码\Wendy\Wendy.Win\bin\Debug\Wendy.Win.exe
+22.10.18 10:45:26.052	--------------------------------------------------------------------------------
+							Initialize Modules Manager
+
+22.10.18 10:45:26.053	--------------------------------------------------------------------------------
+							
+
+22.10.18 10:45:26.056	--------------------------------------------------------------------------------
+Loaded assemblies
+	Anonymously Hosted DynamicMethods Assembly, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+	DevExpress.Data.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Data.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.Data.v18.1.dll
+	DevExpress.ExpressApp.CloneObject.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.CloneObject.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.CloneObject.v18.1.dll
+	DevExpress.ExpressApp.ConditionalAppearance.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.ConditionalAppearance.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.ConditionalAppearance.v18.1.dll
+	DevExpress.ExpressApp.Dashboards.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Dashboards.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.Dashboards.v18.1.dll
+	DevExpress.ExpressApp.Dashboards.Win.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Dashboards.Win.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.Dashboards.Win.v18.1.dll
+	DevExpress.ExpressApp.Security.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Security.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.Security.v18.1.dll
+	DevExpress.ExpressApp.Security.Xpo.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Security.Xpo.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.Security.Xpo.v18.1.dll
+	DevExpress.ExpressApp.TreeListEditors.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.TreeListEditors.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.TreeListEditors.v18.1.dll
+	DevExpress.ExpressApp.TreeListEditors.Win.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.TreeListEditors.Win.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.TreeListEditors.Win.v18.1.dll
+	DevExpress.ExpressApp.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.v18.1.dll
+	DevExpress.ExpressApp.Validation.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Validation.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.Validation.v18.1.dll
+	DevExpress.ExpressApp.Validation.Win.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Validation.Win.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.Validation.Win.v18.1.dll
+	DevExpress.ExpressApp.Win.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Win.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.Win.v18.1.dll
+	DevExpress.ExpressApp.Xpo.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Xpo.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.Xpo.v18.1.dll
+	DevExpress.Persistent.Base.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Persistent.Base.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.Persistent.Base.v18.1.dll
+	DevExpress.Persistent.BaseImpl.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Persistent.BaseImpl.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.Persistent.BaseImpl.v18.1.dll
+	DevExpress.Printing.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Printing.v18.1.Core\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.Printing.v18.1.Core.dll
+	DevExpress.Utils.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Utils.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.Utils.v18.1.dll
+	DevExpress.Xpo.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Xpo.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.Xpo.v18.1.dll
+	DevExpress.XtraBars.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraBars.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.XtraBars.v18.1.dll
+	DevExpress.XtraEditors.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraEditors.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.XtraEditors.v18.1.dll
+	DevExpress.XtraTreeList.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraTreeList.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.XtraTreeList.v18.1.dll
+	mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll
+	mscorlib.resources, Version=4.0.0.0, Culture=zh-Hans, PublicKeyToken=b77a5c561934e089, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\mscorlib.resources\v4.0_4.0.0.0_zh-Hans_b77a5c561934e089\mscorlib.resources.dll
+	System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll
+	System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll
+	System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll
+	System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Windows\Microsoft.Net\assembly\GAC_32\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll
+	System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll
+	System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll
+	System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll
+	UIAutomationClient, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\UIAutomationClient\v4.0_4.0.0.0__31bf3856ad364e35\UIAutomationClient.dll
+	Wendy.Module, Version=1.0.6869.19351, Culture=neutral, PublicKeyToken=null, Location=D:\代码\Wendy\Wendy.Win\bin\Debug\Wendy.Module.dll
+	Wendy.Module.Win, Version=1.0.6869.19351, Culture=neutral, PublicKeyToken=null, Location=D:\代码\Wendy\Wendy.Win\bin\Debug\Wendy.Module.Win.dll
+	Wendy.Win, Version=1.0.6869.19352, Culture=neutral, PublicKeyToken=null, Location=D:\代码\Wendy\Wendy.Win\bin\Debug\Wendy.Win.exe
+22.10.18 10:45:26.168	SetupModules
+22.10.18 10:45:26.288	Customize TypesInfo
+22.10.18 10:45:26.309	The ValueManagerType is initialized by the default value: SimpleValueManager.
+22.10.18 10:45:26.311	Stack trace:
+   在 DevExpress.Persistent.Base.ValueManager.CreateValueManager[ValueType](String key)
+   在 DevExpress.Persistent.Base.ValueManager.GetValueManager[ValueType](String key)
+   在 DevExpress.ExpressApp.SecuritySystem.SetInstance(ISecurityStrategyBase instance)
+   在 DevExpress.ExpressApp.XafApplication.InitializeSecuritySystem(ExpressApplicationSetupParameters parameters)
+   在 DevExpress.ExpressApp.XafApplication.Setup(ExpressApplicationSetupParameters parameters)
+   在 DevExpress.ExpressApp.XafApplication.Setup(String applicationName, IList`1 objectSpaceProviders, ApplicationModulesManager modulesManager, ISecurityStrategyBase security)
+   在 DevExpress.ExpressApp.XafApplication.Setup()
+   在 Wendy.Win.Program.Main() 位置 D:\代码\Wendy\Wendy.Win\Program.cs:行号 44
+
+22.10.18 10:45:27.607		preferredLanguageName: (User language)
+								userLanguageName: zh-CN
+
+22.10.18 10:45:27.609		preferredLanguageName: (User language)
+								userFormattingCultureName: zh-CN
+								selectedFormattingCultureName: 
+
+22.10.18 10:45:27.610	Logon With Parameters
+22.10.18 10:45:27.613		Type: DevExpress.ExpressApp.Actions.PopupWindowShowAction
+								ID: cfb46d4d-6eec-4a90-8a4d-d78be6fe5032
+								Category: Unspecified
+
+22.10.18 10:45:28.092	Generate default Model for Action containers
+22.10.18 10:45:31.294	'UserName' property editor: new value is 'admin'
+22.10.18 10:45:35.356	'Password' property editor: new value is '*******'
+22.10.18 10:45:35.358	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:45:35.358		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: Logon
+								Category: PopupActions
+								Controller.Name: DevExpress.ExpressApp.LogonController
+								Context.Name: 登录
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.ExpressApp.Security.AuthenticationStandardLogonParameters
+
+22.10.18 10:45:35.360	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:45:35.360		Type: DevExpress.ExpressApp.Actions.PopupWindowShowAction
+								ID: cfb46d4d-6eec-4a90-8a4d-d78be6fe5032
+								Category: Unspecified
+
+22.10.18 10:45:35.382	--------------------------------------------------------------------------------
+							Start logon process
+
+22.10.18 10:45:35.383	--------------------------------------------------------------------------------
+							Checking Compatibility
+
+22.10.18 10:45:35.385		ConnectionString: XpoProvider=MySql;Server=cdb-regn6a3u.bj.tencentcdb.com;Port=10035;User ID=root;Database=WendyDB;Persist Security Info= true;Charset=utf8;SslMode= none;XpoDataStorePool=True;
+22.10.18 10:45:35.385		ConnectionString: 
+22.10.18 10:45:36.424	--------------------------------------------------------------------------------
+							Logon successful
+
+22.10.18 10:45:36.465	--------------------------------------------------------------------------------
+							Logon completed
+
+22.10.18 10:45:36.472	Action 'cfb46d4d-6eec-4a90-8a4d-d78be6fe5032' done
+22.10.18 10:45:36.474	Window closing: 登录
+22.10.18 10:45:36.497	Action 'Logon' done
+22.10.18 10:45:36.498	Window closed: 登录
+22.10.18 10:45:36.554		startUpActions: 1
+22.10.18 10:45:36.572	--------------------------------------------------------------------------------
+							Initialize 'ShowNavigationItem' action items
+
+22.10.18 10:45:36.661	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:45:36.661		Type: DevExpress.ExpressApp.Actions.SingleChoiceAction
+								ID: ChooseSkin
+								Category: Appearance
+								Controller.Name: DevExpress.ExpressApp.Win.SystemModule.ChooseSkinController
+
+22.10.18 10:45:36.662		SelectedItem: Summer 2008
+22.10.18 10:45:36.662	Action 'ChooseSkin' done
+22.10.18 10:45:38.083	Resolve the 'DevExpress.ExpressApp.Win.v18.1.XmlSerializers, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a' assembly
+22.10.18 10:45:38.084	Resolve the 'DevExpress.ExpressApp.Win.v18.1.XmlSerializers, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a' assembly
+22.10.18 10:45:40.344	Application startup done
+=========================
+22.10.18 10:45:40.344	Application running
+====================
+22.10.18 10:45:50.910	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:45:50.910		Type: DevExpress.ExpressApp.Actions.SingleChoiceAction
+								ID: ShowNavigationItem
+								Category: ViewsNavigation
+								Controller.Name: DevExpress.ExpressApp.SystemModule.ShowNavigationItemController
+
+22.10.18 10:45:50.910		SelectedItem: 我的信息
+22.10.18 10:45:51.576	Action 'ShowNavigationItem' done
+22.10.18 10:46:01.022	Window closing: 学生资料
+22.10.18 10:46:01.050	Window closed: 学生资料
+22.10.18 10:46:02.414	Window closing: 管理员 - 用户信息
+22.10.18 10:46:02.420	Window closed: 管理员 - 用户信息
+22.10.18 10:46:03.218	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:46:03.218		Type: DevExpress.ExpressApp.Actions.SingleChoiceAction
+								ID: ShowNavigationItem
+								Category: ViewsNavigation
+								Controller.Name: DevExpress.ExpressApp.SystemModule.ShowNavigationItemController
+
+22.10.18 10:46:03.218		SelectedItem: 用户信息
+22.10.18 10:46:03.415	Action 'ShowNavigationItem' done
+22.10.18 10:46:04.220	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:46:04.220		Type: DevExpress.ExpressApp.Actions.SingleChoiceAction
+								ID: ShowNavigationItem
+								Category: ViewsNavigation
+								Controller.Name: DevExpress.ExpressApp.SystemModule.ShowNavigationItemController
+
+22.10.18 10:46:04.220		SelectedItem: 用户信息
+22.10.18 10:46:04.231	Action 'ShowNavigationItem' done
+22.10.18 10:46:50.064	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:46:50.064		Type: DevExpress.ExpressApp.Actions.SingleChoiceAction
+								ID: ShowNavigationItem
+								Category: ViewsNavigation
+								Controller.Name: DevExpress.ExpressApp.SystemModule.ShowNavigationItemController
+
+22.10.18 10:46:50.064		SelectedItem: 角色
+22.10.18 10:46:50.222	Action 'ShowNavigationItem' done
+22.10.18 10:46:58.555	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:46:58.555		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: ListViewShowObject
+								Category: ListView
+								Controller.Name: DevExpress.ExpressApp.SystemModule.ListViewProcessCurrentObjectController
+								Context.Name: 角色
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyRole(638ad415-270c-429d-b4f3-c157614964df)
+
+22.10.18 10:46:58.894	Action 'ListViewShowObject' done
+22.10.18 10:47:05.034	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:47:05.034		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: ListViewShowObject
+								Category: ListView
+								Controller.Name: DevExpress.ExpressApp.SystemModule.ListViewProcessCurrentObjectController
+								Context.Name: 类型权限
+								Context.IsRoot: False
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyTypePermissionObject(1109cb76-b24c-463d-8d4b-743792deec93)
+
+22.10.18 10:47:16.339	'ReadState' property editor: new value is 'Allow'
+22.10.18 10:47:22.895	'ReadState' property editor: new value is 'Deny'
+22.10.18 10:47:26.381		Type: DevExpress.ExpressApp.Actions.PopupWindowShowAction
+								ID: FilterPopup
+								Category: 
+
+22.10.18 10:47:35.798	'FilterString' property editor: new value is '[OwnerCC.Oid] = CurrentUserId()'
+22.10.18 10:47:35.881	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:47:35.881		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: DialogOK
+								Category: PopupActions
+								Controller.Name: DevExpress.ExpressApp.SystemModule.DialogController
+								Context.Name: 编辑条件
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.ExpressApp.Editors.CriteriaProvider
+
+22.10.18 10:47:35.884	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:47:35.884		Type: DevExpress.ExpressApp.Actions.PopupWindowShowAction
+								ID: FilterPopup
+								Category: 
+
+22.10.18 10:47:35.884	Action 'FilterPopup' done
+22.10.18 10:47:35.884	Window closing: 编辑条件
+22.10.18 10:47:35.886	Action 'DialogOK' done
+22.10.18 10:47:35.887	Window closed: 编辑条件
+22.10.18 10:47:43.960	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:47:43.960		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: Save
+								Category: Save
+								Controller.Name: DevExpress.ExpressApp.Win.SystemModule.WinModificationsController
+								Context.Name: 类型操作权限
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyTypePermissionObject(1109cb76-b24c-463d-8d4b-743792deec93)
+
+22.10.18 10:47:44.343	Action 'Save' done
+22.10.18 10:47:44.552	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:47:44.552		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: SaveAndClose
+								Category: Save
+								Controller.Name: DevExpress.ExpressApp.Win.SystemModule.WinModificationsController
+								Context.Name: 类型操作权限
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyTypePermissionObject(1109cb76-b24c-463d-8d4b-743792deec93)
+
+22.10.18 10:47:44.553	Window closing: 类型操作权限
+22.10.18 10:47:44.554	Action 'SaveAndClose' done
+22.10.18 10:47:44.554	Window closed: 类型操作权限
+22.10.18 10:47:44.658	Action 'ListViewShowObject' done
+22.10.18 10:47:47.566	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:47:47.566		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: Save
+								Category: Save
+								Controller.Name: DevExpress.ExpressApp.Win.SystemModule.WinModificationsController
+								Context.Name: 角色
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyRole(638ad415-270c-429d-b4f3-c157614964df)
+
+22.10.18 10:47:47.686	Action 'Save' done
+22.10.18 10:49:04.753	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:49:04.753		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: ListViewShowObject
+								Category: ListView
+								Controller.Name: DevExpress.ExpressApp.SystemModule.ListViewProcessCurrentObjectController
+								Context.Name: 类型权限
+								Context.IsRoot: False
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyTypePermissionObject(1109cb76-b24c-463d-8d4b-743792deec93)
+
+22.10.18 10:49:30.793	'ReadState' property editor: new value is ''
+22.10.18 10:49:30.793	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:49:30.793		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: Save
+								Category: Save
+								Controller.Name: DevExpress.ExpressApp.Win.SystemModule.WinModificationsController
+								Context.Name: 类型操作权限
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyTypePermissionObject(1109cb76-b24c-463d-8d4b-743792deec93)
+
+22.10.18 10:49:30.795	Action 'Save' done
+22.10.18 10:49:46.673	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:49:46.673		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: SaveAndClose
+								Category: Save
+								Controller.Name: DevExpress.ExpressApp.Win.SystemModule.WinModificationsController
+								Context.Name: 类型操作权限
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyTypePermissionObject(1109cb76-b24c-463d-8d4b-743792deec93)
+
+22.10.18 10:49:46.673	Window closing: 类型操作权限
+22.10.18 10:49:46.674	Action 'SaveAndClose' done
+22.10.18 10:49:46.674	Window closed: 类型操作权限
+22.10.18 10:49:46.780	Action 'ListViewShowObject' done
+22.10.18 10:49:48.372	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:49:48.372		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: Save
+								Category: Save
+								Controller.Name: DevExpress.ExpressApp.Win.SystemModule.WinModificationsController
+								Context.Name: 角色
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyRole(638ad415-270c-429d-b4f3-c157614964df)
+
+22.10.18 10:49:48.402	Action 'Save' done
+22.10.18 10:50:09.827	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:50:09.827		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: ListViewShowObject
+								Category: ListView
+								Controller.Name: DevExpress.ExpressApp.SystemModule.ListViewProcessCurrentObjectController
+								Context.Name: 类型权限
+								Context.IsRoot: False
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyTypePermissionObject(1109cb76-b24c-463d-8d4b-743792deec93)
+
+22.10.18 10:50:16.072		Type: DevExpress.ExpressApp.Actions.PopupWindowShowAction
+								ID: FilterPopup
+								Category: 
+
+22.10.18 10:50:23.510	'FilterString' property editor: new value is '[OwnerCC.Oid] <> CurrentUserId()'
+22.10.18 10:50:23.681	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:50:23.681		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: DialogOK
+								Category: PopupActions
+								Controller.Name: DevExpress.ExpressApp.SystemModule.DialogController
+								Context.Name: 编辑条件
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.ExpressApp.Editors.CriteriaProvider
+
+22.10.18 10:50:23.682	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:50:23.682		Type: DevExpress.ExpressApp.Actions.PopupWindowShowAction
+								ID: FilterPopup
+								Category: 
+
+22.10.18 10:50:23.682	Action 'FilterPopup' done
+22.10.18 10:50:23.682	Window closing: 编辑条件
+22.10.18 10:50:23.682	Action 'DialogOK' done
+22.10.18 10:50:23.683	Window closed: 编辑条件
+22.10.18 10:50:26.010	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:50:26.010		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: Save
+								Category: Save
+								Controller.Name: DevExpress.ExpressApp.Win.SystemModule.WinModificationsController
+								Context.Name: 类型操作权限
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyTypePermissionObject(1109cb76-b24c-463d-8d4b-743792deec93)
+
+22.10.18 10:50:26.012	Action 'Save' done
+22.10.18 10:50:34.081	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:50:34.081		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: Save
+								Category: Save
+								Controller.Name: DevExpress.ExpressApp.Win.SystemModule.WinModificationsController
+								Context.Name: 类型操作权限
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyTypePermissionObject(1109cb76-b24c-463d-8d4b-743792deec93)
+
+22.10.18 10:50:34.082	Action 'Save' done
+22.10.18 10:50:39.131	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:50:39.131		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: SaveAndClose
+								Category: Save
+								Controller.Name: DevExpress.ExpressApp.Win.SystemModule.WinModificationsController
+								Context.Name: 类型操作权限
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyTypePermissionObject(1109cb76-b24c-463d-8d4b-743792deec93)
+
+22.10.18 10:50:39.132	Window closing: 类型操作权限
+22.10.18 10:50:39.133	Action 'SaveAndClose' done
+22.10.18 10:50:39.133	Window closed: 类型操作权限
+22.10.18 10:50:39.229	Action 'ListViewShowObject' done
+22.10.18 10:50:40.576	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:50:40.576		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: Save
+								Category: Save
+								Controller.Name: DevExpress.ExpressApp.Win.SystemModule.WinModificationsController
+								Context.Name: 角色
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyRole(638ad415-270c-429d-b4f3-c157614964df)
+
+22.10.18 10:50:40.609	Action 'Save' done
+22.10.18 10:52:58.867	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:52:58.867		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: ListViewShowObject
+								Category: ListView
+								Controller.Name: DevExpress.ExpressApp.SystemModule.ListViewProcessCurrentObjectController
+								Context.Name: 类型权限
+								Context.IsRoot: False
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyTypePermissionObject(1109cb76-b24c-463d-8d4b-743792deec93)
+
+22.10.18 10:53:02.569	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:53:02.569		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: Close
+								Category: Close
+								Controller.Name: DevExpress.ExpressApp.Win.SystemModule.CloseWindowController
+								Context.Name: 类型操作权限
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyTypePermissionObject(1109cb76-b24c-463d-8d4b-743792deec93)
+
+22.10.18 10:53:02.569	Window closing: 类型操作权限
+22.10.18 10:53:02.570	Action 'Close' done
+22.10.18 10:53:02.570	Window closed: 类型操作权限
+22.10.18 10:53:02.651	Action 'ListViewShowObject' done
+22.10.18 10:53:12.679	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:53:12.679		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: ListViewShowObject
+								Category: ListView
+								Controller.Name: DevExpress.ExpressApp.SystemModule.ListViewProcessCurrentObjectController
+								Context.Name: 类型权限
+								Context.IsRoot: False
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyTypePermissionObject(1109cb76-b24c-463d-8d4b-743792deec93)
+
+22.10.18 10:53:16.592	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:53:16.592		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: Close
+								Category: Close
+								Controller.Name: DevExpress.ExpressApp.Win.SystemModule.CloseWindowController
+								Context.Name: 类型操作权限
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyTypePermissionObject(1109cb76-b24c-463d-8d4b-743792deec93)
+
+22.10.18 10:53:16.592	Window closing: 类型操作权限
+22.10.18 10:53:16.592	Action 'Close' done
+22.10.18 10:53:16.593	Window closed: 类型操作权限
+22.10.18 10:53:16.682	Action 'ListViewShowObject' done
+22.10.18 10:53:18.079	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:53:18.079		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: ListViewShowObject
+								Category: ListView
+								Controller.Name: DevExpress.ExpressApp.SystemModule.ListViewProcessCurrentObjectController
+								Context.Name: 类型权限
+								Context.IsRoot: False
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyTypePermissionObject(90149dc3-71d2-4e36-98b8-45d97c02daf5)
+
+22.10.18 10:53:22.574		Type: DevExpress.ExpressApp.Actions.PopupWindowShowAction
+								ID: FilterPopup
+								Category: 
+
+22.10.18 10:53:31.749	'FilterString' property editor: new value is '[dt_ConsultDate] = ?'
+22.10.18 10:53:31.896	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:53:31.896		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: DialogCancel
+								Category: PopupActions
+								Controller.Name: DevExpress.ExpressApp.SystemModule.DialogController
+								Context.Name: 编辑条件
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.ExpressApp.Editors.CriteriaProvider
+
+22.10.18 10:53:31.896	Window closing: 编辑条件
+22.10.18 10:53:31.897	Action 'DialogCancel' done
+22.10.18 10:53:31.897	Window closed: 编辑条件
+22.10.18 10:53:33.335		Type: DevExpress.ExpressApp.Actions.PopupWindowShowAction
+								ID: FilterPopup
+								Category: 
+
+22.10.18 10:54:05.192	'FilterString' property editor: new value is '[Consultant.Oid] <> CurrentUserId()'
+22.10.18 10:54:05.207	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:54:05.207		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: DialogOK
+								Category: PopupActions
+								Controller.Name: DevExpress.ExpressApp.SystemModule.DialogController
+								Context.Name: 编辑条件
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.ExpressApp.Editors.CriteriaProvider
+
+22.10.18 10:54:05.208	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:54:05.208		Type: DevExpress.ExpressApp.Actions.PopupWindowShowAction
+								ID: FilterPopup
+								Category: 
+
+22.10.18 10:54:05.208	Action 'FilterPopup' done
+22.10.18 10:54:05.208	Window closing: 编辑条件
+22.10.18 10:54:05.209	Action 'DialogOK' done
+22.10.18 10:54:05.209	Window closed: 编辑条件
+22.10.18 10:54:15.393	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:54:15.393		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: SaveAndClose
+								Category: Save
+								Controller.Name: DevExpress.ExpressApp.Win.SystemModule.WinModificationsController
+								Context.Name: 类型操作权限
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyTypePermissionObject(90149dc3-71d2-4e36-98b8-45d97c02daf5)
+
+22.10.18 10:54:15.718	Window closing: 类型操作权限
+22.10.18 10:54:15.720	Action 'SaveAndClose' done
+22.10.18 10:54:15.740	Window closed: 类型操作权限
+22.10.18 10:54:15.849	Action 'ListViewShowObject' done
+22.10.18 10:54:17.054	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:54:17.054		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: Save
+								Category: Save
+								Controller.Name: DevExpress.ExpressApp.Win.SystemModule.WinModificationsController
+								Context.Name: 角色
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyRole(638ad415-270c-429d-b4f3-c157614964df)
+
+22.10.18 10:54:17.085	Action 'Save' done
+22.10.18 10:57:28.513	'PermissionPolicy' property editor: new value is 'DenyAllByDefault'
+22.10.18 10:57:31.504	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:57:31.504		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: Save
+								Category: Save
+								Controller.Name: DevExpress.ExpressApp.Win.SystemModule.WinModificationsController
+								Context.Name: 角色
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyRole(638ad415-270c-429d-b4f3-c157614964df)
+
+22.10.18 10:57:31.603	Action 'Save' done
+22.10.18 10:59:08.671	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:59:08.671		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: Save
+								Category: Save
+								Controller.Name: DevExpress.ExpressApp.Win.SystemModule.WinModificationsController
+								Context.Name: 角色
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyRole(638ad415-270c-429d-b4f3-c157614964df)
+
+22.10.18 10:59:08.706	Action 'Save' done
+22.10.18 11:00:24.862	'PermissionPolicy' property editor: new value is 'AllowAllByDefault'
+22.10.18 11:00:38.870	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 11:00:38.870		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: Save
+								Category: Save
+								Controller.Name: DevExpress.ExpressApp.Win.SystemModule.WinModificationsController
+								Context.Name: 角色
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyRole(638ad415-270c-429d-b4f3-c157614964df)
+
+22.10.18 11:00:38.925	Action 'Save' done
+22.10.18 11:00:50.460	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 11:00:50.460		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: ListViewShowObject
+								Category: ListView
+								Controller.Name: DevExpress.ExpressApp.SystemModule.ListViewProcessCurrentObjectController
+								Context.Name: 类型权限
+								Context.IsRoot: False
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyTypePermissionObject(1109cb76-b24c-463d-8d4b-743792deec93)
+
+22.10.18 11:01:07.779	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 11:01:07.779		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: Save
+								Category: Save
+								Controller.Name: DevExpress.ExpressApp.Win.SystemModule.WinModificationsController
+								Context.Name: 类型操作权限
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyTypePermissionObject(1109cb76-b24c-463d-8d4b-743792deec93)
+
+22.10.18 11:01:07.780	Action 'Save' done
+22.10.18 11:01:09.670	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 11:01:09.671		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: SaveAndClose
+								Category: Save
+								Controller.Name: DevExpress.ExpressApp.Win.SystemModule.WinModificationsController
+								Context.Name: 类型操作权限
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyTypePermissionObject(1109cb76-b24c-463d-8d4b-743792deec93)
+
+22.10.18 11:01:09.671	Window closing: 类型操作权限
+22.10.18 11:01:09.672	Action 'SaveAndClose' done
+22.10.18 11:01:09.672	Window closed: 类型操作权限
+22.10.18 11:01:09.739	Action 'ListViewShowObject' done
+22.10.18 11:02:20.308	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 11:02:20.308		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: Save
+								Category: Save
+								Controller.Name: DevExpress.ExpressApp.Win.SystemModule.WinModificationsController
+								Context.Name: 角色
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyRole(638ad415-270c-429d-b4f3-c157614964df)
+
+22.10.18 11:02:20.351	Action 'Save' done
+22.10.18 11:02:54.094	'PermissionPolicy' property editor: new value is 'DenyAllByDefault'
+22.10.18 11:02:54.095	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 11:02:54.095		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: Save
+								Category: Save
+								Controller.Name: DevExpress.ExpressApp.Win.SystemModule.WinModificationsController
+								Context.Name: 角色
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyRole(638ad415-270c-429d-b4f3-c157614964df)
+
+22.10.18 11:02:54.163	Action 'Save' done
+22.10.18 11:04:24.195	Window closing: 用户信息
+22.10.18 11:04:24.196	Window closing: 角色
+22.10.18 11:04:24.196	Window closing: 咨询顾问 - 角色
+22.10.18 11:04:24.196	Window closing: 咨询顾问 - 角色 - 文迪营销管理系统
+22.10.18 11:04:24.236	Window closed: 用户信息
+22.10.18 11:04:24.237	Window closed: 角色
+22.10.18 11:04:24.237	Window closed: 咨询顾问 - 角色
+22.10.18 11:04:24.237	Window closed: 咨询顾问 - 角色 - 文迪营销管理系统
+22.10.18 11:04:24.652	Save model changes
+===================
+22.10.18 11:04:24.709	Save model changes
+===================
+22.10.18 11:04:24.727	--------------------------------------------------------------------------------
+							Logoff completed
+
+22.10.18 11:04:24.728	Application stopping
+=====================

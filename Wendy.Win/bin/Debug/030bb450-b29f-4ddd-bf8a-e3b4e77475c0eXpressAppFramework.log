@@ -1,0 +1,557 @@
+22.10.18 10:19:32.461	================================================================================
+22.10.18 10:19:32.461	Trace Log for Wendy.Win.exe is started
+22.10.18 10:19:32.461	================================================================================
+22.10.18 10:19:32.461	System Environment
+	OS Version: Microsoft Windows NT 6.2.9200.0
+	.Net Framework Versions: v2.0.50727, v4.0.30319
+	CLR Version: 4.0.30319.42000
+	eXpressApp Version: 18.1.6.0
+	eXpressApp File Version: 18.1.6.0
+
+Application config
+	Modules=
+	NewVersionServer=
+	EnableDiagnosticActions=False
+
+22.10.18 10:19:32.508	Initialize application
+=======================
+22.10.18 10:19:32.508		Command line arguments: 
+		D:\代码\Wendy\Wendy.Win\bin\Debug\Wendy.Win.exe
+22.10.18 10:19:32.774	--------------------------------------------------------------------------------
+							Initialize Modules Manager
+
+22.10.18 10:19:32.774	--------------------------------------------------------------------------------
+							
+
+22.10.18 10:19:32.774	--------------------------------------------------------------------------------
+Loaded assemblies
+	Anonymously Hosted DynamicMethods Assembly, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+	DevExpress.Data.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Data.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.Data.v18.1.dll
+	DevExpress.ExpressApp.CloneObject.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.CloneObject.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.CloneObject.v18.1.dll
+	DevExpress.ExpressApp.ConditionalAppearance.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.ConditionalAppearance.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.ConditionalAppearance.v18.1.dll
+	DevExpress.ExpressApp.Dashboards.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Dashboards.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.Dashboards.v18.1.dll
+	DevExpress.ExpressApp.Dashboards.Win.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Dashboards.Win.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.Dashboards.Win.v18.1.dll
+	DevExpress.ExpressApp.Security.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Security.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.Security.v18.1.dll
+	DevExpress.ExpressApp.Security.Xpo.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Security.Xpo.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.Security.Xpo.v18.1.dll
+	DevExpress.ExpressApp.TreeListEditors.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.TreeListEditors.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.TreeListEditors.v18.1.dll
+	DevExpress.ExpressApp.TreeListEditors.Win.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.TreeListEditors.Win.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.TreeListEditors.Win.v18.1.dll
+	DevExpress.ExpressApp.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.v18.1.dll
+	DevExpress.ExpressApp.Validation.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Validation.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.Validation.v18.1.dll
+	DevExpress.ExpressApp.Validation.Win.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Validation.Win.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.Validation.Win.v18.1.dll
+	DevExpress.ExpressApp.Win.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Win.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.Win.v18.1.dll
+	DevExpress.ExpressApp.Xpo.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Xpo.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.Xpo.v18.1.dll
+	DevExpress.Persistent.Base.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Persistent.Base.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.Persistent.Base.v18.1.dll
+	DevExpress.Persistent.BaseImpl.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Persistent.BaseImpl.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.Persistent.BaseImpl.v18.1.dll
+	DevExpress.Printing.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Printing.v18.1.Core\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.Printing.v18.1.Core.dll
+	DevExpress.Utils.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Utils.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.Utils.v18.1.dll
+	DevExpress.Xpo.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Xpo.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.Xpo.v18.1.dll
+	DevExpress.XtraBars.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraBars.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.XtraBars.v18.1.dll
+	DevExpress.XtraEditors.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraEditors.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.XtraEditors.v18.1.dll
+	DevExpress.XtraTreeList.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraTreeList.v18.1\v4.0_18.1.6.0__b88d1754d700e49a\DevExpress.XtraTreeList.v18.1.dll
+	mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll
+	mscorlib.resources, Version=4.0.0.0, Culture=zh-Hans, PublicKeyToken=b77a5c561934e089, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\mscorlib.resources\v4.0_4.0.0.0_zh-Hans_b77a5c561934e089\mscorlib.resources.dll
+	System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll
+	System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll
+	System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll
+	System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Windows\Microsoft.Net\assembly\GAC_32\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll
+	System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll
+	System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll
+	System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll
+	UIAutomationClient, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=C:\Windows\Microsoft.Net\assembly\GAC_MSIL\UIAutomationClient\v4.0_4.0.0.0__31bf3856ad364e35\UIAutomationClient.dll
+	Wendy.Module, Version=1.0.6869.18303, Culture=neutral, PublicKeyToken=null, Location=D:\代码\Wendy\Wendy.Win\bin\Debug\Wendy.Module.dll
+	Wendy.Module.Win, Version=1.0.6869.18303, Culture=neutral, PublicKeyToken=null, Location=D:\代码\Wendy\Wendy.Win\bin\Debug\Wendy.Module.Win.dll
+	Wendy.Win, Version=1.0.6869.18304, Culture=neutral, PublicKeyToken=null, Location=D:\代码\Wendy\Wendy.Win\bin\Debug\Wendy.Win.exe
+22.10.18 10:19:32.899	SetupModules
+22.10.18 10:19:33.008	Customize TypesInfo
+22.10.18 10:19:33.039	The ValueManagerType is initialized by the default value: SimpleValueManager.
+22.10.18 10:19:33.039	Stack trace:
+   在 DevExpress.Persistent.Base.ValueManager.CreateValueManager[ValueType](String key)
+   在 DevExpress.Persistent.Base.ValueManager.GetValueManager[ValueType](String key)
+   在 DevExpress.ExpressApp.SecuritySystem.SetInstance(ISecurityStrategyBase instance)
+   在 DevExpress.ExpressApp.XafApplication.InitializeSecuritySystem(ExpressApplicationSetupParameters parameters)
+   在 DevExpress.ExpressApp.XafApplication.Setup(ExpressApplicationSetupParameters parameters)
+   在 DevExpress.ExpressApp.XafApplication.Setup(String applicationName, IList`1 objectSpaceProviders, ApplicationModulesManager modulesManager, ISecurityStrategyBase security)
+   在 DevExpress.ExpressApp.XafApplication.Setup()
+   在 Wendy.Win.Program.Main() 位置 D:\代码\Wendy\Wendy.Win\Program.cs:行号 44
+
+22.10.18 10:19:33.414		preferredLanguageName: (User language)
+								userLanguageName: zh-CN
+
+22.10.18 10:19:33.414		preferredLanguageName: (User language)
+								userFormattingCultureName: zh-CN
+								selectedFormattingCultureName: 
+
+22.10.18 10:19:33.414	Logon With Parameters
+22.10.18 10:19:33.430		Type: DevExpress.ExpressApp.Actions.PopupWindowShowAction
+								ID: cc825199-a5dd-483d-8f50-e49895c05331
+								Category: Unspecified
+
+22.10.18 10:19:33.914	Generate default Model for Action containers
+22.10.18 10:19:37.899	'UserName' property editor: new value is 'tmk'
+22.10.18 10:19:37.899	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:19:37.899		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: Logon
+								Category: PopupActions
+								Controller.Name: DevExpress.ExpressApp.LogonController
+								Context.Name: 登录
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.ExpressApp.Security.AuthenticationStandardLogonParameters
+
+22.10.18 10:19:37.899	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:19:37.899		Type: DevExpress.ExpressApp.Actions.PopupWindowShowAction
+								ID: cc825199-a5dd-483d-8f50-e49895c05331
+								Category: Unspecified
+
+22.10.18 10:19:37.931	--------------------------------------------------------------------------------
+							Start logon process
+
+22.10.18 10:19:37.931	--------------------------------------------------------------------------------
+							Checking Compatibility
+
+22.10.18 10:19:37.931		ConnectionString: XpoProvider=MySql;Server=cdb-regn6a3u.bj.tencentcdb.com;Port=10035;User ID=root;Database=WendyDB;Persist Security Info= true;Charset=utf8;SslMode= none;XpoDataStorePool=True;
+22.10.18 10:19:37.931		ConnectionString: 
+22.10.18 10:19:38.477	--------------------------------------------------------------------------------
+							Logon successful
+
+22.10.18 10:19:38.493	--------------------------------------------------------------------------------
+							Logon completed
+
+22.10.18 10:19:38.493	Action 'cc825199-a5dd-483d-8f50-e49895c05331' done
+22.10.18 10:19:38.493	Window closing: 登录
+22.10.18 10:19:38.524	Action 'Logon' done
+22.10.18 10:19:38.524	Window closed: 登录
+22.10.18 10:19:38.587		startUpActions: 1
+22.10.18 10:19:38.587		startUpAction executing: ChangePasswordOnLogon
+22.10.18 10:19:38.587		Type: DevExpress.ExpressApp.Actions.PopupWindowShowAction
+								ID: ChangePasswordOnLogon
+								Category: 
+
+22.10.18 10:19:44.384	'NewPassword' property editor: new value is '*******'
+22.10.18 10:19:44.806	'ConfirmPassword' property editor: new value is '*******'
+22.10.18 10:19:44.806	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:19:44.806		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: DialogOK
+								Category: PopupActions
+								Controller.Name: DevExpress.ExpressApp.SystemModule.DialogController
+								Context.Name: 在第一次登录时更改密码
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.ExpressApp.Security.ChangePasswordOnLogonParameters
+
+22.10.18 10:19:44.806	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:19:44.806		Type: DevExpress.ExpressApp.Actions.PopupWindowShowAction
+								ID: ChangePasswordOnLogon
+								Category: 
+
+22.10.18 10:19:45.119	Action 'ChangePasswordOnLogon' done
+22.10.18 10:19:45.119	Window closing: 在第一次登录时更改密码
+22.10.18 10:19:45.150	Action 'DialogOK' done
+22.10.18 10:19:45.150	Window closed: 在第一次登录时更改密码
+22.10.18 10:19:45.166	startUpAction executed
+22.10.18 10:19:45.181	--------------------------------------------------------------------------------
+							Initialize 'ShowNavigationItem' action items
+
+22.10.18 10:19:45.259	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:19:45.259		Type: DevExpress.ExpressApp.Actions.SingleChoiceAction
+								ID: ChooseSkin
+								Category: Appearance
+								Controller.Name: DevExpress.ExpressApp.Win.SystemModule.ChooseSkinController
+
+22.10.18 10:19:45.259		SelectedItem: Summer 2008
+22.10.18 10:19:45.259	Action 'ChooseSkin' done
+22.10.18 10:19:46.650	Application startup done
+=========================
+22.10.18 10:19:46.650	Application running
+====================
+22.10.18 10:29:38.093	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:29:38.093		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: Logoff
+								Category: Security
+								Controller.Name: DevExpress.ExpressApp.SystemModule.LogoffController
+
+22.10.18 10:29:38.140	Resolve the 'DevExpress.ExpressApp.Win.v18.1.XmlSerializers, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a' assembly
+22.10.18 10:29:38.140	Resolve the 'DevExpress.ExpressApp.Win.v18.1.XmlSerializers, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a' assembly
+22.10.18 10:29:38.140	Window closing: 文迪营销管理系统
+22.10.18 10:29:38.218	Window closed: 文迪营销管理系统
+22.10.18 10:29:38.359	Save model changes
+===================
+22.10.18 10:29:38.406	--------------------------------------------------------------------------------
+							Logoff completed
+
+22.10.18 10:29:38.406	Logon With Parameters
+22.10.18 10:29:38.406		Type: DevExpress.ExpressApp.Actions.PopupWindowShowAction
+								ID: 087d2677-b22c-4b80-b4aa-dec888c1394b
+								Category: Unspecified
+
+22.10.18 10:29:47.501	'UserName' property editor: new value is 'sunyuan'
+22.10.18 10:29:47.501	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:29:47.501		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: Logon
+								Category: PopupActions
+								Controller.Name: DevExpress.ExpressApp.LogonController
+								Context.Name: 登录
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.ExpressApp.Security.AuthenticationStandardLogonParameters
+
+22.10.18 10:29:47.501	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:29:47.501		Type: DevExpress.ExpressApp.Actions.PopupWindowShowAction
+								ID: 087d2677-b22c-4b80-b4aa-dec888c1394b
+								Category: Unspecified
+
+22.10.18 10:29:47.532	--------------------------------------------------------------------------------
+							Start logon process
+
+22.10.18 10:29:47.532	--------------------------------------------------------------------------------
+							Logon successful
+
+22.10.18 10:29:47.548	--------------------------------------------------------------------------------
+							Logon completed
+
+22.10.18 10:29:47.548	Action '087d2677-b22c-4b80-b4aa-dec888c1394b' done
+22.10.18 10:29:47.548	Window closing: 登录
+22.10.18 10:29:47.548	Action 'Logon' done
+22.10.18 10:29:47.548	Window closed: 登录
+22.10.18 10:29:47.548		startUpActions: 1
+22.10.18 10:29:47.548	--------------------------------------------------------------------------------
+							Initialize 'ShowNavigationItem' action items
+
+22.10.18 10:29:47.626	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:29:47.626		Type: DevExpress.ExpressApp.Actions.SingleChoiceAction
+								ID: ChooseSkin
+								Category: Appearance
+								Controller.Name: DevExpress.ExpressApp.Win.SystemModule.ChooseSkinController
+
+22.10.18 10:29:47.626		SelectedItem: Summer 2008
+22.10.18 10:29:47.626	Action 'ChooseSkin' done
+22.10.18 10:29:47.813	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:29:47.813		Type: DevExpress.ExpressApp.Actions.SingleChoiceAction
+								ID: ShowNavigationItem
+								Category: ViewsNavigation
+								Controller.Name: DevExpress.ExpressApp.SystemModule.ShowNavigationItemController
+
+22.10.18 10:29:47.813		SelectedItem: 学生资料
+22.10.18 10:29:49.063	Action 'ShowNavigationItem' done
+22.10.18 10:29:49.767	Action 'Logoff' done
+22.10.18 10:29:59.893	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:29:59.893		Type: DevExpress.ExpressApp.Actions.SingleChoiceAction
+								ID: ShowNavigationItem
+								Category: ViewsNavigation
+								Controller.Name: DevExpress.ExpressApp.SystemModule.ShowNavigationItemController
+
+22.10.18 10:29:59.893		SelectedItem: 咨询信息
+22.10.18 10:30:00.596	Action 'ShowNavigationItem' done
+22.10.18 10:30:02.471	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:30:02.471		Type: DevExpress.ExpressApp.Actions.SingleChoiceAction
+								ID: ShowNavigationItem
+								Category: ViewsNavigation
+								Controller.Name: DevExpress.ExpressApp.SystemModule.ShowNavigationItemController
+
+22.10.18 10:30:02.471		SelectedItem: Demo活动
+22.10.18 10:30:02.705	Action 'ShowNavigationItem' done
+22.10.18 10:30:03.393	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:30:03.393		Type: DevExpress.ExpressApp.Actions.SingleChoiceAction
+								ID: ShowNavigationItem
+								Category: ViewsNavigation
+								Controller.Name: DevExpress.ExpressApp.SystemModule.ShowNavigationItemController
+
+22.10.18 10:30:03.393		SelectedItem: 课程安排
+22.10.18 10:30:03.627	Action 'ShowNavigationItem' done
+22.10.18 10:30:04.596	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:30:04.596		Type: DevExpress.ExpressApp.Actions.SingleChoiceAction
+								ID: ShowNavigationItem
+								Category: ViewsNavigation
+								Controller.Name: DevExpress.ExpressApp.SystemModule.ShowNavigationItemController
+
+22.10.18 10:30:04.596		SelectedItem: 课程安排
+22.10.18 10:30:04.612	Action 'ShowNavigationItem' done
+22.10.18 10:30:05.315	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:30:05.315		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: ListViewShowObject
+								Category: ListView
+								Controller.Name: DevExpress.ExpressApp.SystemModule.ListViewProcessCurrentObjectController
+								Context.Name: 课程安排
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: 机器人
+
+22.10.18 10:30:05.893	Action 'ListViewShowObject' done
+22.10.18 10:30:16.035	Window closing: 机器人-2018/10/19  - 课程安排
+22.10.18 10:30:16.035	Window closed: 机器人-2018/10/19  - 课程安排
+22.10.18 10:30:17.176	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:30:17.176		Type: DevExpress.ExpressApp.Actions.SingleChoiceAction
+								ID: ShowNavigationItem
+								Category: ViewsNavigation
+								Controller.Name: DevExpress.ExpressApp.SystemModule.ShowNavigationItemController
+
+22.10.18 10:30:17.176		SelectedItem: 咨询信息
+22.10.18 10:30:17.301	Action 'ShowNavigationItem' done
+22.10.18 10:30:18.082	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:30:18.082		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: ListViewShowObject
+								Category: ListView
+								Controller.Name: DevExpress.ExpressApp.SystemModule.ListViewProcessCurrentObjectController
+								Context.Name: 咨询信息
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: 2018/4/1 0:00:00
+
+22.10.18 10:30:18.645	Action 'ListViewShowObject' done
+22.10.18 10:30:45.054	Window closing: 萱萱-20180401 - 咨询信息
+22.10.18 10:30:45.069	Window closed: 萱萱-20180401 - 咨询信息
+22.10.18 10:30:45.694	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:30:45.694		Type: DevExpress.ExpressApp.Actions.SingleChoiceAction
+								ID: ShowNavigationItem
+								Category: ViewsNavigation
+								Controller.Name: DevExpress.ExpressApp.SystemModule.ShowNavigationItemController
+
+22.10.18 10:30:45.694		SelectedItem: 学生资料
+22.10.18 10:30:45.851	Action 'ShowNavigationItem' done
+22.10.18 10:35:36.882	Window closing: 学生资料
+22.10.18 10:35:36.882	Window closed: 学生资料
+22.10.18 10:35:38.616	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:35:38.616		Type: DevExpress.ExpressApp.Actions.SingleChoiceAction
+								ID: ShowNavigationItem
+								Category: ViewsNavigation
+								Controller.Name: DevExpress.ExpressApp.SystemModule.ShowNavigationItemController
+
+22.10.18 10:35:38.616		SelectedItem: 学生资料
+22.10.18 10:35:39.163	Action 'ShowNavigationItem' done
+22.10.18 10:35:48.227	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:35:48.227		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: Logoff
+								Category: Security
+								Controller.Name: DevExpress.ExpressApp.SystemModule.LogoffController
+
+22.10.18 10:35:48.242	Window closing: 咨询信息
+22.10.18 10:35:48.242	Window closing: Demo活动
+22.10.18 10:35:48.242	Window closing: 课程安排
+22.10.18 10:35:48.242	Window closing: 学生资料
+22.10.18 10:35:48.242	Window closing: 学生资料 - 文迪营销管理系统
+22.10.18 10:35:48.242	Window closed: 咨询信息
+22.10.18 10:35:48.242	Window closed: Demo活动
+22.10.18 10:35:48.242	Window closed: 课程安排
+22.10.18 10:35:48.242	Window closed: 学生资料
+22.10.18 10:35:48.242	Window closed: 学生资料 - 文迪营销管理系统
+22.10.18 10:35:48.586	Save model changes
+===================
+22.10.18 10:35:48.664	--------------------------------------------------------------------------------
+							Logoff completed
+
+22.10.18 10:35:48.664	Logon With Parameters
+22.10.18 10:35:48.664		Type: DevExpress.ExpressApp.Actions.PopupWindowShowAction
+								ID: ef29eb99-1c6e-436d-920c-c1db66d69ce9
+								Category: Unspecified
+
+22.10.18 10:35:52.024	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:35:52.024		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: Logon
+								Category: PopupActions
+								Controller.Name: DevExpress.ExpressApp.LogonController
+								Context.Name: 登录
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.ExpressApp.Security.AuthenticationStandardLogonParameters
+
+22.10.18 10:35:52.024	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:35:52.024		Type: DevExpress.ExpressApp.Actions.PopupWindowShowAction
+								ID: ef29eb99-1c6e-436d-920c-c1db66d69ce9
+								Category: Unspecified
+
+22.10.18 10:35:52.024	--------------------------------------------------------------------------------
+							Start logon process
+
+22.10.18 10:35:52.040	--------------------------------------------------------------------------------
+							Logon successful
+
+22.10.18 10:35:52.055	--------------------------------------------------------------------------------
+							Logon completed
+
+22.10.18 10:35:52.055	Action 'ef29eb99-1c6e-436d-920c-c1db66d69ce9' done
+22.10.18 10:35:52.055	Window closing: 登录
+22.10.18 10:35:52.055	Action 'Logon' done
+22.10.18 10:35:52.055	Window closed: 登录
+22.10.18 10:35:52.071		startUpActions: 1
+22.10.18 10:35:52.071	--------------------------------------------------------------------------------
+							Initialize 'ShowNavigationItem' action items
+
+22.10.18 10:35:52.118	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:35:52.118		Type: DevExpress.ExpressApp.Actions.SingleChoiceAction
+								ID: ChooseSkin
+								Category: Appearance
+								Controller.Name: DevExpress.ExpressApp.Win.SystemModule.ChooseSkinController
+
+22.10.18 10:35:52.118		SelectedItem: Summer 2008
+22.10.18 10:35:52.118	Action 'ChooseSkin' done
+22.10.18 10:35:53.540	Action 'Logoff' done
+22.10.18 10:37:51.880	Window closing: 学生资料
+22.10.18 10:37:51.880	Window closed: 学生资料
+22.10.18 10:37:59.694	Window closing: 课程安排
+22.10.18 10:37:59.694	Window closed: 课程安排
+22.10.18 10:38:00.913	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:38:00.913		Type: DevExpress.ExpressApp.Actions.SingleChoiceAction
+								ID: ShowNavigationItem
+								Category: ViewsNavigation
+								Controller.Name: DevExpress.ExpressApp.SystemModule.ShowNavigationItemController
+
+22.10.18 10:38:00.913		SelectedItem: 学生资料
+22.10.18 10:38:01.350	Action 'ShowNavigationItem' done
+22.10.18 10:38:15.430	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:38:15.430		Type: DevExpress.ExpressApp.Actions.SingleChoiceAction
+								ID: StudentInfo.scaFilter
+								Category: FullTextSearch
+								Controller.Name: Wendy.Module.Controllers.VCStudentInfoList
+								Context.Name: 学生资料
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: 
+
+22.10.18 10:38:15.430		SelectedItem: 所有咨询
+22.10.18 10:38:15.430	Action 'StudentInfo.scaFilter' done
+22.10.18 10:38:15.977	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:38:15.977		Type: DevExpress.ExpressApp.Actions.ParametrizedAction
+								ID: FullTextSearch
+								Category: FullTextSearch
+								Controller.Name: DevExpress.ExpressApp.SystemModule.FilterController
+								Context.Name: 学生资料
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: 
+
+22.10.18 10:38:15.977		CurrentValue: <not specified>
+22.10.18 10:38:16.399	Action 'FullTextSearch' done
+22.10.18 10:40:53.290	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:40:53.290		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: Logoff
+								Category: Security
+								Controller.Name: DevExpress.ExpressApp.SystemModule.LogoffController
+
+22.10.18 10:40:53.290	Window closing: 学生资料
+22.10.18 10:40:53.290	Window closing: 学生资料 - 文迪营销管理系统
+22.10.18 10:40:53.290	Window closed: 学生资料
+22.10.18 10:40:53.290	Window closed: 学生资料 - 文迪营销管理系统
+22.10.18 10:40:53.509	Save model changes
+===================
+22.10.18 10:40:53.555	--------------------------------------------------------------------------------
+							Logoff completed
+
+22.10.18 10:40:53.555	Logon With Parameters
+22.10.18 10:40:53.555		Type: DevExpress.ExpressApp.Actions.PopupWindowShowAction
+								ID: 6c6d1037-0382-4244-ab06-f63b5a69ae19
+								Category: Unspecified
+
+22.10.18 10:40:59.306	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:40:59.306		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: Logon
+								Category: PopupActions
+								Controller.Name: DevExpress.ExpressApp.LogonController
+								Context.Name: 登录
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: DevExpress.ExpressApp.Security.AuthenticationStandardLogonParameters
+
+22.10.18 10:40:59.306	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:40:59.306		Type: DevExpress.ExpressApp.Actions.PopupWindowShowAction
+								ID: 6c6d1037-0382-4244-ab06-f63b5a69ae19
+								Category: Unspecified
+
+22.10.18 10:40:59.322	--------------------------------------------------------------------------------
+							Start logon process
+
+22.10.18 10:40:59.322	--------------------------------------------------------------------------------
+							Logon successful
+
+22.10.18 10:40:59.337	--------------------------------------------------------------------------------
+							Logon completed
+
+22.10.18 10:40:59.337	Action '6c6d1037-0382-4244-ab06-f63b5a69ae19' done
+22.10.18 10:40:59.337	Window closing: 登录
+22.10.18 10:40:59.337	Action 'Logon' done
+22.10.18 10:40:59.337	Window closed: 登录
+22.10.18 10:40:59.353		startUpActions: 1
+22.10.18 10:40:59.353	--------------------------------------------------------------------------------
+							Initialize 'ShowNavigationItem' action items
+
+22.10.18 10:40:59.400	--------------------------------------------------------------------------------
+							Execute action
+
+22.10.18 10:40:59.400		Type: DevExpress.ExpressApp.Actions.SingleChoiceAction
+								ID: ChooseSkin
+								Category: Appearance
+								Controller.Name: DevExpress.ExpressApp.Win.SystemModule.ChooseSkinController
+
+22.10.18 10:40:59.400		SelectedItem: Summer 2008
+22.10.18 10:40:59.400	Action 'ChooseSkin' done
+22.10.18 10:41:00.791	Action 'Logoff' done
+22.10.18 10:42:48.872	Window closing: 学生资料
+22.10.18 10:42:48.872	Window closing: 学生资料 - 文迪营销管理系统
+22.10.18 10:42:48.874	Window closed: 学生资料
+22.10.18 10:42:48.875	Window closed: 学生资料 - 文迪营销管理系统
+22.10.18 10:42:48.985	Save model changes
+===================
+22.10.18 10:42:49.025	Save model changes
+===================
+22.10.18 10:42:49.036	--------------------------------------------------------------------------------
+							Logoff completed
+
+22.10.18 10:42:49.037	Application stopping
+=====================

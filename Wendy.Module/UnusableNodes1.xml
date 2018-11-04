@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel Id="BOModel">
+    <Class Name="Wendy.Module.BusinessObjects.ConsultRecord">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="b_IsBack" Caption="退回" />
+        <Member Name="ContactRecords" Caption="联系记录" />
+        <Member Name="LastContactRecord" Caption="最近联系记录" />
+        <Member Name="OwnerCC" Caption="CC归属" />
+        <Member Name="OwnerTMK" Caption="TMK归属" />
+        <Member Name="s_Valid" Caption="是否有效" PredefinedValues="待定;无效;有效;CC无效" />
+      </OwnMembers>
+    </Class>
+    <Class Name="Wendy.Module.BusinessObjects.ContactRecord">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="ConsultRecord" Caption="咨询信息" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Views Id="Views">
+    <ListView Id="ConsultRecord_ContactRecords_ListView" NewItemRowPosition="Top" AllowEdit="True">
+      <Columns Id="Columns">
+        <ColumnInfo Id="Creator" Index="-1" />
+        <ColumnInfo Id="dt_CreateDate" Index="-1" />
+        <ColumnInfo Id="dt_RecordDate" Width="112" SortIndex="0" SortOrder="Descending" />
+        <ColumnInfo Id="s_Content" Width="200" Index="1" />
+        <ColumnInfo Id="dt_NextDate" Width="118" Index="2" />
+      </Columns>
+    </ListView>
+    <DetailView Id="ConsultRecord_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="LastContactRecord" Removed="True" />
+      </Items>
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="ContactRecords_Group" ShowCaption="True" Caption="联系记录" Index="2" RelativeSize="42.398022249690975" Removed="True">
+            <LayoutItem Id="ContactRecords" ViewItem="ContactRecords" Index="0" RelativeSize="100" />
+          </LayoutGroup>
+          <TabbedGroup Id="Item4">
+            <LayoutGroup Id="ContactRecords_Group">
+              <LayoutItem Id="ContactRecords" ViewItem="ContactRecords" />
+            </LayoutGroup>
+          </TabbedGroup>
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ConsultRecord">
+              <LayoutGroup Id="ConsultRecord_col1">
+                <LayoutItem Id="s_Valid" ViewItem="s_Valid" Index="2" RelativeSize="9.30232558139535" Removed="True" />
+                <LayoutItem Id="b_IsBack" Removed="True" />
+                <LayoutItem Id="LastContactRecord" Removed="True" />
+                <LayoutGroup Id="Autoa628f857-e00c-4007-96ec-b0d55257e964">
+                  <LayoutItem Id="OwnerCC" ViewItem="OwnerCC" />
+                  <LayoutItem Id="OwnerTMK" ViewItem="OwnerTMK" />
+                </LayoutGroup>
+                <LayoutGroup Id="Autob1763fe2-356f-4ee1-8ce8-e68fe9e87b74">
+                  <LayoutGroup Id="Auto54e42ebc-3e52-4805-960d-c3558df9bc6a">
+                    <LayoutItem Id="b_IsBack" ViewItem="b_IsBack" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Autoff2f0ca7-64dc-413f-8b05-8bd2d2d9163c">
+                    <LayoutItem Id="s_Valid" ViewItem="s_Valid" />
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="ConsultRecord_col2">
+                <LayoutItem Id="s_PayWay" Index="1" RelativeSize="17.391304347826086" Removed="True" />
+                <LayoutItem Id="OwnerTMK" Index="5" RelativeSize="9.30232558139535" Removed="True" />
+                <LayoutItem Id="OwnerCC" RelativeSize="9.30232558139535" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="ConsultRecord_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="LastContactRecord" Width="121" Index="-1" Removed="True" />
+        <ColumnInfo Id="OwnerTMK" Width="79" Index="-1" Removed="True" />
+        <ColumnInfo Id="s_Valid" Index="0" Width="68" />
+        <ColumnInfo Id="OwnerCC" Width="69" Index="16" />
+        <ColumnInfo Id="b_IsBack" Width="44" Index="19" />
+        <ColumnInfo Id="LastContactRecord.dt_NextDate" PropertyName="LastContactRecord.dt_NextDate" Index="7" Width="80" />
+        <ColumnInfo Id="LastContactRecord.s_Content" PropertyName="LastContactRecord.s_Content" Index="6" Width="182" />
+      </Columns>
+    </ListView>
+    <ListView Id="SourseInfo_DemoConsultRecords_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="b_IsBack" Index="-1" Removed="True" />
+        <ColumnInfo Id="LastContactRecord" Index="-1" SortIndex="-1" SortOrder="None" Removed="True" />
+        <ColumnInfo Id="OwnerCC" Index="-1" Removed="True" />
+        <ColumnInfo Id="OwnerTMK" Index="-1" Removed="True" />
+        <ColumnInfo Id="s_Valid" Width="68" Index="-1" Removed="True" />
+      </Columns>
+    </ListView>
+    <ListView Id="SourseInfo_SourseConsultRecords_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="b_IsBack" Index="-1" Removed="True" />
+        <ColumnInfo Id="LastContactRecord" Index="-1" Removed="True" />
+        <ColumnInfo Id="OwnerTMK" Index="-1" Removed="True" />
+        <ColumnInfo Id="s_Valid" Index="-1" Width="68" Removed="True" />
+        <ColumnInfo Id="OwnerCC" PropertyName="OwnerCC" Index="8" Width="69" Removed="True" />
+      </Columns>
+    </ListView>
+    <ListView Id="StudentInfo_ConsultRecords_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="LastContactRecord" Index="-1" Removed="True" />
+        <ColumnInfo Id="s_Valid" Index="0" Width="68" />
+        <ColumnInfo Id="OwnerTMK" Index="5" Width="92" />
+        <ColumnInfo Id="OwnerCC" Index="6" Width="83" />
+        <ColumnInfo Id="b_IsBack" Width="44" Index="13" />
+      </Columns>
+    </ListView>
+    <DetailView Id="StudentInfo_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="StudentInfo">
+              <LayoutGroup Id="StudentInfo_col2">
+                <LayoutItem Id="n_ConsumePoints" Index="3" RelativeSize="10.256410256410257" Removed="True" />
+                <LayoutItem Id="s_IdNo" RelativeSize="12.790697674418604" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="StudentInfo_RecommendRecords_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="b_IsBack" Width="44" Index="-1" Removed="True" />
+        <ColumnInfo Id="LastContactRecord" Width="89" Index="-1" Removed="True" />
+        <ColumnInfo Id="s_Valid" Width="68" Index="0" />
+        <ColumnInfo Id="OwnerCC" Width="79" Index="9" />
+        <ColumnInfo Id="OwnerTMK" Width="79" Index="10" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>

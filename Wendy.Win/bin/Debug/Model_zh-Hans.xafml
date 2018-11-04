@@ -1,0 +1,2869 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="About Info" Caption="关于..." />
+      <Action Id="Cancel" Caption="取消" />
+      <Action Id="CancelAction" Caption="取消" />
+      <Action Id="ChangePasswordByUser" Caption="更改我的密码" />
+      <Action Id="ChooseSkin" Caption="选择皮肤">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Skins">
+            <ChoiceActionItems>
+              <ChoiceActionItem Id="DevExpress Style" Caption="DevExpress 风格" />
+              <ChoiceActionItem Id="Visual Studio 2013 Blue" Caption="视觉工作室 2013年蓝色" />
+              <ChoiceActionItem Id="Visual Studio 2013 Dark" Caption="视觉工作室 2013年黑暗" />
+              <ChoiceActionItem Id="Visual Studio 2013 Light" Caption="视觉工作室 2013年光" />
+            </ChoiceActionItems>
+          </ChoiceActionItem>
+          <ChoiceActionItem Id="Windows Theme" Caption="Windows 主题" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="Close" Caption="关闭" />
+      <Action Id="CopyCellValue" Caption="复制单元格的值" />
+      <Action Id="CopyModelDifference" Caption="复制模型的区别" />
+      <Action Id="CreateDashboard" Caption="创建仪表板" />
+      <Action Id="CreateModelDifferences" Caption="创建模式的差异" />
+      <Action Id="Delete" Caption="删除" ConfirmationMessage="您即将删除所选记录。 你要继续吗？" />
+      <Action Id="Delete Item" Caption="删除项目" ConfirmationMessage="您即将删除所选项目。 你要继续吗？" />
+      <Action Id="DeleteDashboard" Caption="删除仪表板" />
+      <Action Id="Deny_TypePermissionMatrixItem" Caption="拒绝">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Create" Caption="创建" />
+          <ChoiceActionItem Id="Delete" Caption="删除" />
+          <ChoiceActionItem Id="Deny All" Caption="全部拒绝" />
+          <ChoiceActionItem Id="Deny Modification" Caption="拒绝修改" />
+          <ChoiceActionItem Id="Navigate" Caption="导航" />
+          <ChoiceActionItem Id="Read" Caption="读" />
+          <ChoiceActionItem Id="Write" Caption="写" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="Diagnostic Info" Caption="诊断" />
+      <Action Id="Diagnostic Info.Actions Info">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Actions Info" Caption="操作信息" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="Diagnostic Info.View Info">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="View Info" Caption="查看信息" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="DialogCancel" Caption="取消" />
+      <Action Id="DialogClose" Caption="关闭" />
+      <Action Id="DialogOK" Caption="确定" />
+      <Action Id="EditModel" Caption="编辑模型" />
+      <Action Id="Exit" Caption="退出" />
+      <Action Id="Export" Caption="导出到" />
+      <Action Id="ExportAnalysis" Caption="将分析导出到" />
+      <Action Id="ExportModelDifferences" Caption="导出模型差异" />
+      <Action Id="FullTextSearch" Caption="按文本筛选" ShortCaption="搜索" NullValuePrompt="要搜索的文本..." />
+      <Action Id="Grant_TypePermissionMatrixItem" Caption="授权">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Create" Caption="创建" />
+          <ChoiceActionItem Id="Delete" Caption="删除" />
+          <ChoiceActionItem Id="Full Access" Caption="完全访问" />
+          <ChoiceActionItem Id="Navigate" Caption="导航" />
+          <ChoiceActionItem Id="Read" Caption="读" />
+          <ChoiceActionItem Id="Read Only Access" Caption="只读访问" />
+          <ChoiceActionItem Id="Write" Caption="写" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="HideItemsFromDashboard" Caption="从仪表板中隐藏" />
+      <Action Id="ImportSharedModelDifference" ConfirmationMessage="您即将使用{0}文件内容覆盖共享设置（模型差异）。 这不能被撤销。 你要继续吗？" />
+      <Action Id="Link" Caption="关联" />
+      <Action Id="ListViewShowObject" Caption="开放" />
+      <Action Id="Logoff" Caption="注销" />
+      <Action Id="Logon" Caption="登录" />
+      <Action Id="MergeAction" Caption="合并" />
+      <Action Id="MyDetails" Caption="我的详细信息" />
+      <Action Id="NavigateBack" Caption="返回" />
+      <Action Id="NavigateForward" Caption="前进" />
+      <Action Id="New" Caption="新增">
+        <DisableReasons>
+          <Reason Id="MasterObjectIsNew" Caption="编辑后的对象是新的。" />
+        </DisableReasons>
+      </Action>
+      <Action Id="NextObject" Caption="下一条记录" />
+      <Action Id="OpenObject" Caption="打开相关的记录" />
+      <Action Id="OrganizeDashboard" Caption="组织仪表板" />
+      <Action Id="PageSetup" Caption="页面设置..." ToolTip="页面设置..." />
+      <Action Id="PreviousObject" Caption="上一条记录" />
+      <Action Id="Print" Caption="打印......" ToolTip="打印" />
+      <Action Id="PrintPreview" Caption="打印预览..." ToolTip="打印预览..." />
+      <Action Id="Refresh" Caption="刷新" />
+      <Action Id="RefreshAction" Caption="刷新" />
+      <Action Id="ResetModelDifferences" Caption="重置模型差异" ConfirmationMessage="您即将重置所选设置（模型差异）。 你要继续吗？" />
+      <Action Id="ResetPassword" Caption="重置密码" />
+      <Action Id="ResetViewSettings" Caption="重置视图设置" ConfirmationMessage="您即将重置为'{0}'视图所做的所有设置。 你要继续吗？" />
+      <Action Id="Save" Caption="保存" />
+      <Action Id="SaveAndClose" Caption="保存并关闭" />
+      <Action Id="SaveAndNew" Caption="保存并新建" />
+      <Action Id="SetFilter" Caption="筛选器" />
+      <Action Id="ShowAllContexts" Caption="验证" />
+      <Action Id="ShowItemsOnDashboard" Caption="在仪表板中显示" ToolTip="在仪表盘中显示选中项" />
+      <Action Id="ShowNavigationItem" Caption="导航" />
+      <Action Id="ShowToolbar" Caption="显示工具栏" />
+      <Action Id="Unlink" Caption="取消关联" ConfirmationMessage="您即将取消所选记录的关联。 你要继续吗？" />
+    </Actions>
+    <DisableReasons>
+      <Reason Id="ByContext_RequireMultipleObjects" Caption="需要至少选择一个对象" />
+      <Reason Id="ByContext_RequireSingleObject" Caption="需要单个对象" />
+      <Reason Id="Security" Caption="拒绝访问" />
+    </DisableReasons>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Editors.CriteriaProvider" Caption="标准提供程序">
+      <OwnMembers>
+        <Member Name="FilteredObjectsType" Caption="筛选过的对象类型" />
+        <Member Name="FilterString" Caption="筛选器字符串" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.AuthenticationStandardLogonParameters" Caption="身份验证标准登录参数">
+      <OwnMembers>
+        <Member Name="Password" Caption="密码" />
+        <Member Name="UserName" Caption="账号" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ChangePasswordOnLogonParameters" Caption="更改密码登录参数">
+      <OwnMembers>
+        <Member Name="ConfirmPassword" Caption="确认密码" />
+        <Member Name="NewPassword" Caption="新密码" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ChangePasswordParameters" Caption="更改密码参数">
+      <OwnMembers>
+        <Member Name="OldPassword" Caption="旧密码" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.EditModelPermission" Caption="编辑模型的权限" />
+    <Class Name="DevExpress.ExpressApp.Security.ObjectAccessPermission">
+      <OwnMembers>
+        <Member Name="CreateAccess" Caption="创建访问" />
+        <Member Name="DeleteAccess" Caption="删除访问" />
+        <Member Name="NavigateAccess" Caption="导航访问" />
+        <Member Name="ReadAccess" Caption="读取访问权限" />
+        <Member Name="WriteAccess" Caption="写访问权限" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ResetPasswordParameters" Caption="重置密码参数">
+      <OwnMembers>
+        <Member Name="Password" Caption="密码" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.AboutInfo" Caption="关于信息">
+      <OwnMembers>
+        <Member Name="AboutInfoString" Caption="关于信息字符串" />
+        <Member Name="Company" Caption="公司" />
+        <Member Name="Copyright" Caption="版权所有" />
+        <Member Name="Description" Caption="描述" />
+        <Member Name="LogoImageName" Caption="Logo名称" />
+        <Member Name="ProductName" Caption="产品名称" />
+        <Member Name="Version" Caption="版本" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.ActionContainerDashboardOrganizationItem" Caption="行动的容器">
+      <OwnMembers>
+        <Member Name="ActionContainer" Caption="行动的容器" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.ActionContainerDescriptor" Caption="操作容器描述符">
+      <OwnMembers>
+        <Member Name="ActionContainerId" Caption="操作容器 Id" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardCreationInfo" Caption="仪表板创建向导">
+      <OwnMembers>
+        <Member Name="DashboardName" Caption="名称" />
+        <Member Name="NavigationGroupName" Caption="目标导航组" />
+        <Member Name="ViewItems" Caption="查看项目" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardName">
+      <OwnMembers>
+        <Member Name="Name" Caption="名称" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardOrganizationItem" Caption="仪表板组织项目">
+      <OwnMembers>
+        <Member Name="Visibility" Caption="可见性" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardOrganizer" Caption="仪表板管理器">
+      <OwnMembers>
+        <Member Name="ViewItems" Caption="查看项目" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardViewItemDescriptor" Caption="仪表板视图项目描述符">
+      <OwnMembers>
+        <Member Name="ViewCaption" Caption="查看标题" />
+        <Member Name="ViewDescription" Caption="查看描述" />
+        <Member Name="ViewId" Caption="视图 Id" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DiagnosticInfoObject" Caption="诊断信息对象" />
+    <Class Name="DevExpress.ExpressApp.SystemModule.ModelDifferenceCopyParameters" Caption="复制模式的差异">
+      <OwnMembers>
+        <Member Name="CopyBehavior" Caption="复制行为" />
+        <Member Name="SourceModelDifference" Caption="源模型差异" />
+        <Member Name="TargetModelDifferences" Caption="目标模型差异" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.StaticImageDashboardOrganizationItem">
+      <OwnMembers>
+        <Member Name="Preview" Caption="预览" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.StaticTextDashboardOrganizationItem">
+      <OwnMembers>
+        <Member Name="Text" Caption="文本" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.ViewDashboardOrganizationItem" Caption="视图">
+      <OwnMembers>
+        <Member Name="ActionsToolbarVisibility" Caption="操作工具栏可见性" />
+        <Member Name="Criteria" Caption="标准" />
+        <Member Name="ViewDescriptor" Caption="视图" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.ContextValidationResult" Caption="上下文验证结果">
+      <OwnMembers>
+        <Member Name="Context" Caption="上下文" />
+        <Member Name="ContextValidationOutcome" Caption="状态" />
+        <Member Name="DisplayableValidationResultItems" Caption="可显示验证结果项" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.DisplayableValidationResultItem" Caption="验证的详细信息">
+      <OwnMembers>
+        <Member Name="ContextCaption" Caption="上下文标题" />
+        <Member Name="ContextId" Caption="上下文 Id" />
+        <Member Name="ErrorMessage" Caption="错误消息" />
+        <Member Name="Outcome" Caption="状态" />
+        <Member Name="RuleName" Caption="规则名称" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.ValidationResults" Caption="验证结果">
+      <OwnMembers>
+        <Member Name="DisplayableValidationResultItems" Caption="可显示验证结果项" />
+        <Member Name="HighlightErrors" Caption="突出问题" />
+        <Member Name="Results" Caption="结果" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Win.SystemModule.ProcessDataLockingInfoDialogObject" Caption="处理数据锁定信息对话框" />
+    <Class Name="DevExpress.Persistent.BaseImpl.ModelDifference">
+      <OwnMembers>
+        <Member Name="Aspects" Caption="方面" />
+        <Member Name="ContextId" Caption="上下文 Id" />
+        <Member Name="UserName" Caption="账号" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.ModelDifferenceAspect">
+      <OwnMembers>
+        <Member Name="DisplayName" Caption="显示名称" />
+        <Member Name="Name" Caption="名称" />
+        <Member Name="Owner" Caption="所有者" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyMemberPermissionsObject" Caption="成员操作权限">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="标准" />
+        <Member Name="Members" Caption="成员" />
+        <Member Name="ReadState" Caption="读" />
+        <Member Name="TypePermissionObject" Caption="类型权限对象" />
+        <Member Name="WriteState" Caption="写" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyNavigationPermissionObject" Caption="导航项权限">
+      <OwnMembers>
+        <Member Name="ItemPath" Caption="导航项" />
+        <Member Name="NavigateState" Caption="导航" />
+        <Member Name="Role" Caption="角色" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyObjectPermissionsObject">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="标准" />
+        <Member Name="DeleteState" Caption="删除" />
+        <Member Name="ReadState" Caption="读" />
+        <Member Name="TypePermissionObject" Caption="类型权限对象" />
+        <Member Name="WriteState" Caption="写" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyRole" Caption="角色">
+      <OwnMembers>
+        <Member Name="Users" Caption="用户" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyRoleBase">
+      <OwnMembers>
+        <Member Name="CanEditModel" Caption="可以编辑模型" />
+        <Member Name="IsAdministrative" Caption="是管理员" />
+        <Member Name="Name" Caption="名称" />
+        <Member Name="NavigationPermissions" Caption="导航权限" />
+        <Member Name="PermissionPolicy" Caption="权限策略" />
+        <Member Name="TypePermissions" Caption="类型权限" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyTypePermissionObject" Caption="类型操作权限">
+      <OwnMembers>
+        <Member Name="CreateState" Caption="创建" />
+        <Member Name="DeleteState" Caption="删除" />
+        <Member Name="MemberPermissions" Caption="成员的权限" />
+        <Member Name="ObjectPermissions" Caption="对象权限" />
+        <Member Name="ReadState" Caption="读" />
+        <Member Name="Role" Caption="角色" />
+        <Member Name="TargetType" Caption="目标类型" />
+        <Member Name="WriteState" Caption="写" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser" Caption="用户">
+      <OwnMembers>
+        <Member Name="ChangePasswordOnFirstLogon" Caption="在第一次登录时更改密码" />
+        <Member Name="IsActive" Caption="处于活跃状态" />
+        <Member Name="Roles" Caption="角色" />
+        <Member Name="UserName" Caption="账号" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleBaseProperties">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="自定义信息模板" />
+        <Member Name="InvertResult" Caption="反转结果" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <Member Name="Name" Caption="名称" />
+        <Member Name="ResultType" Caption="结果类型" />
+        <Member Name="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <Member Name="TargetContextIDs" Caption="目标上下文 Id" />
+        <Member Name="TargetCriteria" Caption="目标条件" />
+        <Member Name="TargetType" Caption="目标类型" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleCollectionPropertyProperties">
+      <OwnMembers>
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <Member Name="TargetCollectionOwnerType" Caption="目标集合所有者类型" />
+        <Member Name="TargetCollectionPropertyName" Caption="目标集合属性名称" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleCombinationOfPropertiesIsUniqueProperties">
+      <OwnMembers>
+        <Member Name="MessageTemplateCombinationOfPropertiesMustBeUnique" Caption="消息模板属性的组合必须是唯一的" />
+        <Member Name="TargetProperties" Caption="目标属性" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleCriteriaProperties">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="标准" />
+        <Member Name="MessageTemplateMustSatisfyCriteria" Caption="消息模板必须满足标准" />
+        <Member Name="UsedProperties" Caption="使用的属性" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleFromBoolPropertyProperties">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustBeTrue" Caption="消息模板必须为 True" />
+        <Member Name="UsedProperties" Caption="使用的属性" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleIsReferencedProperties">
+      <OwnMembers>
+        <Member Name="LooksFor" Caption="查找" />
+        <Member Name="MessageTemplateMustBeReferenced" Caption="必须引用消息模板" />
+        <Member Name="ReferencePropertyName" Caption="引用属性名称" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleObjectExistsProperties">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="标准" />
+        <Member Name="LooksFor" Caption="查找" />
+        <Member Name="MessageTemplateMustExist" Caption="消息模板必须存在" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRulePropertyValueProperties">
+      <OwnMembers>
+        <Member Name="TargetPropertyName" Caption="目标属性名称" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleRangeProperties">
+      <OwnMembers>
+        <Member Name="MaximumValue" Caption="最大值" />
+        <Member Name="MaximumValueExpression" Caption="最大值表达式" />
+        <Member Name="MessageTemplateMustBeInRange" Caption="消息模板必须在范围内" />
+        <Member Name="MinimumValue" Caption="最小值" />
+        <Member Name="MinimumValueExpression" Caption="最小值表达式" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleRegularExpressionProperties">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustMatchPattern" Caption="消息模板必须与模式匹配" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleRequiredFieldProperties">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustNotBeEmpty" Caption="消息模板不能为空" />
+        <Member Name="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleSearchObjectProperties">
+      <OwnMembers>
+        <Member Name="CriteriaEvaluationBehavior" Caption="标准评价行为" />
+        <Member Name="FoundObjectMessageFormat" Caption="找到对象消息格式" />
+        <Member Name="FoundObjectMessagesSeparator" Caption="找到对象消息分隔符" />
+        <Member Name="IncludeCurrentObject" Caption="包括当前对象" />
+        <Member Name="MessageTemplateFoundObjects" Caption="消息模板找到的对象" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleStringComparisonProperties" Caption="规则字符串比较属性">
+      <OwnMembers>
+        <Member Name="IgnoreCase" Caption="忽略大小写" />
+        <Member Name="MessageTemplateMustBeEqual" Caption="消息模板必须相等" />
+        <Member Name="MessageTemplateMustBeginWith" Caption="消息模板必须以开始" />
+        <Member Name="MessageTemplateMustContain" Caption="消息模板必须包含" />
+        <Member Name="MessageTemplateMustEndWith" Caption="消息模板必须以结束" />
+        <Member Name="MessageTemplateMustNotBeEqual" Caption="消息模板不必须相等" />
+        <Member Name="OperandValue" Caption="操作数的值" />
+        <Member Name="OperatorType" Caption="运算符类型" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleSupportsCollectionAggregatesProperties" Caption="规则支持集合聚合属性">
+      <OwnMembers>
+        <Member Name="TargetCollectionAggregate" Caption="目标集合聚合" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleUniqueValueProperties" Caption="规则的唯一值属性">
+      <OwnMembers>
+        <Member Name="FoundObjectMessageFormat" Caption="找到对象消息格式" />
+        <Member Name="MessageTemplateMustBeUnique" Caption="必须是唯一的消息模板" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleValueComparisonProperties" Caption="规则值比较属性">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustBeEqualToOperand" Caption="消息模板必须等于操作数" />
+        <Member Name="MessageTemplateMustBeGreaterThanOperand" Caption="消息模板必须大于操作数" />
+        <Member Name="MessageTemplateMustBeGreaterThanOrEqualToOperand" Caption="消息模板必须大于或等于操作数" />
+        <Member Name="MessageTemplateMustBeLessThanOperand" Caption="消息模板必须小于操作数" />
+        <Member Name="MessageTemplateMustBeLessThanOrEqualToOperand" Caption="消息模板必须小于或等于操作数" />
+        <Member Name="MessageTemplateMustNotBeEqualToOperand" Caption="消息模板必须不等于操作数" />
+        <Member Name="OperatorType" Caption="运算符类型" />
+        <Member Name="RightOperand" Caption="右操作数" />
+        <Member Name="RightOperandExpression" Caption="右操作数表达式" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleBaseProperties">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="自定义信息模板" />
+        <Member Name="InvertResult" Caption="反转结果" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足集合标准" />
+        <Member Name="Name" Caption="名称" />
+        <Member Name="ResultType" Caption="结果类型" />
+        <Member Name="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <Member Name="TargetCollectionOwnerType" Caption="目标集合所有者类型" />
+        <Member Name="TargetCollectionPropertyName" Caption="目标集合属性名称" />
+        <Member Name="TargetContextIDs" Caption="目标上下文 Id" />
+        <Member Name="TargetCriteria" Caption="目标条件" />
+        <Member Name="TargetType" Caption="目标类型" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleCombinationOfPropertiesIsUniqueProperties">
+      <OwnMembers>
+        <Member Name="MessageTemplateCombinationOfPropertiesMustBeUnique" Caption="消息模板属性的组合必须是唯一的" />
+        <Member Name="TargetProperties" Caption="目标属性" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleCriteriaProperties">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="标准" />
+        <Member Name="MessageTemplateMustSatisfyCriteria" Caption="消息模板必须满足标准" />
+        <Member Name="UsedProperties" Caption="使用的属性" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleFromBoolPropertyProperties">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustBeTrue" Caption="消息模板必须为 True" />
+        <Member Name="UsedProperties" Caption="使用的属性" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleIsReferencedProperties">
+      <OwnMembers>
+        <Member Name="LooksFor" Caption="查找" />
+        <Member Name="MessageTemplateMustBeReferenced" Caption="必须引用消息模板" />
+        <Member Name="ReferencePropertyName" Caption="引用属性名称" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleObjectExistsProperties">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="标准" />
+        <Member Name="LooksFor" Caption="查找" />
+        <Member Name="MessageTemplateMustExist" Caption="消息模板必须存在" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RulePropertyValueProperties">
+      <OwnMembers>
+        <Member Name="TargetPropertyName" Caption="目标属性名称" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleRangeProperties">
+      <OwnMembers>
+        <Member Name="MaximumValue" Caption="最大值" />
+        <Member Name="MaximumValueExpression" Caption="最大值表达式" />
+        <Member Name="MessageTemplateMustBeInRange" Caption="消息模板必须在范围内" />
+        <Member Name="MinimumValue" Caption="最小值" />
+        <Member Name="MinimumValueExpression" Caption="最小值表达式" />
+        <Member Name="TargetCollectionAggregate" Caption="目标集合聚合" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleRegularExpressionProperties">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustMatchPattern" Caption="消息模板必须与模式匹配" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleRequiredFieldProperties">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustNotBeEmpty" Caption="消息模板不能为空" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSearchObjectProperties">
+      <OwnMembers>
+        <Member Name="CriteriaEvaluationBehavior" Caption="标准评价行为" />
+        <Member Name="FoundObjectMessageFormat" Caption="找到对象消息格式" />
+        <Member Name="FoundObjectMessagesSeparator" Caption="找到对象消息分隔符" />
+        <Member Name="IncludeCurrentObject" Caption="包括当前对象" />
+        <Member Name="MessageTemplateFoundObjects" Caption="消息模板找到的对象" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResult" Caption="验证结果">
+      <OwnMembers>
+        <Member Name="Results" Caption="结果" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResultItem" Caption="验证的详细信息">
+      <OwnMembers>
+        <Member Name="ContextId" Caption="上下文 Id" />
+        <Member Name="DisplayObjectName" Caption="显示对象名称" />
+        <Member Name="ErrorMessage" Caption="错误消息" />
+        <Member Name="RuleName" Caption="规则名称" />
+        <Member Name="ValidationOutcome" Caption="状态" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleStringComparisonProperties" Caption="规则字符串比较属性">
+      <OwnMembers>
+        <Member Name="IgnoreCase" Caption="忽略大小写" />
+        <Member Name="MessageTemplateMustBeEqual" Caption="消息模板必须相等" />
+        <Member Name="MessageTemplateMustBeginWith" Caption="消息模板必须以开始" />
+        <Member Name="MessageTemplateMustContain" Caption="消息模板必须包含" />
+        <Member Name="MessageTemplateMustEndWith" Caption="消息模板必须以结束" />
+        <Member Name="MessageTemplateMustNotBeEqual" Caption="消息模板不必须相等" />
+        <Member Name="OperandValue" Caption="操作数的值" />
+        <Member Name="OperatorType" Caption="运算符类型" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleUniqueValueProperties" Caption="规则的唯一值属性">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustBeUnique" Caption="必须是唯一的消息模板" />
+        <Member Name="TargetPropertyName" Caption="目标属性名称" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleValueComparisonProperties" Caption="规则值比较属性">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustBeEqualToOperand" Caption="消息模板必须等于操作数" />
+        <Member Name="MessageTemplateMustBeGreaterThanOperand" Caption="消息模板必须大于操作数" />
+        <Member Name="MessageTemplateMustBeGreaterThanOrEqualToOperand" Caption="消息模板必须大于或等于操作数" />
+        <Member Name="MessageTemplateMustBeLessThanOperand" Caption="消息模板必须小于操作数" />
+        <Member Name="MessageTemplateMustBeLessThanOrEqualToOperand" Caption="消息模板必须小于或等于操作数" />
+        <Member Name="MessageTemplateMustNotBeEqualToOperand" Caption="消息模板必须不等于操作数" />
+        <Member Name="OperatorType" Caption="运算符类型" />
+        <Member Name="RightOperand" Caption="右操作数" />
+        <Member Name="RightOperandExpression" Caption="右操作数表达式" />
+        <Member Name="TargetCollectionAggregate" Caption="目标集合聚合" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Xpo.XPBaseObject" Caption="XPBase 对象" />
+    <Class Name="DevExpress.Xpo.XPCustomObject" Caption="XPCustom 对象" />
+    <Class Name="DevExpress.Xpo.XPObjectType" Caption="XPObject 型" />
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Captions">
+      <LocalizationItem Name="DashboardView" Value="仪表板视图" />
+      <LocalizationItem Name="DetailView" Value="详细视图" />
+      <LocalizationItem Name="DiagnosticChildWindowAddition" Value="(C子窗口)" />
+      <LocalizationItem Name="EditCriteria" Value="编辑条件" />
+      <LocalizationItem Name="ExportedModelDifferencesMessage" Value="所选设置（模型差异）已导出到{0}文件夹。" />
+      <LocalizationItem Name="FilterBuilder" Value="筛选器生成器" />
+      <LocalizationItem Name="ListView" Value="列表视图" />
+      <LocalizationItem Name="ObjectModel" Value="对象模型" />
+      <LocalizationItem Name="View" Value="视图" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Confirmations">
+      <LocalizationItem Name="Cancel" Value="你想要取消您的更改吗？" />
+      <LocalizationItem Name="ConfirmForcedCloseWindow" Value="关闭此窗口将导致错误。你想反正关闭窗口？ 警告： 如果您单击 '是'所有更改将都会丢失。" />
+      <LocalizationItem Name="Save" Value="你想要保存更改吗？" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="DashboardOrganizationItems">
+      <LocalizationItem Name="StaticImage" Value="图片" />
+      <LocalizationItem Name="StaticText" Value="文本" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="DialogButtons">
+      <LocalizationItem Name="Abort" Value="退出" />
+      <LocalizationItem Name="Add" Value="添加" />
+      <LocalizationItem Name="Apply" Value="应用" />
+      <LocalizationItem Name="Back" Value="&lt; 后退" />
+      <LocalizationItem Name="Cancel" Value="取消" />
+      <LocalizationItem Name="Clear" Value="清除" />
+      <LocalizationItem Name="Close" Value="关闭" />
+      <LocalizationItem Name="Delete" Value="删除" />
+      <LocalizationItem Name="Find" Value="查找" />
+      <LocalizationItem Name="Ignore" Value="忽略" />
+      <LocalizationItem Name="Next" Value="下一个 &gt;" />
+      <LocalizationItem Name="No" Value="否" />
+      <LocalizationItem Name="OK" Value="是" />
+      <LocalizationItem Name="Remove" Value="删除" />
+      <LocalizationItem Name="Retry" Value="重试" />
+      <LocalizationItem Name="Yes" Value="是" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.Data.Filtering.Aggregate">
+        <LocalizationItem Name="Avg" Value="平均值" />
+        <LocalizationItem Name="Count" Value="计数" />
+        <LocalizationItem Name="Exists" Value="存在" />
+        <LocalizationItem Name="Max" Value="最大" />
+        <LocalizationItem Name="Min" Value="最小" />
+        <LocalizationItem Name="Single" Value="单个" />
+        <LocalizationItem Name="Sum" Value="总数" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Editors.ViewItemVisibility" Value="查看项目可见性">
+        <LocalizationItem Name="Hide" Value="隐藏" />
+        <LocalizationItem Name="Show" Value="显示" />
+        <LocalizationItem Name="ShowEmptySpace" Value="显示空白" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.ModelDifferenceCopyBehavior">
+        <LocalizationItem Name="Merge" Value="合并" />
+        <LocalizationItem Name="Overwrite" Value="覆盖" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ModelAccessModifier" Value="模型访问修饰符">
+        <LocalizationItem Name="Allow" Value="允许" />
+        <LocalizationItem Name="Deny" Value="拒绝" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ObjectAccess">
+        <LocalizationItem Name="AllAccess" Value="访问全部" />
+        <LocalizationItem Name="ChangeAccess" Value="更改访问" />
+        <LocalizationItem Name="Create" Value="创建" />
+        <LocalizationItem Name="Delete" Value="删除" />
+        <LocalizationItem Name="Navigate" Value="导航" />
+        <LocalizationItem Name="NoAccess" Value="无法访问" />
+        <LocalizationItem Name="Read" Value="读" />
+        <LocalizationItem Name="Write" Value="写" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ObjectAccessModifier">
+        <LocalizationItem Name="Allow" Value="允许" />
+        <LocalizationItem Name="Deny" Value="拒绝" />
+        <LocalizationItem Name="None" Value="无" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Templates.ActionsToolbarVisibility" Value="操作工具栏可见性">
+        <LocalizationItem Name="Default" Value="默认" />
+        <LocalizationItem Name="Hide" Value="隐藏" />
+        <LocalizationItem Name="Show" Value="显示" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Base.SecurityPermissionPolicy">
+        <LocalizationItem Name="AllowAllByDefault" Value="默认全部允许" />
+        <LocalizationItem Name="DenyAllByDefault" Value="默认全部拒绝" />
+        <LocalizationItem Name="ReadOnlyAllByDefault" Value="默认全部只读" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Base.SecurityPermissionState">
+        <LocalizationItem Name="Allow" Value="允许" />
+        <LocalizationItem Name="Deny" Value="拒绝" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.CriteriaEvaluationBehavior" Value="标准评价行为">
+        <LocalizationItem Name="BeforeTransaction" Value="提交前" />
+        <LocalizationItem Name="InTransaction" Value="提交中" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.StringComparisonType">
+        <LocalizationItem Name="Contains" Value="包含" />
+        <LocalizationItem Name="EndsWith" Value="结尾于" />
+        <LocalizationItem Name="Equals" Value="等于" />
+        <LocalizationItem Name="NotEquals" Value="不等于" />
+        <LocalizationItem Name="StartsWith" Value="开始于" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.ValidationOutcome" Value="验证结果">
+        <LocalizationItem Name="Error" Value="错误" />
+        <LocalizationItem Name="Information" Value="信息" />
+        <LocalizationItem Name="Skipped" Value="跳过" />
+        <LocalizationItem Name="Valid" Value="有效" />
+        <LocalizationItem Name="Warning" Value="警告" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.ValidationResultType" Value="验证结果类型">
+        <LocalizationItem Name="Error" Value="错误" />
+        <LocalizationItem Name="Information" Value="信息" />
+        <LocalizationItem Name="Warning" Value="警告" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.ValueComparisonType" Value="值比较类型">
+        <LocalizationItem Name="Equals" Value="等于" />
+        <LocalizationItem Name="GreaterThan" Value="大于" />
+        <LocalizationItem Name="GreaterThanOrEqual" Value="大于或等于" />
+        <LocalizationItem Name="LessThan" Value="小于" />
+        <LocalizationItem Name="LessThanOrEqual" Value="小于或等于" />
+        <LocalizationItem Name="NotEquals" Value="不等于" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.XtraBars.Docking.DockVisibility">
+        <LocalizationItem Name="AutoHide" Value="自动隐藏" />
+        <LocalizationItem Name="Hidden" Value="隐藏" />
+        <LocalizationItem Name="Visible" Value="可见" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="Exceptions">
+      <LocalizationItem Name="CanNotDeleteObject" Value="您不能删除 '{0}' 由于安全限制的对象。" />
+      <LocalizationItem Name="CanNotSaveObject" Value="你不能保存 '{0}' 由于安全限制的对象。" />
+      <LocalizationGroup Name="SystemExceptions">
+        <LocalizationItem Name="ActionMethodShouldBeNonGeneric" Value="无法创建操作方法 {0} 类的 {1}.操作方法应非泛型" />
+        <LocalizationItem Name="ActionMethodShouldBeParameterless" Value="无法创建操作方法 {0} 类的 {1}.操作方法应该是无参数" />
+        <LocalizationItem Name="AlreadyUsedObjectSpace" Value="ObjectSpace 具有已分配给另一根视图： '{0}'.只有当您尝试分配已被另一根视图根视图使用 ObjectSpace 时，将发生此错误。例如，您可能会收到此错误时使用 XafApplication.CreateDetailView/CreateListView 方法在 ViewController 和 View.ObjectSpace 对象作为参数传递给这些方法 true.\r\nTo View.IsRoot 属性时避免这种情况错误是足以通过 XafApplication.CreateObjectSpace 方法在这些方法中，通过创建一个新的 ObjectSpace 实例或创建非根视图通过将相应的参数传递给这些 methods.\r\nIf 这也没什么帮助，请联系我们在 http://www.devexpress.com/Support/Center/ 的支持团队" />
+        <LocalizationItem Name="AnErrorHasOccurredWhileLoadingTheModel" Value="加载模型时出错。来源： '{0}'" />
+        <LocalizationItem Name="AnErrorHasOccurredWhileProcessingAShortcut" Value="在处理一个快捷方式时出现错误： {0}" />
+        <LocalizationItem Name="AnErrorHasOccurredWithContext" Value="发生错误，内容： {0}" />
+        <LocalizationItem Name="AnUnsavedObjectCannotBeShown" Value="不能显示新创建的记录，直到它被保存。请保存在单独的窗体中查看其详细信息。" />
+        <LocalizationItem Name="ApplicationIsNotStarted" Value="应用程序未被启动" />
+        <LocalizationItem Name="ApplicationUpdaterAssemblyDoesNotExist" Value="由于“{1}”程序集不存在于’{0}‘文件夹中，所以无法更新应用程序。" />
+        <LocalizationItem Name="ApplicationUpdaterDatabaseVersionIsNewer" Value="不能运行该应用程序。数据库版本是比应用程序版本，但找不到服务器与应用程序的新版本。请与管理员联系，检查配置文件包含到应用程序的新版本的正确路径。" />
+        <LocalizationItem Name="AttributeModifyingFailed" Value="属性修改失败" />
+        <LocalizationItem Name="AttributeShouldStartWithSymbol" Value="属性 '{0}' 应该开始 '@' 符号开始： '{1}'" />
+        <LocalizationItem Name="AutoCreateOptionIs" Value="更新只读数据存储。自动创建选项是{0}" />
+        <LocalizationItem Name="CannotAccessCollectionCollectionSourceIsBeingIntialized" Value="因为现在正在初始化集合源，你不能访问的集合属性。例如，当您尝试访问的集合属性中的 ViewController 的 OnActivated 方法时，可能会发生此错误。若要避免此错误是在随后的时间，当已经初始化集合源访问集合属性所必需。最好的办法做到这一点是处理 CollectionChanged 事件。请参阅产品文档在这些类和方法的详细信息。如果这没有帮助，请联系我们的支持团队在 http://www.devexpress.com/Support/Center/" />
+        <LocalizationItem Name="CannotAddCollectionProperty" Value="不能添加 '{0}' 集合" />
+        <LocalizationItem Name="CannotAddDuplicateProperty" Value="不能添加重复的属性编辑器： '{0}'" />
+        <LocalizationItem Name="CannotAddToEmptySingleton" Value="无法将添加到空的单身人士。创建集合的新实例" />
+        <LocalizationItem Name="CannotCreateAppropriateDetailItem" Value="不能创建适当的详细项目 '{0}'" />
+        <LocalizationItem Name="CannotCreateAppropriatePropertyEditorForTheProperty" Value="不能创建适当的属性编辑器 '{0}.{1}' 属性" />
+        <LocalizationItem Name="CannotCreateSchemaForAttribute" Value="不能更改为属性架构" />
+        <LocalizationItem Name="CannotCreateTemplateByName" Value="无法创建模板的名称： '{0}'" />
+        <LocalizationItem Name="CannotFindDescendantOfXafApplicationClass" Value="找不到 XafApplication 类的后裔来检测您的应用程序设置在下列文件夹中：&#xD;&#xA;{0}&#xD;&#xA;对于 Windows 窗体应用程序中，此文件夹必须包含您的应用程序可执行文件。&#xD;&#xA;为 ASP.NET 应用程序，此文件夹必须包含包含你的 WebApplication 后裔的程序集。" />
+        <LocalizationItem Name="CannotFindListViewWithId" Value="找不到 id 为 ListView ='{0}'" />
+        <LocalizationItem Name="CannotFindTheMemberWithinTheClass" Value="找不到 '{0}' 内的成员 '{1}' 类" />
+        <LocalizationItem Name="CannotFindThePropertyWithinTheClass" Value="找不到 '{0}' 物业内的 '{1}' 类" />
+        <LocalizationItem Name="CannotGenerateContent" Value="无法生成的内容： 'ClassName' 属性为空" />
+        <LocalizationItem Name="CannotObtainTheEditingObject" Value="无法获取编辑对象" />
+        <LocalizationItem Name="CannotProcessTheRequestedUrl" Value="无法处理请求的 url" />
+        <LocalizationItem Name="CannotProcessTheRequestedUrlActionItemWasNotFound" Value="无法处理请求的网址，未找到’{0}‘操作项" />
+        <LocalizationItem Name="CannotReadDictionaryFromResource" Value="无法从“{1}”程序集的“{0}”资源读取字典" />
+        <LocalizationItem Name="CannotSetEditValueAvailableValues" Value="无法通过“{0}”文字设置为可编辑，可用值为：\ r \ n {1}" />
+        <LocalizationItem Name="CannotSetEditValueListIsEmpty" Value="无法通过“{0}”文字设置可编辑，列表为空" />
+        <LocalizationItem Name="CannotShowViewUnknownContext" Value="不能显示视图，未知的内容： '{0}'" />
+        <LocalizationItem Name="CannotShowViewUnknownTarget" Value="不能显示视图，未知目标： '{0}'" />
+        <LocalizationItem Name="ClassDoesntImplementInterface" Value="类“{0}”未实现接口“{1}”" />
+        <LocalizationItem Name="CompatibilityApplicationIsOldError" Value="数据库版本大于应用程序的版本。应用程序需要更新。请联系您的系统管理员或下载新的 version.\r\nAdditional 信息： 本地版本 {0} 模块的 '{1}' 小于版本 {2} 在数据库中。" />
+        <LocalizationItem Name="CompatibilityDatabaseIsOldError" Value="数据库版本比应用程序版本。数据库需要更新。" />
+        <LocalizationItem Name="ConfigFileDoesNotExists" Value="配置文件“{0}”不存在" />
+        <LocalizationItem Name="ConfigFileHasNoModuleNames" Value="'add \ [@key =“Modules”]'节点应该包含模块列表，配置文件'{0}'" />
+        <LocalizationItem Name="CurrentObjectIsNotSet" Value="无法设置 '{0}' 属性。未设置当前对象" />
+        <LocalizationItem Name="CustomizePopupWindowParamsEventArgsViewIsNull" Value="若要避免此错误是必要时处理 CustomizePopupWindowParams 事件分配的 CustomizePopupWindowParamsEventArgs.View 属性。要做到这一点，请创建一个视图，使用 XafApplication.CreateDetailView/CreateListView 方法。请参阅产品文档在这些类和方法的详细信息。如果这没有帮助，请联系我们的支持团队在 http://www.devexpress.com/Support/Center/" />
+        <LocalizationItem Name="CustomPersistentPropertiesAreNotSupported" Value="不支持自定义持久性属性 （在应用程序模型或 TypesInfo 系统中直接定义） '{0}' 类型。" />
+        <LocalizationItem Name="DataLayerAlreadyExists" Value="数据层已存在:'{0}'" />
+        <LocalizationItem Name="DictionaryPathItemParsingFailed" Value="字典路径项目解析失败。在表达式中有语法错误 '{0}'" />
+        <LocalizationItem Name="DictionaryPathParsingFailed" Value="字典的路径解析失败。在表达式中有语法错误 '{0}'" />
+        <LocalizationItem Name="DuplicateComponentIdentifier" Value="重复的组件标识符 '{0}'" />
+        <LocalizationItem Name="DuplicatedVisibleInDashboardsClassCaption" Value="类型 '{0}' 和类型 '{1}' 两者都具有相同的标题的 '{2}' 于是，在仪表板模块中不能使用。用 VisibleInDashboards 属性修饰的所有类型必须都有独特的标题。" />
+        <LocalizationItem Name="ErrorOccursWhileAddingTheCustomProperty" Value="将'{2}'自定义属性（'{0}'属性类型）添加到'{1}'类型时发生错误：'{3}'" />
+        <LocalizationItem Name="ExceptionDialogLabel" Value="出现了以下错误：" />
+        <LocalizationItem Name="GridColumnDoesNotExist" Value="列“{0}”在表中不存在" />
+        <LocalizationItem Name="GridColumnExists" Value="列“{0}”已经存在于表中" />
+        <LocalizationItem Name="GridControlIsAlreadyCreated" Value="不能设置 EditMode 属性。GridControl 已经创建" />
+        <LocalizationItem Name="IncompatibleParametersCombinationOnViewChanged" Value="不兼容的参数组合。 弹出窗口与主视图具有相同的对象空间。 但是，弹出窗口的对话框控制器的保存接受属性设置为true。 为调用的弹出窗口使用新的对象空间或设置对话框控制器。 将接受属性保存为false。" />
+        <LocalizationItem Name="IncorrectConfigFile" Value="通过的配置文件 '{0}' 不包含 '&lt;add key=&quot;Modules&quot;' 节点" />
+        <LocalizationItem Name="InfiniteRecursionDetected" Value="检测到无限递归：“{0}”视图创建了{1}次。 为避免此错误，请使用https://www.devexpress.com/kb=B181657知识库文章中的某个解决方案。" />
+        <LocalizationItem Name="InfiniteRecursionDetectedInGenerateColumns" Value="生成“{0}”类列表视图的列时检测到无限递归。 嵌套数超过了{1}的限制（使用MaxRecursionDepth属性指定）。 请检查数据模型结构。" />
+        <LocalizationItem Name="InvalidApplicationVersion" Value="“{0}”上的应用版本无效" />
+        <LocalizationItem Name="InvalidParametrizedActionValueType" Value="将无效的值类型分配给“{0}”参数化操作。 改为设置Int，String或DateTime类型。" />
+        <LocalizationItem Name="InvalidStreamDataException" Value="高速缓存器加载错误。更多详情，请联系您的管理员联系。" />
+        <LocalizationItem Name="InvalidValueOfEnumProperty" Value="{0}对象的{1}属性的{2}值不正确。 在{4}业务类AfterConstruction方法中使用正确的{3}枚举值初始化该属性。" />
+        <LocalizationItem Name="IsNotValidNamespacePrefixDescription" Value="“{0}”不是有效的名称空间前缀描述" />
+        <LocalizationItem Name="ItsImpossibleToFindPathForNode" Value="路径='{0}'下找不到节点“{1}”" />
+        <LocalizationItem Name="ItsImpossibleToFindSourceNode" Value="无法找到SourceNode ='{0} \\ {1}'" />
+        <LocalizationItem Name="LayoutControlInvalidCount" Value="错误的计数：“{0}”" />
+        <LocalizationItem Name="ListEditorShouldImplement" Value="列表编辑器应该实现IDXPopupMenuHolder接口" />
+        <LocalizationItem Name="MethodShouldBeUsed" Value="应该使用“{0}”方法" />
+        <LocalizationItem Name="ModulesHasAlreadyBeenLoaded" Value="已被加载过的模块" />
+        <LocalizationItem Name="NameAndValueCollectionsShouldHaveEqualLengths" Value="名称和值的集合应该具有相等的长度" />
+        <LocalizationItem Name="NodeContainsDuplicatedChildNodes" Value="“{0}”节点包含两个在键属性中具有“{1}”值的子节点。 \ r \ n节点1：'{2}'\ r \ n节点2：'{3}'" />
+        <LocalizationItem Name="NodeWasNotFound" Value="未找到'{0}'节点" />
+        <LocalizationItem Name="NotRegisteredReadOnlyParameterException" Value="“参数工厂”中未注册“{0}”只读参数。" />
+        <LocalizationItem Name="ObjectFormatterFormatStringIsInvalid" Value="对象无法格式化，因为指定的格式字符串无效：“{0}”" />
+        <LocalizationItem Name="PageCanOnlyContainOneInstanceOfControl" Value="页面只能包含一个“{0}”控件实例" />
+        <LocalizationItem Name="ParameterConflictsWithPropertyException" Value="标准包含 '{0}' 只读的参数，与冲突 '{0}' 属性的 '{1}' 类。若要引用只读参数，请使用 '@@{0}' 语法。若要引用的属性，请使用 '@this.{0}' 语法。" />
+        <LocalizationItem Name="PassedObjectBelongsToAnotherObjectSpace" Value="已传递的对象属于另一个ObjectSpace。 当您通过这些对象不属于的ObjectSpace操纵对象时，可能会发生此错误。 例如，当您使用XafApplication.CreateDetailView方法时，您可能会收到此错误，以防您从不同的ObjectSpace获取的对象比在此方法中用作参数的ObjectSpace。 要纠正此错误，您应该确保所有操作的对象属于一个ObjectSpace。在大多数情况下，为避免此错误，调用ObjectSpace.GetObject / GetObjectByKey方法以获取目标ObjectSpace中传递的对象就足够了 。如果没有帮助，请联系我们的支持团队，网址为：http：//www.devexpress.com/Support/Center/" />
+        <LocalizationItem Name="PermissionIsDenied" Value="权限被拒绝" />
+        <LocalizationItem Name="ProcessWasAborted" Value="过程被中止" />
+        <LocalizationItem Name="RequiresCurrentObjectException" Value="无法更新 CriteriaWrapper，因为标准使用动态参数，但不指定的当前对象。若要更新 CriteriaWrapper，调用 UpdateParametersValues(Object currentObject) 方法和当前对象作为参数传递。" />
+        <LocalizationItem Name="ResourceItemWithNameIsNotFound" Value="找不到名称为“{0}”的资源项目" />
+        <LocalizationItem Name="RuleSetClearingIsDenied" Value="规则集清除被拒绝" />
+        <LocalizationItem Name="SharedPartIncorrectRegistration" Value="“{0}”界面被注册为共享部分。 它应该至少有一个被注册为实体的继承接口。" />
+        <LocalizationItem Name="SourceAttributeExpressionShouldStartWith" Value="源属性表达式应以“{0}”开头：“{1}”" />
+        <LocalizationItem Name="SourceAttributePathShouldConsistOf" Value="源属性路径应由一个或多个节点名称和最后一个属性名称组成，这些名称由'\\'符号分隔：“{0}”" />
+        <LocalizationItem Name="SourceNodeExpressionShouldStartWith" Value="源节点表达式应以'{0}'开头：'{1}'" />
+        <LocalizationItem Name="TemplateTypeInfoMissed" Value="找不到类类型信息 '{0}'.你应该把你的模板放在 XAF 模块，或手动注册它使用 XafTypesInfo.Instance.FindTypeInfo （typeof ({0}）） 方法。" />
+        <LocalizationItem Name="TheAspectIsNotPresentInAspectsCollection" Value="集合中不存在方面“{0}”" />
+        <LocalizationItem Name="TheAssemblyDoesntReferAssembly" Value="'{0}'程序集不会引用程序集{1}（{2}）" />
+        <LocalizationItem Name="TheClassIsNotFoundInBOModel" Value="BOModel中找不到'{0}'类" />
+        <LocalizationItem Name="TheClassNameAttributeIsEmpty" Value="引用的视图节点的 ClassName 属性为空:" />
+        <LocalizationItem Name="TheClassNameAttributeRefersToADifferentType" Value="引用视图节点的“类名”属性指的是不同的类型。 快捷对象类型：{0} 查看节点对象类型：{1}" />
+        <LocalizationItem Name="TheCreateApplicationModulesManagerReturnsNull" Value="CreateApplicationModulesManager方法返回null" />
+        <LocalizationItem Name="TheExpressionShouldConsistOf" Value="表达式应包括搜索表达式和源属性名称，由分隔 ';' 符号： '{0}'" />
+        <LocalizationItem Name="TheExpressionStringContainsANumberOfExpressions" Value="的 'expressionString' 字符串包含 {0} 表达式" />
+        <LocalizationItem Name="ThePassedFileIsNotADllOrConfig" Value="传递 '{0}' 文件不是 *.dll 或 *.config 的文件" />
+        <LocalizationItem Name="ThereIsAlreadyRegisteredCreatorForFormat" Value="已经是一个创造者注册了格式 '{0}'" />
+        <LocalizationItem Name="TheTypeAttributeCannotBeEmpty" Value=" 'Type' 属性不能为空" />
+        <LocalizationItem Name="TheTypeIsNotDescendantOf" Value="’{0}‘类型不是’{0}‘的后代" />
+        <LocalizationItem Name="TheValueWasLocked" Value="该值被锁定" />
+        <LocalizationItem Name="TypeDoesNotContainTheMember" Value=" '{0}' 类型不包含 '{1}' 成员" />
+        <LocalizationItem Name="TypeIsNotAEnum" Value=" '{0}' 类型不是枚举类型" />
+        <LocalizationItem Name="UnableToAssignDisabledActionItem" Value="无法将指定一个已禁用的项目。行动： {0}.项目： {1}.禁用的原因： {2}" />
+        <LocalizationItem Name="UnableToAssignInvisibleActionItem" Value="无法将指定一个不可见的项目。行动： {0}.项目： {1}.看不见的原因： {2}" />
+        <LocalizationItem Name="UnableToCast" Value="无法将对象的类型强制转换 '{0}' 键入 '{1}'" />
+        <LocalizationItem Name="UnableToChangeChildrenOfNodeDueItIsLocked" Value="无法更改的儿童 '{0}' 由于它的节点将被锁定。" />
+        <LocalizationItem Name="UnableToChangeConnectionString" Value="无法更改连接字符串。已连接" />
+        <LocalizationItem Name="UnableToChangeValueOfAttributeDueItIsLocked" Value="无法更改值 '{0}' 由于它的特性被锁定" />
+        <LocalizationItem Name="UnableToCreateObjectSpace" Value="无法创建 ObjectSpace。DataLayer 是 null 或 connectionString 为空" />
+        <LocalizationItem Name="UnableToCreateUpdateSessionAutoCreateOption" Value="无法创建 UpdatingSession。DataLayer.AutoCreateOption 是 {0}" />
+        <LocalizationItem Name="UnableToCreateUpdateSessionDataLayerIsNull" Value="无法创建 UpdatingSession。DataLayer 是 null 或 connectionString 为空" />
+        <LocalizationItem Name="UnableToCreateUpdatingReadonlySessionAutoCreateOption" Value="无法创建 UpdatingReadOnlySession。DataLayer.AutoCreateOption 是 {0}" />
+        <LocalizationItem Name="UnableToExecuteDisabledOrInactiveAction" Value="无法执行禁用或处于非活动状态的行动 {2}.禁用的原因： {0}处于非活动状态的原因： {1}" />
+        <LocalizationItem Name="UnableToFindADetailViewForType" Value="无法找到为详细信息视图 '{0}' 对象类型" />
+        <LocalizationItem Name="UnableToFindAListViewForType" Value="无法找到列表视图 '{0}' 对象类型" />
+        <LocalizationItem Name="UnableToFindPropertyInType" Value="无法找到属性 '{0}' 在类型 '{1}'" />
+        <LocalizationItem Name="UnableToFindType" Value="无法找到类型 '{0}'" />
+        <LocalizationItem Name="UnableToInitializeFileDataProperty" Value="无法初始化 {0} 在属性 {1} 对象，因为该属性是只读的、 或 {2} 类型没有默认构造函数，或者您没有权限创建它" />
+        <LocalizationItem Name="UnableToSetReadOnlyProperty" Value="无法设置只读属性 '{0}'" />
+        <LocalizationItem Name="UnknownException" Value="发生未知的异常。无法检索异常的详细信息" />
+        <LocalizationItem Name="UnknownValue" Value="未知的值： '{0}'" />
+        <LocalizationItem Name="UnknownViewNodeName" Value="未知的视图节点名称： '{0}'\r\nAllowed 名称： '{1}', '{2}'" />
+        <LocalizationItem Name="ValidationCannotFindTheAssociatedMemberInTargetClassForCollectionProperty" Value="{0} 集合属性的 {1} 类在目标对象类中没有关联的成员 {2}" />
+        <LocalizationItem Name="ValidationCannotFindThePropertyWithinTheClass" Value="不能检查 '{0}' 正在使用的验证规则 '{1}' 属性因为此属性不存在目标中 '{2}' 类" />
+        <LocalizationItem Name="ValidationMessageTemplateHasInvalidFormat" Value="验证邮件模板具有无效的格式： '{0}'" />
+        <LocalizationItem Name="ValueCannotBeStoredIntoTheProperty" Value="’{0}‘值不能存储到’{1}‘属性中" />
+        <LocalizationItem Name="WindowWasNotFound" Value="按 id 找不到窗口 '{0}'.注册的窗口： '{1}'" />
+        <LocalizationItem Name="XPDictionaryIsNull" Value="XPDictionary 为空" />
+        <LocalizationItem Name="YouCannotChangeCurrentAspect" Value="您不能更改当前的方面。这取决于当前线程的区域性" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="UserVisibleExceptions">
+        <LocalizationItem Name="ActionIsNotSingleChoiceAction" Value="无法在’{1}‘操作容器中注册‘{0}’操作。 ‘{0}’动作不是‘{2}’类型。" />
+        <LocalizationItem Name="ApplicationUpdateError" Value="此更新已成功完成。但是，数据库的版本是仍然大于应用程序的版本。请与系统管理员联系。" />
+        <LocalizationItem Name="CannotLoadUserSettingsFromFile" Value="不能从 Model.xafml 文件加载用户设置。" />
+        <LocalizationItem Name="CannotLoadUserSettingsFromTheDatabase" Value="不能从数据库中加载用户设置。" />
+        <LocalizationItem Name="CannotSaveUserSettingsToTheDatabase" Value="不能保存到数据库中的用户设置。" />
+        <LocalizationItem Name="CircularReference" Value="无法完成此操作，因为它会导致循环引用。" />
+        <LocalizationItem Name="CriteriaEditorsDataTypeIsNull" Value="请指定要为其建立一个标准的对象类型。" />
+        <LocalizationItem Name="FieldValueSizeExceedsMaxLength" Value="此字段值的长度不能超过 {0}" />
+        <LocalizationItem Name="LogonAttemptsAmountedToLimitWin" Value="三次登录尝试失败后，该应用程序将关闭。 请考虑联系管理员您的登录详细信息。" />
+        <LocalizationItem Name="MaskValidationErrorMessage" Value="输入缺少的符号" />
+        <LocalizationItem Name="ObjectAccessPermissionCannotBeEmpty" Value=" 'Object Type' 字段不能为空，并且至少有一个访问字段必须具有不同于“无”的值。" />
+        <LocalizationItem Name="ObjectToSaveWasChanged" Value="您尝试保存的对象是由其他用户更改。请刷新数据。" />
+        <LocalizationItem Name="RequestedObjectHasBeenDeleted" Value="在只读模式下显示数据，因为它已被删除。" />
+        <LocalizationItem Name="RequestedObjectIsNotFound" Value="未找到请求的对象，无法处理。" />
+        <LocalizationItem Name="ResearchTheErrorDetailsBelow" Value="研究下面的问题细节" />
+        <LocalizationGroup Name="Security">
+          <LocalizationItem Name="AllBusinessClasses" Value="所有业务类" />
+          <LocalizationItem Name="AllPersistentBusinessClasses" Value="所有持久性业务类别" />
+          <LocalizationItem Name="LastAdmin" Value="’{0}‘用户是系统中的最后一个管理员。 无法撤销管理权限。" />
+          <LocalizationItem Name="LoginFailed" Value="登录失败 '{0}'. {1}" />
+          <LocalizationItem Name="NewPasswordIsEqualToOldPassword" Value="新密码和旧密码相同。" />
+          <LocalizationItem Name="OldPasswordIsWrong" Value="旧密码是错误的。" />
+          <LocalizationItem Name="PasswordsAreDifferent" Value="密码是不同的。" />
+          <LocalizationItem Name="RetypeTheInformation" Value="请确保您的用户名是正确并重新键入正确的密码。" />
+          <LocalizationItem Name="UnableToReadCurrentUserData" Value="没有足够的权限来更改“{0}”用户的密码。 用户应至少有权读取自己的数据并更改存储的密码。" />
+          <LocalizationItem Name="UserNameIsEmpty" Value="账号必须不为空。" />
+        </LocalizationGroup>
+        <LocalizationItem Name="SimultaneousChangeDataMessage" Value="警告： 在检测到的相同的信息在不同的窗口视图同时修改： \n&#xD;&#xA;{0}\n&#xD;&#xA;它将有可能将修改保存在一个窗口/视图只。" />
+        <LocalizationItem Name="SimultaneousChangeDataMessageItem" Value="- “{0}”窗口/视图（{1}），“{2}”对象（{3}）" />
+        <LocalizationItem Name="SystemExceptionMessageFormat" Value="与一些错误 {0} 有 occurred.错误消息： {1}" />
+        <LocalizationItem Name="TheFollowingErrorOccurred" Value="出现了以下错误：" />
+        <LocalizationItem Name="UserFriendlyConnectionFailedException" Value="到数据库的连接失败。请与系统管理员联系。" />
+        <LocalizationItem Name="UserFriendlySqlException" Value="执行应用程序数据库的 SQL 命令时出错。检查应用程序日志文件的详细信息或与系统管理员联系。" />
+        <LocalizationItem Name="UserSettingsFailureSuggestion" Value="请参阅上这个失败的原因的详细信息的日志文件。如果你需要进一步的帮助，请联系您的管理员联系。" />
+        <LocalizationGroup Name="Validation">
+          <LocalizationItem Name="ActionErrorMessageHeaderFormat" Value="在数据验证期间检测到问题。请阅读下面的信息以了解问题是什么，以及如何你可以纠正它们。" />
+          <LocalizationItem Name="AllContextsErrorMessageHeader" Value="在数据验证期间检测到问题。请阅读下面的信息以了解问题是什么，以及如何你可以纠正它们。" />
+          <LocalizationItem Name="DeleteErrorMessageHeader" Value="在数据验证期间检测到问题。请阅读下面的信息以了解问题是什么，以及如何你可以纠正它们。" />
+          <LocalizationItem Name="SaveErrorMessageHeader" Value="在数据验证期间检测到问题。请阅读下面的信息以了解问题是什么，以及如何你可以纠正它们。" />
+          <LocalizationItem Name="ValidationSucceededMessageHeader" Value="没有检测到问题。" />
+        </LocalizationGroup>
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="Messages">
+      <LocalizationItem Name="Create" Value="创建" />
+      <LocalizationItem Name="Delete" Value="删除" />
+      <LocalizationItem Name="ErrorDetailsLink" Value="如何获取有关这个问题的更多细节？" />
+      <LocalizationItem Name="IsGrantedFrom" Value="授予“{0}”类中的成员。" />
+      <LocalizationItem Name="IsInheritedFrom" Value="从“{0}”类继承。" />
+      <LocalizationItem Name="Navigate" Value="导航" />
+      <LocalizationItem Name="Read" Value="读" />
+      <LocalizationItem Name="UnableToSaveCustomization" Value="无法保存自定义信息： \n{0}" />
+      <LocalizationItem Name="User" Value="用户： {0}" />
+      <LocalizationItem Name="ValidationErrorMessage" Value="验证错误" />
+      <LocalizationItem Name="ValidationInformationMessage" Value="验证信息" />
+      <LocalizationItem Name="ValidationWarningMessage" Value="验证警告" />
+      <LocalizationItem Name="Write" Value="写" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Namespaces">
+      <LocalizationItem Name="DevExpress.ExpressApp.Editors" Value="编辑" />
+      <LocalizationItem Name="DevExpress.Persistent.AuditTrail" Value="审计跟踪" />
+      <LocalizationItem Name="DevExpress.Persistent.Validation" Value="验证" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="NotificationsPostponeTimesList">
+      <LocalizationItem Name="AtStartTime" Value="0 分钟" />
+      <LocalizationItem Name="EightHours" Value="8 小时" />
+      <LocalizationItem Name="ElevenHours" Value="11 个小时" />
+      <LocalizationItem Name="FifteenMinutes" Value="15 分钟" />
+      <LocalizationItem Name="FiveHours" Value="5 个小时" />
+      <LocalizationItem Name="FiveMinutes" Value="5 分钟" />
+      <LocalizationItem Name="FourDays" Value="4 天" />
+      <LocalizationItem Name="FourHours" Value="4 个小时" />
+      <LocalizationItem Name="HalfDay" Value="0，5 天" />
+      <LocalizationItem Name="NineHours" Value="9 个小时" />
+      <LocalizationItem Name="OneDay" Value="1 天" />
+      <LocalizationItem Name="OneHour" Value="1 小时" />
+      <LocalizationItem Name="OneWeek" Value="1 周" />
+      <LocalizationItem Name="SevenHours" Value="7 个小时" />
+      <LocalizationItem Name="SixHours" Value="6 个小时" />
+      <LocalizationItem Name="TenHours" Value="10 个小时" />
+      <LocalizationItem Name="TenMinutes" Value="10 分钟" />
+      <LocalizationItem Name="ThirtyMinutes" Value="30 分钟" />
+      <LocalizationItem Name="ThreeDays" Value="3 天" />
+      <LocalizationItem Name="ThreeHours" Value="3 个小时" />
+      <LocalizationItem Name="TwoDays" Value="2 天" />
+      <LocalizationItem Name="TwoHours" Value="2 个小时" />
+      <LocalizationItem Name="TwoWeeks" Value="2 周" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="OpenSaveDialogFilters">
+      <LocalizationItem Name="AllFiles" Value="所有文件" />
+      <LocalizationItem Name="BmpFiles" Value="Bmp 文件" />
+      <LocalizationItem Name="CsvFiles" Value="Csv 文件" />
+      <LocalizationItem Name="EmfFiles" Value="Emf 文件" />
+      <LocalizationItem Name="GifFiles" Value="GIF 文件" />
+      <LocalizationItem Name="HtmlFiles" Value="Html 文件" />
+      <LocalizationItem Name="JpegFiles" Value="Jpeg 文件" />
+      <LocalizationItem Name="MhtFiles" Value="Mht 文件" />
+      <LocalizationItem Name="PdfFiles" Value="Pdf 文件" />
+      <LocalizationItem Name="PngFiles" Value="Png 文件" />
+      <LocalizationItem Name="RtfFiles" Value="Rtf 文件" />
+      <LocalizationItem Name="TextFiles" Value="文本文件" />
+      <LocalizationItem Name="TiffFiles" Value="Tiff 文件" />
+      <LocalizationItem Name="WmfFiles" Value="Wmf 文件" />
+      <LocalizationItem Name="XlsFiles" Value="Xls 文件" />
+      <LocalizationItem Name="XlsxFiles" Value="兑换 Xlsx 文件" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Ribbon">
+      <LocalizationItem Name="ActionsPageGroup" Value="动作" />
+      <LocalizationItem Name="HomePage" Value="首页" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Security">
+      <LocalizationItem Name="AllBusinessClasses" Value="业务类" />
+      <LocalizationItem Name="AllPersistentBusinessClasses" Value="持久化业务类" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Texts">
+      <LocalizationItem Name="Aggregates" Value="聚合运算" />
+      <LocalizationItem Name="AggregatesAvgDescription" Value="Avg(Field)\r\n评估集合中所有值的平均值。" />
+      <LocalizationItem Name="AggregatesCountDescription" Value="Count\r\n返回集合中的对象数量。" />
+      <LocalizationItem Name="AggregatesMaxDescription" Value="Max(Field)\r\n返回集合中的最大表达式值。" />
+      <LocalizationItem Name="AggregatesMinDescription" Value="Min(Field)\r\n返回集合中的最小表达式值。" />
+      <LocalizationItem Name="AggregatesSumDescription" Value="Sum(Field)\r\n返回集合中所有表达式值的总和。" />
+      <LocalizationItem Name="DefaultAspectText" Value="（默认语言）" />
+      <LocalizationItem Name="Error" Value="错误" />
+      <LocalizationItem Name="SharedModelDifferenceName" Value="共享模型差异" />
+      <LocalizationItem Name="Warning" Value="警告" />
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="MyDetails" Caption="我的信息" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Validation>
+    <Contexts>
+      <ValidationContext Id="Save" Caption="保存" />
+    </Contexts>
+  </Validation>
+  <Views>
+    <DetailView Id="AboutInfo_DetailView" Caption="关于">
+      <Items>
+        <StaticText Id="AboutText" Caption="AboutText(2)" />
+      </Items>
+    </DetailView>
+    <DetailView Id="ActionContainerDashboardOrganizationItem_DetailView" Caption="行动的容器">
+      <Items>
+        <PropertyEditor Id="ActionContainer" Caption="行动的容器" />
+      </Items>
+    </DetailView>
+    <ListView Id="ActionContainerDashboardOrganizationItem_ListView" Caption="行动的容器">
+      <Columns>
+        <ColumnInfo Id="ActionContainer" Caption="行动的容器" />
+      </Columns>
+    </ListView>
+    <ListView Id="ActionContainerDashboardOrganizationItem_LookupListView" Caption="行动的容器">
+      <Columns>
+        <ColumnInfo Id="ActionContainer" Caption="行动的容器" />
+      </Columns>
+    </ListView>
+    <DetailView Id="ActionContainerDescriptor_DetailView" Caption="操作容器描述符">
+      <Items>
+        <PropertyEditor Id="ActionContainerId" Caption="操作容器 Id" />
+      </Items>
+    </DetailView>
+    <ListView Id="ActionContainerDescriptor_ListView" Caption="操作容器描述符">
+      <Columns>
+        <ColumnInfo Id="ActionContainerId" Caption="操作容器 Id" />
+      </Columns>
+    </ListView>
+    <ListView Id="ActionContainerDescriptor_LookupListView" Caption="操作容器描述符">
+      <Columns>
+        <ColumnInfo Id="ActionContainerId" Caption="操作容器 Id" />
+      </Columns>
+    </ListView>
+    <DetailView Id="AuthenticationStandardLogonParameters_DetailView" Caption="登录">
+      <Items>
+        <StaticText Id="LogonText" Text="欢迎 ！请您输入账号和密码。" />
+        <PropertyEditor Id="Password" Caption="密码" />
+        <PropertyEditor Id="UserName" Caption="账号" />
+      </Items>
+    </DetailView>
+    <ListView Id="AuthenticationStandardLogonParameters_ListView">
+      <Columns>
+        <ColumnInfo Id="UserName" Caption="账号" />
+        <ColumnInfo Id="Password" Caption="密码" />
+      </Columns>
+    </ListView>
+    <ListView Id="AuthenticationStandardLogonParameters_LookupListView">
+      <Columns>
+        <ColumnInfo Id="UserName" Caption="账号" />
+      </Columns>
+    </ListView>
+    <DetailView Id="ChangePasswordOnLogonParameters_DetailView" Caption="在第一次登录时更改密码">
+      <Items>
+        <StaticText Id="ChangePasswordText" Text="出于安全原因，现在，您必须设置您自己的密码。请在下面的两个文本字框中输入您的新密码，请务必不重用您以前使用的密码。" />
+        <PropertyEditor Id="ConfirmPassword" Caption="确认密码" />
+        <PropertyEditor Id="NewPassword" Caption="新密码" />
+      </Items>
+    </DetailView>
+    <ListView Id="ChangePasswordOnLogonParameters_ListView" Caption="更改密码登录参数">
+      <Columns>
+        <ColumnInfo Id="NewPassword" Caption="新密码" />
+        <ColumnInfo Id="ConfirmPassword" Caption="确认密码" />
+      </Columns>
+    </ListView>
+    <ListView Id="ChangePasswordOnLogonParameters_LookupListView" Caption="更改密码登录参数">
+      <Columns>
+        <ColumnInfo Id="NewPassword" Caption="新密码" />
+        <ColumnInfo Id="ConfirmPassword" Caption="确认密码" />
+      </Columns>
+    </ListView>
+    <DetailView Id="ChangePasswordParameters_DetailView" Caption="更改密码">
+      <Items>
+        <StaticText Id="ChangePasswordText" Text="若要更改您的密码，请在下面的文本字段中输入您旧密码和新密码。" />
+        <PropertyEditor Id="ConfirmPassword" Caption="确认密码" />
+        <PropertyEditor Id="NewPassword" Caption="新密码" />
+        <PropertyEditor Id="OldPassword" Caption="旧密码" />
+      </Items>
+    </DetailView>
+    <ListView Id="ChangePasswordParameters_ListView">
+      <Columns>
+        <ColumnInfo Id="ConfirmPassword" Caption="确认密码" />
+        <ColumnInfo Id="NewPassword" Caption="新密码" />
+        <ColumnInfo Id="OldPassword" Caption="旧密码" />
+      </Columns>
+    </ListView>
+    <ListView Id="ChangePasswordParameters_LookupListView">
+      <Columns>
+        <ColumnInfo Id="ConfirmPassword" Caption="确认密码" />
+        <ColumnInfo Id="NewPassword" Caption="新密码" />
+        <ColumnInfo Id="OldPassword" Caption="旧密码" />
+      </Columns>
+    </ListView>
+    <DetailView Id="ContextValidationResult_DetailView">
+      <Items>
+        <PropertyEditor Id="ContextValidationOutcome" Caption="状态" />
+      </Items>
+    </DetailView>
+    <ListView Id="ContextValidationResult_DisplayableValidationResultItems_ListView" Caption="验证的详细信息">
+      <Columns>
+        <ColumnInfo Id="RuleName" Caption="规则名称" />
+        <ColumnInfo Id="ContextId" Caption="上下文 Id" />
+        <ColumnInfo Id="Outcome" Caption="状态" />
+        <ColumnInfo Id="ErrorMessage" Caption="错误消息" />
+        <ColumnInfo Id="RuleProperties.Name" Caption="名称" />
+        <ColumnInfo Id="RuleProperties.TargetType" Caption="目标类型" />
+        <ColumnInfo Id="RuleProperties.ResultType" Caption="结果类型" />
+        <ColumnInfo Id="RuleProperties.TargetContextIDs" Caption="目标上下文 Id" />
+        <ColumnInfo Id="RuleProperties.InvertResult" Caption="反转结果" />
+        <ColumnInfo Id="RuleProperties.SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <ColumnInfo Id="RuleProperties.MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <ColumnInfo Id="RuleProperties.MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <ColumnInfo Id="RuleProperties.TargetCriteria" Caption="目标条件" />
+      </Columns>
+    </ListView>
+    <ListView Id="ContextValidationResult_ListView">
+      <Columns>
+        <ColumnInfo Id="ContextValidationOutcome" Caption="状态" />
+      </Columns>
+    </ListView>
+    <ListView Id="ContextValidationResult_LookupListView">
+      <Columns>
+        <ColumnInfo Id="ContextValidationOutcome" Caption="状态" />
+      </Columns>
+    </ListView>
+    <DetailView Id="CriteriaProvider_DetailView">
+      <Items>
+        <PropertyEditor Id="FilterString" Caption="筛选器字符串" />
+      </Items>
+    </DetailView>
+    <DetailView Id="DashboardCreationInfo_DetailView">
+      <Items>
+        <PropertyEditor Id="DashboardName" Caption="名称" />
+        <PropertyEditor Id="ViewItems" Caption="查看项目" />
+      </Items>
+    </DetailView>
+    <ListView Id="DashboardCreationInfo_ListView">
+      <Columns>
+        <ColumnInfo Id="DashboardName" Caption="名称" />
+      </Columns>
+    </ListView>
+    <ListView Id="DashboardCreationInfo_LookupListView">
+      <Columns>
+        <ColumnInfo Id="DashboardName" Caption="名称" />
+      </Columns>
+    </ListView>
+    <ListView Id="DashboardCreationInfo_ViewItems_ListView" Caption="仪表板组织项目">
+      <Columns>
+        <ColumnInfo Id="Visibility" Caption="可见性" />
+      </Columns>
+    </ListView>
+    <DetailView Id="DashboardName_DetailView">
+      <Items>
+        <PropertyEditor Id="Name" Caption="名称" />
+      </Items>
+    </DetailView>
+    <ListView Id="DashboardName_ListView">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <ListView Id="DashboardName_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="DashboardOrganizationItem_DetailView" Caption="仪表板组织项目">
+      <Items>
+        <PropertyEditor Id="Visibility" Caption="可见性" />
+      </Items>
+    </DetailView>
+    <ListView Id="DashboardOrganizationItem_ListView" Caption="仪表板组织项目">
+      <Columns>
+        <ColumnInfo Id="Visibility" Caption="可见性" />
+      </Columns>
+    </ListView>
+    <ListView Id="DashboardOrganizationItem_LookupListView" Caption="仪表板组织项目">
+      <Columns>
+        <ColumnInfo Id="Visibility" Caption="可见性" />
+      </Columns>
+    </ListView>
+    <DetailView Id="DashboardOrganizer_DetailView">
+      <Items>
+        <PropertyEditor Id="ViewItems" Caption="查看项目" />
+      </Items>
+    </DetailView>
+    <ListView Id="DashboardOrganizer_ViewItems_ListView" Caption="仪表板组织项目">
+      <Columns>
+        <ColumnInfo Id="Visibility" Caption="可见性" />
+      </Columns>
+    </ListView>
+    <DetailView Id="DashboardViewItemDescriptor_DetailView">
+      <Items>
+        <PropertyEditor Id="ViewCaption" Caption="查看标题" />
+        <PropertyEditor Id="ViewDescription" Caption="查看描述" />
+        <PropertyEditor Id="ViewId" Caption="视图 Id" />
+      </Items>
+    </DetailView>
+    <ListView Id="DashboardViewItemDescriptor_ListView">
+      <Columns>
+        <ColumnInfo Id="ViewDescription" Caption="查看描述" />
+        <ColumnInfo Id="ViewCaption" Caption="查看标题" />
+        <ColumnInfo Id="ViewId" Caption="视图 Id" />
+      </Columns>
+    </ListView>
+    <ListView Id="DashboardViewItemDescriptor_LookupListView">
+      <Columns>
+        <ColumnInfo Id="ViewDescription" Caption="查看描述" />
+      </Columns>
+    </ListView>
+    <DetailView Id="DisplayableValidationResultItem_DetailView" Caption="验证的详细信息">
+      <Items>
+        <PropertyEditor Id="ContextId" Caption="上下文 Id" />
+        <PropertyEditor Id="ErrorMessage" Caption="错误消息" />
+        <PropertyEditor Id="Outcome" Caption="状态" />
+        <PropertyEditor Id="RuleName" Caption="规则名称" />
+      </Items>
+    </DetailView>
+    <ListView Id="DisplayableValidationResultItem_ListView" Caption="验证的详细信息">
+      <Columns>
+        <ColumnInfo Id="RuleName" Caption="规则名称" />
+        <ColumnInfo Id="ContextId" Caption="上下文 Id" />
+        <ColumnInfo Id="Outcome" Caption="状态" />
+        <ColumnInfo Id="ErrorMessage" Caption="错误消息" />
+        <ColumnInfo Id="RuleProperties.Name" Caption="名称" />
+        <ColumnInfo Id="RuleProperties.TargetType" Caption="目标类型" />
+        <ColumnInfo Id="RuleProperties.ResultType" Caption="结果类型" />
+        <ColumnInfo Id="RuleProperties.TargetContextIDs" Caption="目标上下文 Id" />
+        <ColumnInfo Id="RuleProperties.InvertResult" Caption="反转结果" />
+        <ColumnInfo Id="RuleProperties.SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <ColumnInfo Id="RuleProperties.MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <ColumnInfo Id="RuleProperties.MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息板目标不满足目标标准" />
+        <ColumnInfo Id="RuleProperties.TargetCriteria" Caption="目标条件" />
+      </Columns>
+    </ListView>
+    <ListView Id="DisplayableValidationResultItem_LookupListView" Caption="验证的详细信息">
+      <Columns>
+        <ColumnInfo Id="RuleName" Caption="规则名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="IRuleBaseProperties_DetailView">
+      <Items>
+        <PropertyEditor Id="InvertResult" Caption="反转结果" />
+        <PropertyEditor Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <PropertyEditor Id="Name" Caption="名称" />
+        <PropertyEditor Id="ResultType" Caption="结果类型" />
+        <PropertyEditor Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <PropertyEditor Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <PropertyEditor Id="TargetCriteria" Caption="目标条件" />
+        <PropertyEditor Id="TargetType" Caption="目标类型" />
+      </Items>
+    </DetailView>
+    <ListView Id="IRuleBaseProperties_ListView">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+        <ColumnInfo Id="TargetType" Caption="目标类型" />
+        <ColumnInfo Id="ResultType" Caption="结果类型" />
+        <ColumnInfo Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <ColumnInfo Id="InvertResult" Caption="反转结果" />
+        <ColumnInfo Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <ColumnInfo Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <ColumnInfo Id="TargetCriteria" Caption="目标条件" />
+      </Columns>
+    </ListView>
+    <ListView Id="IRuleBaseProperties_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="IRuleCollectionPropertyProperties_DetailView">
+      <Items>
+        <PropertyEditor Id="InvertResult" Caption="反转结果" />
+        <PropertyEditor Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <PropertyEditor Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <PropertyEditor Id="Name" Caption="名称" />
+        <PropertyEditor Id="ResultType" Caption="结果类型" />
+        <PropertyEditor Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <PropertyEditor Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <PropertyEditor Id="TargetCriteria" Caption="目标条件" />
+        <PropertyEditor Id="TargetType" Caption="目标类型" />
+      </Items>
+    </DetailView>
+    <ListView Id="IRuleCollectionPropertyProperties_ListView">
+      <Columns>
+        <ColumnInfo Id="InvertResult" Caption="反转结果" />
+        <ColumnInfo Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <ColumnInfo Id="ResultType" Caption="结果类型" />
+        <ColumnInfo Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <ColumnInfo Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <ColumnInfo Id="TargetCriteria" Caption="目标条件" />
+        <ColumnInfo Id="TargetType" Caption="目标类型" />
+        <ColumnInfo Id="Name" Caption="名称" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <ColumnInfo Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+      </Columns>
+    </ListView>
+    <ListView Id="IRuleCollectionPropertyProperties_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="IRuleCombinationOfPropertiesIsUniqueProperties_DetailView">
+      <Items>
+        <PropertyEditor Id="CriteriaEvaluationBehavior" Caption="标准评价行为" />
+        <PropertyEditor Id="IncludeCurrentObject" Caption="包括当前对象" />
+        <PropertyEditor Id="InvertResult" Caption="反转结果" />
+        <PropertyEditor Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <PropertyEditor Id="MessageTemplateFoundObjects" Caption="消息模板找到的对象" />
+        <PropertyEditor Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <PropertyEditor Id="Name" Caption="名称" />
+        <PropertyEditor Id="ResultType" Caption="结果类型" />
+        <PropertyEditor Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <PropertyEditor Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <PropertyEditor Id="TargetCriteria" Caption="目标条件" />
+        <PropertyEditor Id="TargetType" Caption="目标类型" />
+      </Items>
+    </DetailView>
+    <ListView Id="IRuleCombinationOfPropertiesIsUniqueProperties_ListView">
+      <Columns>
+        <ColumnInfo Id="CriteriaEvaluationBehavior" Caption="标准评价行为" />
+        <ColumnInfo Id="IncludeCurrentObject" Caption="包括当前对象" />
+        <ColumnInfo Id="InvertResult" Caption="反转结果" />
+        <ColumnInfo Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <ColumnInfo Id="MessageTemplateFoundObjects" Caption="消息模板找到的对象" />
+        <ColumnInfo Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <ColumnInfo Id="ResultType" Caption="结果类型" />
+        <ColumnInfo Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <ColumnInfo Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <ColumnInfo Id="TargetCriteria" Caption="目标条件" />
+        <ColumnInfo Id="TargetType" Caption="目标类型" />
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <ListView Id="IRuleCombinationOfPropertiesIsUniqueProperties_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="IRuleCriteriaProperties_DetailView">
+      <Items>
+        <PropertyEditor Id="Criteria" Caption="标准" />
+        <PropertyEditor Id="InvertResult" Caption="反转结果" />
+        <PropertyEditor Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <PropertyEditor Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <PropertyEditor Id="Name" Caption="名称" />
+        <PropertyEditor Id="ResultType" Caption="结果类型" />
+        <PropertyEditor Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <PropertyEditor Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <PropertyEditor Id="TargetCriteria" Caption="目标条件" />
+        <PropertyEditor Id="TargetType" Caption="目标类型" />
+        <PropertyEditor Id="UsedProperties" Caption="使用的属性" />
+      </Items>
+    </DetailView>
+    <ListView Id="IRuleCriteriaProperties_ListView">
+      <Columns>
+        <ColumnInfo Id="InvertResult" Caption="反转结果" />
+        <ColumnInfo Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <ColumnInfo Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <ColumnInfo Id="ResultType" Caption="结果类型" />
+        <ColumnInfo Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <ColumnInfo Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <ColumnInfo Id="TargetCriteria" Caption="目标条件" />
+        <ColumnInfo Id="TargetType" Caption="目标类型" />
+        <ColumnInfo Id="Name" Caption="名称" />
+        <ColumnInfo Id="Criteria" Caption="标准" />
+        <ColumnInfo Id="UsedProperties" Caption="使用的属性" />
+      </Columns>
+    </ListView>
+    <ListView Id="IRuleCriteriaProperties_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="IRuleFromBoolPropertyProperties_DetailView">
+      <Items>
+        <PropertyEditor Id="InvertResult" Caption="反转结果" />
+        <PropertyEditor Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <PropertyEditor Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足集合标准" />
+        <PropertyEditor Id="Name" Caption="名称" />
+        <PropertyEditor Id="ResultType" Caption="结果类型" />
+        <PropertyEditor Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <PropertyEditor Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <PropertyEditor Id="TargetCriteria" Caption="目标条件" />
+        <PropertyEditor Id="TargetType" Caption="目标类型" />
+        <PropertyEditor Id="UsedProperties" Caption="使用的属性" />
+      </Items>
+    </DetailView>
+    <ListView Id="IRuleFromBoolPropertyProperties_ListView">
+      <Columns>
+        <ColumnInfo Id="InvertResult" Caption="反转结果" />
+        <ColumnInfo Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <ColumnInfo Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <ColumnInfo Id="ResultType" Caption="结果类型" />
+        <ColumnInfo Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <ColumnInfo Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <ColumnInfo Id="TargetCriteria" Caption="目标条件" />
+        <ColumnInfo Id="TargetType" Caption="目标类型" />
+        <ColumnInfo Id="Name" Caption="名称" />
+        <ColumnInfo Id="UsedProperties" Caption="使用的属性" />
+      </Columns>
+    </ListView>
+    <ListView Id="IRuleFromBoolPropertyProperties_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="IRuleIsReferencedProperties_DetailView">
+      <Items>
+        <PropertyEditor Id="CriteriaEvaluationBehavior" Caption="标准评价行为" />
+        <PropertyEditor Id="IncludeCurrentObject" Caption="包括当前对象" />
+        <PropertyEditor Id="InvertResult" Caption="反转结果" />
+        <PropertyEditor Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <PropertyEditor Id="MessageTemplateFoundObjects" Caption="消息模板找到的对象" />
+        <PropertyEditor Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <PropertyEditor Id="Name" Caption="名称" />
+        <PropertyEditor Id="ResultType" Caption="结果类型" />
+        <PropertyEditor Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <PropertyEditor Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <PropertyEditor Id="TargetCriteria" Caption="目标条件" />
+        <PropertyEditor Id="TargetType" Caption="目标类型" />
+      </Items>
+    </DetailView>
+    <ListView Id="IRuleIsReferencedProperties_ListView">
+      <Columns>
+        <ColumnInfo Id="CriteriaEvaluationBehavior" Caption="标准评价行为" />
+        <ColumnInfo Id="IncludeCurrentObject" Caption="包括当前对象" />
+        <ColumnInfo Id="InvertResult" Caption="反转结果" />
+        <ColumnInfo Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <ColumnInfo Id="MessageTemplateFoundObjects" Caption="消息模板找到的对象" />
+        <ColumnInfo Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <ColumnInfo Id="ResultType" Caption="结果类型" />
+        <ColumnInfo Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <ColumnInfo Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <ColumnInfo Id="TargetCriteria" Caption="目标条件" />
+        <ColumnInfo Id="TargetType" Caption="目标类型" />
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <ListView Id="IRuleIsReferencedProperties_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="IRuleObjectExistsProperties_DetailView">
+      <Items>
+        <PropertyEditor Id="Criteria" Caption="标准" />
+        <PropertyEditor Id="CriteriaEvaluationBehavior" Caption="标准评价行为" />
+        <PropertyEditor Id="IncludeCurrentObject" Caption="包括当前对象" />
+        <PropertyEditor Id="InvertResult" Caption="反转结果" />
+        <PropertyEditor Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <PropertyEditor Id="MessageTemplateFoundObjects" Caption="消息模板找到的对象" />
+        <PropertyEditor Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <PropertyEditor Id="Name" Caption="名称" />
+        <PropertyEditor Id="ResultType" Caption="结果类型" />
+        <PropertyEditor Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <PropertyEditor Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <PropertyEditor Id="TargetCriteria" Caption="目标条件" />
+        <PropertyEditor Id="TargetType" Caption="目标类型" />
+      </Items>
+    </DetailView>
+    <ListView Id="IRuleObjectExistsProperties_ListView">
+      <Columns>
+        <ColumnInfo Id="CriteriaEvaluationBehavior" Caption="标准评价行为" />
+        <ColumnInfo Id="IncludeCurrentObject" Caption="包括当前对象" />
+        <ColumnInfo Id="InvertResult" Caption="反转结果" />
+        <ColumnInfo Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <ColumnInfo Id="MessageTemplateFoundObjects" Caption="消息模板找到的对象" />
+        <ColumnInfo Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <ColumnInfo Id="ResultType" Caption="结果类型" />
+        <ColumnInfo Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <ColumnInfo Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <ColumnInfo Id="TargetCriteria" Caption="目标条件" />
+        <ColumnInfo Id="TargetType" Caption="目标类型" />
+        <ColumnInfo Id="Name" Caption="名称" />
+        <ColumnInfo Id="Criteria" Caption="标准" />
+      </Columns>
+    </ListView>
+    <ListView Id="IRuleObjectExistsProperties_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="IRulePropertyValueProperties_DetailView">
+      <Items>
+        <PropertyEditor Id="InvertResult" Caption="反转结果" />
+        <PropertyEditor Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <PropertyEditor Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <PropertyEditor Id="Name" Caption="名称" />
+        <PropertyEditor Id="ResultType" Caption="结果类型" />
+        <PropertyEditor Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <PropertyEditor Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <PropertyEditor Id="TargetCriteria" Caption="目标条件" />
+        <PropertyEditor Id="TargetType" Caption="目标类型" />
+      </Items>
+    </DetailView>
+    <ListView Id="IRulePropertyValueProperties_ListView">
+      <Columns>
+        <ColumnInfo Id="InvertResult" Caption="反转结果" />
+        <ColumnInfo Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <ColumnInfo Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <ColumnInfo Id="ResultType" Caption="结果类型" />
+        <ColumnInfo Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <ColumnInfo Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <ColumnInfo Id="TargetCriteria" Caption="目标条件" />
+        <ColumnInfo Id="TargetType" Caption="目标类型" />
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <ListView Id="IRulePropertyValueProperties_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="IRuleRangeProperties_DetailView">
+      <Items>
+        <PropertyEditor Id="InvertResult" Caption="反转结果" />
+        <PropertyEditor Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <PropertyEditor Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足集合标准" />
+        <PropertyEditor Id="Name" Caption="名称" />
+        <PropertyEditor Id="ResultType" Caption="结果类型" />
+        <PropertyEditor Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <PropertyEditor Id="TargetCollectionAggregate" Caption="目标集合聚合" />
+        <PropertyEditor Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <PropertyEditor Id="TargetCriteria" Caption="目标条件" />
+        <PropertyEditor Id="TargetType" Caption="目标类型" />
+      </Items>
+    </DetailView>
+    <ListView Id="IRuleRangeProperties_ListView">
+      <Columns>
+        <ColumnInfo Id="InvertResult" Caption="反转结果" />
+        <ColumnInfo Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <ColumnInfo Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <ColumnInfo Id="ResultType" Caption="结果类型" />
+        <ColumnInfo Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <ColumnInfo Id="TargetCollectionAggregate" Caption="目标集合聚合" />
+        <ColumnInfo Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <ColumnInfo Id="TargetCriteria" Caption="目标条件" />
+        <ColumnInfo Id="TargetType" Caption="目标类型" />
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <ListView Id="IRuleRangeProperties_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="IRuleRegularExpressionProperties_DetailView">
+      <Items>
+        <PropertyEditor Id="InvertResult" Caption="反转结果" />
+        <PropertyEditor Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <PropertyEditor Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <PropertyEditor Id="Name" Caption="名称" />
+        <PropertyEditor Id="ResultType" Caption="结果类型" />
+        <PropertyEditor Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <PropertyEditor Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <PropertyEditor Id="TargetCriteria" Caption="目标条件" />
+        <PropertyEditor Id="TargetType" Caption="目标类型" />
+      </Items>
+    </DetailView>
+    <ListView Id="IRuleRegularExpressionProperties_ListView">
+      <Columns>
+        <ColumnInfo Id="InvertResult" Caption="反转结果" />
+        <ColumnInfo Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <ColumnInfo Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <ColumnInfo Id="ResultType" Caption="结果类型" />
+        <ColumnInfo Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <ColumnInfo Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <ColumnInfo Id="TargetCriteria" Caption="目标条件" />
+        <ColumnInfo Id="TargetType" Caption="目标类型" />
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <ListView Id="IRuleRegularExpressionProperties_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="IRuleRequiredFieldProperties_DetailView">
+      <Items>
+        <PropertyEditor Id="InvertResult" Caption="反转结果" />
+        <PropertyEditor Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <PropertyEditor Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <PropertyEditor Id="Name" Caption="名称" />
+        <PropertyEditor Id="ResultType" Caption="结果类型" />
+        <PropertyEditor Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <PropertyEditor Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <PropertyEditor Id="TargetCriteria" Caption="目标条件" />
+        <PropertyEditor Id="TargetType" Caption="目标类型" />
+      </Items>
+    </DetailView>
+    <ListView Id="IRuleRequiredFieldProperties_ListView">
+      <Columns>
+        <ColumnInfo Id="InvertResult" Caption="反转结果" />
+        <ColumnInfo Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <ColumnInfo Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <ColumnInfo Id="ResultType" Caption="结果类型" />
+        <ColumnInfo Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <ColumnInfo Id="TargetCriteria" Caption="目标条件" />
+        <ColumnInfo Id="TargetType" Caption="目标类型" />
+        <ColumnInfo Id="Name" Caption="名称" />
+        <ColumnInfo Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+      </Columns>
+    </ListView>
+    <ListView Id="IRuleRequiredFieldProperties_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="IRuleSearchObjectProperties_DetailView">
+      <Items>
+        <PropertyEditor Id="CriteriaEvaluationBehavior" Caption="标准评价行为" />
+        <PropertyEditor Id="IncludeCurrentObject" Caption="包括当前对象" />
+        <PropertyEditor Id="InvertResult" Caption="反转结果" />
+        <PropertyEditor Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <PropertyEditor Id="MessageTemplateFoundObjects" Caption="消息模板找到的对象" />
+        <PropertyEditor Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空值" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <PropertyEditor Id="Name" Caption="名称" />
+        <PropertyEditor Id="ResultType" Caption="结果类型" />
+        <PropertyEditor Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <PropertyEditor Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <PropertyEditor Id="TargetCriteria" Caption="目标条件" />
+        <PropertyEditor Id="TargetType" Caption="目标类型" />
+      </Items>
+    </DetailView>
+    <ListView Id="IRuleSearchObjectProperties_ListView">
+      <Columns>
+        <ColumnInfo Id="InvertResult" Caption="反转结果" />
+        <ColumnInfo Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <ColumnInfo Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <ColumnInfo Id="ResultType" Caption="结果类型" />
+        <ColumnInfo Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <ColumnInfo Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <ColumnInfo Id="TargetCriteria" Caption="目标条件" />
+        <ColumnInfo Id="TargetType" Caption="目标类型" />
+        <ColumnInfo Id="Name" Caption="名称" />
+        <ColumnInfo Id="CriteriaEvaluationBehavior" Caption="标准评价行为" />
+        <ColumnInfo Id="IncludeCurrentObject" Caption="包括当前对象" />
+        <ColumnInfo Id="MessageTemplateFoundObjects" Caption="消息模板找到的对象" />
+      </Columns>
+    </ListView>
+    <ListView Id="IRuleSearchObjectProperties_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="IRuleStringComparisonProperties_DetailView" Caption="规则字符串比较属性">
+      <Items>
+        <PropertyEditor Id="IgnoreCase" Caption="忽略大小写" />
+        <PropertyEditor Id="InvertResult" Caption="反转结果" />
+        <PropertyEditor Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <PropertyEditor Id="MessageTemplateMustBeEqual" Caption="消息模板必须相等" />
+        <PropertyEditor Id="MessageTemplateMustBeginWith" Caption="消息模板必须以开始" />
+        <PropertyEditor Id="MessageTemplateMustContain" Caption="消息模板必须包含" />
+        <PropertyEditor Id="MessageTemplateMustEndWith" Caption="消息模板必须以结束" />
+        <PropertyEditor Id="MessageTemplateMustNotBeEqual" Caption="消息模板不必须相等" />
+        <PropertyEditor Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空值" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <PropertyEditor Id="Name" Caption="名称" />
+        <PropertyEditor Id="OperandValue" Caption="操作数的值" />
+        <PropertyEditor Id="ResultType" Caption="结果类型" />
+        <PropertyEditor Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <PropertyEditor Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <PropertyEditor Id="TargetCriteria" Caption="目标条件" />
+        <PropertyEditor Id="TargetType" Caption="目标类型" />
+      </Items>
+    </DetailView>
+    <ListView Id="IRuleStringComparisonProperties_ListView" Caption="规则字符串比较属性">
+      <Columns>
+        <ColumnInfo Id="InvertResult" Caption="反转结果" />
+        <ColumnInfo Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <ColumnInfo Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空值" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <ColumnInfo Id="ResultType" Caption="结果类型" />
+        <ColumnInfo Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <ColumnInfo Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <ColumnInfo Id="TargetCriteria" Caption="目标条件" />
+        <ColumnInfo Id="TargetType" Caption="目标类型" />
+        <ColumnInfo Id="Name" Caption="名称" />
+        <ColumnInfo Id="OperandValue" Caption="操作数的值" />
+        <ColumnInfo Id="IgnoreCase" Caption="忽略大小写" />
+        <ColumnInfo Id="MessageTemplateMustContain" Caption="消息模板必须包含" />
+        <ColumnInfo Id="MessageTemplateMustBeginWith" Caption="消息模板必须以开始" />
+        <ColumnInfo Id="MessageTemplateMustEndWith" Caption="消息模板必须以结束" />
+        <ColumnInfo Id="MessageTemplateMustBeEqual" Caption="消息模板必须相等" />
+        <ColumnInfo Id="MessageTemplateMustNotBeEqual" Caption="消息模板不必须相等" />
+      </Columns>
+    </ListView>
+    <ListView Id="IRuleStringComparisonProperties_LookupListView" Caption="规则字符串比较属性">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="IRuleSupportsCollectionAggregatesProperties_DetailView" Caption="规则支持集合聚合属性">
+      <Items>
+        <PropertyEditor Id="InvertResult" Caption="反转结果" />
+        <PropertyEditor Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <PropertyEditor Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空值" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <PropertyEditor Id="Name" Caption="名称" />
+        <PropertyEditor Id="ResultType" Caption="结果类型" />
+        <PropertyEditor Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <PropertyEditor Id="TargetCollectionAggregate" Caption="目标集合聚合" />
+        <PropertyEditor Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <PropertyEditor Id="TargetCriteria" Caption="目标条件" />
+        <PropertyEditor Id="TargetType" Caption="目标类型" />
+      </Items>
+    </DetailView>
+    <ListView Id="IRuleSupportsCollectionAggregatesProperties_ListView" Caption="规则支持集合聚合属性">
+      <Columns>
+        <ColumnInfo Id="InvertResult" Caption="反转结果" />
+        <ColumnInfo Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <ColumnInfo Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <ColumnInfo Id="ResultType" Caption="结果类型" />
+        <ColumnInfo Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <ColumnInfo Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <ColumnInfo Id="TargetCriteria" Caption="目标条件" />
+        <ColumnInfo Id="TargetType" Caption="目标类型" />
+        <ColumnInfo Id="Name" Caption="名称" />
+        <ColumnInfo Id="TargetCollectionAggregate" Caption="目标集合聚合" />
+      </Columns>
+    </ListView>
+    <ListView Id="IRuleSupportsCollectionAggregatesProperties_LookupListView" Caption="规则支持集合聚合属性">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="IRuleUniqueValueProperties_DetailView" Caption="规则的唯一值属性">
+      <Items>
+        <PropertyEditor Id="CriteriaEvaluationBehavior" Caption="标准评价行为" />
+        <PropertyEditor Id="IncludeCurrentObject" Caption="包括当前对象" />
+        <PropertyEditor Id="InvertResult" Caption="反转结果" />
+        <PropertyEditor Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <PropertyEditor Id="MessageTemplateFoundObjects" Caption="消息模板找到的对象" />
+        <PropertyEditor Id="MessageTemplateMustBeUnique" Caption="必须是唯一的消息模板" />
+        <PropertyEditor Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空值" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <PropertyEditor Id="Name" Caption="名称" />
+        <PropertyEditor Id="ResultType" Caption="结果类型" />
+        <PropertyEditor Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <PropertyEditor Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <PropertyEditor Id="TargetCriteria" Caption="目标条件" />
+        <PropertyEditor Id="TargetType" Caption="目标类型" />
+      </Items>
+    </DetailView>
+    <ListView Id="IRuleUniqueValueProperties_ListView" Caption="规则的唯一值属性">
+      <Columns>
+        <ColumnInfo Id="CriteriaEvaluationBehavior" Caption="标准评价行为" />
+        <ColumnInfo Id="IncludeCurrentObject" Caption="包括当前对象" />
+        <ColumnInfo Id="InvertResult" Caption="反转结果" />
+        <ColumnInfo Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <ColumnInfo Id="MessageTemplateFoundObjects" Caption="消息模板找到的对象" />
+        <ColumnInfo Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空值" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <ColumnInfo Id="ResultType" Caption="结果类型" />
+        <ColumnInfo Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <ColumnInfo Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <ColumnInfo Id="TargetCriteria" Caption="目标条件" />
+        <ColumnInfo Id="TargetType" Caption="目标类型" />
+        <ColumnInfo Id="Name" Caption="名称" />
+        <ColumnInfo Id="MessageTemplateMustBeUnique" Caption="必须是唯一的消息模板" />
+      </Columns>
+    </ListView>
+    <ListView Id="IRuleUniqueValueProperties_LookupListView" Caption="规则的唯一值属性">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="IRuleValueComparisonProperties_DetailView" Caption="规则值比较属性">
+      <Items>
+        <PropertyEditor Id="InvertResult" Caption="反转结果" />
+        <PropertyEditor Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <PropertyEditor Id="MessageTemplateMustBeEqualToOperand" Caption="消息模板必须等于操作数" />
+        <PropertyEditor Id="MessageTemplateMustBeGreaterThanOperand" Caption="消息模板必须大于操作数" />
+        <PropertyEditor Id="MessageTemplateMustBeGreaterThanOrEqualToOperand" Caption="消息模板必须大于或等于操作数" />
+        <PropertyEditor Id="MessageTemplateMustBeLessThanOperand" Caption="消息模板必须小于操作数" />
+        <PropertyEditor Id="MessageTemplateMustBeLessThanOrEqualToOperand" Caption="消息模板必须小于或等于操作数" />
+        <PropertyEditor Id="MessageTemplateMustNotBeEqualToOperand" Caption="消息模板必须不等于操作数" />
+        <PropertyEditor Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空值" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <PropertyEditor Id="Name" Caption="名称" />
+        <PropertyEditor Id="ResultType" Caption="结果类型" />
+        <PropertyEditor Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <PropertyEditor Id="TargetCollectionAggregate" Caption="目标集合聚合" />
+        <PropertyEditor Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <PropertyEditor Id="TargetCriteria" Caption="目标条件" />
+        <PropertyEditor Id="TargetType" Caption="目标类型" />
+      </Items>
+    </DetailView>
+    <ListView Id="IRuleValueComparisonProperties_ListView" Caption="规则值比较属性">
+      <Columns>
+        <ColumnInfo Id="InvertResult" Caption="反转结果" />
+        <ColumnInfo Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <ColumnInfo Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空值" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <ColumnInfo Id="ResultType" Caption="结果类型" />
+        <ColumnInfo Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <ColumnInfo Id="TargetCollectionAggregate" Caption="目标集合聚合" />
+        <ColumnInfo Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <ColumnInfo Id="TargetCriteria" Caption="目标条件" />
+        <ColumnInfo Id="TargetType" Caption="目标类型" />
+        <ColumnInfo Id="Name" Caption="名称" />
+        <ColumnInfo Id="MessageTemplateMustBeEqualToOperand" Caption="消息模板必须等于操作数" />
+        <ColumnInfo Id="MessageTemplateMustBeGreaterThanOperand" Caption="消息模板必须大于操作数" />
+        <ColumnInfo Id="MessageTemplateMustBeGreaterThanOrEqualToOperand" Caption="消息模板必须大于或等于操作数" />
+        <ColumnInfo Id="MessageTemplateMustBeLessThanOperand" Caption="消息模板必须小于操作数" />
+        <ColumnInfo Id="MessageTemplateMustBeLessThanOrEqualToOperand" Caption="消息模板必须小于或等于操作数" />
+        <ColumnInfo Id="MessageTemplateMustNotBeEqualToOperand" Caption="消息模板必须不等于操作数" />
+      </Columns>
+    </ListView>
+    <ListView Id="IRuleValueComparisonProperties_LookupListView" Caption="规则值比较属性">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <ListView Id="ModelDifference_Aspects_ListView">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+        <ColumnInfo Id="DisplayName" Caption="名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="ModelDifference_DetailView">
+      <Items>
+        <PropertyEditor Id="Aspects" Caption="方面" />
+        <PropertyEditor Id="ContextId" Caption="上下文 Id" />
+        <PropertyEditor Id="UserName" Caption="账号" />
+      </Items>
+    </DetailView>
+    <ListView Id="ModelDifference_ListView">
+      <Columns>
+        <ColumnInfo Id="UserName" Caption="账号" />
+        <ColumnInfo Id="ContextId" Caption="上下文 Id" />
+      </Columns>
+    </ListView>
+    <ListView Id="ModelDifference_LookupListView">
+      <Columns>
+        <ColumnInfo Id="UserName" Caption="账号" />
+        <ColumnInfo Id="ContextId" Caption="上下文 Id" />
+      </Columns>
+    </ListView>
+    <DetailView Id="ModelDifferenceAspect_DetailView">
+      <Items>
+        <PropertyEditor Id="DisplayName" Caption="显示名称" />
+        <PropertyEditor Id="Name" Caption="名称" />
+      </Items>
+    </DetailView>
+    <ListView Id="ModelDifferenceAspect_ListView">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+        <ColumnInfo Id="DisplayName" Caption="显示名称" />
+      </Columns>
+    </ListView>
+    <ListView Id="ModelDifferenceAspect_LookupListView">
+      <Columns>
+        <ColumnInfo Id="DisplayName" Caption="显示名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="ObjectAccessPermission_DetailView">
+      <Items>
+        <PropertyEditor Id="CreateAccess" Caption="创建访问" />
+        <PropertyEditor Id="DeleteAccess" Caption="删除访问" />
+        <PropertyEditor Id="ReadAccess" Caption="读取访问权限" />
+        <PropertyEditor Id="WriteAccess" Caption="写访问权限" />
+      </Items>
+    </DetailView>
+    <ListView Id="ObjectAccessPermission_ListView">
+      <Columns>
+        <ColumnInfo Id="CreateAccess" Caption="创建访问" />
+        <ColumnInfo Id="ReadAccess" Caption="读取访问权限" />
+        <ColumnInfo Id="WriteAccess" Caption="写访问权限" />
+        <ColumnInfo Id="DeleteAccess" Caption="删除访问" />
+      </Columns>
+    </ListView>
+    <ListView Id="ObjectAccessPermission_LookupListView">
+      <Columns>
+        <ColumnInfo Id="CreateAccess" Caption="创建访问" />
+        <ColumnInfo Id="ReadAccess" Caption="读取访问权限" />
+        <ColumnInfo Id="WriteAccess" Caption="写访问权限" />
+        <ColumnInfo Id="DeleteAccess" Caption="删除访问" />
+      </Columns>
+    </ListView>
+    <DetailView Id="PermissionPolicyMemberPermissionsObject_DetailView" Caption="成员操作权限">
+      <Items>
+        <PropertyEditor Id="Criteria" Caption="标准" />
+        <PropertyEditor Id="Members" Caption="成员" />
+        <PropertyEditor Id="ReadState" Caption="读" />
+        <PropertyEditor Id="WriteState" Caption="写" />
+      </Items>
+    </DetailView>
+    <ListView Id="PermissionPolicyMemberPermissionsObject_ListView" Caption="成员操作权限">
+      <Columns>
+        <ColumnInfo Id="TypePermissionObject" Caption="类型权限对象" />
+        <ColumnInfo Id="Members" Caption="成员" />
+        <ColumnInfo Id="ReadState" Caption="读" />
+        <ColumnInfo Id="WriteState" Caption="写" />
+        <ColumnInfo Id="Criteria" Caption="标准" />
+      </Columns>
+    </ListView>
+    <ListView Id="PermissionPolicyMemberPermissionsObject_LookupListView" Caption="成员操作权限">
+      <Columns>
+        <ColumnInfo Id="Criteria" Caption="标准" />
+        <ColumnInfo Id="Members" Caption="成员" />
+        <ColumnInfo Id="ReadState" Caption="读" />
+        <ColumnInfo Id="WriteState" Caption="写" />
+        <ColumnInfo Id="TypePermissionObject" Caption="类型权限对象" />
+      </Columns>
+    </ListView>
+    <DetailView Id="PermissionPolicyNavigationPermissionObject_DetailView">
+      <Items>
+        <PropertyEditor Id="NavigateState" Caption="导航" />
+      </Items>
+    </DetailView>
+    <ListView Id="PermissionPolicyNavigationPermissionObject_ListView">
+      <Columns>
+        <ColumnInfo Id="NavigateState" Caption="导航" />
+      </Columns>
+    </ListView>
+    <ListView Id="PermissionPolicyNavigationPermissionObject_LookupListView">
+      <Columns>
+        <ColumnInfo Id="NavigateState" Caption="导航" />
+      </Columns>
+    </ListView>
+    <DetailView Id="PermissionPolicyObjectPermissionsObject_DetailView">
+      <Items>
+        <PropertyEditor Id="Criteria" Caption="标准" />
+        <PropertyEditor Id="DeleteState" Caption="删除" />
+        <PropertyEditor Id="ReadState" Caption="读" />
+        <PropertyEditor Id="WriteState" Caption="写" />
+      </Items>
+    </DetailView>
+    <ListView Id="PermissionPolicyObjectPermissionsObject_ListView">
+      <Columns>
+        <ColumnInfo Id="TypePermissionObject" Caption="类型权限对象" />
+        <ColumnInfo Id="Criteria" Caption="标准" />
+        <ColumnInfo Id="ReadState" Caption="读" />
+        <ColumnInfo Id="WriteState" Caption="写" />
+        <ColumnInfo Id="DeleteState" Caption="删除" />
+      </Columns>
+    </ListView>
+    <ListView Id="PermissionPolicyObjectPermissionsObject_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Criteria" Caption="标准" />
+        <ColumnInfo Id="ReadState" Caption="读" />
+        <ColumnInfo Id="WriteState" Caption="写" />
+        <ColumnInfo Id="DeleteState" Caption="删除" />
+        <ColumnInfo Id="TypePermissionObject" Caption="类型权限对象" />
+      </Columns>
+    </ListView>
+    <DetailView Id="PermissionPolicyRole_DetailView">
+      <Items>
+        <PropertyEditor Id="Name" Caption="名称" />
+        <PropertyEditor Id="PermissionPolicy" Caption="权限策略" />
+        <PropertyEditor Id="TypePermissions" Caption="类型权限" />
+      </Items>
+    </DetailView>
+    <ListView Id="PermissionPolicyRole_ListView">
+      <Columns>
+        <ColumnInfo Id="PermissionPolicy" Caption="权限策略" />
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <ListView Id="PermissionPolicyRole_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <ListView Id="PermissionPolicyRole_Users_ListView" Caption="用户">
+      <Columns>
+        <ColumnInfo Id="UserName" Caption="账号" />
+        <ColumnInfo Id="ChangePasswordOnFirstLogon" Caption="在第一次登录时更改密码" />
+      </Columns>
+    </ListView>
+    <DetailView Id="PermissionPolicyRoleBase_DetailView">
+      <Items>
+        <PropertyEditor Id="Name" Caption="名称" />
+        <PropertyEditor Id="PermissionPolicy" Caption="权限策略" />
+        <PropertyEditor Id="TypePermissions" Caption="类型权限" />
+      </Items>
+    </DetailView>
+    <ListView Id="PermissionPolicyRoleBase_ListView">
+      <Columns>
+        <ColumnInfo Id="PermissionPolicy" Caption="权限策略" />
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <ListView Id="PermissionPolicyRoleBase_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <ListView Id="PermissionPolicyRoleBase_NavigationPermissions_ListView">
+      <Columns>
+        <ColumnInfo Id="NavigateState" Caption="导航" />
+      </Columns>
+    </ListView>
+    <ListView Id="PermissionPolicyRoleBase_TypePermissions_ListView" Caption="类型操作权限">
+      <Columns>
+        <ColumnInfo Id="TargetType" Caption="目标类型" />
+        <ColumnInfo Id="ReadState" Caption="读" />
+        <ColumnInfo Id="WriteState" Caption="写" />
+        <ColumnInfo Id="CreateState" Caption="创建" />
+        <ColumnInfo Id="DeleteState" Caption="删除" />
+      </Columns>
+    </ListView>
+    <DetailView Id="PermissionPolicyTypePermissionObject_DetailView" Caption="类型操作权限">
+      <Items>
+        <PropertyEditor Id="CreateState" Caption="创建" />
+        <PropertyEditor Id="DeleteState" Caption="删除" />
+        <PropertyEditor Id="ObjectPermissions" Caption="对象权限" />
+        <PropertyEditor Id="ReadState" Caption="读" />
+        <PropertyEditor Id="TargetType" Caption="目标类型" />
+        <PropertyEditor Id="WriteState" Caption="写" />
+      </Items>
+    </DetailView>
+    <ListView Id="PermissionPolicyTypePermissionObject_ListView" Caption="类型操作权限">
+      <Columns>
+        <ColumnInfo Id="TargetType" Caption="目标类型" />
+        <ColumnInfo Id="ReadState" Caption="读" />
+        <ColumnInfo Id="WriteState" Caption="写" />
+        <ColumnInfo Id="CreateState" Caption="创建" />
+        <ColumnInfo Id="DeleteState" Caption="删除" />
+      </Columns>
+    </ListView>
+    <ListView Id="PermissionPolicyTypePermissionObject_LookupListView" Caption="类型操作权限">
+      <Columns>
+        <ColumnInfo Id="TargetType" Caption="目标类型" />
+        <ColumnInfo Id="ReadState" Caption="读" />
+        <ColumnInfo Id="WriteState" Caption="写" />
+        <ColumnInfo Id="CreateState" Caption="创建" />
+        <ColumnInfo Id="DeleteState" Caption="删除" />
+      </Columns>
+    </ListView>
+    <ListView Id="PermissionPolicyTypePermissionObject_MemberPermissions_ListView" Caption="成员操作权限">
+      <Columns>
+        <ColumnInfo Id="TypePermissionObject" Caption="类型权限对象" />
+        <ColumnInfo Id="Members" Caption="成员" />
+        <ColumnInfo Id="ReadState" Caption="读" />
+        <ColumnInfo Id="WriteState" Caption="写" />
+        <ColumnInfo Id="Criteria" Caption="标准" />
+      </Columns>
+    </ListView>
+    <ListView Id="PermissionPolicyTypePermissionObject_ObjectPermissions_ListView">
+      <Columns>
+        <ColumnInfo Id="TypePermissionObject" Caption="类型权限对象" />
+        <ColumnInfo Id="Criteria" Caption="标准" />
+        <ColumnInfo Id="ReadState" Caption="读" />
+        <ColumnInfo Id="WriteState" Caption="写" />
+        <ColumnInfo Id="DeleteState" Caption="删除" />
+      </Columns>
+    </ListView>
+    <DetailView Id="PermissionPolicyUser_DetailView" Caption="用户">
+      <Items>
+        <PropertyEditor Id="ChangePasswordOnFirstLogon" Caption="在第一次登录时更改密码" />
+        <PropertyEditor Id="Roles" Caption="角色" />
+        <PropertyEditor Id="UserName" Caption="账号" />
+      </Items>
+    </DetailView>
+    <ListView Id="PermissionPolicyUser_ListView" Caption="用户">
+      <Columns>
+        <ColumnInfo Id="UserName" Caption="账号" />
+        <ColumnInfo Id="ChangePasswordOnFirstLogon" Caption="在第一次登录时更改密码" />
+      </Columns>
+    </ListView>
+    <ListView Id="PermissionPolicyUser_LookupListView" Caption="用户">
+      <Columns>
+        <ColumnInfo Id="UserName" Caption="账号" />
+      </Columns>
+    </ListView>
+    <ListView Id="PermissionPolicyUser_Roles_ListView">
+      <Columns>
+        <ColumnInfo Id="PermissionPolicy" Caption="权限策略" />
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="ProcessDataLockingInfoMergeDialog_DetailView" Caption="警告" />
+    <DetailView Id="ProcessDataLockingInfoRefreshDialog_DetailView" Caption="警告" />
+    <DetailView Id="ResetPasswordParameters_DetailView" Caption="重置密码">
+      <Items>
+        <PropertyEditor Id="Password" Caption="密码" />
+      </Items>
+    </DetailView>
+    <ListView Id="ResetPasswordParameters_ListView">
+      <Columns>
+        <ColumnInfo Id="Password" Caption="密码" />
+      </Columns>
+    </ListView>
+    <ListView Id="ResetPasswordParameters_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Password" Caption="密码" />
+      </Columns>
+    </ListView>
+    <DetailView Id="RuleBaseProperties_DetailView">
+      <Items>
+        <PropertyEditor Id="InvertResult" Caption="反转结果" />
+        <PropertyEditor Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <PropertyEditor Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <PropertyEditor Id="Name" Caption="名称" />
+        <PropertyEditor Id="ResultType" Caption="结果类型" />
+        <PropertyEditor Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <PropertyEditor Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <PropertyEditor Id="TargetCriteria" Caption="目标条件" />
+        <PropertyEditor Id="TargetType" Caption="目标类型" />
+      </Items>
+    </DetailView>
+    <ListView Id="RuleBaseProperties_ListView">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+        <ColumnInfo Id="TargetType" Caption="目标类型" />
+        <ColumnInfo Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <ColumnInfo Id="InvertResult" Caption="反转结果" />
+        <ColumnInfo Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <ColumnInfo Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空值" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <ColumnInfo Id="TargetCriteria" Caption="目标条件" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <ColumnInfo Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <ColumnInfo Id="ResultType" Caption="结果类型" />
+      </Columns>
+    </ListView>
+    <ListView Id="RuleBaseProperties_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="RuleCombinationOfPropertiesIsUniqueProperties_DetailView">
+      <Items>
+        <PropertyEditor Id="CriteriaEvaluationBehavior" Caption="标准评价行为" />
+        <PropertyEditor Id="IncludeCurrentObject" Caption="包括当前对象" />
+        <PropertyEditor Id="InvertResult" Caption="反转结果" />
+        <PropertyEditor Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <PropertyEditor Id="MessageTemplateFoundObjects" Caption="消息模板找到的对象" />
+        <PropertyEditor Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空值" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <PropertyEditor Id="Name" Caption="名称" />
+        <PropertyEditor Id="ResultType" Caption="结果类型" />
+        <PropertyEditor Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <PropertyEditor Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <PropertyEditor Id="TargetCriteria" Caption="目标条件" />
+        <PropertyEditor Id="TargetType" Caption="目标类型" />
+      </Items>
+    </DetailView>
+    <ListView Id="RuleCombinationOfPropertiesIsUniqueProperties_ListView">
+      <Columns>
+        <ColumnInfo Id="CriteriaEvaluationBehavior" Caption="标准评价行为" />
+        <ColumnInfo Id="IncludeCurrentObject" Caption="包括当前对象" />
+        <ColumnInfo Id="InvertResult" Caption="反转结果" />
+        <ColumnInfo Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <ColumnInfo Id="MessageTemplateFoundObjects" Caption="消息模板找到的对象" />
+        <ColumnInfo Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空值" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <ColumnInfo Id="ResultType" Caption="结果类型" />
+        <ColumnInfo Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <ColumnInfo Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <ColumnInfo Id="TargetCriteria" Caption="目标条件" />
+        <ColumnInfo Id="TargetType" Caption="目标类型" />
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <ListView Id="RuleCombinationOfPropertiesIsUniqueProperties_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="RuleCriteriaProperties_DetailView">
+      <Items>
+        <PropertyEditor Id="Criteria" Caption="标准" />
+        <PropertyEditor Id="InvertResult" Caption="反转结果" />
+        <PropertyEditor Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <PropertyEditor Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <PropertyEditor Id="Name" Caption="名称" />
+        <PropertyEditor Id="ResultType" Caption="结果类型" />
+        <PropertyEditor Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <PropertyEditor Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <PropertyEditor Id="TargetCriteria" Caption="目标条件" />
+        <PropertyEditor Id="TargetType" Caption="目标类型" />
+        <PropertyEditor Id="UsedProperties" Caption="使用的属性" />
+      </Items>
+    </DetailView>
+    <ListView Id="RuleCriteriaProperties_ListView">
+      <Columns>
+        <ColumnInfo Id="InvertResult" Caption="反转结果" />
+        <ColumnInfo Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <ColumnInfo Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空值" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <ColumnInfo Id="ResultType" Caption="结果类型" />
+        <ColumnInfo Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <ColumnInfo Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <ColumnInfo Id="TargetCriteria" Caption="目标条件" />
+        <ColumnInfo Id="TargetType" Caption="目标类型" />
+        <ColumnInfo Id="Name" Caption="名称" />
+        <ColumnInfo Id="Criteria" Caption="标准" />
+        <ColumnInfo Id="UsedProperties" Caption="使用的属性" />
+      </Columns>
+    </ListView>
+    <ListView Id="RuleCriteriaProperties_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="RuleFromBoolPropertyProperties_DetailView">
+      <Items>
+        <PropertyEditor Id="InvertResult" Caption="反转结果" />
+        <PropertyEditor Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <PropertyEditor Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <PropertyEditor Id="Name" Caption="名称" />
+        <PropertyEditor Id="ResultType" Caption="结果类型" />
+        <PropertyEditor Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <PropertyEditor Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <PropertyEditor Id="TargetCriteria" Caption="目标条件" />
+        <PropertyEditor Id="TargetType" Caption="目标类型" />
+        <PropertyEditor Id="UsedProperties" Caption="使用的属性" />
+      </Items>
+    </DetailView>
+    <ListView Id="RuleFromBoolPropertyProperties_ListView">
+      <Columns>
+        <ColumnInfo Id="InvertResult" Caption="反转结果" />
+        <ColumnInfo Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <ColumnInfo Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空值" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足集合标准" />
+        <ColumnInfo Id="ResultType" Caption="结果类型" />
+        <ColumnInfo Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <ColumnInfo Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <ColumnInfo Id="TargetCriteria" Caption="目标条件" />
+        <ColumnInfo Id="TargetType" Caption="目标类型" />
+        <ColumnInfo Id="Name" Caption="名称" />
+        <ColumnInfo Id="UsedProperties" Caption="使用的属性" />
+      </Columns>
+    </ListView>
+    <ListView Id="RuleFromBoolPropertyProperties_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="RuleIsReferencedProperties_DetailView">
+      <Items>
+        <PropertyEditor Id="CriteriaEvaluationBehavior" Caption="标准评价行为" />
+        <PropertyEditor Id="IncludeCurrentObject" Caption="包括当前对象" />
+        <PropertyEditor Id="InvertResult" Caption="反转结果" />
+        <PropertyEditor Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <PropertyEditor Id="MessageTemplateFoundObjects" Caption="消息模板找到的对象" />
+        <PropertyEditor Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <PropertyEditor Id="Name" Caption="名称" />
+        <PropertyEditor Id="ResultType" Caption="结果类型" />
+        <PropertyEditor Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <PropertyEditor Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <PropertyEditor Id="TargetCriteria" Caption="目标条件" />
+        <PropertyEditor Id="TargetType" Caption="目标类型" />
+      </Items>
+    </DetailView>
+    <ListView Id="RuleIsReferencedProperties_ListView">
+      <Columns>
+        <ColumnInfo Id="CriteriaEvaluationBehavior" Caption="标准评价行为" />
+        <ColumnInfo Id="IncludeCurrentObject" Caption="包括当前对象" />
+        <ColumnInfo Id="InvertResult" Caption="反转结果" />
+        <ColumnInfo Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <ColumnInfo Id="MessageTemplateFoundObjects" Caption="消息模板找到的对象" />
+        <ColumnInfo Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空值" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <ColumnInfo Id="ResultType" Caption="结果类型" />
+        <ColumnInfo Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <ColumnInfo Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <ColumnInfo Id="TargetCriteria" Caption="目标条件" />
+        <ColumnInfo Id="TargetType" Caption="目标类型" />
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <ListView Id="RuleIsReferencedProperties_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="RuleObjectExistsProperties_DetailView">
+      <Items>
+        <PropertyEditor Id="Criteria" Caption="标准" />
+        <PropertyEditor Id="CriteriaEvaluationBehavior" Caption="标准评价行为" />
+        <PropertyEditor Id="IncludeCurrentObject" Caption="包括当前对象" />
+        <PropertyEditor Id="InvertResult" Caption="反转结果" />
+        <PropertyEditor Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <PropertyEditor Id="MessageTemplateFoundObjects" Caption="消息模板找到的对象" />
+        <PropertyEditor Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <PropertyEditor Id="Name" Caption="名称" />
+        <PropertyEditor Id="ResultType" Caption="结果类型" />
+        <PropertyEditor Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <PropertyEditor Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <PropertyEditor Id="TargetCriteria" Caption="目标条件" />
+        <PropertyEditor Id="TargetType" Caption="目标类型" />
+      </Items>
+    </DetailView>
+    <ListView Id="RuleObjectExistsProperties_ListView">
+      <Columns>
+        <ColumnInfo Id="CriteriaEvaluationBehavior" Caption="标准评价行为" />
+        <ColumnInfo Id="IncludeCurrentObject" Caption="包括当前对象" />
+        <ColumnInfo Id="InvertResult" Caption="反转结果" />
+        <ColumnInfo Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <ColumnInfo Id="MessageTemplateFoundObjects" Caption="消息模板找到的对象" />
+        <ColumnInfo Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空白值" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <ColumnInfo Id="ResultType" Caption="结果类型" />
+        <ColumnInfo Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <ColumnInfo Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <ColumnInfo Id="TargetCriteria" Caption="目标条件" />
+        <ColumnInfo Id="TargetType" Caption="目标类型" />
+        <ColumnInfo Id="Name" Caption="名称" />
+        <ColumnInfo Id="Criteria" Caption="标准" />
+      </Columns>
+    </ListView>
+    <ListView Id="RuleObjectExistsProperties_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="RulePropertyValueProperties_DetailView">
+      <Items>
+        <PropertyEditor Id="InvertResult" Caption="反转结果" />
+        <PropertyEditor Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <PropertyEditor Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空值" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <PropertyEditor Id="Name" Caption="名称" />
+        <PropertyEditor Id="ResultType" Caption="结果类型" />
+        <PropertyEditor Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <PropertyEditor Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <PropertyEditor Id="TargetCriteria" Caption="目标条件" />
+        <PropertyEditor Id="TargetType" Caption="目标类型" />
+      </Items>
+    </DetailView>
+    <ListView Id="RulePropertyValueProperties_ListView">
+      <Columns>
+        <ColumnInfo Id="InvertResult" Caption="反转结果" />
+        <ColumnInfo Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <ColumnInfo Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空值" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <ColumnInfo Id="ResultType" Caption="结果类型" />
+        <ColumnInfo Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <ColumnInfo Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <ColumnInfo Id="TargetCriteria" Caption="目标条件" />
+        <ColumnInfo Id="TargetType" Caption="目标类型" />
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <ListView Id="RulePropertyValueProperties_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="RuleRangeProperties_DetailView">
+      <Items>
+        <PropertyEditor Id="InvertResult" Caption="反转结果" />
+        <PropertyEditor Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <PropertyEditor Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空值" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <PropertyEditor Id="Name" Caption="名称" />
+        <PropertyEditor Id="ResultType" Caption="结果类型" />
+        <PropertyEditor Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <PropertyEditor Id="TargetCollectionAggregate" Caption="目标集合聚合" />
+        <PropertyEditor Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <PropertyEditor Id="TargetCriteria" Caption="目标条件" />
+        <PropertyEditor Id="TargetType" Caption="目标类型" />
+      </Items>
+    </DetailView>
+    <ListView Id="RuleRangeProperties_ListView">
+      <Columns>
+        <ColumnInfo Id="InvertResult" Caption="反转结果" />
+        <ColumnInfo Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <ColumnInfo Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空值" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <ColumnInfo Id="ResultType" Caption="结果类型" />
+        <ColumnInfo Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <ColumnInfo Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <ColumnInfo Id="TargetCriteria" Caption="目标条件" />
+        <ColumnInfo Id="TargetType" Caption="目标类型" />
+        <ColumnInfo Id="Name" Caption="名称" />
+        <ColumnInfo Id="TargetCollectionAggregate" Caption="目标集合聚合" />
+      </Columns>
+    </ListView>
+    <ListView Id="RuleRangeProperties_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="RuleRegularExpressionProperties_DetailView">
+      <Items>
+        <PropertyEditor Id="InvertResult" Caption="反转结果" />
+        <PropertyEditor Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <PropertyEditor Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空值" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <PropertyEditor Id="Name" Caption="名称" />
+        <PropertyEditor Id="ResultType" Caption="结果类型" />
+        <PropertyEditor Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <PropertyEditor Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <PropertyEditor Id="TargetCriteria" Caption="目标条件" />
+        <PropertyEditor Id="TargetType" Caption="目标类型" />
+      </Items>
+    </DetailView>
+    <ListView Id="RuleRegularExpressionProperties_ListView">
+      <Columns>
+        <ColumnInfo Id="InvertResult" Caption="反转结果" />
+        <ColumnInfo Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <ColumnInfo Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空值" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <ColumnInfo Id="ResultType" Caption="结果类型" />
+        <ColumnInfo Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <ColumnInfo Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <ColumnInfo Id="TargetCriteria" Caption="目标条件" />
+        <ColumnInfo Id="TargetType" Caption="目标类型" />
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <ListView Id="RuleRegularExpressionProperties_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="RuleRequiredFieldProperties_DetailView">
+      <Items>
+        <PropertyEditor Id="InvertResult" Caption="反转结果" />
+        <PropertyEditor Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <PropertyEditor Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空值" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <PropertyEditor Id="Name" Caption="名称" />
+        <PropertyEditor Id="ResultType" Caption="结果类型" />
+        <PropertyEditor Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <PropertyEditor Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <PropertyEditor Id="TargetCriteria" Caption="目标条件" />
+        <PropertyEditor Id="TargetType" Caption="目标类型" />
+      </Items>
+    </DetailView>
+    <ListView Id="RuleRequiredFieldProperties_ListView">
+      <Columns>
+        <ColumnInfo Id="InvertResult" Caption="反转结果" />
+        <ColumnInfo Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <ColumnInfo Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空值" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <ColumnInfo Id="ResultType" Caption="结果类型" />
+        <ColumnInfo Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <ColumnInfo Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <ColumnInfo Id="TargetCriteria" Caption="目标条件" />
+        <ColumnInfo Id="TargetType" Caption="目标类型" />
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <ListView Id="RuleRequiredFieldProperties_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="RuleSearchObjectProperties_DetailView">
+      <Items>
+        <PropertyEditor Id="CriteriaEvaluationBehavior" Caption="标准评价行为" />
+        <PropertyEditor Id="IncludeCurrentObject" Caption="包括当前对象" />
+        <PropertyEditor Id="InvertResult" Caption="反转结果" />
+        <PropertyEditor Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <PropertyEditor Id="MessageTemplateFoundObjects" Caption="消息模板找到的对象" />
+        <PropertyEditor Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空值" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <PropertyEditor Id="Name" Caption="名称" />
+        <PropertyEditor Id="ResultType" Caption="结果类型" />
+        <PropertyEditor Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <PropertyEditor Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <PropertyEditor Id="TargetCriteria" Caption="目标条件" />
+        <PropertyEditor Id="TargetType" Caption="目标类型" />
+      </Items>
+    </DetailView>
+    <ListView Id="RuleSearchObjectProperties_ListView">
+      <Columns>
+        <ColumnInfo Id="InvertResult" Caption="反转结果" />
+        <ColumnInfo Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <ColumnInfo Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空值" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <ColumnInfo Id="ResultType" Caption="结果类型" />
+        <ColumnInfo Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <ColumnInfo Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <ColumnInfo Id="TargetCriteria" Caption="目标条件" />
+        <ColumnInfo Id="TargetType" Caption="目标类型" />
+        <ColumnInfo Id="Name" Caption="名称" />
+        <ColumnInfo Id="IncludeCurrentObject" Caption="包括当前对象" />
+        <ColumnInfo Id="CriteriaEvaluationBehavior" Caption="标准评价行为" />
+        <ColumnInfo Id="MessageTemplateFoundObjects" Caption="消息模板找到的对象" />
+      </Columns>
+    </ListView>
+    <ListView Id="RuleSearchObjectProperties_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="RuleSetValidationResult_ByTarget_Error_DetailView" Caption="验证错误">
+      <Items>
+        <StaticText Id="ValidationResultsText" Text="在数据验证期间检测到问题。请阅读下面的信息以了解问题是什么，以及如何你可以纠正它们。" />
+      </Items>
+    </DetailView>
+    <DetailView Id="RuleSetValidationResult_DetailView" Caption="验证结果">
+      <Items>
+        <PropertyEditor Id="Results" Caption="结果" />
+      </Items>
+    </DetailView>
+    <ListView Id="RuleSetValidationResult_ListView" Caption="验证结果" />
+    <ListView Id="RuleSetValidationResult_LookupListView" Caption="验证结果" />
+    <ListView Id="RuleSetValidationResult_Results_ListView" Caption="验证的详细信息">
+      <Columns>
+        <ColumnInfo Id="RuleName" Caption="规则名称" />
+        <ColumnInfo Id="ContextId" Caption="上下文 Id" />
+        <ColumnInfo Id="ValidationOutcome" Caption="状态" />
+        <ColumnInfo Id="ErrorMessage" Caption="错误消息" />
+      </Columns>
+    </ListView>
+    <ListView Id="RuleSetValidationResultItem_ByTarget_ListView" Caption="验证的详细信息">
+      <Columns>
+        <ColumnInfo Id="ContextCaption" Caption="上下文" />
+        <ColumnInfo Id="ContextId" Caption="上下文ID" />
+        <ColumnInfo Id="RuleName" Caption="规则名称" />
+        <ColumnInfo Id="ErrorMessage" Caption="描述" />
+      </Columns>
+    </ListView>
+    <DetailView Id="RuleSetValidationResultItem_DetailView" Caption="验证的详细信息">
+      <Items>
+        <PropertyEditor Id="ContextId" Caption="上下文 Id" />
+        <PropertyEditor Id="ErrorMessage" Caption="错误消息" />
+        <PropertyEditor Id="RuleName" Caption="规则名称" />
+        <PropertyEditor Id="ValidationOutcome" Caption="状态" />
+      </Items>
+    </DetailView>
+    <ListView Id="RuleSetValidationResultItem_ListView" Caption="验证的详细信息">
+      <Columns>
+        <ColumnInfo Id="RuleName" Caption="规则名称" />
+        <ColumnInfo Id="ContextId" Caption="上下文 Id" />
+        <ColumnInfo Id="ValidationOutcome" Caption="状态" />
+        <ColumnInfo Id="ErrorMessage" Caption="错误消息" />
+      </Columns>
+    </ListView>
+    <ListView Id="RuleSetValidationResultItem_LookupListView" Caption="验证的详细信息" />
+    <ListView Id="RuleSetValidationResultItemAggregate_AggregatedResults_ListView" Caption="验证的详细信息">
+      <Columns>
+        <ColumnInfo Id="RuleName" Caption="规则名称" />
+        <ColumnInfo Id="ContextId" Caption="上下文 Id" />
+        <ColumnInfo Id="ValidationOutcome" Caption="状态" />
+        <ColumnInfo Id="ErrorMessage" Caption="错误消息" />
+      </Columns>
+    </ListView>
+    <DetailView Id="RuleSetValidationResultItemAggregate_DetailView">
+      <Items>
+        <PropertyEditor Id="ContextId" Caption="上下文 Id" />
+        <PropertyEditor Id="ErrorMessage" Caption="错误消息" />
+        <PropertyEditor Id="RuleName" Caption="规则名称" />
+        <PropertyEditor Id="ValidationOutcome" Caption="状态" />
+      </Items>
+    </DetailView>
+    <ListView Id="RuleSetValidationResultItemAggregate_ListView">
+      <Columns>
+        <ColumnInfo Id="RuleName" Caption="规则名称" />
+        <ColumnInfo Id="ContextId" Caption="上下文 Id" />
+        <ColumnInfo Id="ValidationOutcome" Caption="状态" />
+        <ColumnInfo Id="ErrorMessage" Caption="错误消息" />
+      </Columns>
+    </ListView>
+    <ListView Id="RuleSetValidationResultItemAggregate_LookupListView">
+      <Columns>
+        <ColumnInfo Id="RuleName" Caption="规则名称" />
+        <ColumnInfo Id="ContextId" Caption="上下文 Id" />
+        <ColumnInfo Id="ValidationOutcome" Caption="状态" />
+        <ColumnInfo Id="ErrorMessage" Caption="错误消息" />
+      </Columns>
+    </ListView>
+    <DetailView Id="RuleStringComparisonProperties_DetailView" Caption="规则字符串比较属性">
+      <Items>
+        <PropertyEditor Id="IgnoreCase" Caption="忽略大小写" />
+        <PropertyEditor Id="InvertResult" Caption="反转结果" />
+        <PropertyEditor Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <PropertyEditor Id="MessageTemplateMustBeEqual" Caption="消息模板必须相等" />
+        <PropertyEditor Id="MessageTemplateMustBeginWith" Caption="消息模板必须以开始" />
+        <PropertyEditor Id="MessageTemplateMustContain" Caption="消息模板必须包含" />
+        <PropertyEditor Id="MessageTemplateMustEndWith" Caption="消息模板必须以结束" />
+        <PropertyEditor Id="MessageTemplateMustNotBeEqual" Caption="消息模板不必须相等" />
+        <PropertyEditor Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空值" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <PropertyEditor Id="Name" Caption="名称" />
+        <PropertyEditor Id="OperandValue" Caption="操作数的值" />
+        <PropertyEditor Id="ResultType" Caption="结果类型" />
+        <PropertyEditor Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <PropertyEditor Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <PropertyEditor Id="TargetCriteria" Caption="目标条件" />
+        <PropertyEditor Id="TargetType" Caption="目标类型" />
+      </Items>
+    </DetailView>
+    <ListView Id="RuleStringComparisonProperties_ListView" Caption="规则字符串比较属性">
+      <Columns>
+        <ColumnInfo Id="InvertResult" Caption="反转结果" />
+        <ColumnInfo Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <ColumnInfo Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空值" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <ColumnInfo Id="ResultType" Caption="结果类型" />
+        <ColumnInfo Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <ColumnInfo Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <ColumnInfo Id="TargetCriteria" Caption="目标条件" />
+        <ColumnInfo Id="TargetType" Caption="目标类型" />
+        <ColumnInfo Id="Name" Caption="名称" />
+        <ColumnInfo Id="OperandValue" Caption="操作数的值" />
+        <ColumnInfo Id="IgnoreCase" Caption="忽略大小写" />
+        <ColumnInfo Id="MessageTemplateMustContain" Caption="消息模板必须包含" />
+        <ColumnInfo Id="MessageTemplateMustBeginWith" Caption="消息模板必须以开始" />
+        <ColumnInfo Id="MessageTemplateMustEndWith" Caption="消息模板必须以结束" />
+        <ColumnInfo Id="MessageTemplateMustBeEqual" Caption="消息模板必须相等" />
+        <ColumnInfo Id="MessageTemplateMustNotBeEqual" Caption="消息模板不必须相等" />
+      </Columns>
+    </ListView>
+    <ListView Id="RuleStringComparisonProperties_LookupListView" Caption="规则字符串比较属性">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="RuleUniqueValueProperties_DetailView" Caption="规则的唯一值属性">
+      <Items>
+        <PropertyEditor Id="CriteriaEvaluationBehavior" Caption="标准评价行为" />
+        <PropertyEditor Id="IncludeCurrentObject" Caption="包括当前对象" />
+        <PropertyEditor Id="InvertResult" Caption="反转结果" />
+        <PropertyEditor Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <PropertyEditor Id="MessageTemplateFoundObjects" Caption="消息模板找到的对象" />
+        <PropertyEditor Id="MessageTemplateMustBeUnique" Caption="必须是唯一的消息模板" />
+        <PropertyEditor Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空值" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <PropertyEditor Id="Name" Caption="名称" />
+        <PropertyEditor Id="ResultType" Caption="结果类型" />
+        <PropertyEditor Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <PropertyEditor Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <PropertyEditor Id="TargetCriteria" Caption="目标条件" />
+        <PropertyEditor Id="TargetType" Caption="目标类型" />
+      </Items>
+    </DetailView>
+    <ListView Id="RuleUniqueValueProperties_ListView" Caption="规则的唯一值属性">
+      <Columns>
+        <ColumnInfo Id="CriteriaEvaluationBehavior" Caption="标准评价行为" />
+        <ColumnInfo Id="IncludeCurrentObject" Caption="包括当前对象" />
+        <ColumnInfo Id="InvertResult" Caption="反转结果" />
+        <ColumnInfo Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <ColumnInfo Id="MessageTemplateFoundObjects" Caption="消息模板找到的对象" />
+        <ColumnInfo Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空值" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <ColumnInfo Id="ResultType" Caption="结果类型" />
+        <ColumnInfo Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <ColumnInfo Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <ColumnInfo Id="TargetCriteria" Caption="目标条件" />
+        <ColumnInfo Id="TargetType" Caption="目标类型" />
+        <ColumnInfo Id="Name" Caption="名称" />
+        <ColumnInfo Id="MessageTemplateMustBeUnique" Caption="必须是唯一的消息模板" />
+      </Columns>
+    </ListView>
+    <ListView Id="RuleUniqueValueProperties_LookupListView" Caption="规则的唯一值属性">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="RuleValueComparisonProperties_DetailView" Caption="规则值比较属性">
+      <Items>
+        <PropertyEditor Id="InvertResult" Caption="反转结果" />
+        <PropertyEditor Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <PropertyEditor Id="MessageTemplateMustBeEqualToOperand" Caption="消息模板必须等于操作数" />
+        <PropertyEditor Id="MessageTemplateMustBeGreaterThanOperand" Caption="消息模板必须大于操作数" />
+        <PropertyEditor Id="MessageTemplateMustBeGreaterThanOrEqualToOperand" Caption="消息模板必须大于或等于操作数" />
+        <PropertyEditor Id="MessageTemplateMustBeLessThanOperand" Caption="消息模板必须小于操作数" />
+        <PropertyEditor Id="MessageTemplateMustBeLessThanOrEqualToOperand" Caption="消息模板必须小于或等于操作数" />
+        <PropertyEditor Id="MessageTemplateMustNotBeEqualToOperand" Caption="消息模板必须不等于操作数" />
+        <PropertyEditor Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空值" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <PropertyEditor Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <PropertyEditor Id="Name" Caption="名称" />
+        <PropertyEditor Id="ResultType" Caption="结果类型" />
+        <PropertyEditor Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <PropertyEditor Id="TargetCollectionAggregate" Caption="目标集合聚合" />
+        <PropertyEditor Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <PropertyEditor Id="TargetCriteria" Caption="目标条件" />
+        <PropertyEditor Id="TargetType" Caption="目标类型" />
+      </Items>
+    </DetailView>
+    <ListView Id="RuleValueComparisonProperties_ListView" Caption="规则值比较属性">
+      <Columns>
+        <ColumnInfo Id="InvertResult" Caption="反转结果" />
+        <ColumnInfo Id="MessageTemplateCollectionValidationMessageSuffix" Caption="消息模板集合验证消息后缀" />
+        <ColumnInfo Id="MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空值" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="消息模板目标不满足集合标准" />
+        <ColumnInfo Id="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <ColumnInfo Id="ResultType" Caption="结果类型" />
+        <ColumnInfo Id="SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <ColumnInfo Id="TargetContextIDs" Caption="目标上下文 Id" />
+        <ColumnInfo Id="TargetCriteria" Caption="目标条件" />
+        <ColumnInfo Id="TargetType" Caption="目标类型" />
+        <ColumnInfo Id="Name" Caption="名称" />
+        <ColumnInfo Id="TargetCollectionAggregate" Caption="目标集合聚合" />
+        <ColumnInfo Id="MessageTemplateMustBeEqualToOperand" Caption="消息模板必须等于操作数" />
+        <ColumnInfo Id="MessageTemplateMustBeGreaterThanOperand" Caption="消息模板必须大于操作数" />
+        <ColumnInfo Id="MessageTemplateMustBeGreaterThanOrEqualToOperand" Caption="消息模板必须大于或等于操作数" />
+        <ColumnInfo Id="MessageTemplateMustBeLessThanOperand" Caption="消息模板必须小于操作数" />
+        <ColumnInfo Id="MessageTemplateMustBeLessThanOrEqualToOperand" Caption="消息模板必须小于或等于操作数" />
+        <ColumnInfo Id="MessageTemplateMustNotBeEqualToOperand" Caption="消息模板必须不等于操作数" />
+      </Columns>
+    </ListView>
+    <ListView Id="RuleValueComparisonProperties_LookupListView" Caption="规则值比较属性">
+      <Columns>
+        <ColumnInfo Id="Name" Caption="名称" />
+      </Columns>
+    </ListView>
+    <DetailView Id="StaticImageDashboardOrganizationItem_DetailView">
+      <Items>
+        <PropertyEditor Id="Preview" Caption="预览" />
+      </Items>
+    </DetailView>
+    <ListView Id="StaticImageDashboardOrganizationItem_ListView">
+      <Columns>
+        <ColumnInfo Id="Preview" Caption="预览" />
+      </Columns>
+    </ListView>
+    <DetailView Id="StaticTextDashboardOrganizationItem_DetailView">
+      <Items>
+        <PropertyEditor Id="Text" Caption="文本" />
+      </Items>
+    </DetailView>
+    <ListView Id="StaticTextDashboardOrganizationItem_ListView">
+      <Columns>
+        <ColumnInfo Id="Text" Caption="文本" />
+      </Columns>
+    </ListView>
+    <ListView Id="StaticTextDashboardOrganizationItem_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Text" Caption="文本" />
+      </Columns>
+    </ListView>
+    <DetailView Id="ValidationResults_DetailView" Caption="验证结果">
+      <Items>
+        <PropertyEditor Id="Results" Caption="结果" />
+      </Items>
+    </DetailView>
+    <ListView Id="ValidationResults_DisplayableValidationResultItems_ListView" Caption="验证的详细信息">
+      <Columns>
+        <ColumnInfo Id="RuleName" Caption="规则名称" />
+        <ColumnInfo Id="ContextId" Caption="上下文 Id" />
+        <ColumnInfo Id="Outcome" Caption="状态" />
+        <ColumnInfo Id="ErrorMessage" Caption="错误消息" />
+        <ColumnInfo Id="RuleProperties.Name" Caption="名称" />
+        <ColumnInfo Id="RuleProperties.TargetType" Caption="目标类型" />
+        <ColumnInfo Id="RuleProperties.ResultType" Caption="结果类型" />
+        <ColumnInfo Id="RuleProperties.TargetContextIDs" Caption="目标上下文 Id" />
+        <ColumnInfo Id="RuleProperties.InvertResult" Caption="反转结果" />
+        <ColumnInfo Id="RuleProperties.SkipNullOrEmptyValues" Caption="跳过空值或空白值" />
+        <ColumnInfo Id="RuleProperties.MessageTemplateSkipNullOrEmptyValues" Caption="消息模板跳过空值或空值" />
+        <ColumnInfo Id="RuleProperties.MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="消息模板目标不满足目标标准" />
+        <ColumnInfo Id="RuleProperties.TargetCriteria" Caption="目标条件" />
+      </Columns>
+    </ListView>
+    <DetailView Id="ValidationResults_Error_DetailView" Caption="验证结果">
+      <Items>
+        <PropertyEditor Id="Results" Caption="结果" />
+        <StaticText Id="ValidationResultsText" Text="在数据验证期间检测到问题。请阅读下面的信息以了解问题是什么，以及如何你可以纠正它们。" />
+      </Items>
+    </DetailView>
+    <ListView Id="ValidationResults_ListView" Caption="验证结果" />
+    <ListView Id="ValidationResults_LookupListView" Caption="验证结果" />
+    <DetailView Id="ValidationResults_Passed_DetailView" Caption="验证结果">
+      <Items>
+        <PropertyEditor Id="Results" Caption="结果" />
+        <StaticText Id="ValidationResultsText" Text="没有检测到问题。" />
+      </Items>
+    </DetailView>
+    <ListView Id="ValidationResults_Results_ListView">
+      <Columns>
+        <ColumnInfo Id="ContextValidationOutcome" Caption="状态" />
+      </Columns>
+    </ListView>
+    <DetailView Id="ViewDashboardOrganizationItem_DetailView" Caption="视图">
+      <Items>
+        <PropertyEditor Id="ActionsToolbarVisibility" Caption="操作工具栏可见性" />
+        <PropertyEditor Id="Criteria" Caption="标准" />
+        <PropertyEditor Id="ViewDescriptor" Caption="视图" />
+      </Items>
+    </DetailView>
+    <ListView Id="ViewDashboardOrganizationItem_ListView" Caption="视图">
+      <Columns>
+        <ColumnInfo Id="ViewDescriptor" Caption="视图" />
+        <ColumnInfo Id="Criteria" Caption="标准" />
+        <ColumnInfo Id="ActionsToolbarVisibility" Caption="操作工具栏可见性" />
+      </Columns>
+    </ListView>
+    <ListView Id="ViewDashboardOrganizationItem_LookupListView" Caption="视图">
+      <Columns>
+        <ColumnInfo Id="ViewDescriptor" Caption="视图" />
+        <ColumnInfo Id="Criteria" Caption="标准" />
+        <ColumnInfo Id="ActionsToolbarVisibility" Caption="操作工具栏可见性" />
+      </Columns>
+    </ListView>
+    <DetailView Id="XPBaseObject_DetailView" Caption="XPBase 对象" />
+    <ListView Id="XPBaseObject_ListView" Caption="XPBase 对象" />
+    <ListView Id="XPBaseObject_LookupListView" Caption="XPBase 对象" />
+    <DetailView Id="XPCustomObject_DetailView" Caption="XPCustom 对象" />
+    <ListView Id="XPCustomObject_ListView" Caption="XPCustom 对象" />
+    <ListView Id="XPCustomObject_LookupListView" Caption="XPCustom 对象" />
+    <DetailView Id="XPObjectType_DetailView" Caption="XPObject 型" />
+    <ListView Id="XPObjectType_ListView" Caption="XPObject 型" />
+    <ListView Id="XPObjectType_LookupListView" Caption="XPObject 型" />
+  </Views>
+</Application>

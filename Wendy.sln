@@ -1,0 +1,119 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wendy.Module", "Wendy.Module\Wendy.Module.csproj", "{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wendy.Module.Win", "Wendy.Module.Win\Wendy.Module.Win.csproj", "{7964F87D-BC5D-4C4E-8B2F-71E89739AA97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wendy.Win", "Wendy.Win\Wendy.Win.csproj", "{D05D93DF-312D-4D4E-B980-726871EC7833}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Dll", "_Dll", "{BF92ACB6-FF16-48D3-9A08-52EAB1BA0B9B}"
+	ProjectSection(SolutionItems) = preProject
+		_Dll\DevExpress.BonusSkins.v18.1.dll = _Dll\DevExpress.BonusSkins.v18.1.dll
+		_Dll\DevExpress.Charts.v18.1.Core.dll = _Dll\DevExpress.Charts.v18.1.Core.dll
+		_Dll\DevExpress.CodeParser.v18.1.dll = _Dll\DevExpress.CodeParser.v18.1.dll
+		_Dll\DevExpress.Data.v18.1.dll = _Dll\DevExpress.Data.v18.1.dll
+		_Dll\DevExpress.DataAccess.v18.1.dll = _Dll\DevExpress.DataAccess.v18.1.dll
+		_Dll\DevExpress.DataAccess.v18.1.UI.dll = _Dll\DevExpress.DataAccess.v18.1.UI.dll
+		_Dll\DevExpress.Diagram.v18.1.Core.dll = _Dll\DevExpress.Diagram.v18.1.Core.dll
+		_Dll\DevExpress.ExpressApp.AuditTrail.v18.1.dll = _Dll\DevExpress.ExpressApp.AuditTrail.v18.1.dll
+		_Dll\DevExpress.ExpressApp.CloneObject.v18.1.dll = _Dll\DevExpress.ExpressApp.CloneObject.v18.1.dll
+		_Dll\DevExpress.ExpressApp.ConditionalAppearance.v18.1.dll = _Dll\DevExpress.ExpressApp.ConditionalAppearance.v18.1.dll
+		_Dll\DevExpress.ExpressApp.Images.v18.1.dll = _Dll\DevExpress.ExpressApp.Images.v18.1.dll
+		_Dll\DevExpress.ExpressApp.Kpi.v18.1.dll = _Dll\DevExpress.ExpressApp.Kpi.v18.1.dll
+		_Dll\DevExpress.ExpressApp.Objects.v18.1.dll = _Dll\DevExpress.ExpressApp.Objects.v18.1.dll
+		_Dll\DevExpress.ExpressApp.Reports.v18.1.dll = _Dll\DevExpress.ExpressApp.Reports.v18.1.dll
+		_Dll\DevExpress.ExpressApp.ReportsV2.v18.1.dll = _Dll\DevExpress.ExpressApp.ReportsV2.v18.1.dll
+		_Dll\DevExpress.ExpressApp.Security.v18.1.dll = _Dll\DevExpress.ExpressApp.Security.v18.1.dll
+		_Dll\DevExpress.ExpressApp.Security.Xpo.v18.1.dll = _Dll\DevExpress.ExpressApp.Security.Xpo.v18.1.dll
+		_Dll\DevExpress.ExpressApp.StateMachine.v18.1.dll = _Dll\DevExpress.ExpressApp.StateMachine.v18.1.dll
+		_Dll\DevExpress.ExpressApp.TreeListEditors.v18.1.dll = _Dll\DevExpress.ExpressApp.TreeListEditors.v18.1.dll
+		_Dll\DevExpress.ExpressApp.TreeListEditors.Win.v18.1.dll = _Dll\DevExpress.ExpressApp.TreeListEditors.Win.v18.1.dll
+		_Dll\DevExpress.ExpressApp.v18.1.dll = _Dll\DevExpress.ExpressApp.v18.1.dll
+		_Dll\DevExpress.ExpressApp.Validation.v18.1.dll = _Dll\DevExpress.ExpressApp.Validation.v18.1.dll
+		_Dll\DevExpress.ExpressApp.Validation.Win.v18.1.dll = _Dll\DevExpress.ExpressApp.Validation.Win.v18.1.dll
+		_Dll\DevExpress.ExpressApp.Win.v18.1.dll = _Dll\DevExpress.ExpressApp.Win.v18.1.dll
+		_Dll\DevExpress.ExpressApp.Xpo.v18.1.dll = _Dll\DevExpress.ExpressApp.Xpo.v18.1.dll
+		_Dll\DevExpress.Images.v18.1.dll = _Dll\DevExpress.Images.v18.1.dll
+		_Dll\DevExpress.Office.v18.1.Core.dll = _Dll\DevExpress.Office.v18.1.Core.dll
+		_Dll\DevExpress.Pdf.v18.1.Core.dll = _Dll\DevExpress.Pdf.v18.1.Core.dll
+		_Dll\DevExpress.Persistent.Base.v18.1.dll = _Dll\DevExpress.Persistent.Base.v18.1.dll
+		_Dll\DevExpress.Persistent.BaseImpl.v18.1.dll = _Dll\DevExpress.Persistent.BaseImpl.v18.1.dll
+		_Dll\DevExpress.PivotGrid.v18.1.Core.dll = _Dll\DevExpress.PivotGrid.v18.1.Core.dll
+		_Dll\DevExpress.Printing.v18.1.Core.dll = _Dll\DevExpress.Printing.v18.1.Core.dll
+		_Dll\DevExpress.RichEdit.v18.1.Core.dll = _Dll\DevExpress.RichEdit.v18.1.Core.dll
+		_Dll\DevExpress.RichEdit.v18.1.Export.dll = _Dll\DevExpress.RichEdit.v18.1.Export.dll
+		_Dll\DevExpress.Sparkline.v18.1.Core.dll = _Dll\DevExpress.Sparkline.v18.1.Core.dll
+		_Dll\DevExpress.Utils.v18.1.dll = _Dll\DevExpress.Utils.v18.1.dll
+		_Dll\DevExpress.Utils.v18.1.UI.dll = _Dll\DevExpress.Utils.v18.1.UI.dll
+		_Dll\DevExpress.Xpo.v18.1.dll = _Dll\DevExpress.Xpo.v18.1.dll
+		_Dll\DevExpress.XtraBars.v18.1.dll = _Dll\DevExpress.XtraBars.v18.1.dll
+		_Dll\DevExpress.XtraCharts.v18.1.dll = _Dll\DevExpress.XtraCharts.v18.1.dll
+		_Dll\DevExpress.XtraCharts.v18.1.Extensions.dll = _Dll\DevExpress.XtraCharts.v18.1.Extensions.dll
+		_Dll\DevExpress.XtraCharts.v18.1.Wizard.dll = _Dll\DevExpress.XtraCharts.v18.1.Wizard.dll
+		_Dll\DevExpress.XtraDiagram.v18.1.dll = _Dll\DevExpress.XtraDiagram.v18.1.dll
+		_Dll\DevExpress.XtraEditors.v18.1.dll = _Dll\DevExpress.XtraEditors.v18.1.dll
+		_Dll\DevExpress.XtraGauges.v18.1.Core.dll = _Dll\DevExpress.XtraGauges.v18.1.Core.dll
+		_Dll\DevExpress.XtraGrid.v18.1.dll = _Dll\DevExpress.XtraGrid.v18.1.dll
+		_Dll\DevExpress.XtraLayout.v18.1.dll = _Dll\DevExpress.XtraLayout.v18.1.dll
+		_Dll\DevExpress.XtraNavBar.v18.1.dll = _Dll\DevExpress.XtraNavBar.v18.1.dll
+		_Dll\DevExpress.XtraPivotGrid.v18.1.dll = _Dll\DevExpress.XtraPivotGrid.v18.1.dll
+		_Dll\DevExpress.XtraPrinting.v18.1.dll = _Dll\DevExpress.XtraPrinting.v18.1.dll
+		_Dll\DevExpress.XtraReports.v18.1.dll = _Dll\DevExpress.XtraReports.v18.1.dll
+		_Dll\DevExpress.XtraReports.v18.1.Extensions.dll = _Dll\DevExpress.XtraReports.v18.1.Extensions.dll
+		_Dll\DevExpress.XtraRichEdit.v18.1.dll = _Dll\DevExpress.XtraRichEdit.v18.1.dll
+		_Dll\DevExpress.XtraScheduler.v18.1.Core.dll = _Dll\DevExpress.XtraScheduler.v18.1.Core.dll
+		_Dll\DevExpress.XtraTreeList.v18.1.dll = _Dll\DevExpress.XtraTreeList.v18.1.dll
+		_Dll\DevExpress.XtraVerticalGrid.v18.1.dll = _Dll\DevExpress.XtraVerticalGrid.v18.1.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		EasyTest|Any CPU = EasyTest|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
+		{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
+		{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7964F87D-BC5D-4C4E-8B2F-71E89739AA97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7964F87D-BC5D-4C4E-8B2F-71E89739AA97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7964F87D-BC5D-4C4E-8B2F-71E89739AA97}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
+		{7964F87D-BC5D-4C4E-8B2F-71E89739AA97}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
+		{7964F87D-BC5D-4C4E-8B2F-71E89739AA97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7964F87D-BC5D-4C4E-8B2F-71E89739AA97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D05D93DF-312D-4D4E-B980-726871EC7833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D05D93DF-312D-4D4E-B980-726871EC7833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D05D93DF-312D-4D4E-B980-726871EC7833}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
+		{D05D93DF-312D-4D4E-B980-726871EC7833}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
+		{D05D93DF-312D-4D4E-B980-726871EC7833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D05D93DF-312D-4D4E-B980-726871EC7833}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7F776DE-09C8-4D19-B04C-65D26A69D045}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://hostxia.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Wendy.Module.Win\\Wendy.Module.Win.csproj
+		SccProjectName1 = Wendy.Module.Win
+		SccLocalPath1 = Wendy.Module.Win
+		SccProjectUniqueName2 = Wendy.Module\\Wendy.Module.csproj
+		SccProjectName2 = Wendy.Module
+		SccLocalPath2 = Wendy.Module
+		SccProjectUniqueName3 = Wendy.Win\\Wendy.Win.csproj
+		SccProjectName3 = Wendy.Win
+		SccLocalPath3 = Wendy.Win
+	EndGlobalSection
+EndGlobal
