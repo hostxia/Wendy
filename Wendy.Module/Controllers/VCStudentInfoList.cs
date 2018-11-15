@@ -1,5 +1,6 @@
 ﻿using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Actions;
+using DevExpress.ExpressApp.Security;
 using DevExpress.ExpressApp.SystemModule;
 using DevExpress.ExpressApp.Xpo;
 using DevExpress.Xpo;
@@ -12,6 +13,8 @@ namespace Wendy.Module.Controllers
     {
         private string _sCustomCondition =
             "LastContactRecord.dt_RecordDate >= Today() And LastContactRecord.dt_RecordDate < AddDays(Today(),1) Or ConsultRecords.Min(dt_ConsultDate) >= Today() And ConsultRecords.Min(dt_ConsultDate) < AddDays(Today(),1)";
+
+        private readonly string _sTMKCondition = $"(LastContactRecord.dt_NextDate < AddDays(Today(),1) Or ConsultRecords.Min(dt_ConsultDate) >= Today() And ConsultRecords.Min(dt_ConsultDate) < AddDays(Today(),1)) And (s_Valid = '待定' Or s_Valid = '') And OwnerTMK.Oid = '{SecuritySystem.CurrentUserId}' And OwnerCC is Null";
         public VCStudentInfoList()
         {
             InitializeComponent();
@@ -19,7 +22,7 @@ namespace Wendy.Module.Controllers
         protected override void OnActivated()
         {
             base.OnActivated();
-            ((ListView)View).CollectionSource.SetCriteria("Custom", _sCustomCondition);
+            ((ListView)View).CollectionSource.SetCriteria("Custom",((SysUser)SecuritySystem.CurrentUser).IsUserInRole("TMK") ? _sTMKCondition : _sCustomCondition);
         }
         protected override void OnViewControlsCreated()
         {
@@ -35,7 +38,7 @@ namespace Wendy.Module.Controllers
                 switch (scaFilter.SelectedItem.Data.ToString())
                 {
                     case "T":
-                        ((ListView)View).CollectionSource.SetCriteria("Custom", _sCustomCondition);
+                        ((ListView)View).CollectionSource.SetCriteria("Custom", ((SysUser)SecuritySystem.CurrentUser).IsUserInRole("TMK") ? _sTMKCondition : _sCustomCondition);
                         break;
                     default:
                         ((ListView)View).CollectionSource.SetCriteria("Custom", null);

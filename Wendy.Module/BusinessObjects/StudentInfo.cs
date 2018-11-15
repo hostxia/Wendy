@@ -386,10 +386,26 @@ namespace Wendy.Module.BusinessObjects
         /// </summary>
         private string _sValid;
         [Size(10)]
+        [ImmediatePostData]
         public string s_Valid
         {
             get => _sValid;
-            set => SetPropertyValue("s_Valid", ref _sValid, value);
+            set
+            {
+                SetPropertyValue("s_Valid", ref _sValid, value);
+                if (!IsLoading && !IsSaving)
+                {
+                    dt_ValidDate = (value == "有效" || value == "无效") ? DateTime.Today : DateTime.MinValue;
+                }
+            }
+
+        }
+
+        private DateTime _dtValidDate;
+        public DateTime dt_ValidDate
+        {
+            get => _dtValidDate;
+            set => SetPropertyValue("dt_ValidDate", ref _dtValidDate, value);
         }
 
         private SysUser ownerCC;

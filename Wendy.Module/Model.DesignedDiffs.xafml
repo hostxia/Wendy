@@ -142,6 +142,7 @@
         <Member Name="dt_BirthDate" Caption="生日" />
         <Member Name="dt_CreateDate" Caption="创建时间" AllowEdit="False" />
         <Member Name="dt_FirstConsultDate" Caption="首次咨询日" />
+        <Member Name="dt_ValidDate" Caption="判定日期" AllowEdit="False" />
         <Member Name="LastContactRecord" Caption="最新联系记录" />
         <Member Name="ListSourseInfos" Caption="班级信息" />
         <Member Name="n_Age" Caption="年龄" DisplayFormat="{0:f1}" EditMask="f1" />
@@ -875,22 +876,22 @@
       </Items>
       <Layout>
         <LayoutGroup Id="Main" RelativeSize="100">
-          <LayoutGroup Id="SimpleEditors" RelativeSize="48.331273176761435">
-            <LayoutGroup Id="StudentInfo" Caption="基本资料" RelativeSize="44.501278772378519">
-              <LayoutGroup Id="StudentInfo_col1" RelativeSize="49.950445986124876" Caption="StudentInfo_col1" Direction="Horizontal">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="51.939924906132667">
+            <LayoutGroup Id="StudentInfo" Caption="基本资料" RelativeSize="47.710843373493979">
+              <LayoutGroup Id="StudentInfo_col1" RelativeSize="49.931787175989086" Caption="StudentInfo_col1" Direction="Horizontal">
                 <LayoutGroup Id="Autoab6968cd-2a1e-4ced-a6e7-ee62befff89c" ShowCaption="False" Caption="Autoab6968cd-2a1e-4ced-a6e7-ee62befff89c(5)" Index="0" RelativeSize="50" IsNewNode="True">
-                  <LayoutItem Id="s_Name" ViewItem="s_Name" Index="0" RelativeSize="23.913043478260871" IsNewNode="True" />
-                  <LayoutItem Id="s_Sex" ViewItem="s_Sex" Index="1" RelativeSize="17.391304347826086" IsNewNode="True" />
-                  <LayoutItem Id="dt_BirthDate" ViewItem="dt_BirthDate" Index="2" RelativeSize="17.391304347826086" IsNewNode="True" />
-                  <LayoutItem Id="n_Age" ViewItem="n_Age" Index="3" RelativeSize="17.391304347826086" IsNewNode="True" />
-                  <LayoutItem Id="s_Address" ViewItem="s_Address" Index="4" RelativeSize="23.913043478260871" IsNewNode="True" />
+                  <LayoutItem Id="s_Name" ViewItem="s_Name" Index="0" RelativeSize="20.37037037037037" IsNewNode="True" />
+                  <LayoutItem Id="s_Sex" ViewItem="s_Sex" Index="1" RelativeSize="14.814814814814815" IsNewNode="True" />
+                  <LayoutItem Id="dt_BirthDate" ViewItem="dt_BirthDate" Index="2" RelativeSize="14.814814814814815" IsNewNode="True" />
+                  <LayoutItem Id="n_Age" ViewItem="n_Age" Index="3" RelativeSize="14.814814814814815" IsNewNode="True" />
+                  <LayoutItem Id="s_Address" ViewItem="s_Address" Index="4" RelativeSize="35.185185185185183" IsNewNode="True" />
                 </LayoutGroup>
                 <LayoutGroup Id="Auto4717ae42-f661-4eff-b478-8055671d3277" ShowCaption="False" Caption="Auto4717ae42-f661-4eff-b478-8055671d3277(10)" Index="1" RelativeSize="50" IsNewNode="True">
-                  <LayoutItem Id="s_Character" ViewItem="s_Character" Index="0" RelativeSize="23.913043478260871" IsNewNode="True" />
-                  <LayoutItem Id="s_School" ViewItem="s_School" Index="1" RelativeSize="17.391304347826086" IsNewNode="True" />
-                  <LayoutItem Id="s_Train" ViewItem="s_Train" Index="2" RelativeSize="17.391304347826086" IsNewNode="True" />
-                  <LayoutItem Id="s_Ability" ViewItem="s_Ability" Index="3" RelativeSize="17.391304347826086" IsNewNode="True" />
-                  <LayoutItem Id="s_WeChat" ViewItem="s_WeChat" Index="4" RelativeSize="23.913043478260871" IsNewNode="True" />
+                  <LayoutItem Id="s_Character" ViewItem="s_Character" Index="0" RelativeSize="20.37037037037037" IsNewNode="True" />
+                  <LayoutItem Id="s_School" ViewItem="s_School" Index="1" RelativeSize="14.814814814814815" IsNewNode="True" />
+                  <LayoutItem Id="s_Train" ViewItem="s_Train" Index="2" RelativeSize="14.814814814814815" IsNewNode="True" />
+                  <LayoutItem Id="s_Ability" ViewItem="s_Ability" Index="3" RelativeSize="14.814814814814815" IsNewNode="True" />
+                  <LayoutItem Id="s_WeChat" ViewItem="s_WeChat" Index="4" RelativeSize="35.185185185185183" IsNewNode="True" />
                 </LayoutGroup>
                 <LayoutItem Id="dt_BirthDate" Index="1" RelativeSize="11.428571428571429" ViewItem="dt_BirthDate" Removed="True" />
                 <LayoutItem Id="s_Ability" Index="1" RelativeSize="17.391304347826086" Removed="True" />
@@ -915,20 +916,21 @@
                 <LayoutItem Id="s_Phone2" RelativeSize="11.428571428571429" Removed="True" />
                 <LayoutItem Id="s_Sex" RelativeSize="10.256410256410257" Removed="True" />
               </LayoutGroup>
-              <LayoutGroup Id="StudentInfo_col2" RelativeSize="50.049554013875124" Caption="StudentInfo_col2" Direction="Horizontal">
-                <LayoutGroup Id="Auto8de3d76c-b51a-4427-8c2a-12fe7d35303b" ShowCaption="False" Caption="Auto8de3d76c-b51a-4427-8c2a-12fe7d35303b(18)" Index="0" RelativeSize="49.9009900990099" IsNewNode="True">
-                  <LayoutItem Id="s_Parent" ViewItem="s_Parent" Index="0" RelativeSize="23.913043478260871" IsNewNode="True" />
-                  <LayoutItem Id="s_Phone" ViewItem="s_Phone" Index="1" RelativeSize="17.391304347826086" IsNewNode="True" />
-                  <LayoutItem Id="s_Parent2" ViewItem="s_Parent2" Index="2" RelativeSize="17.391304347826086" IsNewNode="True" />
-                  <LayoutItem Id="s_Phone2" ViewItem="s_Phone2" Index="3" RelativeSize="17.391304347826086" IsNewNode="True" />
-                  <LayoutItem Id="b_IsBack" ViewItem="b_IsBack" Index="4" RelativeSize="23.913043478260871" IsNewNode="True" />
+              <LayoutGroup Id="StudentInfo_col2" RelativeSize="50.068212824010914" Caption="StudentInfo_col2" Direction="Horizontal">
+                <LayoutGroup Id="Auto8de3d76c-b51a-4427-8c2a-12fe7d35303b" ShowCaption="False" Caption="Auto8de3d76c-b51a-4427-8c2a-12fe7d35303b(18)" Index="0" RelativeSize="49.863760217983653" IsNewNode="True">
+                  <LayoutItem Id="s_Parent" ViewItem="s_Parent" Index="0" RelativeSize="20.37037037037037" IsNewNode="True" />
+                  <LayoutItem Id="s_Phone" ViewItem="s_Phone" Index="1" RelativeSize="14.814814814814815" IsNewNode="True" />
+                  <LayoutItem Id="s_Parent2" ViewItem="s_Parent2" Index="2" RelativeSize="14.814814814814815" IsNewNode="True" />
+                  <LayoutItem Id="s_Phone2" ViewItem="s_Phone2" Index="3" RelativeSize="14.814814814814815" IsNewNode="True" />
+                  <LayoutItem Id="b_IsBack" ViewItem="b_IsBack" Index="4" RelativeSize="35.185185185185183" IsNewNode="True" />
                 </LayoutGroup>
-                <LayoutGroup Id="Auto4435def0-ecab-48d5-a3ae-0a63edb3c643" ShowCaption="False" Caption="Auto4435def0-ecab-48d5-a3ae-0a63edb3c643(22)" Index="1" RelativeSize="50.0990099009901" IsNewNode="True">
-                  <LayoutItem Id="s_Source" ViewItem="s_Source" Index="0" RelativeSize="23.913043478260871" IsNewNode="True" />
-                  <LayoutItem Id="s_SourceComment" ViewItem="s_SourceComment" Index="1" RelativeSize="17.391304347826086" IsNewNode="True" />
-                  <LayoutItem Id="OwnerTMK" ViewItem="OwnerTMK" Index="2" RelativeSize="17.391304347826086" IsNewNode="True" />
-                  <LayoutItem Id="OwnerCC" ViewItem="OwnerCC" Index="3" RelativeSize="17.391304347826086" IsNewNode="True" />
-                  <LayoutItem Id="s_Valid" ViewItem="s_Valid" Index="4" RelativeSize="23.913043478260871" IsNewNode="True" />
+                <LayoutGroup Id="Auto4435def0-ecab-48d5-a3ae-0a63edb3c643" ShowCaption="False" Caption="Auto4435def0-ecab-48d5-a3ae-0a63edb3c643(22)" Index="1" RelativeSize="50.136239782016347" IsNewNode="True">
+                  <LayoutItem Id="s_Source" ViewItem="s_Source" Index="0" RelativeSize="20.37037037037037" IsNewNode="True" />
+                  <LayoutItem Id="s_SourceComment" ViewItem="s_SourceComment" Index="1" RelativeSize="14.814814814814815" IsNewNode="True" />
+                  <LayoutItem Id="OwnerTMK" ViewItem="OwnerTMK" Index="2" RelativeSize="14.814814814814815" IsNewNode="True" />
+                  <LayoutItem Id="OwnerCC" ViewItem="OwnerCC" Index="3" RelativeSize="14.814814814814815" IsNewNode="True" />
+                  <LayoutItem Id="s_Valid" ViewItem="s_Valid" Index="4" RelativeSize="14.814814814814815" IsNewNode="True" />
+                  <LayoutItem Id="dt_ValidDate" ViewItem="dt_ValidDate" Index="5" RelativeSize="20.37037037037037" IsNewNode="True" />
                 </LayoutGroup>
                 <LayoutItem Id="s_WeChat" Index="1" RelativeSize="58.695652173913047" Removed="True" />
                 <LayoutItem Id="b_IsBack" Index="2" RelativeSize="39.525691699604742" Removed="True" />
@@ -948,31 +950,32 @@
                 <LayoutItem Id="s_AllergyCondition" Index="9" RelativeSize="8.51063829787234" Removed="True" />
                 <LayoutItem Id="s_PhysicalCondition" Index="9" RelativeSize="7.8431372549019605" Removed="True" />
                 <LayoutItem Id="s_GuardianName" Index="11" RelativeSize="7.2727272727272725" Removed="True" />
+                <LayoutItem Id="dt_ValidDate" Removed="True" />
                 <LayoutItem Id="s_BankName" Removed="True" />
                 <LayoutItem Id="s_GuardianIdNo" Removed="True" />
                 <LayoutItem Id="s_Source" Removed="True" />
               </LayoutGroup>
             </LayoutGroup>
-            <LayoutGroup Id="Item1" ShowCaption="True" Caption="个人资料" CaptionLocation="Top" Index="1" RelativeSize="29.923273657289002" IsNewNode="True">
+            <LayoutGroup Id="Item1" ShowCaption="True" Caption="个人资料" CaptionLocation="Top" Index="1" RelativeSize="28.192771084337348" IsNewNode="True">
               <LayoutGroup Id="Auto940087ab-2314-4fe1-8aa6-f7ffec02a3b0" ShowCaption="False" Caption="Auto940087ab-2314-4fe1-8aa6-f7ffec02a3b0(29)" Index="0" RelativeSize="100" Direction="Horizontal" IsNewNode="True">
-                <LayoutGroup Id="Auto2afd1dee-12e5-4094-ac0b-d5ed999f8456" ShowCaption="False" Caption="Auto2afd1dee-12e5-4094-ac0b-d5ed999f8456(31)" Index="0" RelativeSize="24.975222993062438" IsNewNode="True">
+                <LayoutGroup Id="Auto2afd1dee-12e5-4094-ac0b-d5ed999f8456" ShowCaption="False" Caption="Auto2afd1dee-12e5-4094-ac0b-d5ed999f8456(31)" Index="0" RelativeSize="24.965893587994543" IsNewNode="True">
                   <LayoutItem Id="n_Stature" ViewItem="n_Stature" Index="0" RelativeSize="36.666666666666664" IsNewNode="True" />
                   <LayoutItem Id="n_Weight" ViewItem="n_Weight" Index="1" RelativeSize="26.666666666666668" IsNewNode="True" />
                   <LayoutItem Id="n_ShoeSize" ViewItem="n_ShoeSize" Index="2" RelativeSize="36.666666666666664" IsNewNode="True" />
                 </LayoutGroup>
-                <LayoutGroup Id="Autoa24cc5a7-766c-47c2-a69e-9f54f33c3323" ShowCaption="False" Caption="Autoa24cc5a7-766c-47c2-a69e-9f54f33c3323(35)" Direction="Horizontal" Index="1" RelativeSize="75.024777006937569" IsNewNode="True">
-                  <LayoutGroup Id="Auto2ba457f1-5c55-40c2-8fd9-5ef9e9958f70" ShowCaption="False" Caption="Auto2ba457f1-5c55-40c2-8fd9-5ef9e9958f70(36)" Index="0" RelativeSize="33.2892998678996" IsNewNode="True">
+                <LayoutGroup Id="Autoa24cc5a7-766c-47c2-a69e-9f54f33c3323" ShowCaption="False" Caption="Autoa24cc5a7-766c-47c2-a69e-9f54f33c3323(35)" Direction="Horizontal" Index="1" RelativeSize="75.034106412005457" IsNewNode="True">
+                  <LayoutGroup Id="Auto2ba457f1-5c55-40c2-8fd9-5ef9e9958f70" ShowCaption="False" Caption="Auto2ba457f1-5c55-40c2-8fd9-5ef9e9958f70(36)" Index="0" RelativeSize="33.272727272727273" IsNewNode="True">
                     <LayoutItem Id="s_Nation" ViewItem="s_Nation" Index="0" RelativeSize="36.666666666666664" IsNewNode="True" />
                     <LayoutItem Id="s_PhysicalCondition" ViewItem="s_PhysicalCondition" Index="1" RelativeSize="26.666666666666668" IsNewNode="True" />
                     <LayoutItem Id="s_AllergyCondition" ViewItem="s_AllergyCondition" Index="2" RelativeSize="36.666666666666664" IsNewNode="True" />
                   </LayoutGroup>
-                  <LayoutGroup Id="Auto468e7858-4567-4c79-b41c-0e0cd85b2dea" ShowCaption="False" Caption="Auto468e7858-4567-4c79-b41c-0e0cd85b2dea(39)" Direction="Horizontal" Index="1" RelativeSize="66.7107001321004" IsNewNode="True">
-                    <LayoutGroup Id="Autoafeac06b-5443-4d2b-ab6d-ae952c067255" ShowCaption="False" Caption="Autoafeac06b-5443-4d2b-ab6d-ae952c067255(40)" Index="0" RelativeSize="49.9009900990099" IsNewNode="True">
+                  <LayoutGroup Id="Auto468e7858-4567-4c79-b41c-0e0cd85b2dea" ShowCaption="False" Caption="Auto468e7858-4567-4c79-b41c-0e0cd85b2dea(39)" Direction="Horizontal" Index="1" RelativeSize="66.727272727272734" IsNewNode="True">
+                    <LayoutGroup Id="Autoafeac06b-5443-4d2b-ab6d-ae952c067255" ShowCaption="False" Caption="Autoafeac06b-5443-4d2b-ab6d-ae952c067255(40)" Index="0" RelativeSize="49.863760217983653" IsNewNode="True">
                       <LayoutItem Id="s_IdNo" ViewItem="s_IdNo" Index="0" RelativeSize="36.666666666666664" IsNewNode="True" />
                       <LayoutItem Id="s_GuardianName" ViewItem="s_GuardianName" Index="1" RelativeSize="26.666666666666668" IsNewNode="True" />
                       <LayoutItem Id="s_GuardianIdNo" ViewItem="s_GuardianIdNo" Index="2" RelativeSize="36.666666666666664" IsNewNode="True" />
                     </LayoutGroup>
-                    <LayoutGroup Id="Auto703afd2b-9b6e-46f1-8c53-5a7140375073" ShowCaption="False" Caption="Auto703afd2b-9b6e-46f1-8c53-5a7140375073(43)" Index="1" RelativeSize="50.0990099009901" IsNewNode="True">
+                    <LayoutGroup Id="Auto703afd2b-9b6e-46f1-8c53-5a7140375073" ShowCaption="False" Caption="Auto703afd2b-9b6e-46f1-8c53-5a7140375073(43)" Index="1" RelativeSize="50.136239782016347" IsNewNode="True">
                       <LayoutItem Id="s_BankName" ViewItem="s_BankName" Index="0" RelativeSize="36.666666666666664" IsNewNode="True" />
                       <LayoutItem Id="s_AccountNo" ViewItem="s_AccountNo" Index="1" RelativeSize="26.666666666666668" IsNewNode="True" />
                       <LayoutItem Id="s_AccountName" ViewItem="s_AccountName" Index="2" RelativeSize="36.666666666666664" IsNewNode="True" />
@@ -981,8 +984,8 @@
                 </LayoutGroup>
               </LayoutGroup>
             </LayoutGroup>
-            <LayoutGroup Id="Item2" ShowCaption="True" CaptionLocation="Top" Index="2" RelativeSize="25.575447570332482" Caption="积分信息" Direction="Horizontal" IsNewNode="True">
-              <LayoutGroup Id="Autoc9753d94-b068-45b7-a2f3-6029078dfe87" ShowCaption="False" Caption="Autoc9753d94-b068-45b7-a2f3-6029078dfe87(37)" Index="0" RelativeSize="49.950445986124876" Direction="Vertical" IsNewNode="True">
+            <LayoutGroup Id="Item2" ShowCaption="True" CaptionLocation="Top" Index="2" RelativeSize="24.096385542168676" Caption="积分信息" Direction="Horizontal" IsNewNode="True">
+              <LayoutGroup Id="Autoc9753d94-b068-45b7-a2f3-6029078dfe87" ShowCaption="False" Caption="Autoc9753d94-b068-45b7-a2f3-6029078dfe87(37)" Index="0" RelativeSize="49.931787175989086" Direction="Vertical" IsNewNode="True">
                 <LayoutGroup Id="Auto7825a7d4-2fa1-4c0d-9ea0-2dbe83c7236d" ShowCaption="False" Caption="Auto7825a7d4-2fa1-4c0d-9ea0-2dbe83c7236d(48)" Index="0" RelativeSize="100" Direction="Horizontal" IsNewNode="True">
                   <LayoutGroup Id="Autof0dcda80-9227-4e68-ad7b-800d1be91b45" ShowCaption="False" Caption="Autof0dcda80-9227-4e68-ad7b-800d1be91b45(47)" Index="0" RelativeSize="50" IsNewNode="True">
                     <LayoutItem Id="n_RecommandNum" ViewItem="n_RecommandNum" Index="0" RelativeSize="50" IsNewNode="True" />
@@ -994,18 +997,18 @@
                   </LayoutGroup>
                 </LayoutGroup>
               </LayoutGroup>
-              <LayoutGroup Id="Auto58925c6c-0c49-4184-bdc3-3cfb02542a98" ShowCaption="False" Caption="Auto58925c6c-0c49-4184-bdc3-3cfb02542a98(41)" Index="1" RelativeSize="50.049554013875124" Direction="Horizontal" IsNewNode="True">
-                <LayoutGroup Id="Autofef4c1c2-58f0-4c3c-943e-fcf5ad9068e7" ShowCaption="False" Caption="Autofef4c1c2-58f0-4c3c-943e-fcf5ad9068e7(53)" Index="0" RelativeSize="49.9009900990099" IsNewNode="True">
+              <LayoutGroup Id="Auto58925c6c-0c49-4184-bdc3-3cfb02542a98" ShowCaption="False" Caption="Auto58925c6c-0c49-4184-bdc3-3cfb02542a98(41)" Index="1" RelativeSize="50.068212824010914" Direction="Horizontal" IsNewNode="True">
+                <LayoutGroup Id="Autofef4c1c2-58f0-4c3c-943e-fcf5ad9068e7" ShowCaption="False" Caption="Autofef4c1c2-58f0-4c3c-943e-fcf5ad9068e7(53)" Index="0" RelativeSize="49.863760217983653" IsNewNode="True">
                   <LayoutItem Id="n_ConsumePoints" ViewItem="n_ConsumePoints" Index="0" RelativeSize="50" IsNewNode="True" />
                   <LayoutItem Id="n_Points" ViewItem="n_Points" Index="1" RelativeSize="50" IsNewNode="True" />
                 </LayoutGroup>
-                <LayoutGroup Id="Auto68923b07-3adf-4c08-87e7-99d09c950970" ShowCaption="False" Caption="Auto68923b07-3adf-4c08-87e7-99d09c950970(56)" Index="1" RelativeSize="50.0990099009901" IsNewNode="True">
+                <LayoutGroup Id="Auto68923b07-3adf-4c08-87e7-99d09c950970" ShowCaption="False" Caption="Auto68923b07-3adf-4c08-87e7-99d09c950970(56)" Index="1" RelativeSize="50.136239782016347" IsNewNode="True">
                   <LayoutItem Id="s_PointLevel" ViewItem="s_PointLevel" Index="0" RelativeSize="100" IsNewNode="True" />
                 </LayoutGroup>
               </LayoutGroup>
             </LayoutGroup>
           </LayoutGroup>
-          <TabbedGroup Id="Tabs" RelativeSize="51.668726823238565" Index="1">
+          <TabbedGroup Id="Tabs" RelativeSize="48.060075093867333" Index="1">
             <LayoutGroup Id="ConsultRecords" RelativeSize="100" Caption="咨询信息">
               <LayoutItem Id="ConsultRecords" RelativeSize="100" />
             </LayoutGroup>
