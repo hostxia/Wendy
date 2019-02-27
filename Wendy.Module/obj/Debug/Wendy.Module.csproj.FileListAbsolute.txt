@@ -304,3 +304,4 @@ E:\GitCode\hostxia\Wendy\Wendy.Module\obj\Debug\Wendy.Module.csproj.CoreCompileI
 E:\GitCode\hostxia\Wendy\Wendy.Module\obj\Debug\Wendy.Module.csproj.CopyComplete
 E:\GitCode\hostxia\Wendy\Wendy.Module\obj\Debug\Wendy.Module.dll
 E:\GitCode\hostxia\Wendy\Wendy.Module\obj\Debug\Wendy.Module.pdb
+E:\GitCode\hostxia\Wendy\Wendy.Module\obj\Debug\Wendy.Module.csprojAssemblyReference.cache

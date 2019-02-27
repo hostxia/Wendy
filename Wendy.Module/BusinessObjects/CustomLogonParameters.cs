@@ -15,7 +15,8 @@ namespace Wendy.Module.BusinessObjects
     {
         private string databaseName = MSSqlServerChangeDatabaseHelper.Databases.Split(';')[0];
         [ModelDefault("PredefinedValues", MSSqlServerChangeDatabaseHelper.Databases)]
-        public string DatabaseName {
+        public string DatabaseName
+        {
             get => databaseName;
             set => databaseName = value;
         }
@@ -26,20 +27,21 @@ namespace Wendy.Module.BusinessObjects
         private string databaseName = MSSqlServerChangeDatabaseHelper.Databases.Split(';')[0];
 
         [ModelDefault("PredefinedValues", MSSqlServerChangeDatabaseHelper.Databases)]
-        public string DatabaseName {
+        public string DatabaseName
+        {
             get => databaseName;
             set => databaseName = value;
         }
     }
     public class MSSqlServerChangeDatabaseHelper
     {
-        public const string Databases = "朝新;常青藤";
+        public const string Databases = "校区1";
         public static void UpdateDatabaseName(XafApplication application, string databaseName)
         {
             ConnectionStringParser helper = new ConnectionStringParser(application.ConnectionString);
-            helper.RemovePartByName("DataBase");
-            helper.RemovePartByName("Password");
-            application.ConnectionString = string.Format("Password=xm19870218;DataBase={0};{1}", databaseName.Contains("朝新") ? "WendyDB" : "WendyDB2", helper.GetConnectionString());
+            //helper.RemovePartByName("DataBase");
+            //helper.RemovePartByName("Password");
+            //application.ConnectionString = string.Format("Password=Xiameng19870218;DataBase={0};{1}", "WendyDB", helper.GetConnectionString());
         }
     }
 }
