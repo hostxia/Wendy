@@ -4,11 +4,13 @@ using DevExpress.Persistent.BaseImpl;
 using DevExpress.Xpo;
 using System;
 using System.ComponentModel;
+using DevExpress.ExpressApp.ConditionalAppearance;
 
 namespace Wendy.Module.BusinessObjects
 {
     [DefaultClassOptions]
     [DefaultProperty("dt_ConsultDate")]
+    [Appearance("Today", TargetItems = "*", Context = "ListView", Criteria = "DemoInfo is not null And DemoInfo.dt_OpenDate <= Today() And IsNull(s_SignupResult,'') = '' And b_VisitResult != False", FontColor = "Red")]
     public class ConsultRecord : BaseObject
     {
         public ConsultRecord(Session session)
@@ -25,7 +27,6 @@ namespace Wendy.Module.BusinessObjects
 
             dt_CreateDate = DateTime.Now;
             dt_ConsultDate = DateTime.Now;
-            s_Status = "未承诺";
             base.AfterConstruction();
         }
 
@@ -111,16 +112,145 @@ namespace Wendy.Module.BusinessObjects
             set => SetPropertyValue("s_Demand", ref _sDemand, value);
         }
 
+        #region 状态
+        #region 筛选结果
         /// <summary>
-        /// 状态
+        /// 筛选结果
         /// </summary>
-        private string _sStatus;
-        [Size(20)]
+        private bool? _bFilterResult;
+        [CaptionsForBoolValues("有效", "无效")]
+        public bool? b_FilterResult
+        {
+            get => _bFilterResult;
+            set => SetPropertyValue("b_FilterResult", ref _bFilterResult, value);
+        }
+
+        private SysUser filterUser;
+        [Persistent("g_FilterId")]
+        public SysUser FilterUser
+        {
+            get => filterUser;
+            set => SetPropertyValue("FilterUser", ref filterUser, value);
+        }
+
+        private DateTime _dtFilterDate;
+        public DateTime dt_FilterDate
+        {
+            get => _dtFilterDate;
+            set => SetPropertyValue("dt_FilterDate", ref _dtFilterDate, value);
+        }
+        #endregion
+
+        #region 邀约结果
+        /// <summary>
+        /// 邀约结果
+        /// </summary>
+        private string _sInviteResult;
+        public string s_InviteResult
+        {
+            get => _sInviteResult;
+            set => SetPropertyValue("s_InviteResult", ref _sInviteResult, value);
+        }
+
+        private SysUser inviteUser;
+        [Persistent("g_InviteUserId")]
+        public SysUser InviteUser
+        {
+            get => inviteUser;
+            set => SetPropertyValue("InviteUser", ref inviteUser, value);
+        }
+
+        private SysUser shareUser;
+        [Persistent("g_ShareUserId")]
+        public SysUser ShareUser
+        {
+            get => shareUser;
+            set => SetPropertyValue("ShareUser", ref shareUser, value);
+        }
+
+        private DateTime _dtInviteDate;
+        public DateTime dt_InviteDate
+        {
+            get => _dtInviteDate;
+            set => SetPropertyValue("dt_InviteDate", ref _dtInviteDate, value);
+        }
+        #endregion
+
+        #region 上门结果
+        /// <summary>
+        /// 上门结果
+        /// </summary>
+        private bool? _bVisitResult;
+        [CaptionsForBoolValues("已上门", "承诺未上门")]
+        public bool? b_VisitResult
+        {
+            get => _bVisitResult;
+            set => SetPropertyValue("b_VisitResult", ref _bVisitResult, value);
+        }
+
+        private SysUser visitUser;
+        [Persistent("g_VisitUserId")]
+        public SysUser VisitUser
+        {
+            get => visitUser;
+            set => SetPropertyValue("VisitUser", ref visitUser, value);
+        }
+
+
+        private DateTime _dtVisitDate;
+        public DateTime dt_VisitDate
+        {
+            get => _dtVisitDate;
+            set => SetPropertyValue("dt_VisitDate", ref _dtVisitDate, value);
+        }
+        #endregion
+
+        #region 报名结果
+        /// <summary>
+        /// 报名结果
+        /// </summary>
+        private string _sSignupResult;
+        public string s_SignupResult
+        {
+            get => _sSignupResult;
+            set => SetPropertyValue("s_SignupResult", ref _sSignupResult, value);
+        }
+
+        private SysUser signupUser;
+        [Persistent("g_SignupUserId")]
+        public SysUser SignupUser
+        {
+            get => signupUser;
+            set => SetPropertyValue("SignupUser", ref signupUser, value);
+        }
+
+        private DateTime _dtSignupDate;
+        public DateTime dt_SignupDate
+        {
+            get => _dtSignupDate;
+            set => SetPropertyValue("dt_SignupDate", ref _dtSignupDate, value);
+        }
+        #endregion
+        #endregion
+
         public string s_Status
         {
-            get => _sStatus;
-            set => SetPropertyValue("s_Status", ref _sStatus, value);
+            get
+            {
+                if (!string.IsNullOrWhiteSpace(_sSignupResult))
+                    return _sSignupResult;
+                if (_bVisitResult.HasValue)
+                    return _bVisitResult.Value ? "已上门" : "承诺未上门";
+                if (!string.IsNullOrWhiteSpace(_sInviteResult))
+                    return _sInviteResult;
+                if (_bFilterResult.HasValue)
+                    return _bFilterResult.Value ? "有效" : "无效";
+
+                return string.Empty;
+            }
         }
+
+        public bool b_Distribution => filterUser != null || inviteUser != null;
 
         /// <summary>
         /// 报名期数
@@ -162,23 +292,6 @@ namespace Wendy.Module.BusinessObjects
         {
             get => _nPaidAmount;
             set => SetPropertyValue("n_PaidAmount", ref _nPaidAmount, value);
-        }
-
-        private SysUser consultant;
-        [Persistent("g_ConsultantId")]
-        public SysUser Consultant
-        {
-            get => consultant;
-            set => SetPropertyValue("Consultant", ref consultant, value);
-        }
-
-
-        private SysUser inviter;
-        [Persistent("g_InviterId")]
-        public SysUser Inviter
-        {
-            get => inviter;
-            set => SetPropertyValue("Inviter", ref inviter, value);
         }
 
         private SysUser recommender;
@@ -324,7 +437,7 @@ namespace Wendy.Module.BusinessObjects
         }
         #endregion
 
-        [Aggregated, Association("ConsultRecord-Payments")]
+        [DevExpress.Xpo.Aggregated, Association("ConsultRecord-Payments")]
         public XPCollection<Payment> Payments => GetCollection<Payment>("Payments");
 
         public decimal n_UnpaidAmount => n_Amount - n_PaidAmount;

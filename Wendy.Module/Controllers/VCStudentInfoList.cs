@@ -18,6 +18,7 @@ namespace Wendy.Module.Controllers
         public VCStudentInfoList()
         {
             InitializeComponent();
+            saBack.Active.SetItemValue("Custom", false);
         }
         protected override void OnActivated()
         {
@@ -62,7 +63,7 @@ namespace Wendy.Module.Controllers
                     return;
                 }
 
-                stu.b_IsBack = true;
+                //stu.b_IsBack = true;
                 stu.Save();
                 uow.CommitChanges();
             });

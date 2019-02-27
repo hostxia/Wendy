@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="StudentInfo_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="StudentInfo">
+              <LayoutGroup Id="StudentInfo_col2">
+                <LayoutGroup Id="Auto4435def0-ecab-48d5-a3ae-0a63edb3c643">
+                  <LayoutItem Id="s_Valid" ViewItem="s_Valid" />
+                  <LayoutItem Id="OwnerCC" ViewItem="OwnerCC" />
+                  <LayoutItem Id="OwnerTMK" ViewItem="OwnerTMK" />
+                </LayoutGroup>
+                <LayoutGroup Id="Auto8de3d76c-b51a-4427-8c2a-12fe7d35303b">
+                  <LayoutItem Id="b_IsBack" ViewItem="b_IsBack" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

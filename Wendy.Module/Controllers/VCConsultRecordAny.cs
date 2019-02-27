@@ -10,6 +10,7 @@ namespace Wendy.Module.Controllers
         public VCConsultRecordAny()
         {
             InitializeComponent();
+            saShowStudentInfo.Active.SetItemValue("Custom", false);
         }
         protected override void OnActivated()
         {

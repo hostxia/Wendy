@@ -15,27 +15,27 @@ namespace Wendy.Module.Win {
 	public class WinChangeDatabaseController : WindowController {
 		public SingleChoiceAction changeDatabaseAction;
 		public WinChangeDatabaseController() {
-			this.TargetWindowType = WindowType.Main;
-			changeDatabaseAction = new SingleChoiceAction(this, "ChangeDatabase", PredefinedCategory.View);
-		    changeDatabaseAction.ItemType = SingleChoiceActionItemType.ItemIsOperation;
-			foreach(string databaseName in MSSqlServerChangeDatabaseHelper.Databases.Split(';')) {
-				changeDatabaseAction.Items.Add(new ChoiceActionItem(databaseName, databaseName));
-			}
-			changeDatabaseAction.Execute += new SingleChoiceActionExecuteEventHandler(changeDatabaseAction_Execute);
+			//this.TargetWindowType = WindowType.Main;
+			//changeDatabaseAction = new SingleChoiceAction(this, "ChangeDatabase", PredefinedCategory.View);
+		 //   changeDatabaseAction.ItemType = SingleChoiceActionItemType.ItemIsOperation;
+			//foreach(string databaseName in MSSqlServerChangeDatabaseHelper.Databases.Split(';')) {
+			//	changeDatabaseAction.Items.Add(new ChoiceActionItem(databaseName, databaseName));
+			//}
+			//changeDatabaseAction.Execute += new SingleChoiceActionExecuteEventHandler(changeDatabaseAction_Execute);
 		}
 
 
 		protected override void OnActivated() {
 			base.OnActivated();
-			changeDatabaseAction.Active["ActiveOnlyForAdmin"] = SecuritySystem.CurrentUserName == "Admin";
-			foreach(ChoiceActionItem item in changeDatabaseAction.Items) {
-				if(Application.ConnectionString.Contains((string)item.Data)) {
-					changeDatabaseAction.SelectedItem = item;
-					break;
-				}
-			}
-			Application.LoggedOn += new EventHandler<LogonEventArgs>(Application_LoggedOn);
-			Application.LoggedOff += new EventHandler<EventArgs>(Application_LoggedOff);
+			//changeDatabaseAction.Active["ActiveOnlyForAdmin"] = SecuritySystem.CurrentUserName == "Admin";
+			//foreach(ChoiceActionItem item in changeDatabaseAction.Items) {
+			//	if(Application.ConnectionString.Contains((string)item.Data)) {
+			//		changeDatabaseAction.SelectedItem = item;
+			//		break;
+			//	}
+			//}
+			//Application.LoggedOn += new EventHandler<LogonEventArgs>(Application_LoggedOn);
+			//Application.LoggedOff += new EventHandler<EventArgs>(Application_LoggedOff);
 		}
 
 		void Application_LoggedOff(object sender, EventArgs e) {

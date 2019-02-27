@@ -10,6 +10,7 @@ namespace Wendy.Module.BusinessObjects
 {
     [DefaultClassOptions]
     [DefaultProperty("s_Name")]
+    [Appearance("Today", TargetItems = "*", Context = "ListView", Criteria = "dt_OpenDate = Today()", FontColor = "Red")]
     [Appearance("Expired", TargetItems = "*", Context = "ListView", Criteria = "dt_OpenDate < Today()", FontColor = "LightGray")]
     public class DemoInfo : BaseObject
     {

@@ -28,11 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            DevExpress.ExpressApp.Actions.ChoiceActionItem choiceActionItem9 = new DevExpress.ExpressApp.Actions.ChoiceActionItem();
-            DevExpress.ExpressApp.Actions.ChoiceActionItem choiceActionItem10 = new DevExpress.ExpressApp.Actions.ChoiceActionItem();
-            this.scaFilter = new DevExpress.ExpressApp.Actions.SingleChoiceAction(this.components);
-            this.saBack = new DevExpress.ExpressApp.Actions.SimpleAction(this.components);
+            DevExpress.ExpressApp.Actions.ChoiceActionItem choiceActionItem1 = new DevExpress.ExpressApp.Actions.ChoiceActionItem();
+            DevExpress.ExpressApp.Actions.ChoiceActionItem choiceActionItem2 = new DevExpress.ExpressApp.Actions.ChoiceActionItem();
+            this.scaFilter = new DevExpress.ExpressApp.Actions.SingleChoiceAction();
+            this.saBack = new DevExpress.ExpressApp.Actions.SimpleAction();
             // 
             // scaFilter
             // 
@@ -40,20 +39,20 @@
             this.scaFilter.Category = "FullTextSearch";
             this.scaFilter.ConfirmationMessage = null;
             this.scaFilter.Id = "StudentInfo.scaFilter";
-            choiceActionItem9.Caption = "今天的咨询";
-            choiceActionItem9.Data = "T";
-            choiceActionItem9.Id = "Entry 1";
-            choiceActionItem9.ImageName = null;
-            choiceActionItem9.Shortcut = null;
-            choiceActionItem9.ToolTip = null;
-            choiceActionItem10.Caption = "所有咨询";
-            choiceActionItem10.Data = "A";
-            choiceActionItem10.Id = "Entry 2";
-            choiceActionItem10.ImageName = null;
-            choiceActionItem10.Shortcut = null;
-            choiceActionItem10.ToolTip = null;
-            this.scaFilter.Items.Add(choiceActionItem9);
-            this.scaFilter.Items.Add(choiceActionItem10);
+            choiceActionItem1.Caption = "今天的咨询";
+            choiceActionItem1.Data = "T";
+            choiceActionItem1.Id = "Entry 1";
+            choiceActionItem1.ImageName = null;
+            choiceActionItem1.Shortcut = null;
+            choiceActionItem1.ToolTip = null;
+            choiceActionItem2.Caption = "所有咨询";
+            choiceActionItem2.Data = "A";
+            choiceActionItem2.Id = "Entry 2";
+            choiceActionItem2.ImageName = null;
+            choiceActionItem2.Shortcut = null;
+            choiceActionItem2.ToolTip = null;
+            this.scaFilter.Items.Add(choiceActionItem1);
+            this.scaFilter.Items.Add(choiceActionItem2);
             this.scaFilter.ToolTip = null;
             // 
             // saBack

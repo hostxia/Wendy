@@ -110,11 +110,11 @@ namespace Wendy.Module.DatabaseUpdate
             foreach (var studentInfo in listStudentInfo)
             {
                 var consultRecord = studentInfo.ConsultRecords.FirstOrDefault();
-                if (consultRecord != null && consultRecord.Consultant != null)
-                {
-                    studentInfo.OwnerCC = consultRecord.Consultant;
-                    ObjectSpace.CommitChanges();
-                }
+                //if (consultRecord != null && consultRecord.Consultant != null)
+                //{
+                //    //studentInfo.OwnerCC = consultRecord.Consultant;
+                //    ObjectSpace.CommitChanges();
+                //}
             }
         }
 
@@ -154,7 +154,7 @@ namespace Wendy.Module.DatabaseUpdate
                     studentInfo.s_Address = dataRow["住址"]?.ToString();
                     studentInfo.s_School = dataRow["幼儿园/小学"]?.ToString();
                     studentInfo.s_Train = dataRow["兴趣班"]?.ToString();
-                    studentInfo.s_Valid = dataRow["有效"]?.ToString();
+                    //studentInfo.s_Valid = dataRow["有效"]?.ToString();
 
                     var consultRecord = studentInfo.ConsultRecords.Count > 0
                         ? studentInfo.ConsultRecords[0]
@@ -162,13 +162,13 @@ namespace Wendy.Module.DatabaseUpdate
                     consultRecord.StudentInfo = studentInfo;
                     consultRecord.s_Level = dataRow["级别"]?.ToString();
                     studentInfo.s_Source = dataRow["来源"]?.ToString();
-                    consultRecord.s_Status = dataRow["状态"]?.ToString();
+                    //consultRecord.s_Status = dataRow["状态"]?.ToString();
                     consultRecord.s_Demand = dataRow["需求"]?.ToString();
-                    if (!string.IsNullOrWhiteSpace(dataRow["课程顾问"]?.ToString()))
-                    {
-                        consultRecord.Consultant = ObjectSpace.FindObject<SysUser>(
-                        CriteriaOperator.Parse($"s_Name like '%{dataRow["课程顾问"]}%' or s_EName like '%{dataRow["课程顾问"]}%'"));
-                    }
+                    //if (!string.IsNullOrWhiteSpace(dataRow["课程顾问"]?.ToString()))
+                    //{
+                    //    consultRecord.Consultant = ObjectSpace.FindObject<SysUser>(
+                    //    CriteriaOperator.Parse($"s_Name like '%{dataRow["课程顾问"]}%' or s_EName like '%{dataRow["课程顾问"]}%'"));
+                    //}
 
                     var contactRecord = studentInfo.ContactRecords.Count > 0
                         ? studentInfo.ContactRecords[0]
@@ -186,7 +186,7 @@ namespace Wendy.Module.DatabaseUpdate
                         contactRecord.dt_NextDate = dtDate;
                         contactRecord.s_Content = dataRow["上门日期"].ToString();
                     }
-                    studentInfo.OwnerCC = consultRecord.Consultant;
+                    //studentInfo.OwnerCC = consultRecord.Consultant;
                     ObjectSpace.CommitChanges();
                 }
                 catch (Exception e)

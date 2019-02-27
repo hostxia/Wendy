@@ -340,3 +340,6 @@ E:\GitCode\hostxia\Wendy\Wendy.Module.Win\obj\Debug\Wendy.Module.Win.csproj.Core
 E:\GitCode\hostxia\Wendy\Wendy.Module.Win\obj\Debug\Wendy.Module.Win.csproj.CopyComplete
 E:\GitCode\hostxia\Wendy\Wendy.Module.Win\obj\Debug\Wendy.Module.Win.dll
 E:\GitCode\hostxia\Wendy\Wendy.Module.Win\obj\Debug\Wendy.Module.Win.pdb
+E:\GitCode\hostxia\Wendy\Wendy.Module.Win\obj\Debug\Wendy.Module.Win.Controllers.VCConsultList.resources
+E:\GitCode\hostxia\Wendy\Wendy.Module.Win\obj\Debug\Wendy.Module.Win.Form.XFrmPhone.resources
+E:\GitCode\hostxia\Wendy\Wendy.Module.Win\obj\Debug\Wendy.Module.Win.Form.XFrmDistribution.resources

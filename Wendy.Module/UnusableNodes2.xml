@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel Id="BOModel">
+    <Class Name="Wendy.Module.BusinessObjects.ConsultRecord">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="Consultant" Caption="咨询顾问" />
+        <Member Name="Inviter" Caption="邀约顾问" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Views Id="Views">
+    <DetailView Id="ConsultRecord_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="Inviter" PropertyName="Inviter" Removed="True" />
+        <PropertyEditor Id="Consultant" PropertyName="Consultant" Caption="分单顾问" Removed="True" />
+      </Items>
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item14">
+              <LayoutGroup Id="Item15">
+                <LayoutGroup Id="Item11">
+                  <LayoutItem Id="Consultant" ViewItem="Consultant" />
+                  <LayoutItem Id="Inviter" ViewItem="Inviter" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </TabbedGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="StudentInfo_RecommendRecords_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="Consultant" Width="76" Index="7" />
+        <ColumnInfo Id="Inviter" Width="68" Index="8" />
+      </Columns>
+    </ListView>
+    <ListView Id="ConsultRecord_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="Inviter" Index="15" Width="68" />
+        <ColumnInfo Id="Consultant" Index="16" Width="76" />
+      </Columns>
+    </ListView>
+    <ListView Id="DemoInfo_ConsultRecords_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="Consultant" Width="76" Index="13" />
+        <ColumnInfo Id="Inviter" Width="68" Index="14" />
+      </Columns>
+    </ListView>
+    <ListView Id="SourseInfo_ConsultRecords_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="Inviter" Width="68" Index="7" />
+        <ColumnInfo Id="Consultant" Width="76" Index="8" />
+      </Columns>
+    </ListView>
+    <ListView Id="StudentInfo_ConsultRecords_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="Inviter" Index="7" Width="90" />
+        <ColumnInfo Id="Consultant" Index="8" Width="89" />
+      </Columns>
+    </ListView>
+    <DetailView Id="StudentInfo_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="StudentInfo">
+              <LayoutGroup Id="StudentInfo_col2">
+                <LayoutGroup Id="Auto4435def0-ecab-48d5-a3ae-0a63edb3c643">
+                  <LayoutItem Id="s_Valid" ViewItem="s_Valid" />
+                  <LayoutItem Id="OwnerCC" ViewItem="OwnerCC" />
+                  <LayoutItem Id="OwnerTMK" ViewItem="OwnerTMK" />
+                </LayoutGroup>
+                <LayoutGroup Id="Auto8de3d76c-b51a-4427-8c2a-12fe7d35303b">
+                  <LayoutItem Id="b_IsBack" ViewItem="b_IsBack" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

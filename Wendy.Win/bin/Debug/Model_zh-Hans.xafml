@@ -249,7 +249,6 @@
         <Member Name="Results" Caption="结果" />
       </OwnMembers>
     </Class>
-    <Class Name="DevExpress.ExpressApp.Win.SystemModule.ProcessDataLockingInfoDialogObject" Caption="处理数据锁定信息对话框" />
     <Class Name="DevExpress.Persistent.BaseImpl.ModelDifference">
       <OwnMembers>
         <Member Name="Aspects" Caption="方面" />
@@ -861,8 +860,6 @@
         <LocalizationItem Name="RequestedObjectIsNotFound" Value="未找到请求的对象，无法处理。" />
         <LocalizationItem Name="ResearchTheErrorDetailsBelow" Value="研究下面的问题细节" />
         <LocalizationGroup Name="Security">
-          <LocalizationItem Name="AllBusinessClasses" Value="所有业务类" />
-          <LocalizationItem Name="AllPersistentBusinessClasses" Value="所有持久性业务类别" />
           <LocalizationItem Name="LastAdmin" Value="’{0}‘用户是系统中的最后一个管理员。 无法撤销管理权限。" />
           <LocalizationItem Name="LoginFailed" Value="登录失败 '{0}'. {1}" />
           <LocalizationItem Name="NewPasswordIsEqualToOldPassword" Value="新密码和旧密码相同。" />

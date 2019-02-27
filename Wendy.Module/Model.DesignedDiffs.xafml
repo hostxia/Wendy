@@ -16,19 +16,26 @@
   <BOModel>
     <Class Name="Wendy.Module.BusinessObjects.ConsultRecord" Caption="咨询信息" ImageName="Action_Paste" ObjectCaptionFormat="{0:StudentInfo.s_Name}-{0:dt_ConsultDate:yyyyMMdd}">
       <OwnMembers>
+        <Member Name="b_Distribution" Caption="已分配" />
+        <Member Name="b_FilterResult" Caption="初筛结果" />
         <Member Name="b_GetBag" Caption="书包" />
         <Member Name="b_GetBook" Caption="教材" />
         <Member Name="b_GetDress" Caption="舞蹈/跆拳道服" />
         <Member Name="b_GetUniform" Caption="校服" />
         <Member Name="b_Insurance" Caption="保险" />
-        <Member Name="Consultant" Caption="咨询顾问" />
+        <Member Name="b_VisitResult" Caption="上门结果" />
         <Member Name="Creator" Caption="创建人" AllowEdit="False" />
         <Member Name="DemoInfo" Caption="Demo课程" LookupProperty="s_SourceInfo" />
         <Member Name="dt_ConsultDate" Caption="咨询日期" AllowEdit="False" />
         <Member Name="dt_CreateDate" Caption="创建时间" AllowEdit="False" />
+        <Member Name="dt_FilterDate" Caption="初筛记录日" />
+        <Member Name="dt_InviteDate" Caption="邀约记录日" />
         <Member Name="dt_InvoiceDate" Caption="开票日期" />
         <Member Name="dt_RegDate" Caption="报名日期" />
-        <Member Name="Inviter" Caption="邀约顾问" />
+        <Member Name="dt_SignupDate" Caption="报名记录日" />
+        <Member Name="dt_VisitDate" Caption="上门记录日" />
+        <Member Name="FilterUser" Caption="初筛人" />
+        <Member Name="InviteUser" Caption="邀约顾问" />
         <Member Name="n_Amount" Caption="应付金额" />
         <Member Name="n_InvoiceAmount" Caption="开票金额" />
         <Member Name="n_PaidAmount" Caption="已付金额" AllowEdit="False" />
@@ -38,6 +45,7 @@
         <Member Name="RecommendParent" Caption="推荐人" />
         <Member Name="s_Demand" Caption="需求" />
         <Member Name="s_GetOther" Caption="其他" />
+        <Member Name="s_InviteResult" Caption="邀约结果" PredefinedValues="承诺上门;未承诺;确认无效" />
         <Member Name="s_InvoiceContent" Caption="发票内容" />
         <Member Name="s_InvoiceNo" Caption="发票号" />
         <Member Name="s_InvoiceTitle" Caption="发票抬头" />
@@ -45,11 +53,15 @@
         <Member Name="s_Note" Caption="备注" />
         <Member Name="s_PayWay" PredefinedValues="现金;微信;支付宝;储蓄卡;信用卡" Caption="支付方式" />
         <Member Name="s_SignUpPeriod" Caption="报名期数" PredefinedValues="一期;两期;三期;四期;五期;半年;全年" />
+        <Member Name="s_SignupResult" Caption="报名结果" PredefinedValues=";定金;全款;上门未报名" />
         <Member Name="s_Source" Caption="二次来源" PredefinedValues="2Show;平行报班;续班;升学" />
         <Member Name="s_SourceComment" Caption="二次来源说明" />
         <Member Name="s_Status" Caption="状态" PredefinedValues="未承诺;承诺上门;已承诺-未上门;已承诺-已上门;已上门-未报名;已交定金;已交全款;插班全款;已退款" />
+        <Member Name="ShareUser" Caption="分单顾问" />
+        <Member Name="SignupUser" Caption="报名操作人" />
         <Member Name="SourseInfo" Caption="报名课程" LookupProperty="s_SourceInfo" />
         <Member Name="StudentInfo" Caption="学生资料" />
+        <Member Name="VisitUser" Caption="上门记录人" />
       </OwnMembers>
     </Class>
     <Class Name="Wendy.Module.BusinessObjects.ContactRecord" Caption="联系记录" ImageName="Action_Inline_Edit">
@@ -122,7 +134,7 @@
         <Member Name="s_Description" Caption="课程描述" />
         <Member Name="s_Level" Caption="班级" PredefinedValues="" />
         <Member Name="s_Location" Caption="教室位置" />
-        <Member Name="s_Name" Caption="课程名称" PredefinedValues="幼小衔接;雅派英语;兴趣班;国际早教" />
+        <Member Name="s_Name" Caption="课程名称" PredefinedValues="" />
         <Member Name="s_Note" Caption="备注" />
         <Member Name="s_Status" Caption="课程状态" PredefinedValues="招生中;预热课;已开课;已结课" />
         <Member Name="Teacher1" Caption="班主任" />
@@ -135,7 +147,6 @@
     </Class>
     <Class Name="Wendy.Module.BusinessObjects.StudentInfo" Caption="学生资料" ImageName="BO_Department" ObjectCaptionFormat="{0:s_Name}-{0:s_Phone}">
       <OwnMembers>
-        <Member Name="b_IsBack" Caption="退回" AllowEdit="True" />
         <Member Name="ConsultRecords" Caption="咨询信息" />
         <Member Name="ContactRecords" Caption="联系记录" />
         <Member Name="Creator" Caption="创建人" AllowEdit="False" />
@@ -155,8 +166,6 @@
         <Member Name="n_Stature" Caption="身高" EditMask="n2" DisplayFormat="{0:n2}" />
         <Member Name="n_TotalPoints" Caption="累计积分" />
         <Member Name="n_Weight" EditMask="n0" DisplayFormat="{0:n0}" Caption="体重" />
-        <Member Name="OwnerCC" Caption="归属CC" />
-        <Member Name="OwnerTMK" Caption="归属TMK" />
         <Member Name="RecommendRecords" Caption="推荐信息" />
         <Member Name="s_Ability" Caption="基础能力" />
         <Member Name="s_AccountName" Caption="户名" />
@@ -179,10 +188,9 @@
         <Member Name="s_PointLevel" Caption="积分等级" PredefinedValues="银卡;金卡;至尊卡" />
         <Member Name="s_School" Caption="学校" />
         <Member Name="s_Sex" Caption="性别" PredefinedValues="男;女" />
-        <Member Name="s_Source" Caption="首次来源" PredefinedValues="Walk in;Call in;Online;口碑;活动;置换;社区;幼儿园;小学;商场" />
-        <Member Name="s_SourceComment" Caption="首次来源说明" />
+        <Member Name="s_Source" Caption="来源" PredefinedValues="Walk in;Call in;Online;口碑;活动;置换;社区;幼儿园;小学;商场;其他" />
+        <Member Name="s_SourceComment" Caption="来源说明" />
         <Member Name="s_Train" Caption="兴趣班" />
-        <Member Name="s_Valid" Caption="是否有效" PredefinedValues="待定;有效;无效;CC无效" />
         <Member Name="s_WeChat" Caption="微信" />
       </OwnMembers>
     </Class>
@@ -199,7 +207,6 @@
     <Items>
       <Item Id="@d7996c21-2bca-4257-932d-31cf2994d259" Caption="业务管理" Index="1" IsNewNode="True">
         <Items IsNewNode="True">
-          <Item Id="StudentInfo_ListView" ViewId="StudentInfo_ListView" ObjectKey="" Index="10" IsNewNode="True" />
           <Item Id="ConsultRecord_ListView" ViewId="ConsultRecord_ListView" ObjectKey="" Index="20" IsNewNode="True" />
           <Item Id="DemoInfo_ListView" ViewId="DemoInfo_ListView" ObjectKey="" Index="30" IsNewNode="True" />
           <Item Id="SourseInfo_ListView" ViewId="SourseInfo_ListView" ObjectKey="" Index="40" IsNewNode="True" />
@@ -212,7 +219,6 @@
           <Item Id="DemoInfo_ListView" Removed="True" />
           <Item Id="Payment_ListView" Removed="True" />
           <Item Id="SourseInfo_ListView" Removed="True" />
-          <Item Id="StudentInfo_ListView" Removed="True" />
         </Items>
       </Item>
       <Item Id="Reports" Caption="报表统计" />
@@ -227,7 +233,6 @@
   </SchemaModules>
   <Validation>
     <Rules>
-      <RuleRegularExpression Id="StudentInfo_Phone_Length" TargetType="Wendy.Module.BusinessObjects.StudentInfo" TargetPropertyName="s_Phone" Pattern="\d{11,}" TargetContextIDs="Save" SkipNullOrEmptyValues="False" IsNewNode="True" />
       <RuleRequiredField Id="StudentInfo_Phone_RuleRequired" TargetType="Wendy.Module.BusinessObjects.StudentInfo" TargetPropertyName="s_Phone" TargetContextIDs="Save" IsNewNode="True" />
       <RuleUniqueValue Id="StudentInfo_Phone_RuleUniqueValue" TargetType="Wendy.Module.BusinessObjects.StudentInfo" TargetPropertyName="s_Phone" TargetContextIDs="Save" IsNewNode="True" />
     </Rules>
@@ -235,165 +240,224 @@
   <Views>
     <DetailView Id="ConsultRecord_DetailView">
       <Items>
-        <PropertyEditor Id="Consultant" PropertyName="Consultant" IsNewNode="True" Removed="True" />
         <PropertyEditor Id="Creator" Removed="True" />
         <PropertyEditor Id="DemoInfo" PropertyName="DemoInfo" IsNewNode="True" Removed="True" />
         <PropertyEditor Id="DemoInfo.dt_OpenDate" PropertyName="DemoInfo.dt_OpenDate" AllowEdit="False" Caption="Demo日期" IsNewNode="True" />
         <PropertyEditor Id="dt_CreateDate" Removed="True" />
+        <PropertyEditor Id="dt_SignupDate" Removed="True" />
+        <PropertyEditor Id="dt_VisitDate" Removed="True" />
+        <PropertyEditor Id="FilterUser" PropertyName="FilterUser" IsNewNode="True" Removed="True" />
+        <PropertyEditor Id="InviteUser" PropertyName="InviteUser" IsNewNode="True" Removed="True" />
         <PropertyEditor Id="n_Amount" PropertyName="n_Amount" IsNewNode="True" Removed="True" />
         <PropertyEditor Id="n_PaidAmount" PropertyName="n_PaidAmount" IsNewNode="True" Removed="True" />
         <PropertyEditor Id="Oid" Removed="True" />
         <PropertyEditor Id="Recommender" Removed="True" />
         <PropertyEditor Id="RecommendParent" Removed="True" />
         <PropertyEditor Id="s_GetOther" Removed="True" />
+        <PropertyEditor Id="s_InviteResult" PredefinedValues=";承诺上门;未承诺;确认无效" />
         <PropertyEditor Id="s_PayWay" PropertyName="s_PayWay" IsNewNode="True" Removed="True" />
+        <PropertyEditor Id="s_SignUpPeriod" Removed="True" />
+        <PropertyEditor Id="s_Source" Removed="True" />
+        <PropertyEditor Id="s_SourceComment" Removed="True" />
+        <PropertyEditor Id="SignupUser" Removed="True" />
         <PropertyEditor Id="SourseInfo" PropertyName="SourseInfo" IsNewNode="True" Removed="True" />
         <PropertyEditor Id="SourseInfo.dt_OpenDate" PropertyName="SourseInfo.dt_OpenDate" AllowEdit="False" IsNewNode="True" />
         <PropertyEditor Id="StudentInfo.ContactRecords" PropertyName="StudentInfo.ContactRecords" View="StudentInfo_ContactRecords_ListView" IsNewNode="True" />
         <PropertyEditor Id="StudentInfo.dt_BirthDate" PropertyName="StudentInfo.dt_BirthDate" IsNewNode="True" />
-        <PropertyEditor Id="StudentInfo.n_Age" PropertyName="StudentInfo.n_Age" IsNewNode="True" />
+        <PropertyEditor Id="StudentInfo.ListSourseInfos" PropertyName="StudentInfo.ListSourseInfos" View="StudentInfo_ListSourseInfos_ListView" IsNewNode="True" />
+        <PropertyEditor Id="StudentInfo.n_Age" PropertyName="StudentInfo.n_Age" AllowEdit="True" IsNewNode="True" />
         <PropertyEditor Id="StudentInfo.n_AvailablePoints" PropertyName="StudentInfo.n_AvailablePoints" IsNewNode="True" />
         <PropertyEditor Id="StudentInfo.n_BeginningClassNum" PropertyName="StudentInfo.n_BeginningClassNum" IsNewNode="True" />
         <PropertyEditor Id="StudentInfo.n_ConsumePoints" PropertyName="StudentInfo.n_ConsumePoints" IsNewNode="True" />
-        <PropertyEditor Id="StudentInfo.n_Points" PropertyName="StudentInfo.n_Points" IsNewNode="True" />
+        <PropertyEditor Id="StudentInfo.n_Points" PropertyName="StudentInfo.n_Points" AllowEdit="True" IsNewNode="True" />
         <PropertyEditor Id="StudentInfo.n_RecommandNum" PropertyName="StudentInfo.n_RecommandNum" IsNewNode="True" />
+        <PropertyEditor Id="StudentInfo.n_ShoeSize" PropertyName="StudentInfo.n_ShoeSize" IsNewNode="True" />
+        <PropertyEditor Id="StudentInfo.n_Stature" PropertyName="StudentInfo.n_Stature" IsNewNode="True" />
         <PropertyEditor Id="StudentInfo.n_TotalPoints" PropertyName="StudentInfo.n_TotalPoints" IsNewNode="True" />
+        <PropertyEditor Id="StudentInfo.n_Weight" PropertyName="StudentInfo.n_Weight" IsNewNode="True" />
+        <PropertyEditor Id="StudentInfo.RecommendRecords" PropertyName="StudentInfo.RecommendRecords" View="StudentInfo_RecommendRecords_ListView" IsNewNode="True" />
         <PropertyEditor Id="StudentInfo.s_Ability" PropertyName="StudentInfo.s_Ability" IsNewNode="True" />
+        <PropertyEditor Id="StudentInfo.s_AccountNo" PropertyName="StudentInfo.s_AccountNo" IsNewNode="True" />
         <PropertyEditor Id="StudentInfo.s_Address" PropertyName="StudentInfo.s_Address" IsNewNode="True" />
+        <PropertyEditor Id="StudentInfo.s_AllergyCondition" PropertyName="StudentInfo.s_AllergyCondition" IsNewNode="True" />
+        <PropertyEditor Id="StudentInfo.s_BankName" PropertyName="StudentInfo.s_BankName" IsNewNode="True" />
         <PropertyEditor Id="StudentInfo.s_Character" PropertyName="StudentInfo.s_Character" IsNewNode="True" />
+        <PropertyEditor Id="StudentInfo.s_GuardianIdNo" PropertyName="StudentInfo.s_GuardianIdNo" IsNewNode="True" />
+        <PropertyEditor Id="StudentInfo.s_GuardianName" PropertyName="StudentInfo.s_GuardianName" IsNewNode="True" />
+        <PropertyEditor Id="StudentInfo.s_IdNo" PropertyName="StudentInfo.s_IdNo" IsNewNode="True" />
         <PropertyEditor Id="StudentInfo.s_Name" PropertyName="StudentInfo.s_Name" IsNewNode="True" />
+        <PropertyEditor Id="StudentInfo.s_Nation" PropertyName="StudentInfo.s_Nation" IsNewNode="True" />
         <PropertyEditor Id="StudentInfo.s_Parent" PropertyName="StudentInfo.s_Parent" IsNewNode="True" />
         <PropertyEditor Id="StudentInfo.s_Parent2" PropertyName="StudentInfo.s_Parent2" IsNewNode="True" />
-        <PropertyEditor Id="StudentInfo.s_Phone" PropertyName="StudentInfo.s_Phone" IsNewNode="True" />
+        <PropertyEditor Id="StudentInfo.s_Phone" PropertyName="StudentInfo.s_Phone" AllowEdit="False" IsNewNode="True" />
         <PropertyEditor Id="StudentInfo.s_Phone2" PropertyName="StudentInfo.s_Phone2" IsNewNode="True" />
+        <PropertyEditor Id="StudentInfo.s_PhysicalCondition" PropertyName="StudentInfo.s_PhysicalCondition" IsNewNode="True" />
         <PropertyEditor Id="StudentInfo.s_PointLevel" PropertyName="StudentInfo.s_PointLevel" IsNewNode="True" />
         <PropertyEditor Id="StudentInfo.s_School" PropertyName="StudentInfo.s_School" IsNewNode="True" />
         <PropertyEditor Id="StudentInfo.s_Sex" PropertyName="StudentInfo.s_Sex" IsNewNode="True" />
+        <PropertyEditor Id="StudentInfo.s_Source" PropertyName="StudentInfo.s_Source" IsNewNode="True" />
+        <PropertyEditor Id="StudentInfo.s_SourceComment" PropertyName="StudentInfo.s_SourceComment" IsNewNode="True" />
         <PropertyEditor Id="StudentInfo.s_Train" PropertyName="StudentInfo.s_Train" IsNewNode="True" />
         <PropertyEditor Id="StudentInfo.s_WeChat" PropertyName="StudentInfo.s_WeChat" IsNewNode="True" />
+        <PropertyEditor Id="VisitUser" Removed="True" />
       </Items>
       <Layout>
         <LayoutGroup Id="Main" RelativeSize="100">
-          <LayoutGroup Id="SimpleEditors" RelativeSize="34.29256594724221" Direction="Vertical">
-            <LayoutGroup Id="Item1" ShowCaption="True" Caption="学生信息" CaptionLocation="Top" Direction="Horizontal" Index="0" RelativeSize="50.349650349650346" IsNewNode="True">
-              <LayoutGroup Id="Auto7b33632b-dfe8-4ee3-a63c-2ba216b81cab" ShowCaption="False" Caption="Auto7b33632b-dfe8-4ee3-a63c-2ba216b81cab(4)" Direction="Horizontal" Index="0" RelativeSize="50" IsNewNode="True">
-                <LayoutGroup Id="Autoa773d7a9-c2d3-455d-a605-79753baa9b40" ShowCaption="False" Caption="Autoa773d7a9-c2d3-455d-a605-79753baa9b40(5)" Index="0" RelativeSize="50" IsNewNode="True">
-                  <LayoutItem Id="StudentInfo.s_Name" ViewItem="StudentInfo.s_Name" Index="0" RelativeSize="28.181818181818183" IsNewNode="True" />
-                  <LayoutItem Id="StudentInfo.s_Sex" ViewItem="StudentInfo.s_Sex" Index="1" RelativeSize="21.818181818181817" IsNewNode="True" />
-                  <LayoutItem Id="StudentInfo.dt_BirthDate" ViewItem="StudentInfo.dt_BirthDate" Index="2" RelativeSize="21.818181818181817" IsNewNode="True" />
-                  <LayoutItem Id="StudentInfo.n_Age" ViewItem="StudentInfo.n_Age" Index="3" RelativeSize="28.181818181818183" IsNewNode="True" />
-                </LayoutGroup>
-                <LayoutGroup Id="Autod39da1ed-6678-4529-b777-f176baa6e96c" ShowCaption="False" Caption="Autod39da1ed-6678-4529-b777-f176baa6e96c(10)" Index="1" RelativeSize="50" IsNewNode="True">
-                  <LayoutItem Id="StudentInfo.s_Character" ViewItem="StudentInfo.s_Character" Index="0" RelativeSize="28.181818181818183" IsNewNode="True" />
-                  <LayoutItem Id="StudentInfo.s_School" ViewItem="StudentInfo.s_School" Index="1" RelativeSize="21.818181818181817" IsNewNode="True" />
-                  <LayoutItem Id="StudentInfo.s_Train" ViewItem="StudentInfo.s_Train" Index="2" RelativeSize="21.818181818181817" IsNewNode="True" />
-                  <LayoutItem Id="StudentInfo.s_Ability" ViewItem="StudentInfo.s_Ability" Index="3" RelativeSize="28.181818181818183" IsNewNode="True" />
-                </LayoutGroup>
-              </LayoutGroup>
-              <LayoutGroup Id="Autod7b4d9fd-5b30-412a-a8f8-3907e723af03" ShowCaption="False" Caption="Autod7b4d9fd-5b30-412a-a8f8-3907e723af03(11)" Direction="Horizontal" Index="1" RelativeSize="50" IsNewNode="True">
-                <LayoutGroup Id="Auto3e16e3b7-0f6b-449f-bbaa-f530dda10c9a" ShowCaption="False" Caption="Auto3e16e3b7-0f6b-449f-bbaa-f530dda10c9a(16)" Index="0" RelativeSize="50" IsNewNode="True">
-                  <LayoutItem Id="StudentInfo.s_Parent" ViewItem="StudentInfo.s_Parent" Index="0" RelativeSize="28.181818181818183" IsNewNode="True" />
-                  <LayoutItem Id="StudentInfo.s_Phone" ViewItem="StudentInfo.s_Phone" Index="1" RelativeSize="21.818181818181817" IsNewNode="True" />
-                  <LayoutItem Id="StudentInfo.s_Parent2" ViewItem="StudentInfo.s_Parent2" Index="2" RelativeSize="21.818181818181817" IsNewNode="True" />
-                  <LayoutItem Id="StudentInfo.s_Phone2" ViewItem="StudentInfo.s_Phone2" Index="3" RelativeSize="28.181818181818183" IsNewNode="True" />
-                </LayoutGroup>
-                <LayoutGroup Id="Auto3012f932-2dcd-45a7-9560-d63269a55987" ShowCaption="False" Caption="Auto3012f932-2dcd-45a7-9560-d63269a55987(20)" Index="1" RelativeSize="50" IsNewNode="True">
-                  <LayoutItem Id="StudentInfo.s_Address" ViewItem="StudentInfo.s_Address" Index="0" RelativeSize="28.181818181818183" IsNewNode="True" />
-                  <LayoutItem Id="StudentInfo.s_WeChat" ViewItem="StudentInfo.s_WeChat" Index="1" RelativeSize="71.818181818181813" IsNewNode="True" />
-                </LayoutGroup>
-              </LayoutGroup>
-            </LayoutGroup>
-            <LayoutGroup Id="ConsultRecord" ShowCaption="True" Caption="咨询信息" Direction="Horizontal" Index="1" RelativeSize="49.650349650349654" IsNewNode="True" Removed="True">
-              <LayoutGroup Id="ConsultRecord_col1" ShowCaption="False" Direction="Horizontal" Index="0" RelativeSize="75" IsNewNode="True">
-                <LayoutGroup Id="Autob1763fe2-356f-4ee1-8ce8-e68fe9e87b74" ShowCaption="False" Caption="Autob1763fe2-356f-4ee1-8ce8-e68fe9e87b74(26)" Direction="Horizontal" Index="0" RelativeSize="66.666666666666671" IsNewNode="True">
-                  <LayoutGroup Id="Autoff2f0ca7-64dc-413f-8b05-8bd2d2d9163c" ShowCaption="False" Caption="Autoff2f0ca7-64dc-413f-8b05-8bd2d2d9163c(27)" Index="0" RelativeSize="50" IsNewNode="True">
-                    <LayoutItem Id="dt_ConsultDate" ViewItem="dt_ConsultDate" Index="0" RelativeSize="28.181818181818183" IsNewNode="True" />
-                    <LayoutItem Id="s_Source" ViewItem="s_Source" Index="1" RelativeSize="21.818181818181817" IsNewNode="True" />
-                    <LayoutItem Id="s_SourceComment" ViewItem="s_SourceComment" Index="2" RelativeSize="50" IsNewNode="True" />
+          <LayoutGroup Id="SimpleEditors" RelativeSize="25.710754017305316" Direction="Vertical">
+            <TabbedGroup Id="Item14" CaptionLocation="Top" Index="0" RelativeSize="100" IsNewNode="True">
+              <LayoutGroup Id="Item1" ShowCaption="True" Caption="学生信息" CaptionLocation="Top" Direction="Horizontal" Index="0" RelativeSize="100" IsNewNode="True">
+                <LayoutGroup Id="Auto7b33632b-dfe8-4ee3-a63c-2ba216b81cab" ShowCaption="False" Caption="Auto7b33632b-dfe8-4ee3-a63c-2ba216b81cab(4)" Direction="Horizontal" Index="0" RelativeSize="48.155737704918032" IsNewNode="True">
+                  <LayoutGroup Id="Autoa773d7a9-c2d3-455d-a605-79753baa9b40" ShowCaption="False" Caption="Autoa773d7a9-c2d3-455d-a605-79753baa9b40(5)" Index="0" RelativeSize="48.723404255319146" IsNewNode="True">
+                    <LayoutItem Id="StudentInfo.s_Name" ViewItem="StudentInfo.s_Name" Index="0" RelativeSize="20.754716981132077" IsNewNode="True" />
+                    <LayoutItem Id="StudentInfo.s_Sex" ViewItem="StudentInfo.s_Sex" Index="1" RelativeSize="15.09433962264151" IsNewNode="True" />
+                    <LayoutItem Id="StudentInfo.dt_BirthDate" ViewItem="StudentInfo.dt_BirthDate" Index="2" RelativeSize="15.09433962264151" IsNewNode="True" />
+                    <LayoutItem Id="StudentInfo.n_Age" ViewItem="StudentInfo.n_Age" Index="3" RelativeSize="15.09433962264151" IsNewNode="True" />
+                    <LayoutItem Id="StudentInfo.s_Address" ViewItem="StudentInfo.s_Address" Index="4" RelativeSize="33.9622641509434" IsNewNode="True" />
                   </LayoutGroup>
-                  <LayoutGroup Id="Auto54e42ebc-3e52-4805-960d-c3558df9bc6a" ShowCaption="False" Caption="Auto54e42ebc-3e52-4805-960d-c3558df9bc6a(32)" Index="1" RelativeSize="50" IsNewNode="True">
-                    <LayoutItem Id="s_Status" ViewItem="s_Status" Index="0" RelativeSize="28.181818181818183" IsNewNode="True" />
-                    <LayoutItem Id="s_Demand" ViewItem="s_Demand" Index="1" RelativeSize="21.818181818181817" IsNewNode="True" />
-                    <LayoutItem Id="s_Level" ViewItem="s_Level" Index="2" RelativeSize="50" IsNewNode="True" />
+                  <LayoutGroup Id="Autod39da1ed-6678-4529-b777-f176baa6e96c" ShowCaption="False" Caption="Autod39da1ed-6678-4529-b777-f176baa6e96c(10)" Index="1" RelativeSize="51.276595744680854" IsNewNode="True">
+                    <LayoutItem Id="StudentInfo.s_Character" ViewItem="StudentInfo.s_Character" Index="0" RelativeSize="20.754716981132077" IsNewNode="True" />
+                    <LayoutItem Id="StudentInfo.s_School" ViewItem="StudentInfo.s_School" Index="1" RelativeSize="15.09433962264151" IsNewNode="True" />
+                    <LayoutItem Id="StudentInfo.s_Train" ViewItem="StudentInfo.s_Train" Index="2" RelativeSize="15.09433962264151" IsNewNode="True" />
+                    <LayoutItem Id="StudentInfo.s_Ability" ViewItem="StudentInfo.s_Ability" Index="3" RelativeSize="15.09433962264151" IsNewNode="True" />
+                    <LayoutItem Id="StudentInfo.s_WeChat" ViewItem="StudentInfo.s_WeChat" Index="4" RelativeSize="33.9622641509434" IsNewNode="True" />
                   </LayoutGroup>
                 </LayoutGroup>
-                <LayoutGroup Id="Autoa628f857-e00c-4007-96ec-b0d55257e964" ShowCaption="False" Caption="Autoa628f857-e00c-4007-96ec-b0d55257e964(35)" Index="1" RelativeSize="33.333333333333336" IsNewNode="True">
-                  <LayoutItem Id="Inviter" ViewItem="Inviter" Index="0" RelativeSize="28.181818181818183" IsNewNode="True" />
-                  <LayoutItem Id="Consultant" ViewItem="Consultant" Index="1" RelativeSize="21.818181818181817" IsNewNode="True" />
-                  <LayoutItem Id="DemoInfo" ViewItem="DemoInfo" Index="2" RelativeSize="21.818181818181817" IsNewNode="True" />
-                  <LayoutItem Id="DemoInfo.dt_OpenDate" ViewItem="DemoInfo.dt_OpenDate" Index="3" RelativeSize="28.181818181818183" IsNewNode="True" />
+                <LayoutGroup Id="Autod7b4d9fd-5b30-412a-a8f8-3907e723af03" ShowCaption="False" Caption="Autod7b4d9fd-5b30-412a-a8f8-3907e723af03(11)" Direction="Horizontal" Index="1" RelativeSize="51.844262295081968" IsNewNode="True">
+                  <LayoutGroup Id="Auto3e16e3b7-0f6b-449f-bbaa-f530dda10c9a" ShowCaption="False" Caption="Auto3e16e3b7-0f6b-449f-bbaa-f530dda10c9a(16)" Index="0" RelativeSize="47.628458498023718" IsNewNode="True">
+                    <LayoutItem Id="StudentInfo.s_Parent" ViewItem="StudentInfo.s_Parent" Index="0" RelativeSize="20.754716981132077" IsNewNode="True" />
+                    <LayoutItem Id="StudentInfo.s_Phone" ViewItem="StudentInfo.s_Phone" Index="1" RelativeSize="15.09433962264151" IsNewNode="True" />
+                    <LayoutItem Id="StudentInfo.s_Parent2" ViewItem="StudentInfo.s_Parent2" Index="2" RelativeSize="15.09433962264151" IsNewNode="True" />
+                    <LayoutItem Id="StudentInfo.s_Phone2" ViewItem="StudentInfo.s_Phone2" Index="3" RelativeSize="15.09433962264151" IsNewNode="True" />
+                    <LayoutItem Id="s_Demand" ViewItem="s_Demand" Index="4" RelativeSize="33.9622641509434" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Auto3012f932-2dcd-45a7-9560-d63269a55987" ShowCaption="False" Caption="Auto3012f932-2dcd-45a7-9560-d63269a55987(20)" Index="1" RelativeSize="52.371541501976282" IsNewNode="True">
+                    <LayoutItem Id="dt_ConsultDate" ViewItem="dt_ConsultDate" Index="0" RelativeSize="20.754716981132077" IsNewNode="True" />
+                    <LayoutItem Id="StudentInfo.s_Source" ViewItem="StudentInfo.s_Source" Index="1" RelativeSize="15.09433962264151" IsNewNode="True" />
+                    <LayoutItem Id="StudentInfo.s_SourceComment" ViewItem="StudentInfo.s_SourceComment" Index="2" RelativeSize="15.09433962264151" IsNewNode="True" />
+                    <LayoutItem Id="b_Distribution" ViewItem="b_Distribution" Index="3" RelativeSize="15.09433962264151" IsNewNode="True" />
+                    <LayoutItem Id="s_Status" ViewItem="s_Status" Index="4" RelativeSize="33.9622641509434" IsNewNode="True" />
+                  </LayoutGroup>
                 </LayoutGroup>
               </LayoutGroup>
-              <LayoutGroup Id="ConsultRecord_col2" ShowCaption="False" Index="1" RelativeSize="25" IsNewNode="True">
-                <LayoutItem Id="SourseInfo" ViewItem="SourseInfo" Index="0" RelativeSize="28.181818181818183" IsNewNode="True" />
-                <LayoutItem Id="s_SignUpPeriod" ViewItem="s_SignUpPeriod" Index="1" RelativeSize="21.818181818181817" IsNewNode="True" />
-                <LayoutItem Id="dt_RegDate" ViewItem="dt_RegDate" Index="2" RelativeSize="21.818181818181817" IsNewNode="True" />
-                <LayoutItem Id="SourseInfo.dt_OpenDate" ViewItem="SourseInfo.dt_OpenDate" Index="3" RelativeSize="28.181818181818183" IsNewNode="True" />
+              <LayoutGroup Id="Item15" ShowCaption="True" CaptionLocation="Top" Direction="Horizontal" Index="1" RelativeSize="100" Caption="咨询流程" IsNewNode="True">
+                <LayoutGroup Id="Item10" ShowCaption="True" Caption="初筛" CaptionLocation="Top" Index="0" RelativeSize="23.46311475409836" IsNewNode="True">
+                  <LayoutItem Id="b_FilterResult" ViewItem="b_FilterResult" Index="0" RelativeSize="28.94736842105263" IsNewNode="True" />
+                  <LayoutItem Id="s_Level" ViewItem="s_Level" Index="1" RelativeSize="21.05263157894737" IsNewNode="True" />
+                  <LayoutItem Id="FilterUser" ViewItem="FilterUser" Index="2" RelativeSize="21.05263157894737" IsNewNode="True" />
+                  <LayoutItem Id="dt_FilterDate" ViewItem="dt_FilterDate" Index="3" RelativeSize="28.94736842105263" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutGroup Id="Item11" ShowCaption="True" Caption="邀约" CaptionLocation="Top" Index="1" RelativeSize="23.46311475409836" IsNewNode="True">
+                  <LayoutItem Id="s_InviteResult" ViewItem="s_InviteResult" Index="0" RelativeSize="28.94736842105263" IsNewNode="True" />
+                  <LayoutItem Id="InviteUser" ViewItem="InviteUser" Index="1" RelativeSize="21.05263157894737" IsNewNode="True" />
+                  <LayoutItem Id="ShareUser" ViewItem="ShareUser" Index="2" RelativeSize="21.05263157894737" IsNewNode="True" />
+                  <LayoutItem Id="dt_InviteDate" ViewItem="dt_InviteDate" Index="3" RelativeSize="28.94736842105263" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutGroup Id="Item12" ShowCaption="True" Caption="上门" CaptionLocation="Top" Index="2" RelativeSize="23.46311475409836" IsNewNode="True">
+                  <LayoutItem Id="b_VisitResult" ViewItem="b_VisitResult" Index="0" RelativeSize="28.94736842105263" IsNewNode="True" />
+                  <LayoutItem Id="DemoInfo" ViewItem="DemoInfo" Index="1" RelativeSize="21.05263157894737" IsNewNode="True" />
+                  <LayoutItem Id="DemoInfo.dt_OpenDate" ViewItem="DemoInfo.dt_OpenDate" Index="2" RelativeSize="50" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutGroup Id="Item13" ShowCaption="True" Caption="报名" CaptionLocation="Top" Index="3" RelativeSize="29.610655737704917" IsNewNode="True">
+                  <LayoutItem Id="s_SignupResult" ViewItem="s_SignupResult" Index="0" RelativeSize="28.94736842105263" IsNewNode="True" />
+                  <LayoutItem Id="dt_RegDate" ViewItem="dt_RegDate" Index="1" RelativeSize="21.05263157894737" IsNewNode="True" />
+                  <LayoutItem Id="SourseInfo" ViewItem="SourseInfo" Index="2" RelativeSize="21.05263157894737" IsNewNode="True" />
+                  <LayoutItem Id="SourseInfo.dt_OpenDate" ViewItem="SourseInfo.dt_OpenDate" Index="3" RelativeSize="28.94736842105263" IsNewNode="True" />
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Item18" ShowCaption="True" CaptionLocation="Top" Direction="Horizontal" Index="2" Caption="基本情况" RelativeSize="100" IsNewNode="True">
+                <LayoutGroup Id="Autobade9a8d-654e-440f-9cfe-1e374b529333" ShowCaption="False" Caption="Autobade9a8d-654e-440f-9cfe-1e374b529333(51)" Index="0" RelativeSize="30.840163934426229" IsNewNode="True">
+                  <LayoutItem Id="StudentInfo.n_Stature" ViewItem="StudentInfo.n_Stature" Index="0" RelativeSize="20.754716981132077" IsNewNode="True" />
+                  <LayoutItem Id="StudentInfo.n_Weight" ViewItem="StudentInfo.n_Weight" Index="1" RelativeSize="15.09433962264151" IsNewNode="True" />
+                  <LayoutItem Id="StudentInfo.n_ShoeSize" ViewItem="StudentInfo.n_ShoeSize" Index="2" RelativeSize="15.09433962264151" IsNewNode="True" />
+                  <LayoutItem Id="b_GetBook" ViewItem="b_GetBook" Index="3" RelativeSize="15.09433962264151" IsNewNode="True" />
+                  <LayoutItem Id="b_GetBag" ViewItem="b_GetBag" Index="4" RelativeSize="33.9622641509434" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutGroup Id="Auto272949b1-9cc7-45ab-8871-b76a52c42a67" ShowCaption="False" Caption="Auto272949b1-9cc7-45ab-8871-b76a52c42a67(57)" Direction="Horizontal" Index="1" RelativeSize="69.159836065573771" IsNewNode="True">
+                  <LayoutGroup Id="Autoe4f149e2-40e3-4baf-a90a-72f4505ed43f" ShowCaption="False" Caption="Autoe4f149e2-40e3-4baf-a90a-72f4505ed43f(58)" Index="0" RelativeSize="48.148148148148145" IsNewNode="True">
+                    <LayoutItem Id="StudentInfo.s_PhysicalCondition" ViewItem="StudentInfo.s_PhysicalCondition" Index="0" RelativeSize="20.754716981132077" IsNewNode="True" />
+                    <LayoutItem Id="StudentInfo.s_Nation" ViewItem="StudentInfo.s_Nation" Index="1" RelativeSize="15.09433962264151" IsNewNode="True" />
+                    <LayoutItem Id="StudentInfo.s_AllergyCondition" ViewItem="StudentInfo.s_AllergyCondition" Index="2" RelativeSize="15.09433962264151" IsNewNode="True" />
+                    <LayoutItem Id="b_GetUniform" ViewItem="b_GetUniform" Index="3" RelativeSize="15.09433962264151" IsNewNode="True" />
+                    <LayoutItem Id="b_GetDress" ViewItem="b_GetDress" Index="4" RelativeSize="33.9622641509434" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Autoe147368c-d0ed-4d85-9bf8-ec0e9cbdb8b7" ShowCaption="False" Caption="Autoe147368c-d0ed-4d85-9bf8-ec0e9cbdb8b7(64)" Index="1" RelativeSize="51.851851851851855" IsNewNode="True">
+                    <LayoutItem Id="StudentInfo.s_IdNo" ViewItem="StudentInfo.s_IdNo" Index="0" RelativeSize="20.754716981132077" IsNewNode="True" />
+                    <LayoutItem Id="StudentInfo.s_GuardianName" ViewItem="StudentInfo.s_GuardianName" Index="1" RelativeSize="15.09433962264151" IsNewNode="True" />
+                    <LayoutItem Id="StudentInfo.s_GuardianIdNo" ViewItem="StudentInfo.s_GuardianIdNo" Index="2" RelativeSize="15.09433962264151" IsNewNode="True" />
+                    <LayoutItem Id="b_Insurance" ViewItem="b_Insurance" Index="3" RelativeSize="49.056603773584904" IsNewNode="True" />
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+            </TabbedGroup>
+            <LayoutGroup Id="ConsultRecord" ShowCaption="True" Caption="咨询信息" Index="1" RelativeSize="29.153605015673982" Removed="True">
+              <LayoutGroup Id="ConsultRecord_col1" ShowCaption="False" Index="0" RelativeSize="100" IsNewNode="True">
+                <LayoutGroup Id="Autob1763fe2-356f-4ee1-8ce8-e68fe9e87b74" ShowCaption="False" Caption="Autob1763fe2-356f-4ee1-8ce8-e68fe9e87b74(26)" Index="0" RelativeSize="100" IsNewNode="True">
+                  <LayoutGroup Id="Autoff2f0ca7-64dc-413f-8b05-8bd2d2d9163c" ShowCaption="False" Caption="Autoff2f0ca7-64dc-413f-8b05-8bd2d2d9163c(27)" Index="0" RelativeSize="100" Direction="Vertical" IsNewNode="True">
+                    <LayoutGroup Id="Auto36d5e265-2ea1-4250-8387-6675bc6c3d8f" ShowCaption="False" Caption="Auto36d5e265-2ea1-4250-8387-6675bc6c3d8f(28)" Index="0" RelativeSize="100" IsNewNode="True">
+                      <LayoutItem Id="s_Source" ViewItem="s_Source" Index="0" RelativeSize="50" IsNewNode="True" />
+                      <LayoutItem Id="s_SourceComment" ViewItem="s_SourceComment" Index="1" RelativeSize="50" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
               </LayoutGroup>
             </LayoutGroup>
           </LayoutGroup>
-          <TabbedGroup Id="Item5" CaptionLocation="Top" Index="1" RelativeSize="65.70743405275779" IsNewNode="True">
+          <TabbedGroup Id="Item5" CaptionLocation="Top" Index="1" RelativeSize="74.28924598269468" IsNewNode="True">
             <LayoutGroup Id="Item8" ShowCaption="True" CaptionLocation="Top" Direction="Vertical" Index="0" Caption="联系记录" RelativeSize="100" IsNewNode="True">
               <LayoutItem Id="StudentInfo.ContactRecords" ViewItem="StudentInfo.ContactRecords" Index="0" RelativeSize="100" IsNewNode="True" />
             </LayoutGroup>
-            <LayoutGroup Id="Payments_Group" ShowCaption="True" Caption="支付记录" Index="1" RelativeSize="100" Direction="Horizontal" IsNewNode="True">
-              <LayoutItem Id="Payments" ViewItem="Payments" Index="0" RelativeSize="72.61513157894737" IsNewNode="True" />
-              <LayoutGroup Id="Auto667c55c2-5ec7-4868-83d3-e044bdf656f0" ShowCaption="False" Caption="Auto667c55c2-5ec7-4868-83d3-e044bdf656f0(47)" Index="1" RelativeSize="27.38486842105263" IsNewNode="True">
-                <LayoutGroup Id="Item2" ShowCaption="True" Caption="支付信息" CaptionLocation="Top" Direction="Horizontal" Index="0" RelativeSize="18.897637795275589" IsNewNode="True">
-                  <LayoutGroup Id="Autoba744ec8-7820-4893-9649-d72334d0a42e" ShowCaption="False" Caption="Autoba744ec8-7820-4893-9649-d72334d0a42e(46)" Index="0" RelativeSize="50" IsNewNode="True">
-                    <LayoutItem Id="s_PayWay" ViewItem="s_PayWay" Index="0" RelativeSize="50" IsNewNode="True" />
-                    <LayoutItem Id="n_PaidAmount" ViewItem="n_PaidAmount" Index="1" RelativeSize="50" IsNewNode="True" />
+            <LayoutGroup Id="Payments_Group" ShowCaption="True" Caption="支付记录" Index="1" RelativeSize="100" Direction="Vertical" IsNewNode="True">
+              <LayoutGroup Id="Autobad4e1a1-caf8-4263-a117-a4976842fe6f" ShowCaption="False" Caption="Autobad4e1a1-caf8-4263-a117-a4976842fe6f(74)" Direction="Horizontal" Index="0" RelativeSize="23.877917414721722" IsNewNode="True">
+                <LayoutGroup Id="Item2" ShowCaption="True" Caption="支付信息" CaptionLocation="Top" Direction="Horizontal" Index="0" RelativeSize="49.590163934426229" IsNewNode="True">
+                  <LayoutGroup Id="Autoba744ec8-7820-4893-9649-d72334d0a42e" ShowCaption="False" Caption="Autoba744ec8-7820-4893-9649-d72334d0a42e(46)" Index="0" RelativeSize="49.567099567099568" IsNewNode="True">
+                    <LayoutItem Id="StudentInfo.s_BankName" ViewItem="StudentInfo.s_BankName" Index="0" RelativeSize="36.666666666666664" IsNewNode="True" />
+                    <LayoutItem Id="s_PayWay" ViewItem="s_PayWay" Index="1" RelativeSize="26.666666666666668" IsNewNode="True" />
+                    <LayoutItem Id="n_PaidAmount" ViewItem="n_PaidAmount" Index="2" RelativeSize="36.666666666666664" IsNewNode="True" />
                   </LayoutGroup>
-                  <LayoutGroup Id="Autob2c49649-dfac-4de3-8c6b-b86a96cd0323" ShowCaption="False" Caption="Autob2c49649-dfac-4de3-8c6b-b86a96cd0323(49)" Index="1" RelativeSize="50" IsNewNode="True">
-                    <LayoutItem Id="n_Amount" ViewItem="n_Amount" Index="0" RelativeSize="50" IsNewNode="True" />
-                    <LayoutItem Id="n_UnpaidAmount" ViewItem="n_UnpaidAmount" Index="1" RelativeSize="50" IsNewNode="True" />
+                  <LayoutGroup Id="Autob2c49649-dfac-4de3-8c6b-b86a96cd0323" ShowCaption="False" Caption="Autob2c49649-dfac-4de3-8c6b-b86a96cd0323(49)" Index="1" RelativeSize="50.432900432900432" IsNewNode="True">
+                    <LayoutItem Id="StudentInfo.s_AccountNo" ViewItem="StudentInfo.s_AccountNo" Index="0" RelativeSize="36.666666666666664" IsNewNode="True" />
+                    <LayoutItem Id="n_Amount" ViewItem="n_Amount" Index="1" RelativeSize="26.666666666666668" IsNewNode="True" />
+                    <LayoutItem Id="n_UnpaidAmount" ViewItem="n_UnpaidAmount" Index="2" RelativeSize="36.666666666666664" IsNewNode="True" />
                   </LayoutGroup>
                 </LayoutGroup>
-                <LayoutGroup Id="Item9" ShowCaption="True" CaptionLocation="Top" Index="1" RelativeSize="23.228346456692915" Caption="发票信息" Direction="Vertical" IsNewNode="True">
-                  <LayoutGroup Id="Auto48e82aa4-f6a7-4dae-911f-1917bb52878d" ShowCaption="False" Caption="Auto48e82aa4-f6a7-4dae-911f-1917bb52878d(59)" Direction="Horizontal" Index="0" RelativeSize="65.934065934065927" IsNewNode="True">
-                    <LayoutGroup Id="Autod94d1065-7f45-4269-8ff8-67abea0f8f88" ShowCaption="False" Caption="Autod94d1065-7f45-4269-8ff8-67abea0f8f88(60)" Index="0" RelativeSize="50" IsNewNode="True">
-                      <LayoutItem Id="dt_InvoiceDate" ViewItem="dt_InvoiceDate" Index="0" RelativeSize="51.666666666666664" IsNewNode="True" />
-                      <LayoutItem Id="s_InvoiceContent" ViewItem="s_InvoiceContent" Index="1" RelativeSize="48.333333333333336" IsNewNode="True" />
+                <LayoutGroup Id="Item9" ShowCaption="True" Caption="发票信息" CaptionLocation="Top" Index="1" RelativeSize="50.409836065573771" IsNewNode="True">
+                  <LayoutGroup Id="Auto48e82aa4-f6a7-4dae-911f-1917bb52878d" ShowCaption="False" Caption="Auto48e82aa4-f6a7-4dae-911f-1917bb52878d(59)" Direction="Horizontal" Index="0" RelativeSize="100" IsNewNode="True">
+                    <LayoutGroup Id="Autod94d1065-7f45-4269-8ff8-67abea0f8f88" ShowCaption="False" Caption="Autod94d1065-7f45-4269-8ff8-67abea0f8f88(60)" Index="0" RelativeSize="49.574468085106382" IsNewNode="True">
+                      <LayoutItem Id="dt_InvoiceDate" ViewItem="dt_InvoiceDate" Index="0" RelativeSize="36.666666666666664" IsNewNode="True" />
+                      <LayoutItem Id="s_InvoiceTitle" ViewItem="s_InvoiceTitle" Index="1" RelativeSize="26.666666666666668" IsNewNode="True" />
+                      <LayoutItem Id="s_InvoiceContent" ViewItem="s_InvoiceContent" Index="2" RelativeSize="36.666666666666664" IsNewNode="True" />
                     </LayoutGroup>
-                    <LayoutGroup Id="Auto5f2300f3-f5fd-410a-b8d9-fa5057799078" ShowCaption="False" Caption="Auto5f2300f3-f5fd-410a-b8d9-fa5057799078(63)" Index="1" RelativeSize="50" IsNewNode="True">
-                      <LayoutItem Id="s_InvoiceNo" ViewItem="s_InvoiceNo" Index="0" RelativeSize="51.666666666666664" IsNewNode="True" />
-                      <LayoutItem Id="n_InvoiceAmount" ViewItem="n_InvoiceAmount" Index="1" RelativeSize="48.333333333333336" IsNewNode="True" />
-                    </LayoutGroup>
-                  </LayoutGroup>
-                  <LayoutItem Id="s_InvoiceTitle" ViewItem="s_InvoiceTitle" Index="1" RelativeSize="34.065934065934066" IsNewNode="True" />
-                </LayoutGroup>
-                <LayoutGroup Id="Item3" ShowCaption="True" Caption="积分信息" CaptionLocation="Top" Direction="Horizontal" Index="2" RelativeSize="26.968503937007874" IsNewNode="True">
-                  <LayoutGroup Id="Autoe71e49fa-695a-4af8-94c6-9e689714bcc6" ShowCaption="False" Caption="Autoe71e49fa-695a-4af8-94c6-9e689714bcc6(54)" Index="0" RelativeSize="50" IsNewNode="True">
-                    <LayoutItem Id="StudentInfo.n_RecommandNum" ViewItem="StudentInfo.n_RecommandNum" Index="0" RelativeSize="28.181818181818183" IsNewNode="True" />
-                    <LayoutItem Id="StudentInfo.n_TotalPoints" ViewItem="StudentInfo.n_TotalPoints" Index="1" RelativeSize="21.818181818181817" IsNewNode="True" />
-                    <LayoutItem Id="StudentInfo.n_ConsumePoints" ViewItem="StudentInfo.n_ConsumePoints" Index="2" RelativeSize="21.818181818181817" IsNewNode="True" />
-                    <LayoutItem Id="StudentInfo.s_PointLevel" ViewItem="StudentInfo.s_PointLevel" Index="3" RelativeSize="28.181818181818183" IsNewNode="True" />
-                  </LayoutGroup>
-                  <LayoutGroup Id="Auto73127a16-3443-4625-addf-c37a8e93e4ca" ShowCaption="False" Caption="Auto73127a16-3443-4625-addf-c37a8e93e4ca(57)" Index="1" RelativeSize="50" IsNewNode="True">
-                    <LayoutGroup Id="Autoc5488a8e-b8ef-4927-ba39-fa2c5ee91edf" ShowCaption="False" Caption="Autoc5488a8e-b8ef-4927-ba39-fa2c5ee91edf(58)" Index="0" RelativeSize="100" IsNewNode="True">
-                      <LayoutItem Id="StudentInfo.n_BeginningClassNum" ViewItem="StudentInfo.n_BeginningClassNum" Index="0" RelativeSize="28.181818181818183" IsNewNode="True" />
-                      <LayoutItem Id="StudentInfo.n_AvailablePoints" ViewItem="StudentInfo.n_AvailablePoints" Index="1" RelativeSize="21.818181818181817" IsNewNode="True" />
-                      <LayoutItem Id="StudentInfo.n_Points" ViewItem="StudentInfo.n_Points" Index="2" RelativeSize="50" IsNewNode="True" />
+                    <LayoutGroup Id="Auto5f2300f3-f5fd-410a-b8d9-fa5057799078" ShowCaption="False" Caption="Auto5f2300f3-f5fd-410a-b8d9-fa5057799078(63)" Index="1" RelativeSize="50.425531914893618" IsNewNode="True">
+                      <LayoutItem Id="s_InvoiceNo" ViewItem="s_InvoiceNo" Index="0" RelativeSize="36.666666666666664" IsNewNode="True" />
+                      <LayoutItem Id="n_InvoiceAmount" ViewItem="n_InvoiceAmount" Index="1" RelativeSize="63.333333333333336" IsNewNode="True" />
                     </LayoutGroup>
                   </LayoutGroup>
                 </LayoutGroup>
-                <LayoutGroup Id="Item4" ShowCaption="True" Caption="领取信息" CaptionLocation="Top" Index="3" RelativeSize="22.244094488188978" IsNewNode="True">
-                  <LayoutGroup Id="Autoe05a290f-2058-4064-812e-034646efe09b" ShowCaption="False" Caption="Autoe05a290f-2058-4064-812e-034646efe09b(45)" Direction="Horizontal" Index="0" RelativeSize="100" IsNewNode="True">
-                    <LayoutGroup Id="Auto72309065-7f59-4852-8371-71ecd97943e4" ShowCaption="False" Caption="Auto72309065-7f59-4852-8371-71ecd97943e4(54)" Index="0" RelativeSize="50" IsNewNode="True">
-                      <LayoutItem Id="b_GetBook" ViewItem="b_GetBook" Index="0" RelativeSize="36.046511627906973" IsNewNode="True" />
-                      <LayoutItem Id="b_GetBag" ViewItem="b_GetBag" Index="1" RelativeSize="27.906976744186046" IsNewNode="True" />
-                      <LayoutItem Id="b_Insurance" ViewItem="b_Insurance" Index="2" RelativeSize="36.046511627906973" IsNewNode="True" />
-                    </LayoutGroup>
-                    <LayoutGroup Id="Autoa30d5b4b-eaf1-4137-8cb6-51df2c065a4d" ShowCaption="False" Caption="Autoa30d5b4b-eaf1-4137-8cb6-51df2c065a4d(57)" Index="1" RelativeSize="50" IsNewNode="True">
-                      <LayoutItem Id="b_GetUniform" ViewItem="b_GetUniform" Index="0" RelativeSize="36.046511627906973" IsNewNode="True" />
-                      <LayoutItem Id="b_GetDress" ViewItem="b_GetDress" Index="1" RelativeSize="63.953488372093027" IsNewNode="True" />
-                    </LayoutGroup>
-                  </LayoutGroup>
-                </LayoutGroup>
-                <LayoutItem Id="Item7" Index="4" RelativeSize="8.6614173228346463" IsNewNode="True" />
               </LayoutGroup>
+              <LayoutItem Id="Payments" ViewItem="Payments" Index="1" RelativeSize="76.122082585278278" IsNewNode="True" />
             </LayoutGroup>
-            <LayoutGroup Id="Item6" ShowCaption="True" CaptionLocation="Top" Direction="Vertical" Index="2" Caption="备注" RelativeSize="100" IsNewNode="True">
+            <LayoutGroup Id="Item16" ShowCaption="True" CaptionLocation="Top" Direction="Vertical" Index="2" RelativeSize="100" Caption="已报课程" IsNewNode="True">
+              <LayoutItem Id="StudentInfo.ListSourseInfos" ViewItem="StudentInfo.ListSourseInfos" Index="0" RelativeSize="100" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="Item17" ShowCaption="True" CaptionLocation="Top" Direction="Vertical" Index="3" Caption="推荐记录" RelativeSize="100" IsNewNode="True">
+              <LayoutGroup Id="Item3" ShowCaption="True" Caption="积分信息" CaptionLocation="Top" Direction="Horizontal" Index="0" RelativeSize="26.929982046678635" IsNewNode="True">
+                <LayoutGroup Id="Autoe71e49fa-695a-4af8-94c6-9e689714bcc6" ShowCaption="False" Caption="Autoe71e49fa-695a-4af8-94c6-9e689714bcc6(54)" Index="0" RelativeSize="49.57805907172996" IsNewNode="True">
+                  <LayoutItem Id="StudentInfo.n_RecommandNum" ViewItem="StudentInfo.n_RecommandNum" Index="0" RelativeSize="28.94736842105263" IsNewNode="True" />
+                  <LayoutItem Id="StudentInfo.n_TotalPoints" ViewItem="StudentInfo.n_TotalPoints" Index="1" RelativeSize="21.05263157894737" IsNewNode="True" />
+                  <LayoutItem Id="StudentInfo.n_ConsumePoints" ViewItem="StudentInfo.n_ConsumePoints" Index="2" RelativeSize="21.05263157894737" IsNewNode="True" />
+                  <LayoutItem Id="StudentInfo.s_PointLevel" ViewItem="StudentInfo.s_PointLevel" Index="3" RelativeSize="28.94736842105263" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutGroup Id="Auto73127a16-3443-4625-addf-c37a8e93e4ca" ShowCaption="False" Caption="Auto73127a16-3443-4625-addf-c37a8e93e4ca(57)" Index="1" RelativeSize="50.42194092827004" IsNewNode="True">
+                  <LayoutGroup Id="Autoc5488a8e-b8ef-4927-ba39-fa2c5ee91edf" ShowCaption="False" Caption="Autoc5488a8e-b8ef-4927-ba39-fa2c5ee91edf(58)" Index="0" RelativeSize="100" IsNewNode="True">
+                    <LayoutItem Id="StudentInfo.n_BeginningClassNum" ViewItem="StudentInfo.n_BeginningClassNum" Index="0" RelativeSize="28.94736842105263" IsNewNode="True" />
+                    <LayoutItem Id="StudentInfo.n_AvailablePoints" ViewItem="StudentInfo.n_AvailablePoints" Index="1" RelativeSize="21.05263157894737" IsNewNode="True" />
+                    <LayoutItem Id="StudentInfo.n_Points" ViewItem="StudentInfo.n_Points" Index="2" RelativeSize="50" IsNewNode="True" />
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutItem Id="StudentInfo.RecommendRecords" ViewItem="StudentInfo.RecommendRecords" Index="1" RelativeSize="73.070017953321369" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="Item6" ShowCaption="True" CaptionLocation="Top" Direction="Vertical" Index="4" Caption="备注" RelativeSize="100" IsNewNode="True">
               <LayoutItem Id="s_Note" ViewItem="s_Note" Index="0" RelativeSize="100" ShowCaption="False" IsNewNode="True" />
             </LayoutGroup>
           </TabbedGroup>
@@ -439,8 +503,6 @@
         <ColumnInfo Id="StudentInfo.n_Age" PropertyName="StudentInfo.n_Age" Index="12" IsNewNode="True" />
         <ColumnInfo Id="s_Demand" Width="100" Index="13" />
         <ColumnInfo Id="DemoInfo" Index="14" Width="72" />
-        <ColumnInfo Id="Inviter" Index="15" Width="68" />
-        <ColumnInfo Id="Consultant" Index="16" Width="76" />
         <ColumnInfo Id="SourseInfo" Index="17" Width="77" />
         <ColumnInfo Id="Recommender" Width="97" Index="18" />
         <ColumnInfo Id="RecommendParent" Width="122" Index="19" />
@@ -457,7 +519,7 @@
         <ColumnInfo Id="n_PaidAmount" Width="105" />
         <ColumnInfo Id="Reveiver" Width="124" />
         <ColumnInfo Id="s_PayNo" Width="176" />
-        <ColumnInfo Id="s_Note" Width="143" />
+        <ColumnInfo Id="s_Note" Width="143" SortIndex="-1" SortOrder="None" />
       </Columns>
     </ListView>
     <ListView Id="DemoInfo_ConsultRecords_ListView" NewItemRowPosition="None" AllowEdit="False" AllowDelete="False" AllowNew="False" AllowLink="True" AllowUnlink="True">
@@ -483,15 +545,13 @@
         <ColumnInfo Id="s_Source" Width="68" />
         <ColumnInfo Id="s_SourceComment" Width="121" />
         <ColumnInfo Id="s_Demand" Width="0" />
+        <ColumnInfo Id="n_UnpaidAmount" Width="68" Index="12" />
+        <ColumnInfo Id="Recommender" Width="97" Index="15" />
+        <ColumnInfo Id="RecommendParent" Width="122" Index="16" />
         <ColumnInfo Id="s_Status" Width="65" />
         <ColumnInfo Id="s_PayWay" Width="73" />
         <ColumnInfo Id="n_Amount" Width="68" />
         <ColumnInfo Id="n_PaidAmount" Width="68" />
-        <ColumnInfo Id="n_UnpaidAmount" Width="68" Index="12" />
-        <ColumnInfo Id="Consultant" Width="76" Index="13" />
-        <ColumnInfo Id="Inviter" Width="68" Index="14" />
-        <ColumnInfo Id="Recommender" Width="97" Index="15" />
-        <ColumnInfo Id="RecommendParent" Width="122" Index="16" />
       </Columns>
     </ListView>
     <DetailView Id="DemoInfo_DetailView" IsNewNode="True">
@@ -667,8 +727,6 @@
         <ColumnInfo Id="StudentInfo.s_Name" PropertyName="StudentInfo.s_Name" Index="4" SortIndex="-1" SortOrder="None" Width="71" IsNewNode="True" />
         <ColumnInfo Id="StudentInfo.s_Sex" PropertyName="StudentInfo.s_Sex" Index="5" Width="51" SortIndex="0" SortOrder="Ascending" IsNewNode="True" />
         <ColumnInfo Id="StudentInfo.n_Age" PropertyName="StudentInfo.n_Age" Index="6" Width="44" SortIndex="-1" SortOrder="None" IsNewNode="True" />
-        <ColumnInfo Id="Inviter" Width="68" Index="7" />
-        <ColumnInfo Id="Consultant" Width="76" Index="8" />
         <ColumnInfo Id="DemoInfo" PropertyName="DemoInfo" Index="9" IsNewNode="True" Removed="True" />
         <ColumnInfo Id="DemoInfo.Teacher1" PropertyName="DemoInfo.Teacher1" Index="10" Caption="Demo中教" IsNewNode="True" />
         <ColumnInfo Id="DemoInfo.Teacher2" PropertyName="DemoInfo.Teacher2" Index="11" Caption="Demo外教" IsNewNode="True" />
@@ -826,12 +884,10 @@
         <ColumnInfo Id="s_SourceComment" Width="107" Index="3" />
         <ColumnInfo Id="s_Status" Width="76" Index="4" />
         <ColumnInfo Id="DemoInfo" Index="7" Width="119" />
-        <ColumnInfo Id="Inviter" Index="7" Width="90" />
-        <ColumnInfo Id="Consultant" Index="8" Width="89" />
         <ColumnInfo Id="SourseInfo" Index="8" Width="129" />
         <ColumnInfo Id="Recommender" Width="103" Index="9" />
-        <ColumnInfo Id="s_SignUpPeriod" Width="82" />
         <ColumnInfo Id="RecommendParent" Width="90" Index="10" />
+        <ColumnInfo Id="s_SignUpPeriod" Width="82" />
         <ColumnInfo Id="Oid" Removed="True" />
         <ColumnInfo Id="StudentInfo" Removed="True" />
       </Columns>
@@ -898,9 +954,7 @@
                 <LayoutItem Id="s_Address" ViewItem="s_Address" Index="1" RelativeSize="14.814814814814815" Removed="True" />
                 <LayoutItem Id="s_Character" RelativeSize="12.903225806451612" Index="1" Removed="True" />
                 <LayoutItem Id="n_BeginningClassNum" Index="2" RelativeSize="37.068965517241381" Removed="True" />
-                <LayoutItem Id="n_Stature" Index="2" RelativeSize="28.685258964143426" Removed="True" />
                 <LayoutItem Id="s_IdNo" Index="2" RelativeSize="49.571183533447687" Removed="True" />
-                <LayoutItem Id="s_Nation" Index="2" RelativeSize="32.954545454545453" Removed="True" />
                 <LayoutItem Id="s_School" Index="2" RelativeSize="12.903225806451612" ViewItem="s_School" Removed="True" />
                 <LayoutItem Id="s_Train" ViewItem="s_Train" Index="2" RelativeSize="23.913043478260871" Removed="True" />
                 <LayoutItem Id="n_AvailablePoints" Index="3" RelativeSize="24.828767123287673" Removed="True" />
@@ -933,16 +987,12 @@
                   <LayoutItem Id="dt_ValidDate" ViewItem="dt_ValidDate" Index="5" RelativeSize="20.37037037037037" IsNewNode="True" />
                 </LayoutGroup>
                 <LayoutItem Id="s_WeChat" Index="1" RelativeSize="58.695652173913047" Removed="True" />
-                <LayoutItem Id="b_IsBack" Index="2" RelativeSize="39.525691699604742" Removed="True" />
                 <LayoutItem Id="dt_FirstConsultDate" Index="2" RelativeSize="29.585798816568047" Removed="True" />
                 <LayoutItem Id="LastContactRecord" Index="2" RelativeSize="50.790513833992094" Removed="True" />
-                <LayoutItem Id="OwnerCC" Index="2" RelativeSize="16.50197628458498" Removed="True" />
                 <LayoutItem Id="s_AccountName" Index="2" RelativeSize="39.6978021978022" Removed="True" />
                 <LayoutItem Id="s_AccountNo" Index="2" RelativeSize="51.64835164835165" Removed="True" />
                 <LayoutItem Id="s_SourceComment" Index="2" RelativeSize="50.513698630136986" Removed="True" />
-                <LayoutItem Id="s_Valid" Index="2" RelativeSize="14.229249011857707" Removed="True" />
                 <LayoutItem Id="n_Age" RelativeSize="12.903225806451612" Index="3" Removed="True" />
-                <LayoutItem Id="OwnerTMK" Index="3" RelativeSize="14.229249011857707" Removed="True" />
                 <LayoutItem Id="Creator" RelativeSize="30.64516129032258" Index="5" Removed="True" />
                 <LayoutItem Id="dt_CreateDate" RelativeSize="17.741935483870968" Index="6" Removed="True" />
                 <LayoutItem Id="n_Weight" Index="6" RelativeSize="9.30232558139535" Removed="True" />
@@ -1080,10 +1130,6 @@
         <ColumnInfo Id="n_Age" PropertyName="n_Age" Index="2" Width="44" IsNewNode="True" Removed="True" />
         <ColumnInfo Id="s_Parent" Index="3" Width="66" />
         <ColumnInfo Id="s_Phone" Index="4" Width="65" />
-        <ColumnInfo Id="s_Valid" Index="5" Width="68" />
-        <ColumnInfo Id="OwnerCC" Index="6" Width="69" />
-        <ColumnInfo Id="OwnerTMK" Index="7" Width="79" />
-        <ColumnInfo Id="b_IsBack" Index="8" Width="44" />
         <ColumnInfo Id="LastContactRecord.s_Content" PropertyName="LastContactRecord.s_Content" Index="9" Width="182" IsNewNode="True" />
         <ColumnInfo Id="LastContactRecord.dt_RecordDate" PropertyName="LastContactRecord.dt_RecordDate" Index="10" Width="66" IsNewNode="True" />
         <ColumnInfo Id="LastContactRecord.dt_NextDate" PropertyName="LastContactRecord.dt_NextDate" Index="11" Width="80" IsNewNode="True" />
@@ -1128,8 +1174,6 @@
         <ColumnInfo Id="SourseInfo" Width="91" Index="4" />
         <ColumnInfo Id="SourseInfo.s_Level" PropertyName="SourseInfo.s_Level" Index="5" IsNewNode="True" />
         <ColumnInfo Id="SourseInfo.dt_OpenDate" PropertyName="SourseInfo.dt_OpenDate" Index="6" Width="158" IsNewNode="True" />
-        <ColumnInfo Id="Consultant" Width="76" Index="7" />
-        <ColumnInfo Id="Inviter" Width="68" Index="8" />
         <ColumnInfo Id="s_SignUpPeriod" Index="9" />
         <ColumnInfo Id="Recommender" Width="79" Index="10" />
         <ColumnInfo Id="Oid" Removed="True" />

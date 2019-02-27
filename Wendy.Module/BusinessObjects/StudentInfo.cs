@@ -10,7 +10,6 @@ using System.Linq;
 
 namespace Wendy.Module.BusinessObjects
 {
-    [DefaultClassOptions]
     [DefaultProperty("s_Name")]
     public class StudentInfo : BaseObject
     {
@@ -27,9 +26,9 @@ namespace Wendy.Module.BusinessObjects
             }
 
             dt_CreateDate = DateTime.Now;
-            s_Valid = "待定";
+            //s_Valid = "待定";
             ContactRecords.Add(new ContactRecord(Session) { StudentInfo = this });
-            ConsultRecords.Add(new ConsultRecord(Session) { StudentInfo = this });
+            //ConsultRecords.Add(new ConsultRecord(Session) { StudentInfo = this });
             base.AfterConstruction();
         }
 
@@ -59,7 +58,6 @@ namespace Wendy.Module.BusinessObjects
         /// </summary>
         private string _sSex;
         [Size(1)]
-        [RuleRequiredField]
         public string s_Sex
         {
             get => _sSex;
@@ -167,7 +165,6 @@ namespace Wendy.Module.BusinessObjects
         }
 
         private DateTime _dtBirthDate;
-        [RuleRequiredField]
         public DateTime dt_BirthDate
         {
             get => _dtBirthDate;
@@ -381,59 +378,13 @@ namespace Wendy.Module.BusinessObjects
         }
         #endregion
 
-        /// <summary>
-        /// 有效
-        /// </summary>
-        private string _sValid;
-        [Size(10)]
-        [ImmediatePostData]
-        public string s_Valid
-        {
-            get => _sValid;
-            set
-            {
-                SetPropertyValue("s_Valid", ref _sValid, value);
-                if (!IsLoading && !IsSaving)
-                {
-                    dt_ValidDate = (value == "有效" || value == "无效") ? DateTime.Today : DateTime.MinValue;
-                }
-            }
-
-        }
-
         private DateTime _dtValidDate;
         public DateTime dt_ValidDate
         {
             get => _dtValidDate;
             set => SetPropertyValue("dt_ValidDate", ref _dtValidDate, value);
         }
-
-        private SysUser ownerCC;
-        [Persistent("g_OwnerCCId")]
-        public SysUser OwnerCC
-        {
-            get => ownerCC;
-            set => SetPropertyValue("OwnerCC", ref ownerCC, value);
-        }
-
-        private SysUser ownerTMK;
-        [Persistent("g_OwnerTMKId")]
-        public SysUser OwnerTMK
-        {
-            get => ownerTMK;
-            set => SetPropertyValue("OwnerTMK", ref ownerTMK, value);
-        }
-
-        /// <summary>
-        /// 退回
-        /// </summary>
-        private bool _bIsBack;
-        public bool b_IsBack
-        {
-            get => _bIsBack;
-            set => SetPropertyValue("b_IsBack", ref _bIsBack, value);
-        }
-
+        
         /// <summary>
         /// 来源
         /// </summary>
@@ -501,9 +452,11 @@ namespace Wendy.Module.BusinessObjects
             set => SetPropertyValue("LastContactRecord", ref contactRecord, value);
         }
 
-        public double n_Age => DateTime.Today.Year - _dtBirthDate.Year +
-                                (DateTime.Today - _dtBirthDate.AddYears(DateTime.Today.Year - _dtBirthDate.Year))
-                                .TotalDays / 365;
+        public double n_Age => _dtBirthDate == DateTime.MinValue
+            ? 0.0
+            : (DateTime.Today.Year - _dtBirthDate.Year +
+               (DateTime.Today - _dtBirthDate.AddYears(DateTime.Today.Year - _dtBirthDate.Year))
+               .TotalDays / 365);
 
         public List<SourseInfo> ListSourseInfos =>
             ConsultRecords.Where(r => r.SourseInfo != null).Select(r => r.SourseInfo).ToList();
