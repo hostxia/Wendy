@@ -4,7 +4,7 @@
   <description asmv2:iconFile="ExpressApp.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="Wendy.Win" version="1.0.6998.1008" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="Wendy.Win" version="1.0.6998.1784" language="neutral" processorArchitecture="msil" />
     <commandLine file="Wendy.Win.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -1675,37 +1675,37 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Wendy.Module.dll" size="151040">
-      <assemblyIdentity name="Wendy.Module" version="1.0.6998.835" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="Wendy.Module" version="1.0.6998.1783" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>tLuSPe1DvyjVp92K+ikoidP5Nb92C6l6D/2pCiYkY9E=</dsig:DigestValue>
+        <dsig:DigestValue>8HYdT3N4TWLhOchxOGCiBymvdbUBPonxBwdnSp2E6FE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Wendy.Module.Win.dll" size="31744">
-      <assemblyIdentity name="Wendy.Module.Win" version="1.0.6998.1008" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="Wendy.Module.Win" version="1.0.6998.1784" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>q0sv0L1sthtWzPHKmgK8SRZAOw4bROFjN2BEi29+oio=</dsig:DigestValue>
+        <dsig:DigestValue>jIZEX6eTwj3g4pB6t3jhCm5xm+gjiRa6GwFtSfaYW4M=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Wendy.Win.exe" size="32768">
-      <assemblyIdentity name="Wendy.Win" version="1.0.6998.1008" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="Wendy.Win" version="1.0.6998.1784" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>G0iD2fJFO06Kf4+m2liu7prH7XG1erxo+edY+GxLo6o=</dsig:DigestValue>
+        <dsig:DigestValue>PI+EssT2BmzMEv4DhcIjEpLfgPbtxuLQmdohGgx3WI8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
