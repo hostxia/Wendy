@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="Wendy.Win.exe" version="1.0.0.25" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="Wendy.Win.exe" version="1.0.0.27" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="ExpressApp.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="Wendy.Win" version="1.0.6998.1784" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="Wendy.Win" version="1.0.6998.17261" language="neutral" processorArchitecture="msil" />
     <commandLine file="Wendy.Win.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -1675,37 +1675,37 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Wendy.Module.dll" size="151040">
-      <assemblyIdentity name="Wendy.Module" version="1.0.6998.1783" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="Wendy.Module" version="1.0.6998.17258" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>8HYdT3N4TWLhOchxOGCiBymvdbUBPonxBwdnSp2E6FE=</dsig:DigestValue>
+        <dsig:DigestValue>1AUci8xwPG5mwJQLYAhL67thDzkJK5GqXu/rnZPsivE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Wendy.Module.Win.dll" size="31744">
-      <assemblyIdentity name="Wendy.Module.Win" version="1.0.6998.1784" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="Wendy.Module.Win" version="1.0.6998.17260" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>jIZEX6eTwj3g4pB6t3jhCm5xm+gjiRa6GwFtSfaYW4M=</dsig:DigestValue>
+        <dsig:DigestValue>XkKE2gUpPq+YOD2FCaUWPD+gUrbuG9c24+7vD6KkxQI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Wendy.Win.exe" size="32768">
-      <assemblyIdentity name="Wendy.Win" version="1.0.6998.1784" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="Wendy.Win" version="1.0.6998.17261" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>PI+EssT2BmzMEv4DhcIjEpLfgPbtxuLQmdohGgx3WI8=</dsig:DigestValue>
+        <dsig:DigestValue>BzD237yKOacE2EchfwNzHu5bSNNHRmJiaNE1gwwFvy4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1742,7 +1742,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>fe0J8Sg74g8wX5RaWkbjYyu7FuEmWMGGZn2x7n8yS+8=</dsig:DigestValue>
+      <dsig:DigestValue>hn+CF7f0jaXzkQcJgBf77MQB/hGmasyfoNTRv+iCgOY=</dsig:DigestValue>
     </hash>
   </file>
   <file name="zh-Hans\DevExpress.Charts.Designer.v18.1.resources.dll" size="76288">
