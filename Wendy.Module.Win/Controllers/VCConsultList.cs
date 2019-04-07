@@ -1,4 +1,5 @@
 ﻿using DevExpress.ExpressApp;
+using DevExpress.ExpressApp.Security;
 using DevExpress.ExpressApp.SystemModule;
 using System.Linq;
 using System.Windows.Forms;
@@ -19,6 +20,9 @@ namespace Wendy.Module.Win.Controllers
         protected override void OnActivated()
         {
             base.OnActivated();
+            saDistribution.Active.SetItemValue("Security",
+                ((SysUser) SecuritySystem.CurrentUser).IsUserInRole("校长") ||
+                ((SysUser) SecuritySystem.CurrentUser).IsUserInRole("前台"));
             Frame.GetController<NewObjectViewController>().ObjectCreating += VCConsultList_ObjectCreating;
             // Perform various tasks depending on the target View.
         }
@@ -61,9 +65,9 @@ namespace Wendy.Module.Win.Controllers
         private void saDistribution_Execute(object sender, DevExpress.ExpressApp.Actions.SimpleActionExecuteEventArgs e)
         {
             var listConsult = View.SelectedObjects.Cast<ConsultRecord>().ToList();
-            if(!listConsult.Any()) return;
+            if (!listConsult.Any()) return;
             var frm = new XFrmDistribution(ObjectSpace);
-            if(frm.ShowDialog()!=DialogResult.OK) return;
+            if (frm.ShowDialog() != DialogResult.OK) return;
 
             listConsult.ForEach(r =>
             {
